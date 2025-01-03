@@ -1,0 +1,33 @@
+.test-series-section {
+    padding: 40px 20px;
+    background-color: #e9f7ef;
+    text-align: center;
+}
+
+.test-series-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #2e7d32;
+}
+
+.test-series-description {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.buy-now-button {
+    padding: 12px 24px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.buy-now-button:hover {
+    background-color: #218838;
+}
