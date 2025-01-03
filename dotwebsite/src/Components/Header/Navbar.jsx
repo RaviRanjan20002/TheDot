@@ -1,9 +1,13 @@
 // Navbar.jsx
 import "../../../styles/Navbar.css"
+import logo from "../../assets/logo.jpg"
+
+
+
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="logo">MyLogo</div>
+            <div className="logo"><img src={logo} alt="Logo" className="logo" /></div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
