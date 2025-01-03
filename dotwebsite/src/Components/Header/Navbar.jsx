@@ -1,13 +1,13 @@
 // Navbar.jsx
 import React from 'react';
 import "../../../styles/Navbar.css"
-import logo from "../../assets/logo.jpg"; // Adjust the path based on your folder structure
+
 
 
 const Navbar = () => {
     return (
         <nav className="navbar">
-            <div className="logo"><img src={logo} alt="Logo" className="logo" /></div>
+            <div className="logo">MyLogo</div>
             <ul>
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Contact</a></li>
