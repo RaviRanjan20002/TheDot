@@ -1,6 +1,6 @@
 /* CSS for Facilities Component */
 .facilities-section {
-    padding: 50px 50px 50px 20px;
+    padding: 100px 50px 120px 20px;
     background-color: #1a3d4c;
     color: white;
 }
@@ -21,9 +21,13 @@
     text-align: center;
 }
 
-.textcont{
-    text-align: center;
+.textcont {
+    text-align: center; /* Centers the text */
+    max-width: 800px; /* Set a maximum width for the content */
+    margin: 0 auto; /* Centers the element horizontally */
+    padding: 0 20px; /* Adds padding on both sides for spacing */
 }
+
 
 .section-description {
     font-size: 18px;
@@ -37,7 +41,11 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    max-width: 100%; 
+    margin: 0 auto; 
+    padding: 0 20px; 
     gap: 20px;
+    
 }
 
 .facility-item {
@@ -49,15 +57,35 @@
     max-width: 350px;
     display: flex;
     flex-direction: column;
+    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
+}
+
+.facility-item p {
+    padding: 15px 20px; 
+    text-align: justify; 
+    font-size: 16px; 
+    color: #555; 
+    margin: 0; 
+}
+
+.facility-item p:last-child {
+    margin-bottom: 20px; /* Add some space below the last paragraph */
+}
+
+/* Hover effect on the entire facility-item */
+.facility-item:hover {
+    transform: scale(1.05); /* Scale the entire item when hovered */
 }
 
 .facility-item img {
     width: 100%;
     height: auto;
+    transition: transform 0.3s ease; /* Ensure smooth transition of the image */
 }
 
 .facility-content {
     padding: 20px;
+    
 }
 
 .facility-title {
@@ -65,9 +93,11 @@
     font-weight: bold;
     margin-bottom: 10px;
     color: #003366;
+    
 }
 
 .facility-description {
+    
     font-size: 16px;
     line-height: 1.5;
     color: #555;

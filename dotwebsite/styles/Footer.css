@@ -1,0 +1,110 @@
+/* Footer General Styles */
+.footer {
+    background-color: #212121;
+    color: #ffffff;
+    padding: 40px 20px;
+    font-family: "Arial", sans-serif;
+  }
+  
+  .footer-top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+  }
+  
+  .footer-column {
+    flex: 1;
+    min-width: 200px;
+  }
+  
+  .footer-column h3 {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #f9f9f9;
+    border-bottom: 2px solid #141010; /* Permanent underline */
+    padding-bottom: 10px; /* Adds space between the text and the underline */
+  }
+  
+  
+  .footer-column ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .footer-column ul li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-left: 20px;
+    font-size: 0.90rem;
+    color: #dcdcdc;
+    cursor: pointer;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Add a dot before each list item */
+  .footer-column ul li::before {
+    content: "•";
+    position: absolute;
+    left: 0;
+    font-size: 1rem;
+    color: #76c7c0; /* Dot color */
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  /* Hover effect for list items */
+  .footer-column ul li:hover {
+    color: #ffffff;
+    transform: translateX(5px); /* Slide to the right */
+  }
+  
+  /* Hover effect for the dot */
+  .footer-column ul li:hover::before {
+    color: #ffffff; /* Dot color changes on hover */
+    transform: scale(1.2); /* Slightly enlarges the dot */
+  }
+  
+  /* Contact Section */
+  .contact-info p {
+    margin: 10px 0;
+    font-size: 0.95rem;
+  }
+  
+  .social-icons {
+    margin-top: 15px;
+  }
+  
+  .social-icons i {
+    font-size: 1.5rem;
+    margin-right: 15px;
+    color: #dcdcdc;
+    transition: color 0.3s ease;
+  }
+  
+  .social-icons i:hover {
+    color: #76c7c0; /* Highlight color */
+  }
+  
+  /* Footer Bottom */
+  .footer-bottom {
+    border-top: 1px solid #333;
+    margin-top: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+  
+  .footer-bottom a {
+    color: #76c7c0;
+    margin: 0 10px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-bottom a:hover {
+    color: #ffffff;
+  }
+  

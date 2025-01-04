@@ -1,10 +1,19 @@
 .test-series-section {
-
-    padding: 40px 20px;
-    background-color: #e9f7ef;
+    /* background-image: url(../src/assets/reg3.jpg); */
+    background-size:cover; /* Ensures the background image covers the entire section */
+    background-position:center; 
+    background-repeat: no-repeat; 
+    padding: 60px 20px; 
+    background-color: rgba(233, 247, 239, 0.9); 
     text-align: center;
-    
+    border-radius: 10px; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+    color: #333;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden; 
+    position: relative; 
 }
+
 
 .containertwo {
     display: block; /* Ensures content behaves as a block */
