@@ -1,8 +1,7 @@
 // TestSeries.jsx
-import React from "react";
 import "../../../styles/Registration.css";
 
-const TestSeries = () => {
+const Registration = () => {
     return (
         <section className="test-series-section">
             <div className="container">
@@ -11,7 +10,7 @@ const TestSeries = () => {
             
             <button
                     className="buy-now-button"
-                    onClick={() => alert("Redirecting to the purchase page...")}
+                    onClick={() => window.open("https://docs.google.com/forms/d/e/1FAIpQLSfEXszccdaQxY5Xu-sSSisEQuPcHmMVxZp8J9SPEIFft3m8ag/viewform", "_blank")}
                 >
                     Register now 
             </button>
@@ -22,4 +21,4 @@ const TestSeries = () => {
     );
 };
 
-export default TestSeries;
+export default Registration;
