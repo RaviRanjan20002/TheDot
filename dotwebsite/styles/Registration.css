@@ -1,7 +1,16 @@
 .test-series-section {
+
     padding: 40px 20px;
     background-color: #e9f7ef;
     text-align: center;
+    
+}
+
+.containertwo {
+    display: block; /* Ensures content behaves as a block */
+    width: 100%; /* Full width for block elements */
+    max-width: 600px; /* Limit the width of the content */
+    margin: 0 auto; /* Center the container */
 }
 
 .test-series-title {

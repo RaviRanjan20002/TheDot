@@ -1,0 +1,85 @@
+/* CSS for Facilities Component */
+.facilities-section {
+    padding: 50px 50px 50px 20px;
+    background-color: #1a3d4c;
+    color: white;
+}
+
+.facilities-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section-title {
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.textcont{
+    text-align: center;
+}
+
+.section-description {
+    font-size: 18px;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 1.6;
+    color: #ddd;
+}
+
+.facilities-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.facility-item {
+    background-color: white;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+}
+
+.facility-item img {
+    width: 100%;
+    height: auto;
+}
+
+.facility-content {
+    padding: 20px;
+}
+
+.facility-title {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #003366;
+}
+
+.facility-description {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+}
+
+@media (max-width: 768px) {
+    .facilities-grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .facility-item {
+        max-width: 100%;
+    }
+}

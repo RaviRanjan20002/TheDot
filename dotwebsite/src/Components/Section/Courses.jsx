@@ -6,10 +6,13 @@ const Courses = () => {
     return (
         <section className="courses-section">
             <div className="container">
-            <p className="section-description">
+            <div className="containertwo">
+            <p className="section-description-cr">
             Join our expert coaching for IIT-JEE and NEET success.
                 </p>
                 <button className="enroll-header-button">ENROLL</button>
+            </div>
+            
                 
                 <div className="courses-list">
                     <div className="course-item">
