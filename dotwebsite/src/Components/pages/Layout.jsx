@@ -43,10 +43,12 @@ const Layout = () => {
           </li>
         </ul>
         <div className="social-icons">
-          <a href="#" className="fab fa-facebook-f"></a>
-          <a href="#" className="fab fa-twitter"></a>
-          <a href="#" className="fab fa-instagram"></a>
-          <a href="#" className="fab fa-linkedin-in"></a>
+          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-linkedin-in" target="_blank" rel="noopener noreferrer"></a>
+          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-youtube" target="_blank" rel="noopener noreferrer"></a>
+
         </div>
       </nav>
 
