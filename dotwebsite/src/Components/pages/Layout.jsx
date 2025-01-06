@@ -54,10 +54,14 @@ const Layout = () => {
             {isDropdownVisible && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/jee-main-result" class="no-zoom">JEE Main Result</Link>
+                <a href="https://script.google.com/macros/s/AKfycbyb7MreEsHHZwDRbJbQSftB1aJ9fKfX0KlpSD-CBdyIeJAqjq6b3xgrKjUu3KvZ9tHtPg/exec" class="no-zoom" target="_blank" rel="noopener noreferrer">
+              JEE Main Result
+              </a>
                 </li>
                 <li>
-                  <Link to="/jee-advanced-result" class="no-zoom">JEE Advanced Result</Link>
+                <a href="https://script.google.com/macros/s/AKfycbyb7MreEsHHZwDRbJbQSftB1aJ9fKfX0KlpSD-CBdyIeJAqjq6b3xgrKjUu3KvZ9tHtPg/exec" class="no-zoom" target="_blank" rel="noopener noreferrer">
+                    JEE Advance Result
+                  </a>
                 </li>
               </ul>
             )}

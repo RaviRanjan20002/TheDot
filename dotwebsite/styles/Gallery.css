@@ -5,6 +5,9 @@ body {
 
 .gallery-section {
   /* padding: 10px 20px; */
+  font-family: "DM Serif Text", serif;
+  font-weight: 500;
+  font-style: normal;
   text-align: center;
   background-color: #eef2f7;
   background-image: url("../src/assets/gallerybg9.avif");
@@ -12,8 +15,9 @@ body {
   background-position: center;
 }
 .gallery-title {
-  font-size: 48px;
-  margin-bottom: 10px; /* Reduced gap between title and subtitle */
+  
+  font-size: 2.2rem;
+  margin-bottom: 10px; 
   color: #2c3e50;
   font-weight: bold;
   letter-spacing: 1.5px;

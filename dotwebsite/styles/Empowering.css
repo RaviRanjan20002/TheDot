@@ -16,7 +16,9 @@
 }
 
 .content {
-
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     flex: 1;
     min-width: 300px;
     text-align: center;
@@ -24,11 +26,11 @@
 }
 
 .section-title-em {
-    font-size: 40px;
+    font-size: 50px;
     font-weight: bold;
     color: #070606;
     margin-bottom: 20px;
-    text-align: center;
+    text-align: left;
 }
 
 .section-description-em {
