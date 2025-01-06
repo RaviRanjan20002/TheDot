@@ -4,7 +4,7 @@
     background-position:center; 
     background-repeat: no-repeat; 
     padding: 60px 20px; 
-    background-color: rgba(233, 247, 239, 0.9); 
+    background-color: #e6ebfc; 
     text-align: center;
     border-radius: 10px; 
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
@@ -26,7 +26,7 @@
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
-    color: #2e7d32;
+    color: #1a3d4c;
 }
 
 .test-series-description {
@@ -37,7 +37,7 @@
 
 .buy-now-button {
     padding: 12px 24px;
-    background-color: #28a745;
+    background-color: #1a3d4c;
     color: white;
     border: none;
     border-radius: 5px;
@@ -47,5 +47,5 @@
 }
 
 .buy-now-button:hover {
-    background-color: #218838;
+    background-color: #2a718f;
 }

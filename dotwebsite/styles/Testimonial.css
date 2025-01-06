@@ -35,6 +35,9 @@
   .testimonial-image:hover {
     transform: scale(1.1); /* Zoom effect */
   }
+  .profile-image:hover {
+    transform: scale(1.2); 
+  }
   
   
   .testimonial-content {
@@ -43,7 +46,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: #2f788a; /* Blue background for testimonial */
+    background-color: #1a3d4c; /* Blue background for testimonial */
     color: white;
     padding: 30px;
     text-align: center;
@@ -74,9 +77,12 @@
     border-radius: 50%;
     object-fit: cover;
     margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Smooth transition */
   }
   
   .profile-name {
+    padding: 0%;
+    margin: 5px;
     font-size: 16px;
     font-weight: bold;
     color: white;

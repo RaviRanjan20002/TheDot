@@ -1,7 +1,7 @@
 import { Outlet, Link } from "react-router-dom";
 import { useState } from "react";
-import "../../../styles/Navbar.css"; // Adjust the path based on your structure
-import logo from "../../assets/logo.jpg"; // Adjust the path based on your structure
+import "../../../styles/Navbar.css"; 
+import logo from "../../assets/logo.jpg"; 
 
 const Layout = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -16,6 +16,7 @@ const Layout = () => {
         <div className="logo">
           <img src={logo} alt="Logo" className="logo" />
         </div>
+        {/* <h3>The Dot</h3> */}
         <ul className="nav-links">
           <li>
             <Link to="/">Home</Link>

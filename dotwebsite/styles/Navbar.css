@@ -163,7 +163,7 @@ body, ul, li, a, span {
 .nav-links li a:hover,
 .nav-links .dropdown-toggle:hover {
     transform: scale(1.2); /* Pop-up effect */
-    background-color: #00bcd4; /* Highlighted background color */
+    background-color: #1a3d4c; /* Highlighted background color */
     color: white;
 }
 
@@ -204,7 +204,7 @@ body, ul, li, a, span {
 /* Hover effect for dropdown menu items */
 .nav-links .dropdown-menu li a:hover {
     transform: scale(1.2); /* Pop-up effect */
-    background-color: #00bcd4;
+    background-color: #2a718f;
     color: white;
 }
 /* Social icons */
@@ -223,7 +223,7 @@ body, ul, li, a, span {
 
 .social-icons a:hover {
     transform: scale(1.2);
-    color: #00bcd4;
+    color: #2a718f;
 }
 
 /* Animation on logo */
@@ -248,7 +248,7 @@ body, ul, li, a, span {
 
 /* Optional: Rotate only on hover */
 .navbar .logo:hover {
-    animation: rotate 5s linear infinite;
+    animation: rotate 4s linear infinite;
 }
 
 
