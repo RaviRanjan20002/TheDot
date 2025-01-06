@@ -25,6 +25,9 @@ const Layout = () => {
             <Link to="/blogs">Blogs</Link>
           </li>
           <li>
+            <Link to="/gallery">Gallery</Link>
+          </li>
+          <li>
             <Link to="/contact">Contact</Link>
           </li>
           <li className="dropdown">

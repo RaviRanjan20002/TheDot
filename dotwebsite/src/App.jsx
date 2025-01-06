@@ -10,6 +10,7 @@ import Blogs from "./Components/pages/Blogs";
 import Contact from "./Components/pages/Contact";
 import NoPage from "./Components/pages/NoPage";
 import '@fortawesome/fontawesome-free/css/all.min.css';
+import Gallery from "./Components/pages/Gallery";
 function App() {
   return(
     <>
@@ -21,6 +22,7 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
+          <Route path="blogs" element={<Gallery/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<NoPage />} />
         </Route>

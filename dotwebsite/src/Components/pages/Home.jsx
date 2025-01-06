@@ -15,10 +15,7 @@ function Home() {
       <Empowering/>
       <Facilities/>
       <Testimonial/>
-      {/* <Gallery/> */}
       <Footer/>
-      
-     
     </div>
   );
 }
