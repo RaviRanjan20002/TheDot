@@ -51,7 +51,7 @@
     position: absolute;
     left: 0;
     font-size: 1rem;
-    color: #76c7c0; /* Dot color */
+    color: #2a718f; /* Dot color */
     transition: color 0.3s ease, transform 0.3s ease;
   }
   
@@ -85,7 +85,7 @@
   }
   
   .social-icons i:hover {
-    color: #76c7c0; /* Highlight color */
+    color: #2a718f; /* Highlight color */
   }
   
   /* Footer Bottom */
@@ -98,7 +98,7 @@
   }
   
   .footer-bottom a {
-    color: #76c7c0;
+    color: #2a718f;
     margin: 0 10px;
     text-decoration: none;
     transition: color 0.3s ease;
