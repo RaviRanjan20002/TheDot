@@ -13,34 +13,51 @@ const Layout = () => {
   return (
     <>
       <nav className="navbar">
+      <div class="logo-container">
         <div className="logo">
           <img src={logo} alt="Logo" className="logo" />
         </div>
-        {/* <h3>The Dot</h3> */}
+        <h3 className="DotName">The Dot</h3>
+        </div>
         <ul className="nav-links">
           <li>
-            <Link to="/">Home</Link>
+            <Link to="/">HOME</Link>
           </li>
           <li>
-            <Link to="/blogs">Blogs</Link>
+            <Link to="/blogs">BLOGS</Link>
           </li>
           <li>
-            <Link to="/gallery">Gallery</Link>
+            <Link to="/gallery">GALLERY</Link>
           </li>
           <li>
-            <Link to="/contact">Contact</Link>
+            <Link to="/contact">CONTACT</Link>
           </li>
           <li className="dropdown">
-            <span className="dropdown-toggle" onClick={toggleDropdown}>
-              View Result <span className="dropdown-icon">▼</span>
+          <span className="dropdown-toggle" onClick={toggleDropdown}>
+              VIEW RESULT <span className="dropdown-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="12"
+                  height="12"
+                  fill="currentColor"
+                  viewBox="0 0 16 16"
+                  style={{ marginLeft: '5px' }}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
+                  />
+                </svg>
+              </span>
             </span>
+
             {isDropdownVisible && (
               <ul className="dropdown-menu">
                 <li>
-                  <Link to="/jee-main-result">JEE Main Result</Link>
+                  <Link to="/jee-main-result" class="no-zoom">JEE Main Result</Link>
                 </li>
                 <li>
-                  <Link to="/jee-advanced-result">JEE Advanced Result</Link>
+                  <Link to="/jee-advanced-result" class="no-zoom">JEE Advanced Result</Link>
                 </li>
               </ul>
             )}

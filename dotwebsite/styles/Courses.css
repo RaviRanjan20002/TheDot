@@ -2,7 +2,7 @@
     padding: 20px 20px 20px 20px;
     background-color: #f9f9f9;
     background-image: url("../src/assets/background.jpg");
-    background-size: cover; /* Ensures the image covers the entire section */
+    background-size: cover; 
     background-position: center; /* Centers the image */
     background-repeat: no-repeat; /* Prevents the image from repeating */
     color: #333; /* Ensures text is readable on the background */
