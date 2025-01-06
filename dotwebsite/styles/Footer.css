@@ -1,9 +1,12 @@
 /* Footer General Styles */
 .footer {
+  font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
     background-color: #212121;
     color: #ffffff;
     padding: 40px 20px;
-    font-family: "Arial", sans-serif;
+    /* font-family: "Arial", sans-serif; */
   }
   
   .footer-top {

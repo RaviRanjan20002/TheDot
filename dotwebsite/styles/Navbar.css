@@ -33,6 +33,10 @@ body, ul, li, a, span {
     color: #ffffff;
     text-transform: uppercase; 
     letter-spacing: 2px; 
+    /* background: linear-gradient(90deg, #4d595d  , #155f6e);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
     
 }
 
@@ -53,10 +57,9 @@ body, ul, li, a, span {
 
 /* Navbar links container */
 .nav-links {
-    margin-left: 20px;
-    /* margin-right: 20px; */
+    margin-left: 10px;
     display: flex;
-    gap: 15px; /* Adds space between menu items */
+    gap: 15px; 
     align-items: center; 
 }
 

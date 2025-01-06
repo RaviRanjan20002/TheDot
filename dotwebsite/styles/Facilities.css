@@ -1,5 +1,9 @@
 /* CSS for Facilities Component */
 .facilities-section {
+    font-family: "Bitter", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 1rem;
     padding: 100px 50px 120px 20px;
     background-color: #1a3d4c;
     color: white;
@@ -30,7 +34,7 @@
 
 
 .section-description {
-    font-size: 18px;
+    font-size: 20px;
     margin-bottom: 40px;
     text-align: center;
     line-height: 1.6;
@@ -45,7 +49,7 @@
     margin: 0 auto; 
     padding: 0 20px; 
     gap: 20px;
-    
+    animation: fading 1s ease-in-out;
 }
 
 .facility-item {
@@ -63,11 +67,14 @@
 .facility-item p {
     padding: 15px 20px; 
     text-align: justify; 
-    font-size: 16px; 
+    /* font-size: 16px;  */
     color: #555; 
     margin: 0; 
 }
 
+.facility-item h3{
+     font-size: 20px; 
+}
 .facility-item p:last-child {
     margin-bottom: 20px; /* Add some space below the last paragraph */
 }
@@ -89,7 +96,7 @@
 }
 
 .facility-title {
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: bold;
     margin-bottom: 10px;
     color: #003366;
@@ -98,7 +105,7 @@
 
 .facility-description {
     
-    font-size: 16px;
+    /* font-size: 16px; */
     line-height: 1.5;
     color: #555;
 }
@@ -111,5 +118,19 @@
 
     .facility-item {
         max-width: 100%;
+    }
+}
+
+
+
+/* Animation */
+@keyframes fading {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
     }
 }
