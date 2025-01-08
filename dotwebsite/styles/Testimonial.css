@@ -1,94 +1,142 @@
 /* Testimonial.css */
 
 .testimonial-section {
-    font-family: "Bitter", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    font-size: 1.3rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 100px 50px 100px 20px;
-    background-color: #f5f5f5; /* Light background for better contrast */
+  font-family: "Bitter", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 1.3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 50px 100px 20px;
+  background-color: #f5f5f5; /* Light background for better contrast */
+  flex-direction: column; /* Stack elements on smaller screens */
+}
+
+.testimonial-container {
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+  flex-wrap: wrap; /* Allow wrapping of child elements */
+}
+
+.image-container {
+  flex: 1;
+  max-width: 50%; /* Limit image width on larger screens */
+}
+
+.testimonial-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0%;
+  transition: transform 0.4s ease; /* Smooth transition */
+}
+
+.testimonial-image:hover {
+  transform: scale(1.1); /* Zoom effect */
+}
+
+.testimonial-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #1d2733; /* Blue background for testimonial */
+  color: white;
+  padding: 30px;
+  text-align: center;
+}
+
+.stars {
+  font-size: 20px;
+  color: gold;
+  margin-bottom: 15px;
+}
+
+.testimonial-text {
+  padding: 0px 100px 0px 100px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1.1rem; /* Slightly smaller text */
+}
+
+.profile {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.profile-name {
+  padding: 0%;
+  margin: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+/* Responsive design: Mobile devices */
+@media (max-width: 768px) {
+  .testimonial-section {
+      padding: 50px 20px; /* Adjust padding on smaller screens */
   }
-  
+
   .testimonial-container {
-    display: flex;
-    max-width: 1200px;
-    width: 100%;
-    /* gap: 20px; */
-    background-color: white;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    overflow: hidden;
+      flex-direction: column; /* Stack image and testimonial vertically on small screens */
   }
-  
+
   .image-container {
-    flex: 1;
+      max-width: 100%; /* Make the image container take full width */
+      margin-bottom: 20px; /* Add space between image and content */
   }
-  
-  .testimonial-image {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 0%;
-    transition: transform 0.4s ease; /* Smooth transition */
-  }
-  
-  /* Hover effect */
-  .testimonial-image:hover {
-    transform: scale(1.1); /* Zoom effect */
-  }
-  .profile-image:hover {
-    transform: scale(1.2); 
-  }
-  
-  
+
   .testimonial-content {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #1a3d4c; /* Blue background for testimonial */
-    color: white;
-    padding: 30px;
-    text-align: center;
+      width: 100%; /* Ensure testimonial content takes full width */
+      padding: 20px; /* Adjust padding for mobile */
   }
-  
-  .stars {
-    font-size: 20px;
-    color: gold;
-    margin-bottom: 15px;
-  }
-  
+
   .testimonial-text {
-    /* font-size: 18px; */
-    padding: 0px 100px 0px 100px;
-    line-height: 1.6;
-    margin-bottom: 20px;
+      padding: 0px 20px; /* Adjust text padding */
   }
-  
-  .profile {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
+
   .profile-image {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-bottom: 10px;
-    transition: transform 0.3s ease; /* Smooth transition */
+      width: 50px;
+      height: 50px; /* Smaller profile image for mobile */
   }
-  
-  .profile-name {
-    padding: 0%;
-    margin: 5px;
-    /* font-size: 16px; */
-    font-weight: bold;
-    color: white;
+
+  .stars {
+      font-size: 18px; /* Smaller star icons on mobile */
   }
-  
+}
+
+/* Tablet and larger devices */
+@media (max-width: 1024px) {
+  .testimonial-container {
+      flex-direction: column;
+  }
+
+  .image-container {
+      max-width: 100%;
+  }
+
+  .testimonial-content {
+      padding: 20px;
+  }
+
+  .testimonial-text {
+      padding: 0px 50px;
+  }
+}

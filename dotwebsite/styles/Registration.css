@@ -19,6 +19,7 @@
 
 
 .containertwo {
+    
     display: block; /* Ensures content behaves as a block */
     width: 100%; /* Full width for block elements */
     max-width: 600px; /* Limit the width of the content */
