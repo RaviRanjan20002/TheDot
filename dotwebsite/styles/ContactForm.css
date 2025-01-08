@@ -1,37 +1,31 @@
 /* Page Layout */
 .contact-form-page {
     font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
+    font-weight: 400;
     display: flex;
     flex-direction: column;
     gap: 40px;
     background: #f9f9f9;
-    font-family: "Bitter", serif;
     font-size: 1.2rem;
-    height: 100vh; /* Ensure full screen height */
+    height: 100vh; /* Full screen height */
     margin: 0; /* Remove default margin */
 }
 
 /* Container for the form */
-
 .contact-form-container {
-    animation: fading 1s ease-in-out;
+   padding: 20px 20px 50px 20px;
+    animation: fadeIn 1s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    background-image: url('../src/assets/img.jpg'); /* Replace with actual image URL */
-    background-size: cover;
-    background-position: center;
-    background-attachment: scroll; /* Avoid using 'fixed' for smoother rendering */
-    height: 100%; /* Ensure container fills the full screen height */
-    width: 100%; /* Ensure container fills the full screen width */
-    border-radius: 10px;
+    
+    background-color: #7796a9;
+    height: 100%;
+    width: 100%;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
-    background-color: #f9f9f9; /* Fallback background color */
+    position: relative; /* To support pseudo-elements */
 }
 
 /* Preload the background image */
@@ -42,29 +36,16 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('../src/assets/img.jpg'); /* Replace with actual image URL */
-    background-size: cover;
-    background-position: center;
+    background: url('../src/assets/img.jpg') center/cover no-repeat;
     z-index: -1;
-    filter: opacity(0); /* Initially invisible */
+    opacity: 0; /* Initially invisible */
     animation: fadeInBackground 1s ease-in-out forwards;
 }
-
-/* Fading animation for the background image */
-@keyframes fadeInBackground {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
 
 /* Header Section */
 .contact-header {
     text-align: center;
-    color: #555; /* Set text color to white for better contrast on the background */
+    color: #090101;
     margin-bottom: 20px;
 }
 
@@ -74,27 +55,28 @@
 }
 
 .contact-header p {
-    font-size: 1rem;
-    color: #555; /* Slightly lighter color for description */
+    font-size: 1.1rem;
+    color: white; /* Slightly lighter color for description */
 }
 
 /* Contact Form */
 .contact-form {
-    animation: fading 1s ease-in-out;
-    background: rgba(255, 255, 255, 0.8); /* Slight transparency for readability */
+    animation: fadeIn 1s ease-in-out;
+    background: rgba(255, 255, 255, 0.8); /* Slight transparency */
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
     max-width: 500px;
     min-height: 400px;
+    box-sizing: border-box;
 }
 
 .contact-form label {
     display: block;
     margin-bottom: 10px;
     color: #555;
-    font-weight: bold;
+    /* font-weight: bold; */
 }
 
 .contact-form input,
@@ -106,6 +88,8 @@
     border-radius: 5px;
     font-size: 1rem;
     color: #333;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
 }
 
 .contact-form input:focus,
@@ -131,15 +115,24 @@
     font-weight: bold;
     cursor: pointer;
     margin-top: 15px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s;
 }
 
 .contact-form button:hover {
     background-color: #25566b;
 }
 
-/* Animation */
-@keyframes fading {
+/* Animations */
+@keyframes fadeInBackground {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
     from {
         opacity: 0;
         transform: translateY(-10px);

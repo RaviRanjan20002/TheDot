@@ -3,7 +3,7 @@ import "../../../styles/Footer.css";
 
 const Footer = () => {
   const [openSections, setOpenSections] = useState({
-    about: true, // Default open for large screens
+    about: true,
     courses: true,
     results: true,
     contact: true,
@@ -16,28 +16,24 @@ const Footer = () => {
     }));
   };
 
-  const toggleDropdown = (section) => {
-    toggleSection(section); // Reuse the toggleSection function for the dropdown
-  };
-
   return (
     <footer className="footer">
       <div className="footer-top">
         {/* About Section */}
         <div className="footer-column">
-          <span
-            className="dropdown-toggle-ff"
-            onClick={() => toggleDropdown("about")}
-          >
-            About us{" "}
-            <span className="dropdown-icon">
+          <span className="dropdown-heading">
+            About us
+            <span
+              className="dropdown-icon"
+              onClick={() => toggleSection("about")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="9"
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "117px" }}
               >
                 <path
                   fillRule="evenodd"
@@ -59,12 +55,12 @@ const Footer = () => {
 
         {/* Courses Section */}
         <div className="footer-column">
-          <span
-            className="dropdown-toggle-ff"
-            onClick={() => toggleDropdown("courses")}
-          >
-            Courses & Programs{" "}
-            <span className="dropdown-icon">
+          <span className="dropdown-heading">
+            Courses & Programs
+            <span
+              className="dropdown-icon"
+              onClick={() => toggleSection("courses")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="9"
@@ -93,19 +89,19 @@ const Footer = () => {
 
         {/* Results Section */}
         <div className="footer-column">
-          <span
-            className="dropdown-toggle-ff"
-            onClick={() => toggleDropdown("results")}
-          >
-            Results{" "}
-            <span className="dropdown-icon">
+          <span className="dropdown-heading">
+            Results
+            <span
+              className="dropdown-icon"
+              onClick={() => toggleSection("results")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="9"
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "132px" }}
               >
                 <path
                   fillRule="evenodd"
@@ -127,19 +123,19 @@ const Footer = () => {
 
         {/* Contact Section */}
         <div className="footer-column">
-          <span
-            className="dropdown-toggle-ff"
-            onClick={() => toggleDropdown("contact")}
-          >
-            Contact us{" "}
-            <span className="dropdown-icon">
+          <span className="dropdown-heading">
+            Contact us
+            <span
+              className="dropdown-icon"
+              onClick={() => toggleSection("contact")}
+            >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="9"
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "100px" }}
               >
                 <path
                   fillRule="evenodd"

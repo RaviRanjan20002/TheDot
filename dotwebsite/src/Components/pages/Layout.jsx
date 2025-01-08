@@ -1,11 +1,13 @@
 import { Outlet, Link } from "react-router-dom";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import "../../../styles/Navbar.css";
 import logo from "../../assets/logo.jpg";
 
 const Layout = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
   const [isMobileMenuVisible, setMobileMenuVisible] = useState(false);
+
+  const mobileMenuRef = useRef(null);
 
   const toggleDropdown = () => {
     setDropdownVisible(!isDropdownVisible);
@@ -15,9 +17,26 @@ const Layout = () => {
     setMobileMenuVisible(!isMobileMenuVisible);
   };
 
+  // Close the mobile menu if clicked outside
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (
+        mobileMenuRef.current &&
+        !mobileMenuRef.current.contains(event.target)
+      ) {
+        setMobileMenuVisible(false);
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
+
   return (
     <>
-      <nav className="navbar">
+      <nav className="navbar" ref={mobileMenuRef}>
         <div className="logo-container">
           <div className="logo">
             <img src={logo} alt="Logo" className="logo" />

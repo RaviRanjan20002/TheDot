@@ -9,8 +9,8 @@ body {
 
 .gallery-section {
   text-align: center;
-  background-color: #eef2f7;
-  background-image: url("../src/assets/gallerybg9.avif");
+  background-color: #7796a9;
+  /* background-image: url("../src/assets/gallerybg9.avif"); */
   background-size: cover;
   background-position: center;
   padding: 20px; /* Added padding for smaller screens */

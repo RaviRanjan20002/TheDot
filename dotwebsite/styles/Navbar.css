@@ -105,6 +105,7 @@ body, ul, li, a, span {
 
 /* Social icons */
 .social-icons {
+  margin-bottom: 15px;
   display: flex;
   gap: 15px;
 }
@@ -154,7 +155,7 @@ body, ul, li, a, span {
 
   .social-icons {
     justify-content: center;
-    margin-top: 10px;
+    margin-top: 10px ;
   }
 
   .menu-toggle {
