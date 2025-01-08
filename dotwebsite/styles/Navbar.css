@@ -43,6 +43,16 @@ body, ul, li, a, span {
   height: 50px;
   clip-path: circle(50%);
   object-fit: cover;
+  animation: rotation 8s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform:rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+  
 }
 
 /* Navigation links */

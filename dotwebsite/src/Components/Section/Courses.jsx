@@ -1,5 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "../../../styles/Courses.css";
+import { Link } from "react-router-dom";
 
 const coursesData = [
     {
@@ -27,7 +29,9 @@ const Courses = () => {
                     <p className="section-description-cr">
                         Join our expert coaching for IIT-JEE and NEET success.
                     </p>
-                    <button className="enroll-header-button">ENROLL</button>
+                    <Link to="/contact">
+                        <button className="enroll-header-button">ENROLL</button>
+                    </Link>
                 </div>
 
                 <div className="courses-list">
