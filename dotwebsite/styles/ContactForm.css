@@ -1,5 +1,8 @@
 /* Page Layout */
 .contact-form-page {
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
     display: flex;
     flex-direction: column;
     gap: 40px;
@@ -11,7 +14,7 @@
 }
 
 /* Container for the form */
-/* Container for the form */
+
 .contact-form-container {
     animation: fading 1s ease-in-out;
     display: flex;

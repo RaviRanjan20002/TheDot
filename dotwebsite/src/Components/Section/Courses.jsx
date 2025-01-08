@@ -29,19 +29,17 @@ const Courses = () => {
                     </p>
                     <button className="enroll-header-button">ENROLL</button>
                 </div>
+
                 <div className="courses-list">
-                    <div className="course-item">
-                        <h3>Our Alumni</h3>
-                        <p>Success stories from our accomplished students.</p>
-                    </div>
-                    <div className="course-item">
-                        <h3>DTSE Program</h3>
-                        <p>Stay updated with our latest insights.</p>
-                    </div>
-                    <div className="course-item">
-                        <h3>Latest Blog Posts</h3>
-                        <p>Explore comprehensive coaching programs available.</p>
-                    </div>
+                    {coursesData.map((course, index) => (
+                        <div key={index} className="course-item">
+                            <img src={course.image} alt={course.title} />
+                            <div className="course-item-content">
+                                <h3>{course.title}</h3>
+                                <p>{course.description}</p>
+                            </div>
+                        </div>
+                    ))}
                 </div>
             </div>
         </section>
@@ -49,6 +47,3 @@ const Courses = () => {
 };
 
 export default Courses;
-
-
-

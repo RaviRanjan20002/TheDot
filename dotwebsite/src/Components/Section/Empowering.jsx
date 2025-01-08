@@ -5,8 +5,8 @@ import successImage from "../../assets/success.jpg"; // Replace with the actual 
 const Empowering = () => {
     return (
         <section className="empowering-section">
-            <div className="container">
-                <div className="content">
+            <div className="container-Em">
+                <div className="content-Em">
                     <h2 className="section-title-em">Empowering Future Leaders in Science</h2>
                     <p className="section-description-em">
                         At The Dot, we specialize in IIT-JEE and NEET coaching, guided by experienced IITians ensuring students achieve their academic goals.
@@ -22,7 +22,7 @@ const Empowering = () => {
                         </div>
                     </div>
                 </div>
-                <div className="image-container">
+                <div className="image-container-Em">
                     <img src={successImage} alt="Success Stories" />
                 </div>
             </div>

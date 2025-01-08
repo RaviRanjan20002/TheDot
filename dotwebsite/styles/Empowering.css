@@ -1,26 +1,35 @@
 /* Base styles */
 .empowering-section {
+    box-sizing: border-box;
     padding: 60px 20px;
     background-color: #f9f9f9;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 0;
+    overflow-x: hidden; 
+
+
 }
 
-.container {
+.container-Em {
+    box-sizing: border-box;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row; /* Align text and image side by side */
+    justify-content: space-between;
     align-items: center;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 20px;
     gap: 30px;
 }
 
-.content {
+.content-Em {
+    margin: 20px;
+    overflow: hidden;
     font-family: "Bitter", serif;
     flex: 1;
-    min-width: 300px;
-    text-align: left;
+    min-width: 400px; /* Ensure minimum size for text block */
+    text-align: left; /* Keep text aligned left */
 }
 
 .section-title-em {
@@ -60,12 +69,19 @@
     color: #555;
 }
 
-.image-container {
+
+.image-container-Em {
+    /* margin: 20px; */
+    /* overflow-x: hidden;  */
     flex: 1;
-    min-width: 300px;
+    min-width: 400px; /* Ensure minimum size for image block */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
 }
 
-.image-container img {
+.image-container-Em img {
+    margin: 20px;
+    overflow: hidden;
     max-width: 100%;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
@@ -95,13 +111,14 @@
 }
 
 @media (max-width: 768px) {
-    .container {
-        flex-direction: column;
+    .container-Em {
+        flex-direction: column; /* Stack text and image vertically */
         text-align: center;
     }
 
-    .content {
+    .content-Em {
         text-align: center;
+        min-width: auto;
     }
 
     .stat-item {
