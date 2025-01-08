@@ -1,6 +1,24 @@
 import React from "react";
 import "../../../styles/Courses.css";
 
+const coursesData = [
+    {
+        title: "Our Alumni",
+        description: "Success stories from our accomplished students.",
+        image: "../src/assets/alumini.JPG" // Replace with actual image path
+    },
+    {
+        title: "DTSE Program",
+        description: "Stay updated with our latest insights.",
+        image: "../src/assets/Dtse.png" // Replace with actual image path
+    },
+    {
+        title: "Latest Blog Posts",
+        description: "Explore comprehensive coaching programs available.",
+        image: "../src/assets/sbuild.JPG" // Replace with actual image path
+    }
+];
+
 const Courses = () => {
     return (
         <section className="courses-section">
@@ -31,3 +49,6 @@ const Courses = () => {
 };
 
 export default Courses;
+
+
+
