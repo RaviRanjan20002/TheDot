@@ -1,113 +1,197 @@
 /* Footer General Styles */
 .footer {
+  justify-items: center;
   font-family: "Bitter", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
-    background-color: #212121;
-    color: #ffffff;
-    padding: 40px 20px;
-    /* font-family: "Arial", sans-serif; */
+  font-optical-sizing: auto;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #141b23;
+  background-image: url(../src/assets/footer-widget-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center 100px;
+  color: #ffffff;
+}
+
+/* to handle space etc between ABOUT US and all  in hidden position */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  /* margin-left: 5px; */
+  padding: 10px;
+}
+
+/* Footer dropdown toggle */
+.dropdown-toggle-ff{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid #141010;
+  display: inline-flex;
+  align-items: center;
+  color: #ffffff; /* Customize the color */
+  padding: 10px ;
+}
+
+
+
+.dropdown-icon {
+  margin-left: 5px;
+  color: #ffffff;
+}
+
+/* Styling for the dropdown sections */
+.toggle-section {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-section li {
+  padding-left: 20px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Hover effects */
+.dropdown-toggle-ff:hover {
+  color: #007bff; /* Customize the hover color */
+}
+
+.footer-column {
+  color: white;
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+  font-size: 0.9rem;
+  color: #dcdcdc;
+  padding: 5px 10px;
+  text-align: left;
+  position: relative;
+}
+
+/* Add a dot before each list item */
+.footer-column ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+  color: #2a718f;
+  transition: transform 0.3s ease;
+}
+
+/* Hover effect for list items */
+.footer-column ul li:hover {
+  transform: translateX(5px) scale(1.05);
+  transition: transform 0.3s ease;
+}
+
+/* No color change for the dot */
+.footer-column ul li:hover::before {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* Toggle logic for small screens */
+.footer-column ul.toggle-section {
+  display: block;
+}
+
+.footer-column ul.hidden {
+  display: none;
+}
+
+.footer-column ul.visible {
+  display: block;
+}
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-column ul.toggle-section {
+    display: none;
   }
-  
-  .footer-top {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    max-width: 1200px;
-    margin: 0 auto;
-    gap: 20px;
+
+  .footer-column ul.hidden {
+    display: none;
   }
-  
-  .footer-column {
-    flex: 1;
-    min-width: 200px;
+
+  .footer-column ul.visible {
+    display: block;
   }
-  
-  .footer-column h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #f9f9f9;
-    border-bottom: 2px solid #141010; /* Permanent underline */
-    padding-bottom: 10px; /* Adds space between the text and the underline */
-  }
-  
-  
-  .footer-column ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .footer-column ul li {
-    position: relative;
-    margin-bottom: 10px;
-    padding-left: 20px;
-    font-size: 0.90rem;
-    color: #dcdcdc;
-    cursor: pointer;
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Add a dot before each list item */
-  .footer-column ul li::before {
-    content: "•";
-    position: absolute;
-    left: 0;
-    font-size: 1rem;
-    color: #2a718f; /* Dot color */
-    transition: color 0.3s ease, transform 0.3s ease;
-  }
-  
-  /* Hover effect for list items */
-  .footer-column ul li:hover {
-    color: #ffffff;
-    transform: translateX(5px); /* Slide to the right */
-  }
-  
-  /* Hover effect for the dot */
-  .footer-column ul li:hover::before {
-    color: #ffffff; /* Dot color changes on hover */
-    transform: scale(1.2); /* Slightly enlarges the dot */
-  }
-  
-  /* Contact Section */
-  .contact-info p {
-    margin: 10px 0;
-    font-size: 0.95rem;
-  }
-  
-  .social-icons {
-    margin-top: 15px;
-  }
-  
-  .social-icons i {
-    font-size: 1.5rem;
-    margin-right: 15px;
-    color: #dcdcdc;
-    transition: color 0.3s ease;
-  }
-  
-  .social-icons i:hover {
-    color: #2a718f; /* Highlight color */
-  }
-  
-  /* Footer Bottom */
-  .footer-bottom {
-    border-top: 1px solid #333;
-    margin-top: 20px;
-    padding-top: 20px;
-    text-align: center;
-    font-size: 0.9rem;
-  }
-  
-  .footer-bottom a {
-    color: #2a718f;
-    margin: 0 10px;
-    text-decoration: none;
-    transition: color 0.3s ease;
-  }
-  
-  .footer-bottom a:hover {
-    color: #ffffff;
-  }
-  
+}
+
+/* Contact Section */
+.contact-info p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  margin-top: 15px;
+}
+
+.social-icons i {
+  font-size: 1.5rem;
+  margin-right: 15px;
+  color: #dcdcdc;
+  transition: color 0.3s ease;
+}
+
+.social-icons i:hover {
+  color: #2a718f; /* Highlight color */
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 20px;
+  display: block;
+  font-size: 0.9rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.footer-bottom p {
+  margin: 5px 10px;
+  font-size: 0.9rem;
+  color: #cccccc;
+}
+
+.footer-bottom a {
+  color: #2a718f;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}

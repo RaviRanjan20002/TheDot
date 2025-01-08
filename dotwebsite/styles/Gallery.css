@@ -1,21 +1,24 @@
-
-
 body {
-  font-family: 'Poppins', sans-serif;
+  font-family: "DM Serif Text", serif;
+  font-weight: 500;
+  font-style: normal;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
 .gallery-section {
-  padding: 50px 20px;
-  background-color: #f4f4f4;
   text-align: center;
+  background-color: #eef2f7;
+  background-image: url("../src/assets/gallerybg9.avif");
+  background-size: cover;
+  background-position: center;
+  padding: 20px; /* Added padding for smaller screens */
 }
 
 .gallery-title {
   font-size: 2.2rem;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
   color: #2c3e50;
   font-weight: bold;
   letter-spacing: 1.5px;
@@ -24,33 +27,18 @@ body {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  padding: 10px 0; 
-  display: inline-block;
-  animation: fadeIn 1s ease-in-out;
-  margin-bottom: 10px; 
-  color: #2c3e50;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  text-transform: uppercase;
-  background: linear-gradient(90deg, #05263c, #dce231);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  padding: 10px 0; 
+  padding: 10px 0;
   display: inline-block;
   animation: fadeIn 1s ease-in-out;
 }
 
 .gallery-subtitle {
-  font-size: 18px;
-  color: #555;
-  margin-bottom: 30px;
   font-size: 20px;
   color: #1d1e1f;
   line-height: 1.8;
   font-weight: 300;
   max-width: 1000px;
-  margin: 0 auto 40px; 
+  margin: 0 auto 40px;
   text-align: center;
   padding: 10px;
   background-color: #93acd0;
@@ -80,31 +68,35 @@ body {
     transform: translateY(0);
   }
 }
+
 .gallery-container {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: 20px;
-  padding: 0 20px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Adjusted for smaller screens */
+  gap: 15px; /* Reduced gap for smaller devices */
+  justify-items: center;
+  padding: 10px;
 }
 
 .gallery-item {
   position: relative;
   overflow: hidden;
   border-radius: 15px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  background-color: #fff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);;
 }
 
 .gallery-image {
   width: 100%;
-  height: 100%;
+  height: auto; 
   object-fit: cover;
-  transition: transform 0.3s ease-in-out;
+  border-radius: 15px;
+  transition: opacity 0.4s ease;
 }
 
 .gallery-item:hover .gallery-image {

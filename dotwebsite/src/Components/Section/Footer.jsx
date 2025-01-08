@@ -1,14 +1,54 @@
-import React from "react";
+import React, { useState } from "react";
 import "../../../styles/Footer.css";
 
 const Footer = () => {
+  const [openSections, setOpenSections] = useState({
+    about: true, // Default open for large screens
+    courses: true,
+    results: true,
+    contact: true,
+  });
+
+  const toggleSection = (section) => {
+    setOpenSections((prev) => ({
+      ...prev,
+      [section]: !prev[section],
+    }));
+  };
+
+  const toggleDropdown = (section) => {
+    toggleSection(section); // Reuse the toggleSection function for the dropdown
+  };
+
   return (
     <footer className="footer">
       <div className="footer-top">
         {/* About Section */}
         <div className="footer-column">
-          <h3>About Us</h3>
-          <ul>
+          <span
+            className="dropdown-toggle-ff"
+            onClick={() => toggleDropdown("about")}
+          >
+            About us{" "}
+            <span className="dropdown-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="9"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style={{ marginLeft: "10px" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
+                />
+              </svg>
+            </span>
+          </span>
+          <ul
+            className={`${openSections.about ? "visible" : "hidden"} toggle-section`}
+          >
             <li>About Excellence</li>
             <li>Our Vision</li>
             <li>Leadership</li>
@@ -19,8 +59,30 @@ const Footer = () => {
 
         {/* Courses Section */}
         <div className="footer-column">
-          <h3>Courses & Programs</h3>
-          <ul>
+          <span
+            className="dropdown-toggle-ff"
+            onClick={() => toggleDropdown("courses")}
+          >
+            Courses & Programs{" "}
+            <span className="dropdown-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="9"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style={{ marginLeft: "10px" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
+                />
+              </svg>
+            </span>
+          </span>
+          <ul
+            className={`${openSections.courses ? "visible" : "hidden"} toggle-section`}
+          >
             <li>JEE (Main & Adv.)</li>
             <li>NEET (UG)</li>
             <li>Class 6th to 10th</li>
@@ -31,8 +93,30 @@ const Footer = () => {
 
         {/* Results Section */}
         <div className="footer-column">
-          <h3>Results</h3>
-          <ul>
+          <span
+            className="dropdown-toggle-ff"
+            onClick={() => toggleDropdown("results")}
+          >
+            Results{" "}
+            <span className="dropdown-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="9"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style={{ marginLeft: "10px" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
+                />
+              </svg>
+            </span>
+          </span>
+          <ul
+            className={`${openSections.results ? "visible" : "hidden"} toggle-section`}
+          >
             <li>JEE Advanced</li>
             <li>NEET UG</li>
             <li>AIIMS</li>
@@ -42,26 +126,73 @@ const Footer = () => {
         </div>
 
         {/* Contact Section */}
-        <div className="footer-column contact-info">
-          <h3>Contact Us</h3>
-          <p>
-            <strong>Address:</strong> 94L, Old DC Office Rd, Model Town, Rewari,
-            Haryana 123401
-          </p>
-          <p>
-            <strong>Phone:</strong> +91 7419614851
-          </p>
-          <p>
-            <strong>Email:</strong> thedot.ind@gmail.com
-          </p>
+        <div className="footer-column">
+          <span
+            className="dropdown-toggle-ff"
+            onClick={() => toggleDropdown("contact")}
+          >
+            Contact us{" "}
+            <span className="dropdown-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="9"
+                height="9"
+                fill="currentColor"
+                viewBox="0 0 16 16"
+                style={{ marginLeft: "10px" }}
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
+                />
+              </svg>
+            </span>
+          </span>
+          <ul
+            className={`${openSections.contact ? "visible" : "hidden"} toggle-section`}
+          >
+            <li>
+              <strong>Address:</strong> 94L, Old DC Office Rd, Model Town, Rewari, Haryana 123401
+            </li>
+            <li>
+              <strong>Phone:</strong> +91 7419614851
+            </li>
+            <li>
+              <strong>Email:</strong> thedot.ind@gmail.com
+            </li>
+          </ul>
           <div className="social-icons">
-          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-facebook-f" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-twitter" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-instagram" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-linkedin-in" target="_blank" rel="noopener noreferrer"></a>
-          <a href="https://www.facebook.com/thedotrewari/" className="fab fa-youtube" target="_blank" rel="noopener noreferrer"></a>
-
-        </div>
+            <a
+              href="https://www.facebook.com/thedotrewari/"
+              className="fab fa-facebook-f"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              href="https://www.facebook.com/thedotrewari/"
+              className="fab fa-twitter"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              href="https://www.facebook.com/thedotrewari/"
+              className="fab fa-instagram"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              href="https://www.facebook.com/thedotrewari/"
+              className="fab fa-linkedin-in"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+            <a
+              href="https://www.facebook.com/thedotrewari/"
+              className="fab fa-youtube"
+              target="_blank"
+              rel="noopener noreferrer"
+            ></a>
+          </div>
         </div>
       </div>
 

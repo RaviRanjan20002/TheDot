@@ -1,6 +1,7 @@
 /* General styling */
 body {
-    font-family: Arial, sans-serif;
+    font-family: "DM Serif Text", serif;
+    font-style: normal;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,9 +9,9 @@ body {
 
 .courses-section {
     padding: 20px;
-    background-color: #f4f4f4;
+    background-color: #dee1f6;
     text-align: center;
-    background-image: url("../src/assets/background.jpg");
+    /* background-image: url("../src/assets/background.jpg"); */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -24,21 +25,20 @@ body {
 }
 
 .containertwo {
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    padding: 10px;
 }
 
 .section-description-cr {
-    font-size: 24px;
+    font-size: 1.2rem;
     color: #1a3d4c;
-    font-weight: 600;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     text-align: center;
 }
 
 .enroll-header-button {
-    font-family: "Bitter", serif;
+    font-size: 1rem;
     padding: 10px 20px;
-    font-size: 18px;
     background-color: #1a3d4c;
     color: #ffffff;
     border: none;
@@ -54,6 +54,7 @@ body {
 
 /* Courses List - New CSS */
 .courses-list {
+    margin: 30px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
@@ -82,17 +83,15 @@ body {
 
 .course-item-content {
     padding: 10px;
+    /* font-weight: 200; */
 }
 
 .course-item h3 {
-    font-size: 22px;
     margin-bottom: 10px;
-    font-weight: 700;
 }
 
 .course-item p {
-    font-size: 16px;
-    font-weight: 400;
+    /* Removed font-weight and font-size styling */
 }
 
 /* Animations */
@@ -104,9 +103,3 @@ body {
         opacity: 1;
     }
 }
-
-
-
-
-
-

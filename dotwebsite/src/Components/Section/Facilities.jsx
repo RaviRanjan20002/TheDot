@@ -1,4 +1,3 @@
-// Facilities.jsx
 import React from "react";
 import "../../../styles/Facilities.css";
 import facultySupportImage from "../../assets/facultySupport.jpg"; // Replace with the correct path
@@ -8,9 +7,9 @@ import assessmentsImage from "../../assets/assessments.jpg"; // Replace with the
 const Facilities = () => {
     return (
         <section className="facilities-section">
-            <div className="container">
+            <div className="facilities-container">
                 <div className="textcont">
-                        <h2 className="section-title">Expert Coaching Facilities</h2>
+                    <h2 className="section-title">Expert Coaching Facilities</h2>
                     <p className="section-description">
                         We provide specialized coaching for IIT-JEE and NEET with experienced faculty in all subjects.
                     </p>

@@ -1,53 +1,54 @@
 /* Blog Page Styling */
 .blog-section {
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
     background-color: #f4f4f4;
     color: #333;
     text-align: center;
+    padding: 20px 0;
 }
 
-.container {
+.container-B {
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
-.section-title {
-    font-size: 30px; /* Increased size for a bolder title */
+.section-title-B {
+    font-size: 30px;
     font-weight: 700;
-    color: #2e3b4e;
-    background-color: aquamarine;
-    text-transform: uppercase; /* Make title uppercase */
-    letter-spacing: 2px; /* Add spacing between letters */
+    text-transform: uppercase;
+    letter-spacing: 2px;
     border-radius: 5px;
-    padding: 4px;
+    /* padding: 10px; */
     background: linear-gradient(90deg, hsl(25, 90%, 55%), #0cd2b1);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-    animation: fadeIn 1.5s ease-in-out; /* Fade-in animation for title */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: fadeIn 1.5s ease-in-out;
+    
 }
 
-.section-description {
-    margin-top: -30px;
+.section-description-B{
     font-size: 20px;
-    color: #555;
-    background-color: bisque;
-    font-style: italic; /* Added italic for better readability */
     line-height: 1.6;
     background: linear-gradient(90deg, hsl(253, 70%, 33%), #3f7915);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    border-radius:5px;
-    padding: 4px;
-    animation: fadeIn 2s ease-in-out; /* Fade-in animation for description */
+    border-radius: 5px;
+    padding-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+    margin-top: -20px;
 }
 
-.blog-list {
+.blog-list-B {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-    margin-top: -20px;
+    margin-top: -10px;
 }
 
 .blog-post {
@@ -75,17 +76,17 @@
 
 .blog-title {
     font-size: 20px;
-    font-weight: 600;
+    /* font-weight: 600; */
     margin-bottom: 10px;
-    color: #333;
+    color: #2e3b4e;
 }
 
 .blog-description {
     font-size: 14px;
     color: #666;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
+    line-height: 1.4;
 }
-
 
 .blog-button {
     display: inline-block;
@@ -103,13 +104,15 @@
 .blog-button:hover {
     background-color: #ff6000;
 }
+
 /* Animations */
 @keyframes fadeIn {
     0% {
         opacity: 0;
+        transform: translateY(-10px);
     }
     100% {
         opacity: 1;
+        transform: translateY(0);
     }
 }
-

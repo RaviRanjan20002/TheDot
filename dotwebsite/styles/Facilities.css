@@ -1,55 +1,42 @@
 /* CSS for Facilities Component */
 .facilities-section {
     font-family: "Bitter", serif;
-    font-optical-sizing: auto;
-    font-style: normal;
     font-size: 1rem;
-    padding: 100px 50px 120px 20px;
-    background-color: #1a3d4c;
+    padding: 60px 20px;
+    background-color: #1d2733;
     color: white;
 }
 
 .facilities-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 1200px;
     margin: 0 auto;
-}
-
-.section-title {
-    font-size: 40px;
-    font-weight: bold;
-    color: white;
-    margin-bottom: 20px;
     text-align: center;
 }
 
 .textcont {
-    text-align: center; /* Centers the text */
-    max-width: 800px; /* Set a maximum width for the content */
-    margin: 0 auto; /* Centers the element horizontally */
-    padding: 0 20px; /* Adds padding on both sides for spacing */
+    max-width: 800px;
+    margin: 0 auto 40px;
+    padding: 0 20px;
 }
 
+.section-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 20px;
+}
 
 .section-description {
-    font-size: 20px;
-    margin-bottom: 40px;
-    text-align: center;
-    line-height: 1.6;
+    font-size: 1.2rem;
     color: #ddd;
+    line-height: 1.6;
 }
 
 .facilities-grid {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
-    max-width: 100%; 
-    margin: 0 auto; 
-    padding: 0 20px; 
     gap: 20px;
-    animation: fading 1s ease-in-out;
+    justify-content: center;
 }
 
 .facility-item {
@@ -59,55 +46,53 @@
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
     max-width: 350px;
+    width: 100%;
+    transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
-    transition: transform 0.3s ease; /* Smooth transition for the scaling effect */
 }
 
-.facility-item p {
-    padding: 15px 20px; 
-    text-align: justify; 
-    /* font-size: 16px;  */
-    color: #555; 
-    margin: 0; 
-}
-
-.facility-item h3{
-     font-size: 20px; 
-}
-.facility-item p:last-child {
-    margin-bottom: 20px; /* Add some space below the last paragraph */
-}
-
-/* Hover effect on the entire facility-item */
 .facility-item:hover {
-    transform: scale(1.05); /* Scale the entire item when hovered */
+    transform: scale(1.05);
 }
 
 .facility-item img {
     width: 100%;
     height: auto;
-    transition: transform 0.3s ease; /* Ensure smooth transition of the image */
+    border-bottom: 2px solid #ddd;
 }
 
-.facility-content {
-    padding: 20px;
-    
-}
-
-.facility-title {
-    /* font-size: 20px; */
-    font-weight: bold;
-    margin-bottom: 10px;
+.facility-item h3 {
+    font-size: 1.5rem;
     color: #003366;
-    
+    margin: 15px 20px 10px;
 }
 
-.facility-description {
-    
-    /* font-size: 16px; */
-    line-height: 1.5;
+.facility-item p {
+    font-size: 1rem;
     color: #555;
+    margin: 0 20px 20px;
+    text-align: justify;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .facilities-grid {
+        gap: 15px;
+    }
+
+    .facility-item {
+        max-width: 300px;
+    }
+
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .section-description {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -119,18 +104,26 @@
     .facility-item {
         max-width: 100%;
     }
+
+    .textcont {
+        padding: 0 15px;
+    }
 }
 
-
-
-/* Animation */
-@keyframes fading {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
+@media (max-width: 480px) {
+    .section-title {
+        font-size: 1.8rem;
     }
-    to {
-        opacity: 1;
-        transform: translateY(0);
+
+    .section-description {
+        font-size: 0.9rem;
+    }
+
+    .facility-item h3 {
+        font-size: 1.2rem;
+    }
+
+    .facility-item p {
+        font-size: 0.9rem;
     }
 }

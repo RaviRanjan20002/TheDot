@@ -27,8 +27,12 @@ const ContactForm = () => {
           <button type="submit">Submit your inquiry now</button>
         </form>
       </div>
-      <ContactInfo />
+      <div>
+      <ContactInfo/>
+      </div>
+      <div>
       <Footer/>
+      </div>
     </div>
   );
 };

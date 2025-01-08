@@ -5,7 +5,7 @@ const Registration = () => {
     return (
         <section className="test-series-section">
             <div className="container">
-                <div className="containertwo">
+                <div className="container-R">
                 <h2 className="test-series-title">Registration for DTSE 2025</h2>
             
             <button
