@@ -127,6 +127,7 @@ body, ul, li, a, span {
 }
 
 .social-icons a:hover {
+  color: rgb(173, 195, 228);
   transform: scale(1.2);
 }
 
