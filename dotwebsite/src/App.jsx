@@ -11,6 +11,7 @@ import Contact from "./Components/pages/Contact";
 import NoPage from "./Components/pages/NoPage";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Gallery from "./Components/pages/Gallery";
+import CrashCourse from "./Components/pages/CrashCourse";
 function App() {
   return(
     <>
@@ -24,7 +25,9 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="gallery" element={<Gallery/>} />
           <Route path="contact" element={<Contact />} />
+          <Route path="/CrashCourse" element={<CrashCourse/>} /> {/* Add this route */}
           <Route path="*" element={<NoPage />} />
+
         </Route>
       </Routes>
     </BrowserRouter>

@@ -2,6 +2,7 @@ import { Outlet, Link } from "react-router-dom";
 import { useState, useEffect, useRef } from "react";
 import "../../../styles/Navbar.css";
 import logo from "../../assets/logo.jpg";
+import "../../../styles/CrashCourse.css";
 
 const Layout = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -140,6 +141,18 @@ const Layout = () => {
           </div>
         </ul>
       </nav>
+
+      {/* Crash Course Section */}
+      <div className="crash-course-container-main">
+        <Link
+          to="/CrashCourse" // Link to the Crashcourse page
+          className="crash-course-box-main"
+        >
+          <h2 className="course-title-main">Crash Course for JEE Mains</h2>
+          <p className="course-subtitlemain">Limited Seats Available. Enroll Now!</p>
+        </Link>
+      </div>
+
 
       <Outlet />
     </>

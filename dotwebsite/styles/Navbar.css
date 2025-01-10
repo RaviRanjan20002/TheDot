@@ -204,3 +204,59 @@ body, ul, li, a, span {
     min-width: 120px;
   }
 }
+
+
+
+
+
+
+
+
+
+/* Crash Course  */
+/* Overall container for alignment */
+.crash-course-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #f4f4f4; /* Neutral background for professionalism */
+  border-radius: 8px;
+  width: fit-content;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Box styling - now an anchor tag */
+.crash-course-box {
+  text-align: center;
+  padding: 10px 10px;
+  background-color: #ffee04; /* Highlighted box */
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  text-decoration: none; /* Remove default link styling */
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+/* Hover effect for clickable box */
+.crash-course-box:hover {
+  transform: translateY(-2px); /* Subtle lift effect */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Stronger shadow on hover */
+}
+
+/* Title styling */
+.course-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #333333; /* Subtle dark grey for professional tone */
+  margin: 0 0 5px;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Subtitle styling */
+.course-subtitle {
+  font-size: 1rem;
+  color: #555555; /* Medium grey for contrast */
+  margin: 0 0 0px;
+}
