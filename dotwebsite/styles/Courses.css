@@ -25,14 +25,9 @@ body {
 }
 
 .containertwo {
-<<<<<<< HEAD
-    /* margin-bottom: 5px; */
-    /* padding: 10px; */
-=======
     margin-bottom: 20px;
     padding: 10px;
     z-index: 1;
->>>>>>> e9d63de564328baefe78cee478a585625cb8278d
 }
 
 .section-description-cr {
@@ -62,12 +57,8 @@ body {
 
 /* Courses List - New CSS */
 .courses-list {
-<<<<<<< HEAD
-    margin: 20px;
-=======
     z-index: 1;
     margin: 30px;
->>>>>>> e9d63de564328baefe78cee478a585625cb8278d
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
