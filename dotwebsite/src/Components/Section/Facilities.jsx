@@ -1,4 +1,4 @@
-import React from "react";
+// Desc: This file contains the Facilities component which is used to display the facilities provided by the institute.
 import "../../../styles/Facilities.css";
 import facultySupportImage from "../../assets/facultySupport.jpg"; // Replace with the correct path
 import expertEducatorsImage from "../../assets/expertEducators.jpg"; // Replace with the correct path
@@ -19,7 +19,7 @@ const Facilities = () => {
                         <img src={facultySupportImage} alt="Expert Faculty Support" className="facility-image" />
                         <h3>Expert Faculty Support</h3>
                         <p>
-                            Our experienced faculty members are always ready to assist students in addressing any academic challenges. Whether it’s a specific topic, a difficult concept, or a question from the course material, our faculty provides clear and comprehensive explanations.
+                        Our experienced faculty members are always ready to assist students in addressing any academic challenges they may encounter throughout their learning journey. Whether it is diving into a specific topic, unraveling a difficult concept, or seeking clarity on a question from the course material, our dedicated faculty is committed to providing clear, detailed, and comprehensive explanations.
                         </p>
                     </div>
                     <div className="facility-item">

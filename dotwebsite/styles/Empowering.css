@@ -57,11 +57,11 @@
     flex: 1;
     min-width: 120px;
 }
-
 .stat-item h3 {
     font-size: 32px;
     color: #1a3d4c;
     margin-bottom: 5px;
+    transition: all 0.2s ease-in-out;
 }
 
 .stat-item p {

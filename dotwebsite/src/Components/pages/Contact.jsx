@@ -1,4 +1,4 @@
-import { useRef } from 'react';
+import { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 import "../../../styles/ContactForm.css";
 import ContactInfo from './contactInfo';
@@ -6,9 +6,11 @@ import Footer from '../Section/Footer';
 
 const ContactForm = () => {
   const form = useRef();
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
 
     emailjs
       .sendForm('service_di6rkd9', 'template_22y7blm', form.current, {
@@ -18,9 +20,11 @@ const ContactForm = () => {
         () => {
           alert('Message sent successfully');
           form.current.reset();
+          setIsSubmitting(false);
         },
         (error) => {
           console.log('FAILED...', error.text);
+          setIsSubmitting(false);
         },
       );
   };
@@ -45,7 +49,9 @@ const ContactForm = () => {
             Enter your message here*
             <textarea name="message" placeholder="Your message here" required></textarea>
           </label>
-          <button type="submit">Submit your inquiry now</button>
+          <button type="submit" disabled={isSubmitting}>
+            {isSubmitting ? 'Sending...' : 'Submit your inquiry now'}
+          </button>
         </form>
       </div>
       <div>
@@ -59,3 +65,4 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
+

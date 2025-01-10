@@ -14,6 +14,10 @@
     color: #333;
     overflow: hidden; 
     position: relative; 
+    background-image: url(../src/assets/registerbg3.jpeg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     animation: fading 1s ease-in-out;
 }
 
@@ -26,6 +30,7 @@
 }
 
 .test-series-title {
+    z-index: 1;
     font-size: 28px;
     font-weight: bold;
     margin-bottom: 10px;
