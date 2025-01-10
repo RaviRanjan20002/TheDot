@@ -8,12 +8,11 @@
 
 /* Header Section */
 .header-section {
-  background-color: #000;
+  background-color: black;
   color: white;
   text-align: center;
   padding: 30px 20px;
   font-size: 32px;
-  font-weight: bold;
 }
 
 .header-section h1 {
@@ -22,7 +21,6 @@
   margin: 0 auto; /* Centers the element */
   max-width: 80%; /* Adjust width for responsiveness */
 }
-
 
 /* Main Content Layout */
 .main-container {
@@ -36,22 +34,26 @@
 .course-content {
   flex: 3;
   background-color: white;
-  /* padding: 30px;
-  border-radius: 10px;
+   padding: 30px;
+ /* border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
 }
 
 .course-title {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 28px;
   font-weight: bold;
-  color: #1a237e;
+  color: #003366;
   margin-bottom: 10px;
 }
 
 .course-subtitle {
   font-size: 18px;
   color: #555;
-  margin-bottom: 20px;
+  margin-bottom: 25px;
+  line-height: 1.5;
 }
 
 .course-details {
@@ -62,22 +64,28 @@
 }
 
 .course-details strong {
-  color: #e65100;
+  color: #0066cc;
+  font-weight: bold;
 }
 
 .course-details ul {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   list-style: none;
   padding-left: 0;
 }
 
 .course-details ul li {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   background: url('https://img.icons8.com/ios-filled/20/4caf50/checkmark.png') no-repeat left center;
   background-size: 18px;
   padding-left: 30px;
   margin-bottom: 8px;
 }
 
-/* Enroll Button */
 .enroll-button {
   display: inline-block;
   margin-top: 20px;
@@ -85,65 +93,20 @@
   font-size: 18px;
   font-weight: bold;
   color: white;
-  background-color: #ff5722;
+  background-color: #007bff;
   border-radius: 5px;
   text-decoration: none;
-  transition: background 0.3s;
+  transition: background-color 0.3s;
+  /* margin-top: 30px; */
 }
 
 .enroll-button:hover {
-  background-color: #e64a19;
-}
-
-/* Right Sidebar */
-.sidebar {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.search-box {
-  display: flex;
-  padding: 10px;
-  background: white;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.search-box input {
-  flex: 1;
-  padding: 10px;
-  border: none;
-  outline: none;
-}
-
-.search-box button {
-  background: #ff5722;
-  border: none;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-/* Ad Banners */
-.ad-banner {
-  background: white;
-  padding: 10px;
-  text-align: center;
-  border-radius: 5px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.ad-banner img {
-  max-width: 100%;
-  border-radius: 5px;
+  background-color: #0056b3;
 }
 
 /* Responsive Design */
-@media (max-width: 992px) {
+@media (max-width: 768px) {
   .main-container {
-      flex-direction: column;
+    flex-direction: column;
   }
 }
