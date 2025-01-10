@@ -1,6 +1,7 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import "../../../styles/CrashCoursePage.css"; // Ensure the correct CSS file is imported
-
+import "../../../styles/CrashCourse.css";
 const CrashCourse = () => {
   return (
     <section className="crash-course-page">

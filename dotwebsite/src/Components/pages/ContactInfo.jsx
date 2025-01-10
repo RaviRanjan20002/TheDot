@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import "../../../styles/ContactInfo.css";
 
@@ -8,7 +9,7 @@ const ContactInfo = () => {
         <h1>Contact Us</h1>
         <p>
           Reach out to us for inquiries about IIT-JEE and NEET coaching.
-          We're here to assist you with all your educational needs.
+          We are here to assist you with all your educational needs.
         </p>
         <h3>Location</h3>
         <p>94L, Old DC Office Rd, Model Town, Rewari, Haryana 123401</p>
