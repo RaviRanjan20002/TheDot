@@ -2,7 +2,6 @@
 import React from "react";
 import "../../../styles/Courses.css";
 import { Link } from "react-router-dom";
-
 const coursesData = [
     {
         title: "Our Alumni",
@@ -12,7 +11,7 @@ const coursesData = [
     {
         title: "DTSE Program",
         description: "Stay updated with our latest insights.",
-        image: "../src/assets/Dtse.png" // Replace with actual image path
+        image: "../src/assets/Dtseexam.png" // Replace with actual image path
     },
     {
         title: "Latest Blog Posts",
