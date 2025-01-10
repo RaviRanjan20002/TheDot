@@ -11,7 +11,7 @@ body {
   text-align: center;
   background-color: #7796a9;
   /* background-image: url("../src/assets/gallerybg9.avif"); */
-  background-size: cover;
+  background-size:auto;
   background-position: center;
   padding: 20px; /* Added padding for smaller screens */
 }
@@ -84,23 +84,28 @@ body {
   transition: transform 0.4s ease, box-shadow 0.4s ease;
   background-color: #fff;
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 
 .gallery-item:hover {
   transform: scale(1.05);
-  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);;
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .gallery-image {
+
   width: 100%;
-  height: auto; 
-  object-fit: cover;
-  border-radius: 15px;
-  transition: opacity 0.4s ease;
+  height: 100%; /* Ensures the image completely fills the item */
+  object-fit: cover; /* Maintains aspect ratio */
+  border-radius: 15px; /* Matches the container */
+  transition: opacity 0.4s ease, transform 0.4s ease;
 }
 
 .gallery-item:hover .gallery-image {
-  transform: scale(1.1);
+  transform: scale(1.02); /* Slight zoom effect on hover */
 }
 
 .gallery-item::before {

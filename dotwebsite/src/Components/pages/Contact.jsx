@@ -13,8 +13,8 @@ const ContactForm = () => {
         </div>
         <form className="contact-form">
           <label>
-            Enter your first name
-            <input type="text" placeholder="Your first name here" />
+            Enter your full name
+            <input type="text" placeholder="Your full name here" />
           </label>
           <label>
             Enter your email address*
