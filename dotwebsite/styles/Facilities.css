@@ -50,6 +50,7 @@
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
+    border: 2px solid #003366;
 }
 
 .facility-item:hover {
