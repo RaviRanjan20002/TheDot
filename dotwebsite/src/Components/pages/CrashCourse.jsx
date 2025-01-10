@@ -44,7 +44,7 @@ const CrashCourse = () => {
 
             <p><strong>Salient Features of Program:</strong></p>
             <ul>
-            <li>✔ 180+ Hours (32 Hours in a Week)</li>
+              <li>✔ 180+ Hours (32 Hours in a Week)</li>
               <li>✔ Fast-Paced Offline Classes (One to One Mentorship Session)</li>
               <li>✔ 45+ Home Practice Tests</li>
               <li>✔ 10 JEE Mains Full Mock Tests</li>
@@ -64,7 +64,7 @@ const CrashCourse = () => {
             Enroll Now
           </a>
         </div>
-      </div> {/* Closed the missing div tag */}
+      </div>
     </section>
   );
 };
