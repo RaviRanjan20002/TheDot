@@ -32,7 +32,7 @@ const Courses = () => {
           >
             <h2 className="course-title-main">Crash Course for JEE Mains</h2>
             <p className="course-subtitlemain">
-              Limited Seats Available. Enroll Now!
+              Limited Seats Available. Enroll Now!!
             </p>
           </Link>
         </div>
