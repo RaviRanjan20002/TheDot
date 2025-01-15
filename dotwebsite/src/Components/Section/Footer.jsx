@@ -68,7 +68,7 @@ const Footer = () => {
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "10px" }}
+                style={{ marginLeft: "20px" }}
               >
                 <path
                   fillRule="evenodd"
@@ -102,7 +102,7 @@ const Footer = () => {
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "132px" }}
+                style={{ marginLeft: "130px" }}
               >
                 <path
                   fillRule="evenodd"
@@ -136,7 +136,7 @@ const Footer = () => {
                 height="9"
                 fill="currentColor"
                 viewBox="0 0 16 16"
-                style={{ marginLeft: "100px" }}
+                style={{ marginLeft: "99px" }}
               >
                 <path
                   fillRule="evenodd"

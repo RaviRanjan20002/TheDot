@@ -26,9 +26,10 @@
 
 /* Footer dropdown toggle */
 .dropdown-heading {
-  
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   font-size: 1.2rem;
-  font-weight: bold;
   margin-bottom: 0.5rem;
   cursor: pointer;
   border-bottom: 2px solid #141010;
@@ -81,6 +82,7 @@
 /* Hover effects */
 
 .footer-column {
+  
   color: white;
   flex: 1;
   min-width: 200px;
@@ -95,6 +97,9 @@
 }
 
 .footer-column ul li {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   margin-bottom: 4px;
   font-size: 0.9rem;
   color: #dcdcdc;
