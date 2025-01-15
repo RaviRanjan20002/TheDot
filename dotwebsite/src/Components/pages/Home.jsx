@@ -1,16 +1,16 @@
-import React from 'react';
+
 import Courses from '../Section/Courses';
 import Registration from '../Section/Registration';
 import Empowering from '../Section/Empowering';
 import Facilities from '../Section/Facilities';
 import Testimonial from '../Section/Testimonial';
 import Footer from '../Section/Footer';
-// import CrashCourse from '../Section/CrashCourse';
+import BannerSlider from '../Section/BannerSlider';
 
 function Home() {
   return (
     <div>
-      {/* <CrashCourse/> */}
+      <BannerSlider/> 
       <Courses/>
       <Registration/>
       <Empowering/>
