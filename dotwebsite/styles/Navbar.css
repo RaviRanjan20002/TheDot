@@ -144,6 +144,11 @@ body, ul, li, a, span {
 /* Responsive styles */
 @media screen and (max-width: 1024px) {
   .nav-links {
+    background-image: url(/src/assets/footer-widget-bg.png);
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    background-position: center 100px;
+    /* background-position: center; */
     display: none;
     flex-direction: column;
     position: absolute;
@@ -151,7 +156,7 @@ body, ul, li, a, span {
     left: 0;
     width: 100%;
     background-color: #141b23;
-    padding: 20px 0;
+    /* padding: 20px 0; */
     z-index: 1000;
   }
 
