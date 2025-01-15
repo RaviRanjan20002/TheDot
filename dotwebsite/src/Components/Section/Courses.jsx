@@ -1,22 +1,25 @@
-// eslint-disable-next-line no-unused-vars
-import React from "react";
+
 import "../../../styles/Courses.css";
 import { Link } from "react-router-dom";
+import aluminiImg from "../../assets/alumini.jpg";
+import dtseImg from "../../assets/Dtseexam.png";
+import sbuildImg from "../../assets/sbuild.jpg";
+
 const coursesData = [
   {
     title: "Our Alumni",
     description: "Success stories from our accomplished students.",
-    image: "../src/assets/alumini.JPG", // Replace with actual image path
+    image: aluminiImg,
   },
   {
     title: "DTSE Program",
     description: "Stay updated with our latest insights.",
-    image: "../src/assets/Dtseexam.png", // Replace with actual image path
+    image: dtseImg,
   },
   {
     title: "Latest Blog Posts",
     description: "Explore comprehensive coaching programs available.",
-    image: "../src/assets/sbuild.JPG", // Replace with actual image path
+    image: sbuildImg,
   },
 ];
 
@@ -24,10 +27,9 @@ const Courses = () => {
   return (
     <section className="courses-section">
       <div className="container">
-        {/* Crash Course Section */}
         <div className="crash-course-container-main">
           <Link
-            to="/CrashCourse" // Link to the Crashcourse page
+            to="/CrashCourse"
             className="crash-course-box-main"
           >
             <h2 className="course-title-main">Crash Course for JEE Mains</h2>
@@ -62,3 +64,4 @@ const Courses = () => {
 };
 
 export default Courses;
+
