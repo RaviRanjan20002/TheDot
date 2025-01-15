@@ -4,10 +4,10 @@ import "../../../styles/Footer.css";
 
 const Footer = () => {
   const [openSections, setOpenSections] = useState({
-    about: true,
-    courses: true,
-    results: true,
-    contact: true,
+    about: false,
+    courses: false,
+    results: false,
+    contact: false,
   });
 
   const toggleSection = (section) => {
