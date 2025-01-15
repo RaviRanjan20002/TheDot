@@ -1,11 +1,10 @@
-import { useState, useEffect } from 'react'; 
+import { useState, useEffect } from 'react';  
 import "../../../styles/BannerSlider.css";
+import bannerbg from "../../assets/bannerbg.png";
+import bannerbg6 from "../../assets/bannerbg6.png";
+
 const BannerSlider = () => {
-  const images = [
-    "../src/assets/bannerbg.png",
-    "../src/assets/bannerbg6.png",
-    // Add more image URLs as needed
-  ];
+  const images = [bannerbg, bannerbg6];
 
   const interval = 4000; // Interval time in milliseconds
 
