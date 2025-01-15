@@ -26,7 +26,7 @@ const CrashCourse = () => {
             <p>
               If you are all set to appear in JEE Main 2025, then this is the perfect time and course to give your preparation the ultimate boost. Classes will start soon.
             </p>
-            <p><strong>Course Highlights:</strong></p>
+            <p><strong> <style color='blue'></style>Course Highlights:</strong></p>
             <ul>
               <li>✔ <strong>The Medium of Course:</strong> English</li>
               <li>✔ <strong>Mode of Admission:</strong> Direct</li>

@@ -13,7 +13,7 @@ body {
     text-align: center;
     background-image: url("../src/assets/coursebg3.avif");
     /* background-color: #a0c0e7; */
-    background-size: cover;
+    background-size: cover  ;
     background-position: center;
     background-repeat: no-repeat;
     color: #333;
