@@ -1,9 +1,9 @@
 
 import "../../../styles/Courses.css";
 import { Link } from "react-router-dom";
-import aluminiImg from "../../assets/alumini.jpg";
-import dtseImg from "../../assets/dtseexam.png";
-import sbuildImg from "../../assets/sbuild.jpg";
+import aluminiImg from "../../../src/assets/alumini.jpg";
+import dtseImg from "../../../src/assets/dtseexam.png";
+import sbuildImg from "../../../src/assets/sbuild.jpg";
 
 const coursesData = [
   {
