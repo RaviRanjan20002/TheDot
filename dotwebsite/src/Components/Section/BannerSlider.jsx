@@ -1,10 +1,11 @@
-import { useState, useEffect } from 'react';
+/* eslint-disable no-undef */
+import { useState, useEffect } from 'react'; 
 import "../../../styles/BannerSlider.css";
+
 const BannerSlider = () => {
   const images = [
-    "../src/assets/bannerbg.png",
-    "../src/assets/bannerbg6.png",
-    // Add more image URLs as needed
+    { id: 1, src: require("../src/assets/bannerbg.png"), alt: "Banner Image 1" },
+    { id: 2, src: require("../src/assets/bannerbg6.png"), alt: "Banner Image 2" },
   ];
 
   const interval = 4000; // Interval time in milliseconds
@@ -23,10 +24,10 @@ const BannerSlider = () => {
     <div className="slideshow-container">
       {images.map((image, index) => (
         <div
-          key={index}
+          key={image.id}
           className={`slide ${index === currentIndex ? 'active' : ''}`}
         >
-          <img src={image} alt={`Banner ${index + 1}`} />
+          <img src={image.src} alt={image.alt} />
         </div>
       ))}
       <div className="dots">
@@ -43,3 +44,4 @@ const BannerSlider = () => {
 };
 
 export default BannerSlider;
+
