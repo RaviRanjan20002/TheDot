@@ -2,7 +2,7 @@
 .facilities-section {
     font-family: "Bitter", serif;
     font-size: 1rem;
-    padding: 60px 20px;
+    padding: 2.3rem 1rem 2.5rem 1rem;
     background-color: #1d2733;
     color: white;
 }
@@ -72,9 +72,9 @@
 .facility-item p {
     font-size: 1rem;
     color: #555;
-    margin: 0 20px 20px;
+    margin: 0 1rem 1rem;
     text-align: justify;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 /* Responsive Design */
@@ -103,7 +103,7 @@
     }
 
     .facility-item {
-        max-width: 100%;
+        max-width: 98%;
     }
 
     .textcont {

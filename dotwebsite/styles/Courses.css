@@ -26,11 +26,12 @@ body {
 }
 
 .containertwo {
-    margin: 1rem 1.5rem 1rem 1.5rem;
-    /* margin-bottom: 1rem; */
-    padding: 10px;
-    z-index: 1;
-}
+        margin: 1rem 1.3rem 1rem 1.3rem;
+        /* margin-bottom: 1rem; */
+        padding: 0.6rem;
+        z-index: 1;
+    }
+
 
 .section-description-cr {
     font-size: 1.2rem;
