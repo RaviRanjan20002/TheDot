@@ -13,7 +13,9 @@
     text-align: center;
     text-decoration: none;
     color: black;
-    font-family: 'Arial', sans-serif;
+    font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
     /* box-shadow: 0 0 10px #39ff14, 0 0 20px #39ff14, 0 0 30px #39ff14; */
     animation: float 3s infinite ease-in-out;
   }
