@@ -19,6 +19,8 @@ import img15 from "../../assets/image-15.jpg";
 import img16 from "../../assets/image-16.jpg";
 import img17 from "../../assets/image-17.jpg";
 import img18 from "../../assets/image-18.jpg";
+import img19 from "../../assets/image-19.jpg";
+import img20 from "../../assets/image-20.jpg";
 
 const Gallery = () => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -41,7 +43,9 @@ const Gallery = () => {
     { id: 15, src: img15, alt: "Gallery Image 15", description: "A snapshot from our leadership training camp, where students honed their leadership and team-building skills through various interactive activities." },
     { id: 16, src: img16, alt: "Gallery Image 16", description: "Students participating in an international cultural exchange program, embracing diversity and gaining a broader global perspective." },
     { id: 17, src: img17, alt: "Gallery Image 17", description: "Another moment from our international cultural exchange program, showcasing students’ learning experiences with diverse cultures." },
-    { id: 18, src: img18, alt: "Gallery Image 18", description: "An inspiring scene from our mentorship program, where senior students guided and supported their juniors, fostering a sense of community and mentorship." }
+    { id: 18, src: img18, alt: "Gallery Image 18", description: "An inspiring scene from recuritment." },
+    { id: 19, src: img19, alt: "Gallery Image 19", description: "An inspiring scene from recuritment " },
+    { id: 20, src: img20, alt: "Gallery Image 20", description: "An inspiring scene from recuritment" }
   ];
 
   return (
