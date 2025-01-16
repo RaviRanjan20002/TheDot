@@ -16,6 +16,10 @@ const Navbar = () => {
     setMobileMenuVisible(!isMobileMenuVisible);
   };
 
+  const closeMobileMenu = () => {
+    setMobileMenuVisible(false);
+  };
+
   // Close the mobile menu if clicked outside
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -48,16 +52,16 @@ const Navbar = () => {
 
       <ul className={`nav-links ${isMobileMenuVisible ? "active" : ""}`}>
         <li>
-          <Link to="/">HOME</Link>
+          <Link to="/" onClick={closeMobileMenu}>HOME</Link>
         </li>
         <li>
-          <Link to="/blogs">BLOGS</Link>
+          <Link to="/blogs" onClick={closeMobileMenu}>BLOGS</Link>
         </li>
         <li>
-          <Link to="/gallery">GALLERY</Link>
+          <Link to="/gallery" onClick={closeMobileMenu}>GALLERY</Link>
         </li>
         <li>
-          <Link to="/contact">CONTACT</Link>
+          <Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link>
         </li>
         <li className="dropdown">
           <span className="dropdown-toggle" onClick={toggleDropdown}>
@@ -87,6 +91,7 @@ const Navbar = () => {
                   className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={closeMobileMenu}
                 >
                   JEE Main Result
                 </a>
@@ -97,6 +102,7 @@ const Navbar = () => {
                   className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
+                  onClick={closeMobileMenu}
                 >
                   NEET Result
                 </a>
@@ -110,30 +116,35 @@ const Navbar = () => {
             className="fab fa-facebook-f"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMobileMenu}
           ></a>
           <a
             href="https://www.facebook.com/thedotrewari/"
             className="fab fa-twitter"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMobileMenu}
           ></a>
           <a
             href="https://www.facebook.com/thedotrewari/"
             className="fab fa-instagram"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMobileMenu}
           ></a>
           <a
             href="https://www.facebook.com/thedotrewari/"
             className="fab fa-linkedin-in"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMobileMenu}
           ></a>
           <a
             href="https://www.facebook.com/thedotrewari/"
             className="fab fa-youtube"
             target="_blank"
             rel="noopener noreferrer"
+            onClick={closeMobileMenu}
           ></a>
         </div>
       </ul>

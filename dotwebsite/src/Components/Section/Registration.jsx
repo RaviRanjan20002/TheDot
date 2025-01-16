@@ -20,7 +20,7 @@ const Registration = () => {
                         className="buy-now-button"
                         onClick={handleRegisterClick}
                     >
-                        Register now
+                        Register now !
                     </button>
 
                     {message && <p className="registration-closed-message">{message}</p>}
