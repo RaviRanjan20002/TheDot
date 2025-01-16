@@ -2,6 +2,7 @@
 import React from 'react';
 import "../../../styles/CrashCoursePage.css"; // Ensure the correct CSS file is imported
 import "../../../styles/CrashCourse.css";
+
 const CrashCourse = () => {
   return (
     <section className="crash-course-page">
@@ -26,7 +27,7 @@ const CrashCourse = () => {
             <p>
               If you are all set to appear in JEE Main 2025, then this is the perfect time and course to give your preparation the ultimate boost. Classes will start soon.
             </p>
-            <p><strong> <style color='blue'></style>Course Highlights:</strong></p>
+            <p><strong>Course Highlights:</strong></p>
             <ul>
               <li>✔ <strong>The Medium of Course:</strong> English</li>
               <li>✔ <strong>Mode of Admission:</strong> Direct</li>
@@ -56,14 +57,16 @@ const CrashCourse = () => {
             <p><strong>Note:</strong> Tentative number of Lecture Hours and Days may be revised depending on the Exam Dates announced by NTA.</p>
           </div>
 
-          <a
-            href="https://docs.google.com/forms/d/e/1FAIpQLSfKKfFbXQWro8Y3jPH4q8mqK3-FYUJoHx4rpZYtnwls6YpW9Q/viewform?usp=dialog" 
-            target="_blank"
-            rel="noopener noreferrer"
-            className="enroll-button"
-          >
-            Enroll Now
-          </a>
+          <div className="enroll-button-container">
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfKKfFbXQWro8Y3jPH4q8mqK3-FYUJoHx4rpZYtnwls6YpW9Q/viewform?usp=dialog" 
+              target="_blank"
+              rel="noopener noreferrer"
+              className="enroll-button"
+            >
+              Enroll Now
+            </a>
+          </div>
         </div>
       </div>
     </section>
