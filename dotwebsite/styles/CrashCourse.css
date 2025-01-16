@@ -19,11 +19,14 @@
   font-style: normal;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover animation */
+  animation: float 3s ease-in-out infinite; /* Add a floating effect */
 }
-
 .crash-course-box-main:hover {
   transform: translateY(-5px); /* Slight lift on hover */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow on hover */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15), /* Existing shadow */
+              0 0 10px rgba(58, 123, 253, 0.8), /* Neon blue outer glow */
+              0 0 20px rgba(58, 123, 253, 0.6), 
+              0 0 30px rgba(58, 123, 253, 0.4); /* More intense glow */
 }
 
 .course-title-main {
