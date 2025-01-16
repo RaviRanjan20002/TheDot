@@ -159,6 +159,9 @@
 
 .social-icons {
   margin-top: 15px;
+  display: flex;
+  /* justify-content: center; Horizontally centers the icons */
+   padding: 0 15px; 
 }
 
 .social-icons i {
@@ -167,6 +170,12 @@
   color: #dcdcdc;
   transition: color 0.3s ease;
 }
+
+/* Remove the margin-right for the last icon */
+.social-icons i:last-child {
+  margin-right: 0;
+}
+
 
 .social-icons i:hover {
   color: #2a718f; /* Highlight color */

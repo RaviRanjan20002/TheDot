@@ -48,7 +48,7 @@ const Footer = () => {
           >
             <li>About Excellence</li>
             <li>Our Vision</li>
-            <li>Leadership</li>
+            {/* <li>Leadership</li> */}
             <li>Our Journey</li>
             <li>Join Our Team</li>
           </ul>
@@ -82,9 +82,10 @@ const Footer = () => {
           >
             <li>JEE (Main & Adv.)</li>
             <li>NEET (UG)</li>
-            <li>Class 6th to 10th</li>
-            <li>Online Programs</li>
-            <li>Study Abroad</li>
+            <li>Crash course for JEE mains</li>
+            <li>Crash course for Neet UG</li>
+            {/* <li>Online Programs</li> */}
+            {/* <li>Study Abroad</li> */}
           </ul>
         </div>
 
@@ -117,7 +118,7 @@ const Footer = () => {
             <li>JEE Advanced</li>
             <li>NEET UG</li>
             <li>AIIMS</li>
-            <li>Olympiads</li>
+            {/* <li>Olympiads</li> */}
             <li>Board Exams</li>
           </ul>
         </div>
