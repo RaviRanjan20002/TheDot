@@ -2,8 +2,9 @@ import { useState, useEffect } from 'react';
 import "../../../styles/BannerSlider.css";
 import bannerbg2 from "../../assets/bannerbg2.jpg";
 import bannerbg3 from "../../assets/bannerbg3.jpg";
+import bannerbg4 from "../../assets/bannerbg4.jpg";
 const BannerSlider = () => {
-  const images = [bannerbg2,bannerbg3];
+  const images = [bannerbg2,bannerbg3,bannerbg4];
 
   const interval = 4000; // Interval time in milliseconds
 
