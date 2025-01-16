@@ -1,4 +1,3 @@
-// TestSeries.jsx
 import "../../../styles/Registration.css";
 import { useState } from "react";
 
@@ -6,7 +5,9 @@ const Registration = () => {
     const [message, setMessage] = useState("");
 
     const handleRegisterClick = () => {
-        setMessage("Registration is now closed.");
+        setMessage((prevMessage) =>
+            prevMessage ? "" : "Registration is now closed!"
+        );
     };
 
     return (
@@ -30,4 +31,3 @@ const Registration = () => {
 };
 
 export default Registration;
-
