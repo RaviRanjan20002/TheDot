@@ -118,29 +118,23 @@ const Navbar = () => {
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
           ></a>
+          
           <a
-            href="https://www.facebook.com/thedotrewari/"
-            className="fab fa-twitter"
-            target="_blank"
-            rel="noopener noreferrer"
-            onClick={closeMobileMenu}
-          ></a>
-          <a
-            href="https://www.facebook.com/thedotrewari/"
+            href="https://www.instagram.com/thedot_iit/"
             className="fab fa-instagram"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
           ></a>
           <a
-            href="https://www.facebook.com/thedotrewari/"
+            href="http://linkedin.com/in/the-dot-754739257"
             className="fab fa-linkedin-in"
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
           ></a>
           <a
-            href="https://www.facebook.com/thedotrewari/"
+            href="https://www.youtube.com/@thedotrewari"
             className="fab fa-youtube"
             target="_blank"
             rel="noopener noreferrer"
