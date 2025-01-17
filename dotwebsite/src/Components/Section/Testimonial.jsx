@@ -1,3 +1,4 @@
+// eslint-disable-next-line no-unused-vars
 import React from "react";
 import "../../../styles/Testimonial.css";// Link to the CSS file
 import classroomImage from "../../assets/classroom.jpg"; // Replace with your actual image path
@@ -20,7 +21,7 @@ const Testimonial = () => {
         <div className="testimonial-content">
           <div className="stars">★★★★★</div>
           <p className="testimonial-text">
-            The Dot's coaching transformed my understanding of IIT-JEE
+            The Dot coaching transformed my understanding of IIT-JEE
             concepts. Highly recommend their expert faculty!
           </p>
           <div className="profile">

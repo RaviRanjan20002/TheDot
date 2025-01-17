@@ -13,6 +13,8 @@ const ContactInfo = () => {
         </p>
         <h3>Location</h3>
         <p>94L, Old DC Office Rd, Model Town, Rewari, Haryana 123401</p>
+        <h3>Phone</h3>
+        <p>+91 7419614851</p>
         <h3>Hours</h3>
         <p>9 AM - 6 PM</p>
       </div>
