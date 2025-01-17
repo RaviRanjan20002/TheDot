@@ -98,7 +98,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://script.google.com/macros/s/AKfycbyb7MreEsHHZwDRbJbQSftB1aJ9fKfX0KlpSD-CBdyIeJAqjq6b3xgrKjUu3KvZ9tHtPg/exec"
+                  href="https://script.google.com/macros/s/AKfycbxCMkxiK7oOh2zPgp6m3EDK0sZbT5_8n-b7_gOWqq50gNSyQdjmEy42mBIZhWK2FZkEeA/exec"
                   className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
