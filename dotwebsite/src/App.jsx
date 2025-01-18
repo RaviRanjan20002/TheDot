@@ -2,7 +2,7 @@
 // import Courses from "./Components/Section/Courses";
 // import Registration from "./Components/Section/Registration";
 // eslint-disable-next-line no-unused-vars
-import ReactDOM from "react-dom/client";
+// import ReactDOM from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Layout from "./Components/pages/Layout";
 import Home from "./Components/pages/Home";
