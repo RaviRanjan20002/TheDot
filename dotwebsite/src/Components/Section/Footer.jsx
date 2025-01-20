@@ -190,7 +190,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Excellence Coaching. All rights reserved.</p>
+        <p>THE DOT Coaching Institute ©All rights reserved.</p>
         <p>
           <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> |{" "}
           <a href="#">Refund Policy</a> | <a href="#">Disclaimer</a>
