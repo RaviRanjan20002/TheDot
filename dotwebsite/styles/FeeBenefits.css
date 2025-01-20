@@ -1,0 +1,73 @@
+.fee-benefits-container {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    padding: 20px;
+    background-color: white;
+    border-radius: 30px;
+    min-height: 400px;
+    box-shadow: 0px 0px 25px 2px rgba(0, 0, 0, 0.19);
+    background: linear-gradient(to bottom, #fff, #fef4d3);
+    font-family: Arial, sans-serif;
+}
+
+.title {
+    font-size: 2rem;
+    color: #002d62;
+    margin-bottom: 30px;
+}
+
+.benefits-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.benefit-card {
+    background-color: #ffe066;
+    padding: 15px 15px 65px 15px;
+    border-radius: 15px;
+    padding: 20px;
+    width: 280px;
+    text-align: center;
+}
+
+.benefit-title {
+    font-size: 1.2rem;
+    text-decoration: underline;
+    color: #0c549f;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    font-family: "DM Serif Text", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.benefit-deadline {
+    font-size: 1rem;
+    color: #002d62;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.apply-button {
+    background-color: #002d62;
+    color: white;
+    font-size: 0.9rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.apply-button:hover {
+    background-color: #0056a3;
+}
