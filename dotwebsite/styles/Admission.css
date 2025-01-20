@@ -1,10 +1,10 @@
 
 /* General Styling */
 body {
-  
   margin: 0;
   padding: 0;
-  background-color:  #ffe357;
+  background-color: #ffe357;
+  font-family: 'Arial', sans-serif;
 }
 
 /* Container */
@@ -14,7 +14,7 @@ body {
   justify-content: space-between;
   align-items: flex-start;
   padding: 2rem;
-  background-color:  #ffe357;
+  background-color: #ffe357;
   gap: 1rem;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -37,46 +37,32 @@ body {
   font-size: 2rem;
   color: #0047ab;
   margin: 0;
-  /* font-weight: bold; */
-  font-family: "DM Serif Text", serif; /* Use the same font-family as h2 for consistency */
-  text-align: center; /* Centers the text horizontally */
+  font-family: "DM Serif Text", serif;
+  text-align: center;
 }
 
 .admission-info .three h2 {
   margin: 0;
   font-size: 1.2rem;
   color: #0047ab;
-  
-  /* font-weight: bold; */
-  font-family: "DM Serif Text", serif; /* Use the same font-family as h2 for consistency */
-  text-align: center; /* Centers the text horizontally */
+  font-family: "DM Serif Text", serif;
+  text-align: center;
 }
-
-
 
 .admission-info .three p {
   margin: 5px;
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
   font-size: 1.2rem;
   color: #666;
 }
 
-.admission-stats {
-  /* margin-top: 20px; */
-}
-
 .admission-stats h3 {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
   text-align: center;
   font-size: 1rem;
   color: #444;
   font-weight: bold;
-  
 }
 
 .stats-grid {
@@ -104,7 +90,6 @@ body {
 .stats-item p {
   font-size: 1rem;
   color: #555;
-  /* margin-top: 10px; */
   line-height: 1.4;
 }
 
@@ -152,9 +137,11 @@ body {
   background-color: #fafafa;
 }
 
+/* Updated Mobile Input */
 .mobile-input {
   display: flex;
   align-items: center;
+  gap: 0;
   margin-bottom: 20px;
 }
 
@@ -165,33 +152,49 @@ body {
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top:-10px; 
 }
 
 .mobile-input input {
   flex: 1;
+  border: 1px solid #ccc;
+  border-left: none;
   border-radius: 0 5px 5px 0;
+  padding: 12px 15px;
 }
 
-.checkbox-group {
+/* Updated Checkbox Styling */
+.checkboxes {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  gap: 10px;
   font-size: 0.9rem;
   color: #555;
 }
 
-.checkbox-group label {
+.checkboxes label {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.checkbox-group a {
+.checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #0047ab;
+}
+
+.checkboxes label a {
   color: #0047ab;
   text-decoration: none;
 }
 
-.checkbox-group a:hover {
+.checkboxes label a:hover {
   text-decoration: underline;
 }
 
@@ -225,3 +228,4 @@ button[type="submit"]:hover {
     margin-bottom: 20px;
   }
 }
+
