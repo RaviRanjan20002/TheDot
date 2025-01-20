@@ -1,0 +1,57 @@
+.container {
+    display: flex;
+    font-family: Arial, sans-serif;
+  }
+  
+  .left-section {
+    width: 60%;
+    background-color: #ffcc00;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .right-section {
+    width: 40%;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input, select, button {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+  }
+  
+  .mobile-input {
+    display: flex;
+    align-items: center;
+  }
+  
+  .mobile-input span {
+    margin-right: 5px;
+    padding: 10px;
+    background-color: #ddd;
+  }
+  
+  .checkboxes {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #003f7f;
+  }
+  
