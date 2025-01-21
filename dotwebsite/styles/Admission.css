@@ -1,45 +1,48 @@
-
 /* General Styling */
 body {
-  
   margin: 0;
   padding: 0;
-  background-color:  #ffe357;
+  font-family: Arial, sans-serif;
+  box-sizing: border-box;
 }
 
 /* Container */
-.admission-container1{
-  /* background-color: white; */
+.admission-container1 {
+  background-color: #ffe357; /* Yellow background */
+  padding: 20px 0; /* Add vertical padding only */
+  width: 100%; /* Ensure it takes the full width of the screen */
+  margin: 0; /* Remove default margins */
 }
 
 .admission-container2 {
-  display: flex;
-  flex-direction: column; /* Updated for stacked layout on small screens */
-  justify-content: flex-start;
-  align-items: center;
-  padding: 2rem;
   background-color: #ffe357;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   gap: 2rem;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 10px;
-  max-width: 1200px;
-  margin: 20px auto;
+  width: 100%;
+  margin: 0;
 }
 
 /* Admission Content Wrapper */
+
 .admission-content {
   display: flex;
-  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: space-between;
-  gap: 1rem;
-  width: 100%;
+  gap: 2rem;
+  max-width: 1200px; /* Keep content width constrained */
+  margin: 0 auto; /* Center content within the container */
+  background-color: white; /* White background for content inside */
+  padding: 20px;
+  border-radius: 10px; /* Optional: Add some rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
 }
 
 /* Info Section */
 .admission-info {
   flex: 1;
-  margin-right: 20px;
-  padding: 20px;
+  padding: 2rem;
   background-color: #ffffff;
   border: 1px solid #ececec;
   border-radius: 10px;
@@ -50,52 +53,42 @@ body {
   font-size: 2rem;
   color: #0047ab;
   margin: 0;
-  /* font-weight: bold; */
-  font-family: "DM Serif Text", serif; /* Use the same font-family as h2 for consistency */
-  text-align: center; /* Centers the text horizontally */
+  font-family: "DM Serif Text", serif;
+  text-align: center;
 }
 
 .admission-info .three h2 {
   margin: 0;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   color: #0047ab;
-  
-  /* font-weight: bold; */
-  font-family: "DM Serif Text", serif; /* Use the same font-family as h2 for consistency */
-  text-align: center; /* Centers the text horizontally */
+  font-family: "DM Serif Text", serif;
+  text-align: center;
 }
 
-
-
 .admission-info .three p {
-  margin: 5px;
+  margin: 5px 0;
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: #666;
+  text-align: center;
 }
 
 .admission-stats {
-  /* margin-top: 20px; */
+  margin-top: 20px;
 }
 
 .admission-stats h3 {
   font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
-  text-align: center;
   font-size: 1rem;
   color: #444;
+  text-align: center;
   font-weight: bold;
-  
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
 }
 
 .stats-item {
@@ -111,13 +104,11 @@ body {
   font-size: 1.5rem;
   color: #0047ab;
   font-weight: bold;
-  margin: 0;
 }
 
 .stats-item p {
   font-size: 1rem;
   color: #555;
-  /* margin-top: 10px; */
   line-height: 1.4;
 }
 
@@ -137,15 +128,14 @@ body {
   background-color: #fff;
   border: 1px solid #ececec;
   border-radius: 10px;
-  padding: 30px;
+  padding: 2rem;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .admission-form h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #0047ab;
   font-weight: bold;
-  margin-bottom: 10px;
 }
 
 .admission-form p {
@@ -157,7 +147,7 @@ body {
 .form-section input,
 .form-section select {
   width: 100%;
-  padding: 12px 15px;
+  padding: 12px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -174,7 +164,7 @@ body {
 .mobile-input span {
   background-color: #e8e8e8;
   border: 1px solid #ccc;
-  padding: 12px 15px;
+  padding: 12px;
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
   color: #333;
@@ -227,14 +217,47 @@ button[type="submit"]:hover {
 }
 
 /* Responsive Design */
-@media (max-width: 768px) {
-  .admission-container2{
+@media (max-width: 1024px) {
+  .admission-content {
     flex-direction: column;
     align-items: center;
   }
 
   .admission-info {
-    margin-right: 0;
     margin-bottom: 20px;
+  }
+
+  .admission-stats h3 {
+    font-size: 0.9rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  }
+
+  .admission-form {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .admission-info .three h1 {
+    font-size: 1.5rem;
+  }
+
+  .admission-info .three h2 {
+    font-size: 1.2rem;
+  }
+
+  .admission-stats h3 {
+    font-size: 0.8rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+
+  button[type="submit"] {
+    font-size: 1rem;
   }
 }
