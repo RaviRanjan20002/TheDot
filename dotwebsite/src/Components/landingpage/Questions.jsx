@@ -31,6 +31,10 @@ const Questions = () => {
     setOpenQuestion(openQuestion === index ? null : index);
   };
 
+  const handleEnrolNowClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
   return (
     <div className="questions-container">
       <h2 className="questions-title">HAVE ANY QUESTIONS?</h2>
@@ -51,15 +55,16 @@ const Questions = () => {
           )}
         </div>
       ))}
-      <div className=''>
-      <h2>Kickstart Your Success Journey Today!</h2>
-      <button className="btn">ENROL NOW</button>
+      <div className="enrolnowsection">
+        <h2>Kickstart Your Success Journey Today!</h2>
+        <button className="enrolbtn" onClick={handleEnrolNowClick}>ENROL NOW</button>   
       </div>
     </div>
   );
 };
 
 export default Questions;
+
 
 
 

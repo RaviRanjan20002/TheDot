@@ -1,4 +1,3 @@
-
 import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
@@ -126,7 +125,6 @@ const Admission = () => {
           </form>
         </div>
       </div>
-      
     </div>
     <div className="fee-benefits-section"> 
         <FeeBenefits />
@@ -135,8 +133,11 @@ const Admission = () => {
         <DotGuide/>
       </div>
       <div> 
-      <Questions/>
+        <Questions />
       </div>
+      {/* <div className="DotGuide-section"> 
+        <DotGuide />
+      </div> */}
     </div>
     
   );
