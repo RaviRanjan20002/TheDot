@@ -1,8 +1,6 @@
-
 import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
-import Questions from "./Questions";
 // import DotGuide from "./Dotguidlines";
 
 const Admission = () => {
@@ -130,9 +128,9 @@ const Admission = () => {
     <div className="fee-benefits-section"> 
         <FeeBenefits />
       </div>
-      <div> 
-      <Questions/>
-      </div>
+      {/* <div className="DotGuide-section"> 
+        <DotGuide />
+      </div> */}
     </div>
     
   );
