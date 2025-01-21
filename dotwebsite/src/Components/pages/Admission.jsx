@@ -1,8 +1,51 @@
-import React from "react";
+
+import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 
 const Admission = () => {
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    mobile: '',
+    class: '',
+    choice: '',
+    termsAccepted: false,
+    updatesAuthorized: false,
+  });
+
+  const handleChange = (e) => {
+    const { name, value, type, checked } = e.target;
+    setFormData({
+      ...formData,
+      [name]: type === 'checkbox' ? checked : value,
+    });
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const scriptURL = 'YOUR_GOOGLE_APPS_SCRIPT_URL'; // Replace with your deployed Google Apps Script URL
+
+    try {
+      const response = await fetch(scriptURL, {
+        method: 'POST',
+        body: JSON.stringify(formData),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+      const result = await response.json();
+      if (result.status === 'success') {
+        alert('Form submitted successfully!');
+      } else {
+        alert('Form submission failed.');
+      }
+    } catch (error) {
+      console.error('Error:', error);
+      alert('Error submitting form.');
+    }
+  };
+
   return (
     <div className="admission-container1">
       <div className="admission-container2">
