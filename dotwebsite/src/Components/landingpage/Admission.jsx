@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 import Questions from "./Questions";
+import DotGuide from "./Dotguidlines";
 // import DotGuide from "./Dotguidlines";
 
 const Admission = () => {
@@ -129,6 +130,9 @@ const Admission = () => {
     </div>
     <div className="fee-benefits-section"> 
         <FeeBenefits />
+      </div>
+      <div>
+        <DotGuide/>
       </div>
       <div> 
       <Questions/>

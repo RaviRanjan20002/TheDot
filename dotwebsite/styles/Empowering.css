@@ -7,7 +7,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
-    overflow-x: hidden; 
+    overflow-x: hidden;
 
 
 }
@@ -16,7 +16,8 @@
     margin: 1rem 2rem 1rem 2rem;
     box-sizing: border-box;
     display: flex;
-    flex-direction: row; /* Align text and image side by side */
+    flex-direction: row;
+    /* Align text and image side by side */
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
@@ -28,8 +29,10 @@
     overflow: hidden;
     font-family: "Bitter", serif;
     flex: 1;
-    min-width: 400px; /* Ensure minimum size for text block */
-    text-align: left; /* Keep text aligned left */
+    min-width: 400px;
+    /* Ensure minimum size for text block */
+    text-align: left;
+    /* Keep text aligned left */
 }
 
 .section-title-em {
@@ -57,6 +60,7 @@
     flex: 1;
     min-width: 120px;
 }
+
 .stat-item h3 {
     font-size: 32px;
     color: #1a3d4c;
@@ -71,12 +75,11 @@
 
 
 .image-container-Em {
-    /* margin: 20px; */
-    /* overflow-x: hidden;  */
+    
     flex: 1;
-    min-width: 400px; /* Ensure minimum size for image block */
+    min-width: 400px;
     display: flex;
-    justify-content: flex-end; /* Align image to the right */
+    justify-content: flex-end;
 }
 
 .image-container-Em img {
@@ -112,7 +115,8 @@
 
 @media (max-width: 768px) {
     .container-Em {
-        flex-direction: column; /* Stack text and image vertically */
+        flex-direction: column;
+        /* Stack text and image vertically */
         text-align: center;
     }
 
