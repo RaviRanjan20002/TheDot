@@ -19,7 +19,7 @@ function App() {
           <Route path="gallery" element={<Gallery/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="/CrashCourse" element={<CrashCourse/>} /> {/* Add this route */}
-          <Route path="/Admission" element={<Admission/>} />
+          <Route path="admission" element={<Admission/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
