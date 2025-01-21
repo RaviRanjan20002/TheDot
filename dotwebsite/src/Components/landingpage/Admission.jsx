@@ -123,7 +123,6 @@ const Admission = () => {
           </form>
         </div>
       </div>
-      
     </div>
     <div className="fee-benefits-section"> 
         <FeeBenefits />
