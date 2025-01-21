@@ -1,48 +1,51 @@
-/* General Styling */
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
-  box-sizing: border-box;
+  background-color: white;
+}
+
+.mainBody{
+  background-color: #003580;
+  /* height: 100; */
 }
 
 /* Container */
-.admission-container1 {
-  background-color: #ffe357; /* Yellow background */
-  padding: 20px 0; /* Add vertical padding only */
-  width: 100%; /* Ensure it takes the full width of the screen */
-  margin: 0; /* Remove default margins */
-}
-
-.admission-container2 {
-  background-color: #ffe357;
+.admission-container {
+  margin: 0;
+  padding: 0 15px;
+  box-sizing: border-box;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding: 2rem;
+  background-color: #c1d8e0;
   gap: 2rem;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
   width: 100%;
-  margin: 0;
+  /* max-width: 1200px; */
+  /* margin: 20px auto; */
+  
+  /* padding: 6rem; */
+  padding-top: 3rem;
+  padding-bottom: 10rem;
 }
 
 /* Admission Content Wrapper */
-
 .admission-content {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px; /* Keep content width constrained */
-  margin: 0 auto; /* Center content within the container */
-  background-color: white; /* White background for content inside */
-  padding: 20px;
-  border-radius: 10px; /* Optional: Add some rounded corners */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+  width: 100%;
+  max-width: 1200px;
 }
 
 /* Info Section */
 .admission-info {
   flex: 1;
-  padding: 2rem;
+  /* margin-right: 20px; */
+  padding: 20px;
   background-color: #ffffff;
   border: 1px solid #ececec;
   border-radius: 10px;
@@ -51,7 +54,7 @@ body {
 
 .admission-info .three h1 {
   font-size: 2rem;
-  color: #0047ab;
+  color: #184f89;
   margin: 0;
   font-family: "DM Serif Text", serif;
   text-align: center;
@@ -59,18 +62,20 @@ body {
 
 .admission-info .three h2 {
   margin: 0;
-  font-size: 1.5rem;
-  color: #0047ab;
+  font-size: 1.2rem;
+  color: #184f89;
   font-family: "DM Serif Text", serif;
   text-align: center;
 }
 
 .admission-info .three p {
-  margin: 5px 0;
+  margin: 5px;
   font-family: "DM Serif Text", serif;
-  font-size: 1rem;
-  color: #666;
+  font-weight: 400;
+  font-style: normal;
   text-align: center;
+  font-size: 1.2rem;
+  color: #666;
 }
 
 .admission-stats {
@@ -79,16 +84,18 @@ body {
 
 .admission-stats h3 {
   font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
   font-size: 1rem;
   color: #444;
-  text-align: center;
   font-weight: bold;
 }
 
 .stats-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 15px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
 }
 
 .stats-item {
@@ -102,8 +109,9 @@ body {
 
 .stats-item h4 {
   font-size: 1.5rem;
-  color: #0047ab;
+  color: #184f89;
   font-weight: bold;
+  margin: 0;
 }
 
 .stats-item p {
@@ -124,18 +132,21 @@ body {
 
 /* Form Section */
 .admission-form {
+  margin-left: 10px;
+  margin-right: 10px;
   flex: 1;
   background-color: #fff;
   border: 1px solid #ececec;
   border-radius: 10px;
-  padding: 2rem;
+  padding: 30px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .admission-form h3 {
-  font-size: 1.5rem;
-  color: #0047ab;
+  font-size: 1.8rem;
+  color: #184f89;
   font-weight: bold;
+  margin-bottom: 10px;
 }
 
 .admission-form p {
@@ -147,7 +158,7 @@ body {
 .form-section input,
 .form-section select {
   width: 100%;
-  padding: 12px;
+  padding: 12px 15px;
   margin-bottom: 20px;
   border: 1px solid #ccc;
   border-radius: 5px;
@@ -158,43 +169,59 @@ body {
 .mobile-input {
   display: flex;
   align-items: center;
+  gap: 0;
   margin-bottom: 20px;
 }
 
 .mobile-input span {
   background-color: #e8e8e8;
   border: 1px solid #ccc;
-  padding: 12px;
+  padding: 12px 15px;
   border-radius: 5px 0 0 5px;
   font-size: 1rem;
   color: #333;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  top: -10px;
 }
 
 .mobile-input input {
   flex: 1;
+  border: 1px solid #ccc;
+  border-left: none;
   border-radius: 0 5px 5px 0;
+  padding: 12px 15px;
 }
 
-.checkbox-group {
+.checkboxes {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px;
+  gap: 10px;
   font-size: 0.9rem;
   color: #555;
 }
 
-.checkbox-group label {
+.checkboxes label {
   display: flex;
   align-items: center;
-  margin-bottom: 10px;
+  gap: 10px;
 }
 
-.checkbox-group a {
-  color: #0047ab;
+.checkboxes input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: #184f89;
+}
+
+.checkboxes label a {
+  color: #184f89;
   text-decoration: none;
 }
 
-.checkbox-group a:hover {
+.checkboxes label a:hover {
   text-decoration: underline;
 }
 
@@ -211,53 +238,27 @@ button[type="submit"] {
   transition: background-color 0.3s ease, box-shadow 0.2s ease;
 }
 
+button[type="submit"]:focus,
+input:focus {
+  outline: 2px solid #0047ab;
+  outline-offset: 2px;
+}
+
 button[type="submit"]:hover {
   background-color: #003580;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+@media (max-width: 768px) {
   .admission-content {
-    flex-direction: column;
-    align-items: center;
+    flex-direction: column; /* Stack vertically */
+    align-items: center; /* Center content */
   }
 
-  .admission-info {
-    margin-bottom: 20px;
-  }
-
-  .admission-stats h3 {
-    font-size: 0.9rem;
-  }
-
-  .stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
-  }
-
+  .admission-info,
   .admission-form {
-    padding: 1.5rem;
-  }
-}
-
-@media (max-width: 600px) {
-  .admission-info .three h1 {
-    font-size: 1.5rem;
-  }
-
-  .admission-info .three h2 {
-    font-size: 1.2rem;
-  }
-
-  .admission-stats h3 {
-    font-size: 0.8rem;
-  }
-
-  .stats-grid {
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  }
-
-  button[type="submit"] {
-    font-size: 1rem;
+    width: 100%; /* Full width on smaller screens */
+    margin: 0; /* Remove side margins */
   }
 }
