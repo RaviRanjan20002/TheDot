@@ -1,5 +1,4 @@
 body {
-  
   margin: 0;
   padding: 0;
   background-color: white;
@@ -21,7 +20,13 @@ body {
   padding: 2rem;
   background-color: #c1d8e0;
   gap: 2rem;
+  /* box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); */
+  /* border-radius: 10px; */
   width: 100%;
+  /* max-width: 1200px; */
+  /* margin: 20px auto; */
+  
+  /* padding: 6rem; */
   padding-top: 3rem;
   padding-bottom: 10rem;
 }
@@ -39,6 +44,7 @@ body {
 /* Info Section */
 .admission-info {
   flex: 1;
+  /* margin-right: 20px; */
   padding: 20px;
   background-color: #ffffff;
   border: 1px solid #ececec;
@@ -126,9 +132,7 @@ body {
 
 /* Form Section */
 .admission-form {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
+  
   margin-left: 10px;
   margin-right: 10px;
   flex: 1;
@@ -154,9 +158,6 @@ body {
 
 .form-section input,
 .form-section select {
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  font-style: normal;
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
@@ -164,7 +165,9 @@ body {
   border-radius: 5px;
   font-size: 1rem;
   background-color: #fafafa;
+  box-sizing: border-box; 
 }
+
 
 .mobile-input {
   display: flex;
