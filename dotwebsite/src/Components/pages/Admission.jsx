@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 
-import { useState } from 'react';
-=======
-import React from "react";
->>>>>>> 495acec666cb6e988123afbbaa6b354c90d1bd83
+import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 
@@ -51,8 +47,7 @@ const Admission = () => {
   };
 
   return (
-    <div className="admission-container1">
-    <div className="admission-container2">
+    <div className="admission-container">
       <div className="admission-content">
         {/* Admission Info Section */}
         <div className="admission-info">
@@ -96,78 +91,39 @@ const Admission = () => {
           <h3>Request a Call Back</h3>
           <p>(Session 2025-26)</p>
 
-          <form className="form-section">
-            <input type="text" placeholder="Name" />
-            <input type="email" placeholder="E-mail" />
+          <form className="form-section" onSubmit={handleSubmit}>
+            <input type="text" name="name" placeholder="Name" required onChange={handleChange} />
+            <input type="email" name="email" placeholder="E-mail" required onChange={handleChange} />
             <div className="mobile-input">
               <span>91</span>
-              <input type="tel" placeholder="Mobile No" />
+              <input type="tel" name="mobile" placeholder="Mobile No" required onChange={handleChange} />
             </div>
-            <select>
-              <option>Select Center</option>
+            <select name="class" required onChange={handleChange}>
+              <option value="">Select Class</option>
+              <option value="class10">Class 10</option>
+              <option value="class11">Class 11</option>
+              <option value="class12">Class 12</option>
+              <option value="Dropper">Dropper</option>
             </select>
-            <select>
-              <option>Select Class</option>
+            <select name="choice" required onChange={handleChange}>
+              <option value="">Select Choice</option>
+              <option value="IIT-JEE">IIT-JEE</option>
+              <option value="NEET(UG)">NEET(UG)</option>
             </select>
-            <select>
-              <option>Select Stream</option>
-            </select>
-            <div className="checkbox-group">
+            <div className="checkboxes">
               <label>
-                <input type="checkbox" /> I agree to{" "}
-                <a href="#">Terms & Conditions</a>
+                <input type="checkbox" name="termsAccepted" required onChange={handleChange} /> I agree to Terms & Condition
               </label>
               <label>
-                <input type="checkbox" /> I authorize ALLEN Career Institute Pvt.
-                Ltd. to send me updates.
+                <input type="checkbox" name="updatesAuthorized" onChange={handleChange} /> I authorize The DOT Institute to send me regular updates via Phone Calls, WhatsApp, SMS, or Email.
               </label>
             </div>
             <button type="submit">Submit</button>
           </form>
         </div>
       </div>
-      </div>
-
-<<<<<<< HEAD
-      <div className="admission-form">
-        <h3>Request a Call Back</h3>
-        <p>(Session 2025-26)</p>
-
-        <form className="form-section" onSubmit={handleSubmit}>
-          <input type="text" placeholder="Name" required onChange={handleChange} />
-          <input type="email" placeholder="E-mail"  required onChange={handleChange} />
-          <div className="mobile-input">
-            <span>91</span>
-            <input type="tel" placeholder="Mobile No" required onChange={handleChange} />
-          </div>
-          <select name="class" required onChange={handleChange}>
-            <option value="">Select Class</option>
-            <option value="class10">Class 10</option>
-            <option value="class11">Class 11</option>
-            <option value="class12">Class 12</option>
-            <option value="Dropper">Dropper</option>
-          </select>
-
-          <select name="choice" required onChange={handleChange}>
-            <option value="">Select Choice</option>
-            <option value="IIT-JEE">IIT-JEE</option>
-            <option value="NEET(UG)">NEET(UG)</option>
-          </select>
-          <div className="checkboxes">
-            <label>
-              <input type="checkbox" name="termsAccepted" required onChange={handleChange} /> I agree to Terms & Condition
-            </label>
-            <label>
-              <input type="checkbox" name="updatesAuthorized" onChange={handleChange} /> I authorize The DOT Institute to send me regular updates via Phone Calls, WhatsApp, SMS, or Email.
-            </label>
-          </div>
-          <button type="submit">Submit</button>
-        </form>
-=======
-      {/* Fee Benefits Section */}
-      <div className="fee-benefits-section">
+      <div className="fee-benefits-section"> 
         <FeeBenefits />
->>>>>>> 495acec666cb6e988123afbbaa6b354c90d1bd83
       </div>
     </div>
   );
