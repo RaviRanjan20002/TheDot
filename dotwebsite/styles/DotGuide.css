@@ -1,0 +1,83 @@
+.allen-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    background-color: #f8f9fa;
+  }
+  
+  .allen-content {
+    display: flex;
+    flex-direction: column;
+    margin-right: 2rem;
+  }
+  
+  .allen-images {
+    position: relative;
+  }
+  
+  .image-stack {
+    position: relative;
+  }
+  
+  .image-background {
+    width: 300px;
+    height: auto;
+    border-radius: 8px;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    opacity: 0.9;
+  }
+  
+  .image-foreground {
+    width: 320px;
+    height: auto;
+    border-radius: 8px;
+    position: relative;
+    z-index: 2;
+  }
+  
+  .allen-text-content {
+    max-width: 500px;
+  }
+  
+  .allen-text-content h1 {
+    font-size: 2.5rem;
+    color: #0047ba;
+  }
+  
+  .allen-text-content h1 span {
+    color: #1e73be;
+    font-weight: bold;
+  }
+  
+  .allen-text-content p {
+    font-size: 1rem;
+    color: #444;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+  }
+  
+  .allen-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+  
+  .allen-button {
+    background-color: #ffcc00;
+    color: #000;
+    font-weight: bold;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .allen-button:hover {
+    background-color: #e6b800;
+  }
+  

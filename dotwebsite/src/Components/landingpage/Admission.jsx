@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 import Questions from "./Questions";
+// import DotGuide from "./Dotguidlines";
 
 const Admission = () => {
   const [formData, setFormData] = useState({
@@ -48,6 +49,7 @@ const Admission = () => {
   };
 
   return (
+    <div className="mainBody">
     <div className="admission-container">
       <div className="admission-content">
         {/* Admission Info Section */}
@@ -123,13 +125,16 @@ const Admission = () => {
           </form>
         </div>
       </div>
-      <div className="fee-benefits-section"> 
+      
+    </div>
+    <div className="fee-benefits-section"> 
         <FeeBenefits />
       </div>
       <div> 
       <Questions/>
       </div>
     </div>
+    
   );
 };
 
