@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
+import Questions from "./Questions";
 
 const Admission = () => {
   const [formData, setFormData] = useState({
@@ -124,6 +125,9 @@ const Admission = () => {
       </div>
       <div className="fee-benefits-section"> 
         <FeeBenefits />
+      </div>
+      <div> 
+      <Questions/>
       </div>
     </div>
   );

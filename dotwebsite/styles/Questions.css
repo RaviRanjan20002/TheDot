@@ -1,0 +1,92 @@
+.questions-container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .questions-title {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 1.5rem;
+  }
+  
+  .question-item {
+    background-color: #f9f9f9;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    overflow: hidden;
+    width: 100%; /* Make sure width stays consistent */
+    transition: background-color 0.3s ease, height 0.4s ease;
+    height: 60px; /* Fixed height initially */
+  }
+  
+  .question-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .question-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .question-toggle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #007bff;
+    transition: transform 0.3s ease;
+  }
+  
+  /* The question content hidden initially */
+  .question-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding-top: 0; /* No padding initially */
+  }
+  
+  .question-content p {
+    margin: 0;
+    padding-top: 1rem;
+  }
+  
+  /* When the question is open, adjust the styles */
+  .question-item.open {
+    height: auto; /* Expand the height when open */
+  }
+  
+  .question-item.open .question-content {
+    max-height: 1000px; /* Large enough value to fit the content */
+    padding-top: 1rem; /* Add padding when the content is visible */
+  }
+  
+  /* Rotate the icon on toggle */
+  .question-item.open .question-toggle {
+    transform: rotate(180deg); /* Rotate 180 degrees to show "-" */
+  }
+  
+  @media (max-width: 768px) {
+    .questions-container {
+      padding: 1rem;
+    }
+  
+    .questions-title {
+      font-size: 1.5rem;
+    }
+  
+    .question-header {
+      font-size: 1rem;
+    }
+  
+    .question-toggle {
+      font-size: 1.2rem;
+    }
+  }
+  
