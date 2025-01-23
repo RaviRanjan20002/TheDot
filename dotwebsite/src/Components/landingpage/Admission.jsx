@@ -109,9 +109,7 @@ const Admission = () => {
        <div>
         <DotGuide />
       </div>
-      <div>
-        <DotGuide/>
-      </div>
+      
       <div>
         <StatsSection/>
       </div>

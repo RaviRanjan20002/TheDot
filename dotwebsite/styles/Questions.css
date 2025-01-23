@@ -1,12 +1,14 @@
 .questions-container {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 2rem;
+  max-width: 70%; /* Container width as a percentage of the viewport */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 2rem; /* Padding around all sides */
   text-align: center;
+  box-sizing: border-box; /* Includes padding and border in the element's total width */
 }
 
+
 .questions-title {
-  font-size: 2rem;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
   font-weight: bold;
   margin-bottom: 1.5rem;
 }
@@ -19,25 +21,26 @@
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   cursor: pointer;
   overflow: hidden;
-  width: 100%;
-  transition: background-color 0.3s ease;
+  width: 90%;
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
 
 .question-item:hover {
   background-color: #e9e9e9;
+  transform: scale(1.02);
 }
 
 .question-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 1.1rem;
+  font-size: clamp(1rem, 2vw, 1.2rem);
   font-weight: bold;
   color: #333;
 }
 
 .question-toggle {
-  font-size: 1.5rem;
+  font-size: clamp(1.2rem, 3vw, 1.5rem);
   font-weight: bold;
   color: #184f89;
   transition: transform 0.3s ease-in-out;
@@ -58,19 +61,8 @@
   transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
-/* Keyframe animation for smooth height transition */
-@keyframes expand {
-  from {
-    max-height: 0;
-  }
-  to {
-    max-height: 300px; /* Adjust this based on expected content size */
-  }
-}
-
-/* When the question is open, adjust the styles */
 .question-item.open .question-content {
-  animation: expand 1s ease-in-out forwards;
+  max-height: 300px;
   padding-top: 1rem;
 }
 
@@ -79,9 +71,8 @@
   transform: translateY(0);
 }
 
-/* Rotate the icon on toggle */
 .question-item.open .question-toggle {
-  transform: rotate(180deg); /* Rotate 180 degrees to show "-" */
+  transform: rotate(180deg);
 }
 
 .enrolnowsection {
@@ -93,50 +84,44 @@
 }
 
 .enrolbtn {
-<<<<<<< HEAD
   background-color: #260fc0;
-=======
-  background-color: #184f89;
->>>>>>> 40a04153fa276e2f7129e6e11d2ee2c3d19e91f0
   color: #fff;
-  padding: 0.5rem 1.2rem;
+  padding: 0.7rem 1.4rem;
   border-radius: 10px;
   text-decoration: none;
-  font-size: 1rem;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
   margin-top: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
+
+.enrolbtn:hover {
+  background-color: #1f0999;
+  transform: scale(1.05);
+}
+
 .question-footer {
-  width: 100%;
-  font: 1em sans-serif;
+  width: 100%; 
+  font-size: clamp(0.8rem, 1.5vw, 1rem); 
+  font-family: 'Roboto', sans-serif; 
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 1rem;
-  color: #e9e9e9;
-  padding: 0.5rem;
-  background-color: black;
+  margin-top: 2rem; 
+  color: #a8a8a8; 
+  padding: 1rem 0; 
+  background-color: #1a1a1a; 
+  border-top: 1px solid #333; 
 }
 
-/* Mobile-first responsiveness */
-@media (max-width: 768px) {
+/* Small devices (up to 480px) */
+@media (max-width: 480px) {
   .questions-container {
-    padding: 1rem;
+    padding: 1rem 0.5rem;
   }
 
-  .questions-title {
-    font-size: 1.5rem;
-  }
-
-  .question-header {
-    font-size: 1rem;
-  }
-
-  .question-toggle {
-    font-size: 1.2rem;
-  }
-
-  .enrolnowsection {
-    margin-top: 3rem;
+  .question-item {
+    padding: 0.8rem;
   }
 
   .enrolbtn {
@@ -145,66 +130,34 @@
   }
 }
 
-/* Tablet and larger screens */
-@media (min-width: 769px) and (max-width: 1200px) {
+/* Medium devices (481px to 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
   .questions-container {
-    padding: 1.5rem;
-  }
-
-  .questions-title {
-    font-size: 1.75rem;
+    padding: 1.5rem 1rem;
   }
 
   .question-item {
-    padding: 1.5rem;
-  }
-
-  .question-header {
-    font-size: 1.2rem;
-  }
-
-  .question-toggle {
-    font-size: 1.4rem;
-  }
-
-  .enrolnowsection {
-    margin-top: 4rem;
+    padding: 1rem 1.2rem;
   }
 
   .enrolbtn {
-    padding: 0.7rem 1.4rem;
-    font-size: 1.1rem;
+    padding: 0.6rem 1.2rem;
+    font-size: 1rem;
   }
 }
 
-/* Desktop and larger screens */
-@media (min-width: 1201px) {
+/* Large devices (769px and up) */
+@media (min-width: 769px) {
   .questions-container {
     padding: 2rem;
   }
 
-  .questions-title {
-    font-size: 2rem;
-  }
-
   .question-item {
-    padding: 2rem;
-  }
-
-  .question-header {
-    font-size: 1.3rem;
-  }
-
-  .question-toggle {
-    font-size: 1.6rem;
-  }
-
-  .enrolnowsection {
-    margin-top: 5rem;
+    padding: 1.5rem;
   }
 
   .enrolbtn {
-    padding: 0.8rem 1.6rem;
-    font-size: 1.2rem;
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
   }
 }
