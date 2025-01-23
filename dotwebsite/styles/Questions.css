@@ -1,11 +1,10 @@
 .questions-container {
-  max-width: 70%; /* Container width as a percentage of the viewport */
-  margin: 0 auto; /* Center the container horizontally */
-  padding: 2rem; /* Padding around all sides */
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 2rem;
   text-align: center;
-  box-sizing: border-box; /* Includes padding and border in the element's total width */
+  box-sizing: border-box;
 }
-
 
 .questions-title {
   font-size: clamp(1.5rem, 2.5vw, 2rem);
@@ -50,25 +49,26 @@
   max-height: 0;
   overflow: hidden;
   padding-top: 0;
-  transition: max-height 0.6s ease-in-out, padding 0.6s ease-in-out;
+  opacity: 0;
+  transform: scaleY(0.8);
+  transform-origin: top;
+  transition: 
+    max-height 0.5s ease-in-out, 
+    opacity 0.5s ease-in-out, 
+    transform 0.5s ease-in-out, 
+    padding 0.5s ease-in-out;
 }
 
 .question-content p {
   margin: 0;
   text-align: left;
-  opacity: 0;
-  transform: translateY(-10px);
-  transition: opacity 0.6s ease, transform 0.6s ease;
 }
 
 .question-item.open .question-content {
   max-height: 300px;
   padding-top: 1rem;
-}
-
-.question-item.open .question-content p {
   opacity: 1;
-  transform: translateY(0);
+  transform: scaleY(1);
 }
 
 .question-item.open .question-toggle {
@@ -84,7 +84,7 @@
 }
 
 .enrolbtn {
-  background-color: #260fc0;
+  background-color: #184f89;
   color: #fff;
   padding: 0.7rem 1.4rem;
   border-radius: 10px;
@@ -96,7 +96,7 @@
 }
 
 .enrolbtn:hover {
-  background-color: #1f0999;
+  background-color: #2069b7;
   transform: scale(1.05);
 }
 
@@ -113,6 +113,8 @@
   background-color: #1a1a1a; 
   border-top: 1px solid #333; 
 }
+
+/* Responsive Styling */
 
 /* Small devices (up to 480px) */
 @media (max-width: 480px) {

@@ -6,6 +6,7 @@ import DotGuide from "./Dotguidlines";
 import StatsSection from "./StatsSection";
 import TriumphSection from "./TriumphSection";
 import CoursesSection from "./CoursesSectionL";
+import GreenBoard from "../../assets/greenBoard.jpg";
 // import DotGuide from "./Dotguidlines";
 
 const Admission = () => {
@@ -61,6 +62,7 @@ const Admission = () => {
               <h1>THE DOT</h1>
               <h2>The Clear Leader</h2>
               <p>IIT-JEE, AIIMS, NEET (UG) & Olympiads</p>
+              <img src={GreenBoard} alt="The Green Board" width="500" height="300" />
             </div>
           </div>
           <div className="admission-form">
