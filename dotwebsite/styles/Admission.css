@@ -140,6 +140,7 @@ body {
   border-radius: 10px;
   padding: 30px;
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box; 
 }
 
 .admission-form h3 {

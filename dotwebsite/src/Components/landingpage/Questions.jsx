@@ -36,6 +36,7 @@ const Questions = () => {
   };
 
   return (
+    <>
     <div className="questions-container">
       <h2 className="questions-title">HAVE ANY QUESTIONS?</h2>
       {questions.map((item, index) => (
@@ -60,6 +61,8 @@ const Questions = () => {
         <button className="enrolbtn" onClick={handleEnrolNowClick}>ENROL NOW</button>   
       </div>
     </div>
+    <div className="question-footer">Copyright 2025,The DOT Institute, All right reserved</div>
+    </>
   );
 };
 
