@@ -3,6 +3,9 @@ import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 import Questions from "./Questions";
 import DotGuide from "./Dotguidlines";
+import StatsSection from "./StatsSection";
+import TriumphSection from "./TriumphSection";
+import CoursesSection from "./CoursesSectionL";
 // import DotGuide from "./Dotguidlines";
 
 const Admission = () => {
@@ -132,12 +135,19 @@ const Admission = () => {
       <div>
         <DotGuide/>
       </div>
+      <div>
+        <StatsSection/>
+      </div>
+      <div>
+        <TriumphSection/>
+      </div>
+      <div>
+        <CoursesSection/>
+      </div>
       <div> 
         <Questions />
       </div>
-      {/* <div className="DotGuide-section"> 
-        <DotGuide />
-      </div> */}
+      
     </div>
     
   );

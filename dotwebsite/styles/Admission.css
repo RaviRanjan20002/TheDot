@@ -132,6 +132,7 @@ body {
 
 /* Form Section */
 .admission-form {
+  
   margin-left: 10px;
   margin-right: 10px;
   flex: 1;
@@ -155,8 +156,12 @@ body {
   margin-bottom: 20px;
 }
 
+
 .form-section input,
-.form-section select {
+.form-section select  {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
   width: 100%;
   padding: 12px 15px;
   margin-bottom: 20px;
@@ -176,6 +181,7 @@ body {
 }
 
 .mobile-input span {
+  font-family: "DM Serif Text", serif;
   background-color: #e8e8e8;
   border: 1px solid #ccc;
   padding: 12px 15px;
@@ -230,7 +236,7 @@ body {
 button[type="submit"] {
   width: 100%;
   padding: 12px;
-  background-color: #0047ab;
+  background-color: #184f89;
   color: #fff;
   border: none;
   border-radius: 5px;

@@ -1,0 +1,77 @@
+.courses-sectionL {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  text-align: center;
+  padding: 2rem;
+  margin: 2rem 0rem;
+  background-color: #c1d8e0;
+}
+
+.courses-titleL {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #184f89;
+  margin-bottom: 0.5rem;
+}
+
+.courses-subtitleL {
+  font-size: 1.2rem;
+  color: #000000;
+  margin-bottom: 2rem;
+}
+
+.courses-container {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  padding: 2rem 2rem;
+}
+
+.course-card {
+  background-color: #ffd700;
+  color: #000;
+  border-radius: 15px;
+  text-align: center;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  width: 100%;
+}
+
+.course-icon {
+  font-size: 2.5rem;
+  color: #184f89;
+  margin-bottom: 1rem;
+}
+
+.course-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.course-description {
+  font-size: 1rem;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.course-button {
+  font-family: "DM Serif Text", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  background-color: #184f89;
+  color: #fff;
+  border: none;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.course-button:hover {
+  background-color: #002d66;
+}
