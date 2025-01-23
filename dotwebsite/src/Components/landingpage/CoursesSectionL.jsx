@@ -2,6 +2,9 @@ import React from "react";
 import "../../../styles/CoursesSectionL.css";
 
 const CoursesSection = () => {
+  const handleEnrolNowClick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
   const courses = [
     {
       icon: "📘", // Replace with actual icons or images if needed
@@ -36,7 +39,7 @@ const CoursesSection = () => {
             <div className="course-icon">{course.icon}</div>
             <h3 className="course-title">{course.title}</h3>
             <p className="course-description">{course.description}</p>
-            <button className="course-button">{course.button}</button>
+            <button className="course-button" onClick={handleEnrolNowClick} >{course.button}</button>
           </div>
         ))}
       </div>
