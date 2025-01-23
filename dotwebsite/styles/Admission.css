@@ -143,6 +143,10 @@ body {
 
 /* Form Section */
 .admission-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   margin-left: 10px;
   margin-right: 10px;
   flex: 0.7; /* Reduces the space it takes up compared to other elements */
