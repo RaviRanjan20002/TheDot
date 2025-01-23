@@ -30,6 +30,17 @@ body {
   padding-top: 3rem;
   padding-bottom: 10rem;
 }
+/* Style for the Image */
+.admission-container img {
+  width: 100%; /* Make the image responsive */
+  max-width: 500px; /* Set the maximum width */
+  height: auto; /* Keep the aspect ratio intact */
+  margin: auto; /* Add some margin around the image */
+  border-radius: 10px; /* Optional: add rounded corners */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Optional: add shadow for better aesthetics */
+  object-fit: cover; /* Ensures the image fills the container properly */
+}
+
 
 /* Admission Content Wrapper */
 .admission-content {
@@ -43,14 +54,14 @@ body {
 
 /* Info Section */
 .admission-info {
+  margin-top: 6rem;
   flex: 1;
-  /* margin-right: 20px; */
-  padding: 20px;
-  background-color: #ffffff;
-  border: 1px solid #ececec;
-  border-radius: 10px;
-  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.08);
+  max-width: 500px; 
+  max-height: 400px;
+  padding: 15px;
+  
 }
+
 
 .admission-info .three h1 {
   font-size: 2rem;
@@ -132,19 +143,21 @@ body {
 
 /* Form Section */
 .admission-form {
-  
   margin-left: 10px;
   margin-right: 10px;
-  flex: 1;
+  flex: 0.7; /* Reduces the space it takes up compared to other elements */
+  max-height: 600px;
+  max-width: 500px;
   background-color: #fff;
   border: 1px solid #ececec;
   border-radius: 10px;
-  padding: 30px;
+  padding: 15px; /* Reduced padding */
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
 }
 
+
 .admission-form h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   color: #184f89;
   font-weight: bold;
   margin-bottom: 10px;

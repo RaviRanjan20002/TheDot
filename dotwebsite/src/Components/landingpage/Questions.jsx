@@ -37,37 +37,33 @@ const Questions = () => {
 
   return (
     <>
-    <div className="questions-container">
-      <h2 className="questions-title">HAVE ANY QUESTIONS?</h2>
-      {questions.map((item, index) => (
-        <div 
-          key={index} 
-          className={`question-item ${openQuestion === index ? 'open' : ''}`} 
-          onClick={() => toggleQuestion(index)}
-        >
-          <div className="question-header">
-            {item.question}
-            <span className="question-toggle">{openQuestion === index ? '-' : '+'}</span>
-          </div>
-          {openQuestion === index && (
-            <div className="question-content">
-              <p>{item.answer}</p>
+      <div className="questions-container">
+        <h2 className="questions-title">HAVE ANY QUESTIONS?</h2>
+        {questions.map((item, index) => (
+          <div 
+            key={index} 
+            className={`question-item ${openQuestion === index ? 'open' : ''}`} 
+            onClick={() => toggleQuestion(index)}
+          >
+            <div className="question-header">
+              {item.question}
+              <span className="question-toggle">{openQuestion === index ? '-' : '+'}</span>
             </div>
-          )}
+            {openQuestion === index && (
+              <div className="question-content">
+                <p>{item.answer}</p>
+              </div>
+            )}
+          </div>
+        ))}
+        <div className="enrolnowsection">
+          <h2>Kickstart Your Success Journey Today!</h2>
+          <button className="enrolbtn" onClick={handleEnrolNowClick}>ENROL NOW</button>   
         </div>
-      ))}
-      <div className="enrolnowsection">
-        <h2>Kickstart Your Success Journey Today!</h2>
-        <button className="enrolbtn" onClick={handleEnrolNowClick}>ENROL NOW</button>   
       </div>
-    </div>
-    <div className="question-footer">Copyright 2025,The DOT Institute, All right reserved</div>
+      <div className="question-footer">Copyright 2025, The DOT Institute, All rights reserved</div>
     </>
   );
 };
 
 export default Questions;
-
-
-
-
