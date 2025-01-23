@@ -39,7 +39,7 @@
 .question-toggle {
   font-size: 1.5rem;
   font-weight: bold;
-  color: #007bff;
+  color: #184f89;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -61,10 +61,10 @@
 /* Keyframe animation for smooth height transition */
 @keyframes expand {
   from {
-      max-height: 0;
+    max-height: 0;
   }
   to {
-      max-height: 300px; /* Adjust this based on expected content size */
+    max-height: 300px; /* Adjust this based on expected content size */
   }
 }
 
@@ -93,7 +93,11 @@
 }
 
 .enrolbtn {
+<<<<<<< HEAD
   background-color: #260fc0;
+=======
+  background-color: #184f89;
+>>>>>>> 40a04153fa276e2f7129e6e11d2ee2c3d19e91f0
   color: #fff;
   padding: 0.5rem 1.2rem;
   border-radius: 10px;
@@ -113,23 +117,94 @@
   background-color: black;
 }
 
+/* Mobile-first responsiveness */
 @media (max-width: 768px) {
   .questions-container {
-      padding: 1rem;
+    padding: 1rem;
   }
 
   .questions-title {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .question-header {
-      font-size: 1rem;
+    font-size: 1rem;
   }
 
   .question-toggle {
-      font-size: 1.2rem;
+    font-size: 1.2rem;
+  }
+
+  .enrolnowsection {
+    margin-top: 3rem;
+  }
+
+  .enrolbtn {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
   }
 }
 
+/* Tablet and larger screens */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .questions-container {
+    padding: 1.5rem;
+  }
 
-  
+  .questions-title {
+    font-size: 1.75rem;
+  }
+
+  .question-item {
+    padding: 1.5rem;
+  }
+
+  .question-header {
+    font-size: 1.2rem;
+  }
+
+  .question-toggle {
+    font-size: 1.4rem;
+  }
+
+  .enrolnowsection {
+    margin-top: 4rem;
+  }
+
+  .enrolbtn {
+    padding: 0.7rem 1.4rem;
+    font-size: 1.1rem;
+  }
+}
+
+/* Desktop and larger screens */
+@media (min-width: 1201px) {
+  .questions-container {
+    padding: 2rem;
+  }
+
+  .questions-title {
+    font-size: 2rem;
+  }
+
+  .question-item {
+    padding: 2rem;
+  }
+
+  .question-header {
+    font-size: 1.3rem;
+  }
+
+  .question-toggle {
+    font-size: 1.6rem;
+  }
+
+  .enrolnowsection {
+    margin-top: 5rem;
+  }
+
+  .enrolbtn {
+    padding: 0.8rem 1.6rem;
+    font-size: 1.2rem;
+  }
+}

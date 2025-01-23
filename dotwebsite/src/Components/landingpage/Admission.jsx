@@ -3,6 +3,11 @@ import "../../../styles/Admission.css";
 import FeeBenefits from "./FeeBenefits";
 import Questions from "./Questions";
 import DotGuide from "./Dotguidlines";
+import StatsSection from "./StatsSection";
+import TriumphSection from "./TriumphSection";
+import CoursesSection from "./CoursesSectionL";
+// import DotGuide from "./Dotguidlines";
+
 const Admission = () => {
   const [isSubmitting, setIsSubmitting] = useState(false); // State for submission status
 
@@ -58,7 +63,6 @@ const Admission = () => {
               <p>IIT-JEE, AIIMS, NEET (UG) & Olympiads</p>
             </div>
           </div>
-
           <div className="admission-form">
             <h3>Request a Call Back</h3>
             <p>(Session 2025-26)</p>
@@ -105,9 +109,22 @@ const Admission = () => {
        <div>
         <DotGuide />
       </div>
-       <div>
+      <div>
+        <DotGuide/>
+      </div>
+      <div>
+        <StatsSection/>
+      </div>
+      <div>
+        <TriumphSection/>
+      </div>
+      <div>
+        <CoursesSection/>
+      </div>
+      <div> 
         <Questions />
       </div>
+      
     </div>
   );
 };
