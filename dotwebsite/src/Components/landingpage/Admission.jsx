@@ -106,9 +106,10 @@ const Admission = () => {
       <div className="fee-benefits-section">
          <FeeBenefits />
        </div>
-      <div>
-        <DotGuide/>
+       <div>
+        <DotGuide />
       </div>
+      
       <div>
         <StatsSection/>
       </div>
