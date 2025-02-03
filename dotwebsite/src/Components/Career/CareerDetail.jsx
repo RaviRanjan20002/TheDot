@@ -29,7 +29,6 @@ const CareerDetail = () => {
       <img src={career.image} alt={career.title} className="career-detail-image" />
       <p>Number of career options: {career.options}</p>
       <p>More details about {career.title} will go here...</p> */}
-      <AdministrationManagement/>
     </div>
   );
 };
