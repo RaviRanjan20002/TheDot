@@ -1,4 +1,3 @@
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import Layout from "./Components/pages/Layout";
@@ -9,25 +8,25 @@ import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
 import CareerLibrary from "./Components/Career/CareerLibrary";
+import CareerDetail from "./Components/Career/CareerDetail"; // Import new component
+
 function App() {
-  return(
-     <BrowserRouter>
+  return (
+    <BrowserRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
-          <Route path="gallery" element={<Gallery/>} />
+          <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="/CrashCourse" element={<CrashCourse/>} /> {/* Add this route */}
-          <Route path="CareerLibrary" element={<CareerLibrary/>} />
+          <Route path="CrashCourse" element={<CrashCourse />} />
+          <Route path="CareerLibrary" element={<CareerLibrary />} />
+          <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
     </BrowserRouter>
   );
-  
 }
 
 export default App;
-
-
