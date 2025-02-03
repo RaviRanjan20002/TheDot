@@ -7,6 +7,9 @@ import Contact from "./Components/pages/Contact";
 import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
+import CareerLibrary from "./Components/Career/CareerLibrary";
+import CareerDetail from "./Components/Career/CareerDetail"; // Import new component
+
 function App() {
   return (
     <BrowserRouter>
@@ -16,7 +19,9 @@ function App() {
           <Route path="blogs" element={<Blogs />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
-          <Route path="/CrashCourse" element={<CrashCourse />} />{" "}
+          <Route path="CrashCourse" element={<CrashCourse />} />
+          <Route path="CareerLibrary" element={<CareerLibrary />} />
+          <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
