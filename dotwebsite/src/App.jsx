@@ -8,7 +8,7 @@ import Contact from "./Components/pages/Contact";
 import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
-import Admission from "./Components/landingpage/Admission";
+import CareerLibrary from "./Components/Career/CareerLibrary";
 function App() {
   return(
      <BrowserRouter>
@@ -19,7 +19,7 @@ function App() {
           <Route path="gallery" element={<Gallery/>} />
           <Route path="contact" element={<Contact />} />
           <Route path="/CrashCourse" element={<CrashCourse/>} /> {/* Add this route */}
-          <Route path="admission" element={<Admission/>} />
+          <Route path="CareerLibrary" element={<CareerLibrary/>} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

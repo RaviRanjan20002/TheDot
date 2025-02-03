@@ -64,7 +64,7 @@ const Navbar = () => {
           <Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link>
         </li>
         <li>
-          <Link to="/admission" onClick={closeMobileMenu}>Admission</Link>
+          <Link to="/CareerLibrary" onClick={closeMobileMenu}>CareerLibrary</Link>
         </li>
         <li className="dropdown">
           <span className="dropdown-toggle" onClick={toggleDropdown}>

@@ -33,6 +33,10 @@
 }
 
 .benefit-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #ffe066;
     padding: 1rem;
     border-radius: 15px;

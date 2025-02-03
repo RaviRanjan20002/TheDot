@@ -93,7 +93,7 @@ const Admission = () => {
                   to Terms & Condition
                 </label>
                 <label>
-                  <input type="checkbox" name="updatesAuthorized" /> I authorize
+                  <input type="checkbox" name="updatesAuthorized" required /> I authorize
                   The DOT Institute to send me regular updates via Phone Calls,
                   WhatsApp, SMS, or Email.
                 </label>

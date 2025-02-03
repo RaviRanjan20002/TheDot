@@ -1,4 +1,4 @@
-import React from "react";
+
 import "../../../styles/Blog.css";
 
 import blog2 from "../../assets/blog2.png";
