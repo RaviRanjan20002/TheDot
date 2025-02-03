@@ -1,5 +1,5 @@
 
-import "../../../../styles/AgricultureMgm.css";
+import "./AgricultureMgm.css";
 import ab from "../../../assets/ab.png";
 import ag from "../../../assets/ag.png";
 import Diary from "../../../assets/diary.png";

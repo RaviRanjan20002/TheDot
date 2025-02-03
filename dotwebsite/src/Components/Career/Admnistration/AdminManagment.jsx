@@ -1,6 +1,5 @@
-import React from 'react';
-import "./AdministrationManagement.css";
 
+import "./AdministrationManagement.css";
 // Import images
 import Administration from "../../../assets/admnistrationinside.jpg";
 import Business from "../../../assets/businessinside.jpg";
