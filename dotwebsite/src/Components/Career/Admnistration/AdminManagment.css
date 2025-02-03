@@ -7,12 +7,22 @@
 
 /* Heading */
 h1 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 16px;
   text-align: center;
   color: #333;
 }
+
+.admindescription {
+  justify-content: center;
+  font-size: 16px;
+  margin: 0 auto 1rem auto; /* Centers the element horizontally */
+  text-align: center;
+  color: #333;
+  max-width: 80%; /* Adjust as needed */
+}
+
 
 /* Flexbox Layout for Cards */
 .grid {
@@ -27,7 +37,7 @@ h1 {
 .card {
   background-color: white;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
+  border-radius: 4px;
   padding: 16px;
   display: flex;
   flex-direction: column;
@@ -46,9 +56,9 @@ h1 {
 /* Card Image */
 .card img {
   width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 0px;
 }
 
 /* Title */
@@ -112,3 +122,4 @@ h1 {
     width: 100%; /* Full width on smaller screens */
   }
 }
+
