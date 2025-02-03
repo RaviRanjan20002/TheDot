@@ -43,6 +43,7 @@ import Transport from "../../assets/transport.jpg";
 import Travel from "../../assets/travel.jpg";
 import "../../../styles/CareerLibrary.css";
 
+
 const careersData = [
   { title: "Administration and Management", options: 34, image: Administration },
   { title: "Agriculture and Natural Resources", options: 25, image: Agriculture },

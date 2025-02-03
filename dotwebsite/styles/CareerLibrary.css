@@ -89,6 +89,7 @@ h1 {
   color: gray;
   font-size: 14px;
 }
+<<<<<<< HEAD
 
 /* Career Detail Page */
 .career-detail {
@@ -102,3 +103,9 @@ h1 {
   border-radius: 10px;
   margin-top: 10px;
 }
+=======
+.career-detail-image{
+   height: 200px;
+   width: 200px;
+}
+>>>>>>> 1ff9d864f4d18147d2ca31f0d75189e49df78073
