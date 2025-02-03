@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
 import "../../../styles/CareerLibrary.css";
+import  { useState } from "react";
 import careersData from "./careersData"; // Import career data
 
 const CareerLibrary = () => {
+
+  const [query, setQuery] = useState('');
   return (
     <div className="career-library">
       <h1>Career Library</h1>
@@ -16,10 +19,16 @@ const CareerLibrary = () => {
         <p>Kickstart your career journey with the best Career guidance.</p>
       </div>
       {/* Search Bar */}
-      <input type="text" placeholder="Search by name or career..." className="search-bar" />
+      <input
+        type="text"
+        placeholder="Search by name or career..."
+        onChange={(e) => setQuery(e.target.value.toLowerCase())}
+        className="search-bar"
+      />
       {/* Career Cards */}
       <div className="career-grid">
-        {careersData.map((career, index) => (
+        {careersData.filter((career) => career.title.toLowerCase().includes(query)
+        ).map((career, index) => (
           <Link
             key={index}
             to={`/career/${career.title.replace(/\s+/g, "-").toLowerCase()}`} // Dynamic URL
