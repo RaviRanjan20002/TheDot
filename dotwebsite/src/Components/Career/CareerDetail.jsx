@@ -2,11 +2,14 @@ import { useParams } from "react-router-dom";
 import careersData from "./careersData";
 import AdminManagment from "./Admnistration/AdminManagment";
 import AgricultureMgm from "./Agriculture/AgricultureMgm";
+import ArchitectureMgm from "./Architecture/ArchitectureMgm";
+
 // Import other components for different careers
 
 const careerComponents = {
   "Administration and Management":AdminManagment,
   "Agriculture and Natural Resources": AgricultureMgm,
+  "Architecture": ArchitectureMgm,
   // Add other career-title-to-component mappings here
 };
 
@@ -29,7 +32,6 @@ const CareerDetail = () => {
       <img src={career.image} alt={career.title} className="career-detail-image" />
       <p>Number of career options: {career.options}</p>
       <p>More details about {career.title} will go here...</p> */}
-      <AdministrationManagement/>
     </div>
   );
 };

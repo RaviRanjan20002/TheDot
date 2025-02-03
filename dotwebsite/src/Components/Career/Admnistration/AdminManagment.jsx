@@ -1,6 +1,7 @@
 import React from 'react';
 import "./AdminManagment.css";
 
+
 // Import images
 import Administration from "../../../assets/AdministrativeAssistant.jpg";
 import AdministrativeManager from "../../../assets/AdministrativeManager.jpg";
