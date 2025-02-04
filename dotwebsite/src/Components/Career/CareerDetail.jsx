@@ -3,6 +3,18 @@ import careersData from "./careersData";
 import AdminManagment from "./Admnistration/AdminManagment";
 import AgricultureMgm from "./Agriculture/AgricultureMgm";
 import ArchitectureMgm from "./Architecture/ArchitectureMgm";
+import BusinessMgm from "./BuisnessNfinance/BuisnessMgm";
+import ConstructionMgm from "./ConstructionNskilledTrades/ConstructionMgm";
+import EducationMgm  from "./Education/EducationMgm";
+import EventManagementMgm from "./EventManagement/EventManagementMgm";
+import FoodCulinaryArtMgm from "./FoodCulinaryArt/FoodCulinaryArtMgm";
+import HospitalityTourismMgm from "./HospitalityTourism/HospitalityTourismMgm";
+import MarketingAdvertisingMgm from "./MarketingAdvertising/MarketingAdvertisingMgm";
+import MusicAndEntertainmentMgm from "./MusicAndEntertainment/MusicAndEntertainmentMgm";
+import RoboticsAutomationMgm from "./RoboticsAutomation/RoboticsAutomationMgm";
+import SalesMarketingMgm from "./SalesMarketing/SalesMarketingMgm";
+import SportsCreationMgm from "./SportsCreation/SportsCreationMgm";
+import TravelTourismMgm from "./TravelTourism/TravelTourismMgm";
 
 // Import other components for different careers
 
@@ -10,6 +22,18 @@ const careerComponents = {
   "Administration and Management":AdminManagment,
   "Agriculture and Natural Resources": AgricultureMgm,
   "Architecture": ArchitectureMgm,
+  "Business and Finance": BusinessMgm,
+  "Construction and Skilled Trades": ConstructionMgm, 
+  "Education":EducationMgm,
+  "Event Management": EventManagementMgm,
+  "Food and Culinary Art": FoodCulinaryArtMgm,
+  "Hospitality and Tourism": HospitalityTourismMgm,
+  "Marketing and Advertising": MarketingAdvertisingMgm,
+  "Music and Entertainment": MusicAndEntertainmentMgm ,
+  "Robotics and Automation": RoboticsAutomationMgm,
+  "Sales and Marketing": SalesMarketingMgm,
+  "Sports and Recreation":SportsCreationMgm,
+  "Travel and Tourism": TravelTourismMgm,
   // Add other career-title-to-component mappings here
 };
 
