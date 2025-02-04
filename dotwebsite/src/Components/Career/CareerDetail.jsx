@@ -3,6 +3,11 @@ import careersData from "./careersData";
 import AdminManagment from "./Admnistration/AdminManagment";
 import AgricultureMgm from "./Agriculture/AgricultureMgm";
 import ArchitectureMgm from "./Architecture/ArchitectureMgm";
+import Engineering from "./Engineering/Engineering";
+import Medical from "./Medical/Medical";
+import Civil from "./CivilServices/Civil";
+import Law from "./Law/Law";
+import Arts from "./Arts/Arts";
 
 // Import other components for different careers
 
@@ -10,7 +15,11 @@ const careerComponents = {
   "Administration and Management":AdminManagment,
   "Agriculture and Natural Resources": AgricultureMgm,
   "Architecture": ArchitectureMgm,
-  // Add other career-title-to-component mappings here
+  "Engineering": Engineering,
+  "Medical": Medical,
+  "Civil Services": Civil,
+  "Law and Public Policy":Law,
+  "Arts and Design":Arts
 };
 
 const CareerDetail = () => {

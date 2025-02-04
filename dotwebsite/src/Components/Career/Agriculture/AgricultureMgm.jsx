@@ -67,6 +67,9 @@ const AgricultureMgm = () => {
               />
               <p className="agricareer-title">{career.title}</p>
             </a>
+            <a href={career.path} target="_blank" rel="noopener noreferrer" className="button">
+               See Details
+             </a>
           </div>
         ))}
       </div>
