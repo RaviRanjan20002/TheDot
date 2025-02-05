@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./EducationMgm.css";
 
 // Import images

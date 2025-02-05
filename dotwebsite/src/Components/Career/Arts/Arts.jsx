@@ -9,27 +9,27 @@ const careers = [
   {
     title: "Music",
     image: Music,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://domsindia.com/the-7-principles-of-art-and-design/",
   },
   {
     title: "Choreographer",
     image: Choreographer,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    path: "https://domsindia.com/the-7-principles-of-art-and-design/",
   },
   {
     title: "Acting/Dramatics",
     image: ActingDramatics,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://domsindia.com/the-7-principles-of-art-and-design/",
   },
   {
     title: "Modelling",
     image: Modelling ,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    path: "https://domsindia.com/the-7-principles-of-art-and-design/",
   },
   {
     title: "Stage lighting",
     image: stage,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://domsindia.com/the-7-principles-of-art-and-design/",
   },
 ];
 

@@ -5,12 +5,12 @@ const careers = [
   {
     title: "Law",
     image: Laww,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://en.wikipedia.org/wiki/Law",
   },
   {
     title: "Public Prosecution",
     image: Public,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    path: "https://en.wikipedia.org/wiki/Public_prosecutor",
   },
 ];
 
@@ -20,33 +20,32 @@ const Law = () => {
       <h2 className="lawtitle">Law and Public Policy</h2>
       <p className="lawdescription">
         A law degree arms one with serious advocacy skills, enabling one to
-        argue in favor of any cause. Lawyers advice clients and provide
-        solutions to legal issues at both private and public level. They
-        interpret laws, rules and regulations and prepare legal documents. They
+        argue in favor of any cause. Lawyers advise clients and provide
+        solutions to legal issues at both private and public levels. They
+        interpret laws, rules, and regulations and prepare legal documents. They
         argue and debate at the courts and take decisions on legal matters. As a
-        lawyer one is expected to apply abstract law theories to solve problems
-        of clients in diverse set of situations. India has over twelve lakh
-        lawyers but according to reports only one fifth of them are capable to
-        practice law in the courts. Thus there is a huge demand of well-trained
+        lawyer, one is expected to apply abstract law theories to solve problems
+        of clients in a diverse set of situations. India has over twelve lakh
+        lawyers, but according to reports, only one-fifth of them are capable of
+        practicing law in the courts. Thus, there is a huge demand for well-trained
         & skilled lawyers. With the increase in the number of premier law
-        colleges in the country and the increasing demand from the industry; a
-        career in law is an extremely lucrative option for the youth. Today ,a
+        colleges in the country and the increasing demand from the industry, a
+        career in law is an extremely lucrative option for the youth. Today, a
         huge range of specialization options has also emerged for lawyers such
-        as International Taxation Law, Cyber Law, Environment Law, Sports
-        Management Law, IPR, Aviation Law and Mergers & Acquisitions Law etc.
-        Students interested in making a career in law can either do a 5 years
-        course straight after 12th class or a three-year law course after
-        graduation in any discipline. After graduation one can further
+        as International Taxation Law, Cyber Law, Environmental Law, Sports
+        Management Law, IPR, Aviation Law, and Mergers & Acquisitions Law, etc.
+        Students interested in making a career in law can either do a 5-year
+        course straight after the 12th class or a three-year law course after
+        graduation in any discipline. After graduation, one can further
         specialize by pursuing an LLM from an Indian or global
-        university/college. People in the field of law, work at various
+        university/college. People in the field of law work at various
         corporate houses, law agencies, law firms, litigation, and
-        administrative services amongst others. Today leading law firms are the
-        most sought after destination for Law Graduates. Some of the top law
-        firms in the country are: Amarchand Mangaldas, AZB & Partners, J Sagar
+        administrative services, amongst others. Today, leading law firms are the
+        most sought-after destinations for Law Graduates. Some of the top law
+        firms in the country are Amarchand Mangaldas, AZB & Partners, J Sagar
         Associates, Khaitan & Co, Luthra & Luthra. Trending Fields: Corporate
-        Law, International Taxation, Cyber Law
+        Law, International Taxation, Cyber Law.
       </p>
-      {/* <p className="agriread-more">Read more</p> */}
 
       <h3 className="lawsubtitle">
         Click below to explore any of the following career(s)

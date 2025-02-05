@@ -6,53 +6,54 @@ import Ayurveda from "../../../assets/Ayurveda.avif";
 import Dentist from "../../../assets/Dentist.avif";
 import Pathologist from "../../../assets/Pathologist.avif";
 import Anesthesiologist from "../../../assets/Anesthesiologist.avif";
-import  SportsMedicine from "../../../assets/SportsMedicine.avif";
-import Psychiatry from "../../../assets/Psychiatry.avif"
+import SportsMedicine from "../../../assets/SportsMedicine.avif";
+import Psychiatry from "../../../assets/Psychiatry.avif";
+
 const careers = [
   {
     title: "Doctor",
     image: doctor,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://en.wikipedia.org/wiki/Physician",
   },
   {
     title: "Veterinarian",
     image: Veterinarian,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    path: "https://en.wikipedia.org/wiki/Veterinarian",
   },
   {
     title: "Homeopathy",
     image: Homeopathy,
-    path: "https://www.britannica.com/science/agronomy",
+    path: "https://en.wikipedia.org/wiki/Homeopathy",
   },
   {
     title: "Ayurveda",
     image: Ayurveda,
-    path: "https://www.britannica.com/science/plant-breeding",
+    path: "https://en.wikipedia.org/wiki/Ayurveda",
   },
   {
     title: "Dentist",
     image: Dentist,
-    path: "https://en.wikipedia.org/wiki/Soil_science#:~:text=Soil%20science%20is%20the%20study,use%20and%20management%20of%20soils.",
+    path: "https://en.wikipedia.org/wiki/Dentist",
   },
   {
     title: "Pathologist",
     image: Pathologist,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Pathology",
   },
   {
     title: "Anesthesiologist",
     image: Anesthesiologist,
-    path: "https://en.wikipedia.org/wiki/Soil_science#:~:text=Soil%20science%20is%20the%20study,use%20and%20management%20of%20soils.",
+    path: "https://en.wikipedia.org/wiki/Anesthesiology",
   },
   {
     title: "Sports Medicine",
     image: SportsMedicine,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Sports_medicine",
   },
   {
     title: "Psychiatry",
     image: Psychiatry,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Psychiatry",
   },
 ];
 
@@ -93,7 +94,6 @@ const Medical = () => {
         Trending fields include- Cardiologist, Surgeon, Psychiatrist,
         Neurologist
       </p>
-      {/* <p className="agriread-more">Read more</p> */}
 
       <h3 className="docsubtitle">
         Click below to explore any of the following career(s)

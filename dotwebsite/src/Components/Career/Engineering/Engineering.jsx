@@ -12,47 +12,47 @@ const careers = [
   {
     title: "Computer Science and Engineering",
     image: Computer,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    path: "https://en.wikipedia.org/wiki/Computer_science_and_engineering",
   },
   {
     title: "Information and Technology",
     image: Iteng,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    path: "https://en.wikipedia.org/wiki/Information_technology",
   },
   {
     title: "Electric Engineering",
     image: electrical,
-    path: "https://www.britannica.com/science/agronomy",
+    path: "https://en.wikipedia.org/wiki/Electrical_engineering",
   },
   {
     title: "Mechanical Engineering",
     image: Mechanical,
-    path: "https://www.britannica.com/science/plant-breeding",
+    path: "https://en.wikipedia.org/wiki/Mechanical_engineering",
   },
   {
     title: "Production and Industrial Engineering",
     image: production,
-    path: "https://en.wikipedia.org/wiki/Soil_science#:~:text=Soil%20science%20is%20the%20study,use%20and%20management%20of%20soils.",
+    path: "https://en.wikipedia.org/wiki/Industrial_engineering",
   },
   {
     title: "Aerospace Engineering",
     image: aerospace,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Aerospace_engineering",
   },
   {
     title: "Electronics and Communication Engineering",
     image: ece,
-    path: "https://en.wikipedia.org/wiki/Soil_science#:~:text=Soil%20science%20is%20the%20study,use%20and%20management%20of%20soils.",
+    path: "https://en.wikipedia.org/wiki/Electronics_and_communications_engineering",
   },
   {
     title: "Civil Engineering",
     image: civil,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Civil_engineering",
   },
   {
     title: "Chemical and Petroleum Engineering",
     image: cpl,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    path: "https://en.wikipedia.org/wiki/Petroleum_engineering",
   },
 ];
 
@@ -80,8 +80,7 @@ const Engineering = () => {
         colleges opens doors for some of the top companies in the world like
         Google, Facebook, Amazon, Microsoft amongst others recruiters
       </p>
-      {/* <p className="agriread-more">Read more</p> */}
-
+      
       <h3 className="engsubtitle">
         Click below to explore any of the following career(s)
       </h3>
