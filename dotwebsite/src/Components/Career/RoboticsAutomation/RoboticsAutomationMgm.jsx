@@ -6,10 +6,12 @@ import AutomatedProductDesignEngineer from "../../../assets/AutomatedProductDesi
 import CyborgDesigner from "../../../assets/CyborgDesigner.jpg";
 import FlexibleManufacturingEngineer from "../../../assets/FlexibleManufacturingEngineer.jpg";
 import MechatronicsEngineer from "../../../assets/MechatronicsEngineer.jpg";
-// import RobotDesignEngineer from "../../../assets/RobotDesignEngineer.jpg";
-// import RoboticsAvatarDesigner from "../../../assets/RoboticorHolographicAvatarDesigner.jpg";
-// import RoboticsAccountManager from "../../../assets/RoboticsAccountManager.jpg";
-// import RoboticsEngineer from "../../../assets/RoboticsEngineer.jpg";
+import RobotDesignEngineer from "../../../assets/RobotDesignEngineer.jpg";
+import RoboticsAvatarDesigner from "../../../assets/RoboticorHolographicAvatarDesigner.jpg";
+import RoboticsAccountManager from "../../../assets/RoboticsAccountManager.jpg";
+import RoboticsEngineer from "../../../assets/RoboticsEngineer.jpg";
+import manymore from "../../../assets/manymore.jpg";
+
 // import RoboticsServiceTechnician from "../../../assets/RoboticsServiceTechnician.jpg";
 // import RoboticsSystemEngineer from "../../../assets/RoboticsSystemEngineer.jpg";
 // import RoboticsTechnician from "../../../assets/RoboticsTechnician.jpg";
@@ -23,17 +25,11 @@ const roles = [
   { title: "Cyborg Designer", image: CyborgDesigner },
   { title: "Flexible Manufacturing Engineer", image: FlexibleManufacturingEngineer },
   { title: "Mechatronics Engineer", image: MechatronicsEngineer },
-//   { title: "Robot Design Engineer", image: RobotDesignEngineer },
-//   { title: "Robotic or Holographic Avatar Designer", image: RoboticsAvatarDesigner },
-//   { title: "Robotics Account Manager", image: RoboticsAccountManager },
-//   { title: "Robotics Engineer", image: RoboticsEngineer },
-//   { title: "Robotics Service Technician", image: RoboticsServiceTechnician },
-//   { title: "Robotics System Engineer", image: RoboticsSystemEngineer },
-//   { title: "Robotics Technician", image: RoboticsTechnician },
-//   { title: "Sales Engineer", image: SalesEngineer },
-//   { title: "Senior Robotics Specialist", image: SeniorRoboticsSpecialist },
-//   { title: "Software Developer", image: SoftwareDeveloper },
-//   { title: "VLSI Engineer", image: VLSIEngineer }
+  { title: "Robot Design Engineer", image: RobotDesignEngineer },
+  { title: "Robotic or Holographic Avatar Designer", image: RoboticsAvatarDesigner },
+  { title: "Robotics Account Manager", image: RoboticsAccountManager },
+  { title: "Robotics Engineer", image: RoboticsEngineer },
+  { title: "& many more", image: manymore, link: "https://www.google.com/search?q=Robotics+and+Automation+Careers" }
 ];
 
 const RoboticsAutomationMgm = () => {
@@ -51,7 +47,12 @@ const RoboticsAutomationMgm = () => {
           <div key={index} className="card">
             <img src={role.image} alt={role.title} />
             <h2>{role.title}</h2>
-            <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+            <a
+              href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+            >
               See Details
             </a>
           </div>

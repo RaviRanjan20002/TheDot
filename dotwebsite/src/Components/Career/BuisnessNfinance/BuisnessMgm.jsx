@@ -9,24 +9,25 @@ import BusinessAnalystImage from "../../../assets/BusinessAnalyst.jpg";
 // import CorporateStrategyManagerImage from "../../../assets/CorporateStrategyManager.jpg";
 // import CorporateWellnessConsultantImage from "../../../assets/CorporateWellnessConsultant.jpg";
 // import ECommerceSpecialistImage from "../../../assets/ECommerceSpecialist.jpg";
-// import EntrepreneurImage from "../../../assets/Entrepreneur.jpg";
+import EntrepreneurImage from "../../../assets/Entrepreneur.jpg";
 // import FinancialAnalystImage from "../../../assets/FinancialAnalyst.jpg";
 // import FinancialPlannerImage from "../../../assets/FinancialPlanner.jpg";
 // import FundManagerImage from "../../../assets/FundManager.jpg";
 // import HumanResourcesManagerImage from "../../../assets/HumanResourcesManager.jpg";
-// import InvestmentBankerImage from "../../../assets/InvestmentBanker.jpg";
+import InvestmentBankerImage from "../../../assets/InvestmentBanker.jpg";
 // import InvestorRelationsManagerImage from "../../../assets/InvestorRelationsManager.jpg";
 // import ManagementConsultantImage from "../../../assets/ManagementConsultant.jpg";
 // import MarketingManagerImage from "../../../assets/MarketingManager.jpg";
 // import OperationsManagerImage from "../../../assets/OperationsManager.jpg";
 // import ProcurementSpecialistImage from "../../../assets/ProcurementSpecialist.jpg";
-// import ProductManagerImage from "../../../assets/ProductManager.jpg";
+import ProductManagerImage from "../../../assets/ProductManager.jpg";
 // import RealEstateAgentImage from "../../../assets/RealEstateAgent.jpg";
 // import RiskManagerImage from "../../../assets/RiskManager.jpg";
 // import SalesManagerImage from "../../../assets/SalesManager.jpg";
 // import SocialMediaInfluencerImage from "../../../assets/SocialMediaInfluencer.jpg";
 // import SustainabilityConsultantImage from "../../../assets/SustainabilityConsultant.jpg";
-// import TaxAdvisorImage from "../../../assets/TaxAdvisor.jpg";
+import TaxAdvisorImage from "../../../assets/TaxAdvisor.jpg";
+import manymore from "../../../assets/manymore.jpg";
 
 
 // Business roles (you might need to add images if you have them)
@@ -39,23 +40,29 @@ const roles = [
     // { title: "Corporate Strategy Manager", image: CorporateStrategyManagerImage },
     // { title: "Corporate Wellness Consultant", image: CorporateWellnessConsultantImage },
     // { title: "E-commerce Specialist", image: ECommerceSpecialistImage },
-    // { title: "Entrepreneur", image: EntrepreneurImage },
+    { title: "Entrepreneur", image: EntrepreneurImage },
     // { title: "Financial Analyst", image: FinancialAnalystImage },
     // { title: "Financial Planner", image: FinancialPlannerImage },
     // { title: "Fund Manager", image: FundManagerImage },
     // { title: "Human Resources Manager", image: HumanResourcesManagerImage },
-    // { title: "Investment Banker", image: InvestmentBankerImage },
+    { title: "Investment Banker", image: InvestmentBankerImage },
     // { title: "Investor Relations Manager", image: InvestorRelationsManagerImage },
     // { title: "Management Consultant", image: ManagementConsultantImage },
     // { title: "Marketing Manager", image: MarketingManagerImage },
     // { title: "Operations Manager", image: OperationsManagerImage },
     // { title: "Procurement Specialist", image: ProcurementSpecialistImage },
+    { title: "Product Manager", image: ProductManagerImage },
     // { title: "Real Estate Agent", image: RealEstateAgentImage },
     // { title: "Risk Manager", image: RiskManagerImage },
     // { title: "Sales Manager", image: SalesManagerImage },
     // { title: "Social Media Influencer", image: SocialMediaInfluencerImage },
     // { title: "Sustainability Consultant", image: SustainabilityConsultantImage },
-    // { title: "Tax Advisor", image: TaxAdvisorImage }
+    { title: "Tax Advisor", image: TaxAdvisorImage },
+    {
+        title: "& many more",
+        image: manymore,
+        link: "https://www.google.com/search?q=Business+and+Finance+Careers&sca_esv=664f7e6c30f8a07c&rlz=1C1VDKB_enIN1133IN1133&sxsrf=AHTn8zqlk7s1My2z5W4EWM52Uva0JMb0aQ%3A1738732032848&ei=APKiZ6awM56RnesP88XauA4&ved=0ahUKEwimsLXJ4auLAxWeSGcHHfOiFucQ4dUDCBA&uact=5&oq=Business+and+Finance+Careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiHEJ1c2luZXNzIGFuZCBGaW5hbmNlIENhcmVlcnMyBRAAGIAEMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeMgYQABgWGB4yBhAAGBYYHjIGEAAYFhgeSLIEUABYAHAAeAGQAQCYAboBoAG6AaoBAzAuMbgBA8gBAPgBAvgBAZgCAaACwgGYAwCSBwMwLjGgB6oG&sclient=gws-wiz-serp"
+    },
 ];
 
 
@@ -75,7 +82,12 @@ const BusinessMgm = () => {
                     <div key={index} className="card">
                         <img src={role.image} alt={role.title} />
                         <h2>{role.title}</h2>
-                        <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+                        <a
+                            href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button"
+                        >
                             See Details
                         </a>
                     </div>

@@ -7,6 +7,11 @@ import SoundTechnician from "../../../assets/SoundTechnician.jpg";
 import StaffPublicist from "../../../assets/StaffPublicist.jpg";
 import StageManager from "../../../assets/StageManager.jpg";
 import StudioManager from "../../../assets/StudioManager.jpg";
+import TourManager from "../../../assets/TourManager.jpg";
+import MusicProducer from "../../../assets/MusicProducer.jpg";
+import ConcertPromoter from "../../../assets/ConcertPromoter.jpg";
+import AudioEngineer from "../../../assets/AudioEngineer.jpg";
+import manymore from "../../../assets/manymore.jpg";
 // import StudioSinger from "../../../assets/StudioSinger.jpg";
 // import TalentBuyer from "../../../assets/TalentBuyer.jpg";
 // import TalentPromoter from "../../../assets/TalentPromoter.jpg";
@@ -163,7 +168,7 @@ const roles = [
     // { title: "Technical Sound Designer", image: TechnicalSoundDesigner },
     // { title: "Tour Coordinator", image: TourCoordinator },
     // { title: "Tour Director", image: TourDirector },
-    // { title: "Tour Manager", image: TourManager },
+    { title: "Tour Manager", image: TourManager },
     // { title: "Tour Publicist", image: TourPublicist },
     // { title: "Transcriber", image: Transcriber },
     // { title: "Tribute Band", image: TributeBand },
@@ -190,7 +195,7 @@ const roles = [
     // { title: "Artist Representative", image: ArtistRepresentative },
     // { title: "Audio Artist", image: AudioArtist },
     // { title: "Audio Designer", image: AudioDesigner },
-    // { title: "Audio Engineer", image: AudioEngineer },
+    { title: "Audio Engineer", image: AudioEngineer },
     // { title: "Audio Mastering Engineer", image: AudioMasteringEngineer },
     // { title: "Audio Technician", image: AudioTechnician },
     // { title: "Background Singer", image: BackgroundSinger },
@@ -207,7 +212,7 @@ const roles = [
     // { title: "Composer", image: Composer },
     // { title: "Concert Photographer", image: ConcertPhotographer },
     // { title: "Concert Production Manager", image: ConcertProductionManager },
-    // { title: "Concert Promoter", image: ConcertPromoter },
+    { title: "Concert Promoter", image: ConcertPromoter },
     // { title: "Concert Tour Manager", image: ConcertTourManager },
     // { title: "Cover Artist", image: CoverArtist },
     // { title: "Creative Sound Designer", image: CreativeSoundDesigner },
@@ -256,7 +261,7 @@ const roles = [
     // { title: "Music Marketing Representative", image: MusicMarketingRepresentative },
     // { title: "Music Mixer", image: MusicMixer },
     // { title: "Music Photographer", image: MusicPhotographer },
-    // { title: "Music Producer", image: MusicProducer },
+    { title: "Music Producer", image: MusicProducer },
     // { title: "Music Publisher", image: MusicPublisher },
     // { title: "Music Tech", image: MusicTech },
     // { title: "Music Web Designer", image: MusicWebDesigner },
@@ -299,7 +304,8 @@ const roles = [
     // { title: "Songwriter", image: Songwriter },
     // { title: "Sound Artist", image: SoundArtist },
     // { title: "Sound Engineer", image: SoundEngineer },
-    // { title: "Sound Person", image: SoundPerson }
+    // { title: "Sound Person", image: SoundPerson },
+    { title: "& many more", image: manymore, link: "https://www.google.com/search?q=Music+%26+Entertainment+Careers" }
 ];
 
 const MusicAndEntertainmentMgm = () => {
@@ -307,17 +313,22 @@ const MusicAndEntertainmentMgm = () => {
         <div className="container">
             <h1>Music & Entertainment Careers</h1>
             <p className="musicdescription">
-                Explore a wide variety of exciting careers in the music and entertainment industry, from technical roles to creative positions.
+                Discover exciting careers in the music and entertainment industry. Whether you're working behind the scenes or in the spotlight, there's a role for everyone.
             </p>
-
+            
             <h3 className="musicsubtitle">Click below to explore any of the following career(s)</h3>
-
+            
             <div className="grid">
                 {roles.map((role, index) => (
                     <div key={index} className="card">
                         <img src={role.image} alt={role.title} />
                         <h2>{role.title}</h2>
-                        <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+                        <a
+                            href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button"
+                        >
                             See Details
                         </a>
                     </div>

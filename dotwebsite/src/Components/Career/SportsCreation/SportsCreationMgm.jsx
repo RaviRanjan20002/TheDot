@@ -6,10 +6,12 @@ import AdventureSportsGuide from "../../../assets/AdventureSportsGuide.jpg";
 import AthleticDirector from "../../../assets/AthleticDirector.jpg";
 import AthleticTrainer from "../../../assets/AthleticTrainer.jpg";
 import EsportsPlayer from "../../../assets/EsportsPlayer.jpg";
-// import EnduranceCoach from "../../../assets/EnduranceCoach.jpg";
-// import EquipmentManager from "../../../assets/EquipmentManager.jpg";
-// import ExercisePhysiologist from "../../../assets/ExercisePhysiologist.jpg";
-// import FitnessTrainer from "../../../assets/FitnessTrainer.jpg";
+import EnduranceCoach from "../../../assets/EnduranceCoach.jpg";
+import EquipmentManager from "../../../assets/EquipmentManager.jpg";
+import ExercisePhysiologist from "../../../assets/ExercisePhysiologist.jpg";
+import FitnessTrainer from "../../../assets/FitnessTrainer.jpg";
+import manymore from "../../../assets/manymore.jpg";
+
 // import ParkourCoach from "../../../assets/ParkourCoach.jpg";
 // import PerformanceCoach from "../../../assets/PerformanceCoach.jpg";
 // import PersonalTrainer from "../../../assets/PersonalTrainer.jpg";
@@ -46,48 +48,19 @@ const roles = [
   { title: "Athletic Director", image: AthleticDirector },
   { title: "Athletic Trainer", image: AthleticTrainer },
   { title: "E-sports Player", image: EsportsPlayer },
-//   { title: "Endurance Coach", image: EnduranceCoach },
-//   { title: "Equipment Manager", image: EquipmentManager },
-//   { title: "Exercise Physiologist", image: ExercisePhysiologist },
-//   { title: "Fitness Trainer", image: FitnessTrainer },
-//   { title: "Parkour Coach", image: ParkourCoach },
-//   { title: "Performance Coach", image: PerformanceCoach },
-//   { title: "Personal Trainer", image: PersonalTrainer },
-//   { title: "Physical Education Teacher", image: PhysicalEducationTeacher },
-//   { title: "Physical Therapist", image: PhysicalTherapist },
-//   { title: "Professional Athlete", image: ProfessionalAthlete },
-//   { title: "Recreation Coordinator", image: RecreationCoordinator },
-//   { title: "Recreational Therapist", image: RecreationalTherapist },
-//   { title: "Referee/Umpire", image: RefereeUmpire },
-//   { title: "Scout", image: Scout },
-//   { title: "Sports Agent", image: SportsAgent },
-//   { title: "Sports Analyst", image: SportsAnalyst },
-//   { title: "Sports Broadcaster", image: SportsBroadcaster },
-//   { title: "Sports Coach", image: SportsCoach },
-//   { title: "Sports Commentator", image: SportsCommentator },
-//   { title: "Sports Development Officer", image: SportsDevelopmentOfficer },
-//   { title: "Sports Event Coordinator", image: SportsEventCoordinator },
-//   { title: "Sports Event Manager", image: SportsEventManager },
-//   { title: "Sports Facility Manager", image: SportsFacilityManager },
-//   { title: "Sports Management Consultant", image: SportsManagementConsultant },
-//   { title: "Sports Marketing Manager", image: SportsMarketingManager },
-//   { title: "Sports Medicine Physician", image: SportsMedicinePhysician },
-//   { title: "Sports Nutritionist", image: SportsNutritionist },
-//   { title: "Sports Official", image: SportsOfficial },
-//   { title: "Sports Photographer", image: SportsPhotographer },
-//   { title: "Sports Psychologist", image: SportsPsychologist },
-//   { title: "Sports Public Relations Specialist", image: SportsPublicRelationsSpecialist },
-//   { title: "Sports Statistician", image: SportsStatistician },
-//   { title: "Strength and Conditioning Coach", image: StrengthAndConditioningCoach },
-//   { title: "Yoga Instructor", image: YogaInstructor }
+  { title: "Endurance Coach", image: EnduranceCoach },
+  { title: "Equipment Manager", image: EquipmentManager },
+  { title: "Exercise Physiologist", image: ExercisePhysiologist },
+  { title: "Fitness Trainer", image: FitnessTrainer },
+  { title: "& many more", image: manymore, link: "https://www.google.com/search?q=Sports+%26+Recreation+Careers" },
 ];
 
 const SportsCreationMgm = () => {
   return (
     <div className="container">
-      <h1>Sports and Creation Careers</h1>
+      <h1>Sports and Recreation Careers</h1>
       <p className="sportscreationdescription">
-        Explore the dynamic and rewarding careers in the sports and recreation industry. Whether you're coaching athletes or managing events, these roles are pivotal in shaping the world of sports!
+        Explore exciting career opportunities in the sports and recreation industry. Whether you're coaching, training, or managing, these roles play a vital role in shaping the sports world!
       </p>
 
       <h3 className="sportscreationsubtitle">Click below to explore any of the following career(s)</h3>
@@ -97,7 +70,12 @@ const SportsCreationMgm = () => {
           <div key={index} className="card">
             <img src={role.image} alt={role.title} />
             <h2>{role.title}</h2>
-            <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+            <a
+              href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+            >
               See Details
             </a>
           </div>

@@ -1,67 +1,115 @@
-.lawcontainer {
-    max-width: 900px;
-    margin: 0 auto;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-  }
-  
-  .lawtitle {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-  }
-  
-  .lawdescription {
-    font-size: 14px;
-    color: #666;
-    margin-top: 10px;
-  }
-  
-  .lawread-more {
-    font-size: 14px;
-    color: #007bff;
-    cursor: pointer;
-    margin-top: 5px;
-  }
-  
-  .lawsubtitle {
-    font-size: 18px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 20px;
-  }
-  
-  .lawcareer-grid {
-    display: grid;
-    /* grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); */
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-top: 20px;
-  }
-  
-  .lawcareer-card {
-    display: flex;
-    flex-direction: column;
+/* General Container Styling */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Heading */
+h1 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 16px;
+  text-align: center;
+  color: #333;
+}
+
+.arts-description {
+  justify-content: center;
+  font-size: 16px;
+  margin: 0 auto 1rem auto;
+  text-align: center;
+  color: #333;
+  max-width: 80%;
+}
+
+/* Flexbox Layout for Cards */
+.grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  gap: 16px;
+  padding: 16px;
+}
+
+/* Card Style */
+.card {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 4px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  min-height: 350px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: contain;
+  border-radius: 0px;
+}
+
+/* Card Title */
+.card h2 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 8px 0;
+  text-align: center;
+  color: #333;
+}
+
+/* Button Styling */
+.button {
+  background-color: #3b82f6;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 8px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  display: inline-block;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.button:hover {
+  background-color: #2563eb;
+  transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .grid {
     justify-content: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 90%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid {
+    flex-direction: column;
     align-items: center;
-    background: #fff;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    text-align: center;
   }
-  
-  .lawcareer-image {
+
+  .card {
     width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-radius: 5px;
   }
-  
-  .lawcareer-title {
-    font-size: 14px;
-    font-weight: bold;
-    color: #333;
-    margin-top: 10px;
-  }
-  
+}

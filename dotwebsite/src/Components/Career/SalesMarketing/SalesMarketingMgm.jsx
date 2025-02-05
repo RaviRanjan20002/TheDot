@@ -6,10 +6,12 @@ import SalesRepresentative from "../../../assets/SalesRepresentative.jpg";
 import MarketingManager from "../../../assets/MarketingManager.jpg";
 import MarketResearchAnalyst from "../../../assets/MarketResearchAnalyst.jpg";
 import BrandManager from "../../../assets/BrandManager.jpg";
-// import DigitalMarketingSpecialist from "../../../assets/DigitalMarketingSpecialist.jpg";
-// import AccountExecutive from "../../../assets/AccountExecutive.jpg";
-// import PublicRelationsManager from "../../../assets/PublicRelationsManager.jpg";
-// import SalesManager from "../../../assets/SalesManager.jpg";
+import DigitalMarketingSpecialist from "../../../assets/DigitalMarketingSpecialist.jpg";
+import AccountExecutive from "../../../assets/AccountExecutive.jpg";
+import PublicRelationsManager from "../../../assets/PublicRelationsManager.jpg";
+import SalesManager from "../../../assets/SalesManager.jpg";
+import manymore from "../../../assets/manymore.jpg";
+
 // import ProductManager from "../../../assets/ProductManager.jpg";
 // import BusinessDevelopmentManager from "../../../assets/BusinessDevelopmentManager.jpg";
 // import AffiliateMarketer from "../../../assets/AffiliateMarketer.jpg";
@@ -33,28 +35,12 @@ const roles = [
   { title: "Marketing Manager", image: MarketingManager },
   { title: "Market Research Analyst", image: MarketResearchAnalyst },
   { title: "Brand Manager", image: BrandManager },
-//   { title: "Digital Marketing Specialist", image: DigitalMarketingSpecialist },
-//   { title: "Account Executive", image: AccountExecutive },
-//   { title: "Public Relations Manager", image: PublicRelationsManager },
-//   { title: "Sales Manager", image: SalesManager },
-//   { title: "Product Manager", image: ProductManager },
-//   { title: "Business Development Manager", image: BusinessDevelopmentManager },
-//   { title: "Affiliate Marketer", image: AffiliateMarketer },
-//   { title: "Growth Hacker", image: GrowthHacker },
-//   { title: "Experiential Marketer", image: ExperientialMarketer },
-//   { title: "Influencer Marketing Manager", image: InfluencerMarketingManager },
-//   { title: "SEO Specialist", image: SEOSpecialist },
-//   { title: "Online Community Manager", image: OnlineCommunityManager },
-//   { title: "Marketing Analyst", image: MarketingAnalyst },
-//   { title: "Customer Relationship Manager", image: CustomerRelationshipManager },
-//   { title: "Trade Show Coordinator", image: TradeShowCoordinator },
-//   { title: "Campaign Manager", image: CampaignManager },
-//   { title: "Email Marketing Specialist", image: EmailMarketingSpecialist },
-//   { title: "Content Strategist", image: ContentStrategist },
-//   { title: "Social Media Strategist", image: SocialMediaStrategist },
-//   { title: "Marketing Communications Specialist", image: MarketingCommunicationsSpecialist },
-//   { title: "Lead Generation Specialist", image: LeadGenerationSpecialist }
- ];
+  { title: "Digital Marketing Specialist", image: DigitalMarketingSpecialist },
+  { title: "Account Executive", image: AccountExecutive },
+  { title: "Public Relations Manager", image: PublicRelationsManager },
+  { title: "Sales Manager", image: SalesManager },
+  { title: "& many more", image: manymore, link: "https://www.google.com/search?q=Sales+%26+Marketing+Careers" },
+];
 
 const SalesMarketingMgm = () => {
   return (
@@ -71,7 +57,12 @@ const SalesMarketingMgm = () => {
           <div key={index} className="card">
             <img src={role.image} alt={role.title} />
             <h2>{role.title}</h2>
-            <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+            <a
+              href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="button"
+            >
               See Details
             </a>
           </div>
