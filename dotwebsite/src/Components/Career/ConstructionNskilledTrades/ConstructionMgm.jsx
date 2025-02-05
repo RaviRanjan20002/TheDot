@@ -4,25 +4,25 @@ import "./ConstructionMgm.css";
 // Import images (Make sure to replace these with actual image paths)
 import DPrintingTechnician from "../../../assets/DPrintingTechnician.jpg";
 import Architect from "../../../assets/Architectcc.jpg";
-import ArchitecturalAssistant from "../../../assets/ArchitecturalAssistant.jpg";
-import ArchitecturalTechnician from "../../../assets/ArchitecturalTechnician.jpg";
-// import Builder from "../../../assets/Builder.jpg";
+// import ArchitecturalAssistant from "../../../assets/ArchitecturalAssistant.jpg";
+// import ArchitecturalTechnician from "../../../assets/ArchitecturalTechnician.jpg";
+import Builder from "../../../assets/Builder.jpg";
 // import BuildingInspector from "../../../assets/BuildingInspector.jpg";
 // import BuildingSurveyor from "../../../assets/BuildingSurveyor.jpg";
 // import BuildingTrades from "../../../assets/BuildingTrades.jpg";
 // import BusinessInformationManagementSpecialist from "../../../assets/BusinessInformationManagementSpecialist.jpg";
 // import CADTechnician from "../../../assets/CADTechnician.jpg";
 // import Carpenter from "../../../assets/Carpenter.jpg";
-// import Cartographer from "../../../assets/Cartographer.jpg";
+import Cartographer from "../../../assets/Cartographer.jpg";
 // import CommercialManager from "../../../assets/CommercialManager.jpg";
 // import ConstructionEngineer from "../../../assets/ConstructionEngineer.jpg";
 // import ConstructionEquipmentOperator from "../../../assets/ConstructionEquipmentOperator.jpg";
 // import ConstructionManager from "../../../assets/ConstructionManager.jpg";
 // import ContractAdministrator from "../../../assets/ContractAdministrator.jpg";
-// import ContractsManager from "../../../assets/ContractsManager.jpg";
+import ContractsManager from "../../../assets/ContractsManager.jpg";
 // import DesignSpecialist from "../../../assets/DesignSpecialist.jpg";
 // import Estimator from "../../../assets/Estimator.jpg";
-// import FieldEngineer from "../../../assets/FieldEngineer.jpg";
+import FieldEngineer from "../../../assets/FieldEngineer.jpg";
 // import GamingIndustry from "../../../assets/GamingIndustry.jpg";
 // import GeneralContractor from "../../../assets/GeneralContractor.jpg";
 // import Glazier from "../../../assets/Glazier.jpg";
@@ -48,34 +48,35 @@ import ArchitecturalTechnician from "../../../assets/ArchitecturalTechnician.jpg
 // import StructuralEngineer from "../../../assets/StructuralEngineer.jpg";
 // import Surveyor from "../../../assets/Surveyor.jpg";
 // import TechnicalArchitect from "../../../assets/TechnicalArchitect.jpg";
-// import TownPlanner from "../../../assets/TownPlanner.jpg";
+import TownPlanner from "../../../assets/TownPlanner.jpg";
 // import TreehouseBuilder from "../../../assets/TreehouseBuilder.jpg";
-// import UrbanFarmer from "../../../assets/UrbanFarmer.jpg";
+import UrbanFarmer from "../../../assets/UrbanFarmer.jpg";
 // import Welder from "../../../assets/Welder.jpg";
 // import WindEnergyTechnician from "../../../assets/WindEnergyTechnician.jpg";
+import manymore from "../../../assets/manymore.jpg";
 
 const roles = [
     { title: "3D-Printing Technician", image: DPrintingTechnician },
     { title: "Architect", image: Architect },
-    { title: "Architectural Assistant", image: ArchitecturalAssistant },
-    { title: "Architectural Technician", image: ArchitecturalTechnician },
-    // { title: "Builder", image: Builder },
+    // { title: "Architectural Assistant", image: ArchitecturalAssistant },
+    // { title: "Architectural Technician", image: ArchitecturalTechnician },
+    { title: "Builder", image: Builder },
     // { title: "Building Inspector", image: BuildingInspector },
     // { title: "Building Surveyor", image: BuildingSurveyor },
     // { title: "Building Trades", image: BuildingTrades },
     // { title: "Business Information Management Specialist", image: BusinessInformationManagementSpecialist },
     // { title: "CAD Technician", image: CADTechnician },
     // { title: "Carpenter", image: Carpenter },
-    // { title: "Cartographer", image: Cartographer },
+    { title: "Cartographer", image: Cartographer },
     // { title: "Commercial Manager", image: CommercialManager },
     // { title: "Construction Engineer", image: ConstructionEngineer },
     // { title: "Construction Equipment Operator", image: ConstructionEquipmentOperator },
     // { title: "Construction Manager", image: ConstructionManager },
     // { title: "Contract Administrator", image: ContractAdministrator },
-    // { title: "Contracts Manager", image: ContractsManager },
+    { title: "Contracts Manager", image: ContractsManager },
     // { title: "Design Specialist", image: DesignSpecialist },
     // { title: "Estimator", image: Estimator },
-    // { title: "Field Engineer", image: FieldEngineer },
+    { title: "Field Engineer", image: FieldEngineer },
     // { title: "Gaming Industry", image: GamingIndustry },
     // { title: "General Contractor", image: GeneralContractor },
     // { title: "Glazier", image: Glazier },
@@ -101,11 +102,16 @@ const roles = [
     // { title: "Structural Engineer", image: StructuralEngineer },
     // { title: "Surveyor", image: Surveyor },
     // { title: "Technical Architect", image: TechnicalArchitect },
-    // { title: "Town Planner", image: TownPlanner },
+    { title: "Town Planner", image: TownPlanner },
     // { title: "Treehouse Builder", image: TreehouseBuilder },
-    // { title: "Urban Farmer", image: UrbanFarmer },
+    { title: "Urban Farmer", image: UrbanFarmer },
     // { title: "Welder", image: Welder },
-    // { title: "Wind Energy Technician", image: WindEnergyTechnician }
+    // { title: "Wind Energy Technician", image: WindEnergyTechnician },
+    {
+            title: "& many more",
+            image: manymore,
+            link: "https://www.google.com/search?q=Construction+%26+Skilled+Trades+Careers&sca_esv=664f7e6c30f8a07c&rlz=1C1VDKB_enIN1133IN1133&sxsrf=AHTn8zo4wiQWduOtXnWyO-KBtsK0_Mczxw%3A1738732044746&ei=DPKiZ-qgLdKgnesPn4LW8Qo&ved=0ahUKEwjq1ovP4auLAxVSUGcHHR-BNa4Q4dUDCBA&uact=5&oq=Construction+%26+Skilled+Trades+Careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiJUNvbnN0cnVjdGlvbiAmIFNraWxsZWQgVHJhZGVzIENhcmVlcnMyBhAAGBYYHjIGEAAYFhgeMgsQABiABBiGAxiKBTILEAAYgAQYhgMYigUyCxAAGIAEGIYDGIoFMgsQABiABBiGAxiKBTIIEAAYogQYiQUyBRAAGO8FMggQABiiBBiJBTIFEAAY7wVI1wdQAFgAcAB4AZABAJgB6wGgAesBqgEDMi0xuAEDyAEA-AEC-AEBmAIBoAL0AZgDAJIHAzItMaAH_wc&sclient=gws-wiz-serp"
+        },
 ];
 
 const ConstructionMgm = () => {
@@ -123,7 +129,12 @@ const ConstructionMgm = () => {
                     <div key={index} className="card">
                         <img src={role.image} alt={role.title} />
                         <h2>{role.title}</h2>
-                        <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+                        <a
+                            href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button"
+                        >
                             See Details
                         </a>
                     </div>

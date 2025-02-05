@@ -4,31 +4,31 @@ import "./EducationMgm.css";
 // Import images
 import ChemistryTeacher from "../../../assets/ChemistryTeacher.jpg";
 import CollegeProfessor from "../../../assets/CollegeProfessor.jpg";
-import CorporateTrainer from "../../../assets/CorporateTrainer.jpg";
+// import CorporateTrainer from "../../../assets/CorporateTrainer.jpg";
 import CurriculumDeveloper from "../../../assets/CurriculumDeveloper.jpg";
 // import EducationAdministrator from "../../../assets/EducationAdministrator.jpg";
 // import EducationTechnologySpecialist from "../../../assets/EducationTechnologySpecialist.jpg";
-// import EducationalConsultant from "../../../assets/EducationalConsultant.jpg";
+import EducationalConsultant from "../../../assets/EducationalConsultant.jpg";
 // import HigherEducationLecturer from "../../../assets/HigherEducationLecturer.jpg";
 // import Historian from "../../../assets/Historian.jpg";
 // import HomeCareManager from "../../../assets/HomeCareManager.jpg";
 // import HomeschoolConsultant from "../../../assets/HomeschoolConsultant.jpg";
 // import ImageConsultant from "../../../assets/ImageConsultant.jpg";
-// import ImmigrationExpert from "../../../assets/ImmigrationExpert.jpg";
+import ImmigrationExpert from "../../../assets/ImmigrationExpert.jpg";
 // import InstructionalCoordinator from "../../../assets/InstructionalCoordinator.jpg";
 // import LearningExperienceDesigner from "../../../assets/LearningExperienceDesigner.jpg";
-// import Librarian from "../../../assets/Librarian.jpg";
+import Librarian from "../../../assets/Librarian.jpg";
 // import MontessoriTeacher from "../../../assets/MontessoriTeacher.jpg";
 // import NurseryTeacher from "../../../assets/NurseryTeacher.jpg";
 // import NurseryWorker from "../../../assets/NurseryWorker.jpg";
-// import OnlineEducator from "../../../assets/OnlineEducator.jpg";
+import OnlineEducator from "../../../assets/OnlineEducator.jpg";
 // import OnlineTutor from "../../../assets/OnlineTutor.jpg";
 // import PersonalEducationGuide from "../../../assets/PersonalEducationGuide.jpg";
 // import PersonalPrivacyAdvisor from "../../../assets/PersonalPrivacyAdvisor.jpg";
 // import PrimarySchoolTeacher from "../../../assets/PrimarySchoolTeacher.jpg";
 // import ProblemSolvingCompetitionDirector from "../../../assets/ProblemSolvingCompetitionDirector.jpg";
 // import ProgramEvaluator from "../../../assets/ProgramEvaluator.jpg";
-// import SchoolCounselor from "../../../assets/SchoolCounselor.jpg";
+import SchoolCounselor from "../../../assets/SchoolCounselor.jpg";
 // import SchoolPsychologist from "../../../assets/SchoolPsychologist.jpg";
 // import ScienceWriter from "../../../assets/ScienceWriter.jpg";
 // import SecondarySchoolTeacher from "../../../assets/SecondarySchoolTeacher.jpg";
@@ -38,35 +38,36 @@ import CurriculumDeveloper from "../../../assets/CurriculumDeveloper.jpg";
 // import Teacher from "../../../assets/Teacher.jpg";
 // import TechEthicist from "../../../assets/TechEthicist.jpg";
 // import YouthWorker from "../../../assets/YouthWorker.jpg";
+import manymore from "../../../assets/manymore.jpg";
 
 const roles = [
     { title: "Chemistry Teacher", image: ChemistryTeacher },
     { title: "College Professor", image: CollegeProfessor },
-    { title: "Corporate Trainer", image: CorporateTrainer },
+    // { title: "Corporate Trainer", image: CorporateTrainer },
     { title: "Curriculum Developer", image: CurriculumDeveloper },
     // { title: "Education Administrator", image: EducationAdministrator },
     // { title: "Education Technology Specialist", image: EducationTechnologySpecialist },
-    // { title: "Educational Consultant", image: EducationalConsultant },
+    { title: "Educational Consultant", image: EducationalConsultant },
     // { title: "Higher Education Lecturer", image: HigherEducationLecturer },
     // { title: "Historian", image: Historian },
     // { title: "Home Care Manager", image: HomeCareManager },
     // { title: "Homeschool Consultant", image: HomeschoolConsultant },
     // { title: "Image Consultant", image: ImageConsultant },
-    // { title: "Immigration Expert", image: ImmigrationExpert },
+    { title: "Immigration Expert", image: ImmigrationExpert },
     // { title: "Instructional Coordinator", image: InstructionalCoordinator },
     // { title: "Learning Experience Designer", image: LearningExperienceDesigner },
-    // { title: "Librarian", image: Librarian },
+    { title: "Librarian", image: Librarian },
     // { title: "Montessori Teacher", image: MontessoriTeacher },
     // { title: "Nursery Teacher", image: NurseryTeacher },
     // { title: "Nursery Worker", image: NurseryWorker },
-    // { title: "Online Educator", image: OnlineEducator },
+    { title: "Online Educator", image: OnlineEducator },
     // { title: "Online Tutor", image: OnlineTutor },
     // { title: "Personal Education Guide", image: PersonalEducationGuide },
     // { title: "Personal Privacy Advisor", image: PersonalPrivacyAdvisor },
     // { title: "Primary School Teacher", image: PrimarySchoolTeacher },
     // { title: "Problem-Solving Competition Director", image: ProblemSolvingCompetitionDirector },
     // { title: "Program Evaluator", image: ProgramEvaluator },
-    // { title: "School Counselor", image: SchoolCounselor },
+    { title: "School Counselor", image: SchoolCounselor },
     // { title: "School Psychologist", image: SchoolPsychologist },
     // { title: "Science Writer", image: ScienceWriter },
     // { title: "Secondary School Teacher", image: SecondarySchoolTeacher },
@@ -75,7 +76,12 @@ const roles = [
     // { title: "Student Affairs Administrator", image: StudentAffairsAdministrator },
     // { title: "Teacher", image: Teacher },
     // { title: "Tech Ethicist", image: TechEthicist },
-    // { title: "Youth Worker", image: YouthWorker }
+    // { title: "Youth Worker", image: YouthWorker },
+    {
+                title: "& many more",
+                image: manymore,
+                link: "https://www.google.com/search?q=Education+Careers&sca_esv=664f7e6c30f8a07c&rlz=1C1VDKB_enIN1133IN1133&sxsrf=AHTn8zo40iSiw87XS5Tw4UwaWk7-I6gVkg%3A1738732939678&ei=i_WiZ_z8KOab0-kPg76VqQ4&ved=0ahUKEwi87un55KuLAxXmzTQHHQNfJeUQ4dUDCBA&uact=5&oq=Education+Careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiEUVkdWNhdGlvbiBDYXJlZXJzMgsQABiABBiRAhiKBTILEAAYgAQYkQIYigUyBRAAGIAEMgoQABiABBgUGIcCMgUQABiABDILEC4YgAQYxwEYrwEyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAESOADUABYAHAAeAGQAQCYAb0BoAG9AaoBAzAuMbgBA8gBAPgBAvgBAZgCAaACywGYAwCSBwMyLTGgB6AI&sclient=gws-wiz-serp&jbr=sep:0"
+            },
 ];
 
 const EducationMgm = () => {
@@ -92,7 +98,12 @@ const EducationMgm = () => {
                     <div key={index} className="card">
                         <img src={role.image} alt={role.title} />
                         <h2>{role.title}</h2>
-                        <a href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} target="_blank" rel="noopener noreferrer" className="button">
+                        <a
+                            href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="button"
+                        >
                             See Details
                         </a>
                     </div>

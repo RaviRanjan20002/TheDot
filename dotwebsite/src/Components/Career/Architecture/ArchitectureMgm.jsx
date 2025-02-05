@@ -6,9 +6,9 @@ import ArchitectImage from "../../../assets/Architectinside.jpg";
 import ArchitecturalDrafter from "../../../assets/ArchitecturalDrafter.jpg";
 import ArchitecturalIllustrator from "../../../assets/ArchitecturalIllustrator.jpg";
 import ArchitecturalTechnologist from "../../../assets/ArchitecturalTechnologist.jpg";
-// import BIMSpecialist from "../../../assets/BIMSpecialist.jpg";
-// import BuildingInspector from "../../../assets/BuildingInspector.jpg";
-// import CADTechnician from "../../../assets/CADTechnician.jpg";
+import BIMSpecialist from "../../../assets/BIMSpecialist.jpg";
+import BuildingInspector from "../../../assets/BuildingInspector.jpg";
+import CADTechnician from "../../../assets/CADTechnician.jpg";
 // import CommercialArchitect from "../../../assets/CommercialArchitect.jpg";
 // import ConstructionEstimator from "../../../assets/ConstructionEstimator.jpg";
 // import ConstructionManager from "../../../assets/ConstructionManager.jpg";
@@ -22,20 +22,21 @@ import ArchitecturalTechnologist from "../../../assets/ArchitecturalTechnologist
 // import ProjectManager from "../../../assets/ProjectManager.jpg";
 // import ResidentialArchitect from "../../../assets/ResidentialArchitect.jpg";
 // import RestorationArchitect from "../../../assets/RestorationArchitect.jpg";
-// import SitePlanner from "../../../assets/SitePlanner.jpg";
+import SitePlanner from "../../../assets/SitePlanner.jpg";
 // import StructuralEngineer from "../../../assets/StructuralEngineer.jpg";
 // import SustainableDesignConsultant from "../../../assets/SustainableDesignConsultant.jpg";
 // import UrbanDesigner from "../../../assets/UrbanDesigner.jpg";
 // import UrbanPlanner from "../../../assets/UrbanPlanner.jpg";
+import manymore from "../../../assets/manymore.jpg";
 
 const roles = [
   { title: "Architect", image: ArchitectImage },
   { title: "Architectural Drafter", image: ArchitecturalDrafter },
   { title: "Architectural Illustrator", image: ArchitecturalIllustrator },
-  { title: "Architectural Technologist", image: ArchitecturalTechnologist }
-  // { title: "BIM (Building Information Modeling) Specialist", image: BIMSpecialist },
-  // { title: "Building Inspector", image: BuildingInspector },
-  // { title: "CAD Technician", image: CADTechnician },
+  { title: "Architectural Technologist", image: ArchitecturalTechnologist },
+  { title: "BIM (Building Information Modeling) Specialist", image: BIMSpecialist },
+  { title: "Building Inspector", image: BuildingInspector },
+  { title: "CAD Technician", image: CADTechnician },
   // { title: "Commercial Architect", image: CommercialArchitect },
   // { title: "Construction Estimator", image: ConstructionEstimator },
   // { title: "Construction Manager", image: ConstructionManager },
@@ -49,11 +50,14 @@ const roles = [
   // { title: "Project Manager", image: ProjectManager },
   // { title: "Residential Architect", image: ResidentialArchitect },
   // { title: "Restoration Architect", image: RestorationArchitect },
-  // { title: "Site Planner", image: SitePlanner },
+  { title: "Site Planner", image: SitePlanner },
   // { title: "Structural Engineer", image: StructuralEngineer },
   // { title: "Sustainable Design Consultant", image: SustainableDesignConsultant },
   // { title: "Urban Designer", image: UrbanDesigner },
-  // { title: "Urban Planner", image: UrbanPlanner }
+  // { title: "Urban Planner", image: UrbanPlanner },
+  { title: "& many more", 
+    image: manymore, 
+    link: "https://www.google.com/search?q=Architecture+Careers&rlz=1C1VDKB_enIN1133IN1133&oq=Architecture+Careers&gs_lcrp=EgZjaHJvbWUyBggAEEUYOdIBBzY0N2owajeoAgewAgE&sourceid=chrome&ie=UTF-8" },
 ];
 
 const ArchitectureMgm = () => {
@@ -71,7 +75,7 @@ const ArchitectureMgm = () => {
             <img src={role.image} alt={role.title} />
             <h2>{role.title}</h2>
             <a 
-              href={`https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} 
+              href={role.link || `https://www.google.com/search?q=${encodeURIComponent(role.title)}+Career`} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="button"
@@ -79,6 +83,7 @@ const ArchitectureMgm = () => {
               See Details
             </a>
           </div>
+          
         ))}
       </div>
     </div>

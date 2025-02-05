@@ -15,6 +15,17 @@ import RoboticsAutomationMgm from "./RoboticsAutomation/RoboticsAutomationMgm";
 import SalesMarketingMgm from "./SalesMarketing/SalesMarketingMgm";
 import SportsCreationMgm from "./SportsCreation/SportsCreationMgm";
 import TravelTourismMgm from "./TravelTourism/TravelTourismMgm";
+import Engineering from "./Engineering/Engineering";
+import Medical from "./Medical/Medical";
+import Civil from "./CivilServices/Civil";
+import Law from "./Law/Law";
+import Arts from "./Arts/Arts";
+import ITSoftwareMgm from "./ITSoftware/ITSoftwareMgm";
+import FinanceEconomicsMgm from "./FinanceEconomics/FinanceEconomicsMgm";
+import AnimalCareFarmingMgm from "./AnimalCareFarming/AnimalCareFarmingMgm";
+import BeautyPersonalCareMgm from "./BeautyPersonalCare/BeautyPersonalCareMgm";
+import EnvironmentalCareMgm from "./EnviornmentalCare/EnvironmentalCareMgm";
+
 
 // Import other components for different careers
 
@@ -34,7 +45,16 @@ const careerComponents = {
   "Sales and Marketing": SalesMarketingMgm,
   "Sports and Recreation":SportsCreationMgm,
   "Travel and Tourism": TravelTourismMgm,
-  // Add other career-title-to-component mappings here
+  "Engineering": Engineering,
+  "Medical": Medical,
+  "Civil Services": Civil,
+  "Law and Public Policy":Law,
+  "Arts and Design":Arts,
+  "IT and Computer Science": ITSoftwareMgm,
+  "Finance and Economics":FinanceEconomicsMgm,
+  "Animal Care and Farming": AnimalCareFarmingMgm,
+  "Beauty and Personal Care": BeautyPersonalCareMgm,
+  "Environmental Care": EnvironmentalCareMgm,
 };
 
 const CareerDetail = () => {
