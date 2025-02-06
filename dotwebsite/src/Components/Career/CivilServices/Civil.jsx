@@ -1,4 +1,4 @@
-import "./Civil.css";
+
 import rail from "../../../assets/rail.avif";
 import Customs from "../../../assets/custom.avif";
 import Excise from "../../../assets/excise.avif";
@@ -35,7 +35,7 @@ const Civil = () => {
   return (
     <div className="container">
       <h1>Civil Services</h1>
-      <p className="finance-description">
+      <p className="description">
         The civil service system is the backbone of the administrative machinery of the country.
         The Union Public Service Commission conducts a nationwide competitive examination for 
         recruitment to various Civil Services of the Government of India. Civil Services offer an 
@@ -44,16 +44,19 @@ const Civil = () => {
         fields such as law and order, administration, international representation, and public welfare.
       </p>
 
-      <h2 className="subtitle">Click below to explore any of the following careers</h2>
+      <h3 className="subtitle">Click below to explore any of the following career(s)</h3>
 
       <div className="grid">
         {careers.map((career, index) => (
           <div key={index} className="card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img src={career.image} alt={career.title} />
-              <h2>{career.title}</h2>
-            </a>
-            <a href={career.path} target="_blank" rel="noopener noreferrer" className="button">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
+            <a 
+              href={career.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="button"
+            >
               See Details
             </a>
           </div>

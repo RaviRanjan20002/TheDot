@@ -38,54 +38,30 @@ const careers = [
     path: "https://en.wikipedia.org/wiki/Crime_Investigation_Department",
   },
   {
-      title: "& many more",
-      image: manymore,
-      path: "https://en.wikipedia.org/wiki/Indian_Armed_Forces",
+    title: "& many more",
+    image: manymore,
+    path: "https://en.wikipedia.org/wiki/Indian_Armed_Forces",
   },
 ];
 
 const Security = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">National Security and Emergency Services</h2>
-      <p className="lawdescription">
-        A career in defense forces promises one of the most prestigious and
-        respected positions in the country. The Indian Armed Forces are the
-        military forces of India, which consists of four professional uniformed
-        services: The Indian Army, Indian Air Force, Indian Navy and Indian
-        Coast Guard. The various paramilitary organizations and various
-        inter-service institutions also help the Indian Armed Forces. The
-        Ministry of Defense is responsible for the management of armed forces in
-        India. Armed forces offer very exciting career to young men and women in
-        several fields. Career in the forces promises a life full of adventure.
-        To ensure that appropriate candidates are chosen, a comprehensive
-        selection process is adopted by the armed forces through Service
-        Selection Board (SSB) Interview. Selection procedure involves three
-        phases: Objective test, Interview and medical examination. Candidates
-        applying for Air force and Navy must have Physics and Maths in the +2
-        level exam. Students can apply after class 12 (NDA) or after graduation
-        (CDS) for defense services. Candidates finally selected by SSB are
-        absorbed by armed forces. Individuals are exposed to various forms of
-        training and promotions at different levels.
+    <div className="container">
+      <h2 className="title">National Security and Emergency Services</h2>
+      <p className="description">
+      A career in the Indian Armed Forces offers prestige, adventure, and diverse opportunities in the Army, Navy, Air Force, and Coast Guard, with selection through SSB interviews, tests, and medical exams. Candidates can apply after Class 12 (NDA) or graduation (CDS), followed by rigorous training and career growth.
       </p>
 
-      <h3 className="lawsubtitle">
+      <h3 className="subtitle">
         Click below to explore any of the following career(s)
       </h3>
-
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
             <a
-              href={career.path}
+              href={career.link}
               target="_blank"
               rel="noopener noreferrer"
               className="button"
@@ -93,6 +69,7 @@ const Security = () => {
               See Details
             </a>
           </div>
+
         ))}
       </div>
     </div>

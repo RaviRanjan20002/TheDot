@@ -44,39 +44,25 @@ const careers = [
 ];
 const Textile = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">Textile and Clothing Industry</h2>
-      <p className="lawdescription">
-        The textile and clothing industry is a vital part of the global economy,
-        involving the design, production, and distribution of textiles and
-        apparel. Careers in this industry range from designing fabrics to
-        managing sales and ensuring quality control. Professionals in this field
-        work on innovations in fabric technology, sustainable fashion, and
-        efficient manufacturing processes. Whether you are interested in
-        creative design, production, or retail management, the textile industry
-        offers diverse career paths with opportunities to influence fashion
-        trends and contribute to global markets.
+    <div className="container">
+      <h2 className="title">Textile and Clothing Industry</h2>
+      <p className="description">
+      The textile and clothing industry offers diverse careers in design, production, and sales, focusing on fabric innovation, sustainable fashion, and quality control. Professionals influence fashion trends and contribute to global markets and economies.
       </p>
 
       <h3 className="lawsubtitle">
         Click below to explore any of the following career(s)
       </h3>
 
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
-            <a
-              href={career.path}
-              target="_blank"
-              rel="noopener noreferrer"
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
+            <a 
+              href={career.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="button"
             >
               See Details

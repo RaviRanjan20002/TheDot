@@ -63,54 +63,25 @@ const careers = [
 
 const Media = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">Media and Communications</h2>
-      <p className="lawdescription">
-        Journalists in the 21st century play a very important role in providing
-        necessary information to people regarding the day-to-day life and keep
-        the citizens of the country updated with the current affairs and
-        happenings that take place. Mass communication helps in disseminating
-        such wide range of information to the people in a variety of ways such
-        as audio, video, graphics, animation etc. Today, journalism is not only
-        about reading out news to the people, but is central to shaping the
-        thought patterns among people. With the increasing number of news
-        channels, newspapers and the expansion of technology, journalism and
-        mass communication has a wide scope and plenty of opportunities. Mass
-        communication opens the door to fields like public relations, editing,
-        scriptwriting, video jockey, and radio jockey amongst many others. The
-        coursework for journalism and mass communication provides the technical
-        aspects of knowledge required for the field. Other important skills
-        necessary for the field are the ability to write and speak effectively,
-        interest in the current affairs. General knowledge constitutes an
-        important component of journalism and mass communication. Specialization
-        in the field of journalism is available in areas like sports, politics,
-        finance and economics, investigation etc. Master level courses are also
-        available and are also considered to be important for future growth.
-        Some of the top job recruiters in the field include AIR, NDTV Network,
-        India Today Network, Hindustan Group of Publications, Viacom etc.
-        Trending Field: Reporters, Journalists, Editors, Scriptwriters, Anchors,
-        Writers etc.
+    <div className="container">
+      <h2 className="title">Media and Communications</h2>
+      <p className="description">
+      Journalism and mass communication keep citizens informed and shape public opinion through various media, offering careers in reporting, editing, PR, and broadcasting. With growing media outlets and technology, opportunities span fields like politics, sports, and investigative journalism.
       </p>
 
-      <h3 className="lawsubtitle">
+      <h3 className="subtitle">
         Click below to explore any of the following career(s)
       </h3>
 
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
-            <a
-              href={career.path}
-              target="_blank"
-              rel="noopener noreferrer"
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
+            <a 
+              href={career.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="button"
             >
               See Details

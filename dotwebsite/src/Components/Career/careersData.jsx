@@ -56,7 +56,7 @@ const careersData = [
   { title: "Food and Culinary Art", options: 31, image: Food },
   { title: "Construction and Skilled Trades", options: 52, image: construction },
   { title: "Cultural Heritage Management", options: 10, image: culture },
-  { title: "E-commerce", options: 25, image: ecommerce },
+  { title: "Ecommerce", options: 25, image: ecommerce },
   { title: "Education", options: 36, image: education },
   { title: "Engineering", options: 56, image: engineering },
   { title: "Environmental Care", options: 9, image: Environmental },

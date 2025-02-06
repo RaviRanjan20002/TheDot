@@ -1,4 +1,3 @@
-
 import "./Arts.css";
 
 // Import images

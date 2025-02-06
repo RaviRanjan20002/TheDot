@@ -1,70 +1,80 @@
+import React from 'react';
+import "./Entrepreneurship.css";
 
-import Entrepreneurships from "../../../assets/Entrepreneurships.avif";
-import Family from "../../../assets/family.avif";
+// Import images (replace with actual paths)
+import ManagementAnalyst from "../../../assets/ManagementAnalyst.jpg";
+import SalesManager from "../../../assets/SalesManager.jpg";
+import CorporateCommunication from "../../../assets/CorporateCommunication.jpg";
+import BusinessDevelopment from "../../../assets/BusinessDevelopment.jpg";
+import CEO from "../../../assets/CEO.jpg";
+import NewVentureDevelopers from "../../../assets/NewVentureDevelopers.jpg";
+import AdvertisingExecutive from "../../../assets/AdvertisingExecutive.jpg";
+import BusinessFounder from "../../../assets/BusinessFounder.jpg";
+
+// import MarketingManager from "../../../assets/MarketingManager.jpg";
+// import SocialMedia from "../../../assets/SocialMedia.jpg";
+// import SocialEntrepreneurship from "../../../assets/SocialEntrepreneurship.jpg";
+// import ProductManagement from "../../../assets/ProductManagement.jpg";
+// import ConstructionManager from "../../../assets/ConstructionManager.jpg";
+// import SalesRepresentative from "../../../assets/SalesRepresentative.jpg";
+// import Appraiser from "../../../assets/Appraiser.jpg";
+// import Corporate from "../../../assets/Corporate.jpg";
+// import BusinessConsultant from "../../../assets/BusinessConsultant.jpg";
+// import FinancialAdviser from "../../../assets/FinancialAdviser.jpg";
+// import WebDeveloper from "../../../assets/WebDeveloper.jpg";
+// import SmallBusiness from "../../../assets/SmallBusiness.jpg";
+// import CorporateEntrepreneurship from "../../../assets/CorporateEntrepreneurship.jpg";
+// import VentureCapital from "../../../assets/VentureCapital.jpg";
+// import BusinessAnalyst from "../../../assets/BusinessAnalyst.jpg";
+// import DevelopmentOfficer from "../../../assets/DevelopmentOfficer.jpg";
 import manymore from "../../../assets/manymore.jpg";
+
 const careers = [
-  {
-    title: "Entrepreneurship",
-    image: Entrepreneurships,
-    path: "https://www.econlib.org/library/Enc/Entrepreneurship.html#:~:text=Entrepreneurship%20is%20the%20process%20of,the%20entrepreneur%20makes%20a%20profit.",
-  },
-  {
-    title: "Family Business",
-    image: Family,
-    path: "https://www.econlib.org/library/Enc/Entrepreneurship.html#:~:text=Entrepreneurship%20is%20the%20process%20of,the%20entrepreneur%20makes%20a%20profit.",
-  },
-  { 
-      title: "& many more", 
-      image: manymore, 
-      path: "https://www.econlib.org/library/Enc/Entrepreneurship.html#:~:text=Entrepreneurship%20is%20the%20process%20of,the%20entrepreneur%20makes%20a%20profit."
-  },
+  { title: "Management Analyst", image: ManagementAnalyst },
+  { title: "Sales Manager", image: SalesManager },
+  { title: "Master of Corporate Communication", image: CorporateCommunication },
+  { title: "Business Development", image: BusinessDevelopment },
+  { title: "Chief Executive Officer", image: CEO },
+  { title: "New Venture Developers", image: NewVentureDevelopers },
+  { title: "Advertising Executive", image: AdvertisingExecutive },
+  { title: "Business Founder", image: BusinessFounder },
+
+  // { title: "Marketing Manager", image: MarketingManager },
+  // { title: "Social Media", image: SocialMedia },
+  // { title: "Social Entrepreneurship", image: SocialEntrepreneurship },
+  // { title: "Product Management", image: ProductManagement },
+  // { title: "Construction Manager", image: ConstructionManager },
+  // { title: "Sales Representative", image: SalesRepresentative },
+  // { title: "Appraiser", image: Appraiser },
+  // { title: "Corporate", image: Corporate },
+  // { title: "Business Consultant", image: BusinessConsultant },
+  // { title: "Financial Adviser", image: FinancialAdviser },
+  // { title: "Web Developer", image: WebDeveloper },
+  // { title: "Small Business", image: SmallBusiness },
+  // { title: "Corporate Entrepreneurship", image: CorporateEntrepreneurship },
+  // { title: "Venture Capital", image: VentureCapital },
+  // { title: "Business Analyst", image: BusinessAnalyst },
+  // { title: "Development Officer", image: DevelopmentOfficer },
+  { title: "& many more", image: manymore, link: "https://www.google.com/search?q=Entrepreneurship+Careers" }
 ];
 
 const Entrepreneurship = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">Entrepreneurship</h2>
-      <p className="lawdescription">
-        Entrepreneurs are leaders willing to take risk and exercise initiative.
-        They look to take advantage of market opportunities often by innovating
-        or improving existing products & services. Developed countries are
-        moving from managerial to entrepreneurial economies. India, as an
-        emerging economy, is ensuring that entrepreneurship is embraced as a
-        career choice for the young. The ecosystem for Entrepreneurship commonly
-        known as Start-Ups is at its brightest. While no specific education or
-        training is required to start a business venture of your own, the odds
-        of success increase exponentially when entrepreneurs have a solid
-        education background. With the popularity of entrepreneurship rising,
-        many universities/ institutes offer programs to groom budding
-        entrepreneurs. These programs are available both at undergraduate (BBS,
-        BBA) and post graduate levels (MBA). Most top business schools also
-        provide courses for entrepreneurship. Entrepreneurs are job creators
-        rather than job seekers. They create products and services. Other than
-        the path of owning ones own business, participating in a family
-        business or starting a partnered venture, entrepreneurs also take up
-        roles in the field of business consulting, sales, research and
-        development, not-for-profit management, and mid-level management.
-        Trending Fields: E-Commerce, M-Commerce, EduTech, FinTech, Healthcare
+    <div className="container">
+      <h1>Entrepreneurship Careers</h1>
+      <p className="description">
+        Entrepreneurs drive innovation by seizing market opportunities, often creating new products or services. While no formal education is required, success is enhanced with a solid educational background. Popular fields include E-Commerce, M-Commerce, EduTech, FinTech, and Healthcare. Entrepreneurship can also lead to careers in consulting, sales, and R&D.
       </p>
-      {/* <p className="agriread-more">Read more</p> */}
 
-      <h3 className="lawsubtitle">
-        Click below to explore any of the following career(s)
-      </h3>
+      <h3 className="subtitle">Click below to explore any of the following career(s)</h3>
 
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
             <a
-              href={career.path}
+              href={career.link || `https://www.google.com/search?q=${encodeURIComponent(career.title)}+Career`}
               target="_blank"
               rel="noopener noreferrer"
               className="button"

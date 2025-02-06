@@ -1,79 +1,190 @@
-
 import "./AgricultureMgm.css";
-import ab from "../../../assets/ab.png";
-import ag from "../../../assets/ag.png";
-import Diary from "../../../assets/diary.png";
-import fst from "../../../assets/fst.png";
-import pbg from "../../../assets/pbg.png";
-import soil from "../../../assets/soil.png";
+import AgriculturalInspector from "../../../assets/AgriculturalInspector.jpg";
+import AgriculturalScientist from "../../../assets/AgriculturalScientist.jpg";
+import Agroecologist from "../../../assets/Agroecologist.jpg";
+import AgroforestrySpecialist from "../../../assets/AgroforestrySpecialist.jpg";
+import Agronomist from "../../../assets/Agronomist.png";
+import AquacultureTechnician from "../../../assets/AquacultureTechnician.jpg";
+import ConservationScientist from "../../../assets/ConservationScientist.jpg";
+import EcologicalRestorationTechnician from "../../../assets/EcologicalRestorationTechnician.jpg";
 import manymore from "../../../assets/manymore.jpg";
+// import EnvironmentalConsultant from "../../../assets/EnvironmentalConsultant.png";
+// import EnvironmentalEducator from "../../../assets/EnvironmentalEducator.png";
+// import Farmer from "../../../assets/Farmer.png";
+// import FisheryManager from "../../../assets/FisheryManager.png";
+// import Forester from "../../../assets/Forester.png";
+// import Horticulturist from "../../../assets/Horticulturist.png";
+// import HydroponicsSpecialist from "../../../assets/HydroponicsSpecialist.png";
+// import LandRestorationSpecialist from "../../../assets/LandRestorationSpecialist.png";
+// import PermacultureDesigner from "../../../assets/PermacultureDesigner.png";
+// import PlantPathologist from "../../../assets/PlantPathologist.png";
+// import RanchManager from "../../../assets/RanchManager.png";
+// import RenewableEnergyConsultant from "../../../assets/RenewableEnergyConsultant.png";
+// import SoilScientist from "../../../assets/SoilScientist.png";
+// import SustainableAgricultureSpecialist from "../../../assets/SustainableAgricultureSpecialist.png";
+// import UrbanGardener from "../../../assets/UrbanGardener.png";
+// import VeterinaryTechnician from "../../../assets/VeterinaryTechnician.png";
+// import WildlifeConservationist from "../../../assets/WildlifeConservationist.png";
+
+
+
 const careers = [
   {
-    title: "Food Science and Technology",
-    image: ab,
-    path: "https://www.ift.org/career-development/learn-about-food-science/food-facts/about-fs-and-t",
+    title: "Agricultural Inspector",
+    image: AgriculturalInspector,
+    path: "https://en.wikipedia.org/wiki/Agricultural_inspector",
   },
   {
-    title: "Agricultural Biotechnology",
-    image: ag,
-    path: "https://www.usda.gov/farming-and-ranching/plants-and-crops/biotechnology/agricultural-biotechnology-glossary#:~:text=Agricultural%20Biotechnology%3A%20A%20range%20of,microorganisms%20for%20specific%20agricultural%20uses.",
+    title: "Agricultural Scientist",
+    image: AgriculturalScientist,
+    path: "https://en.wikipedia.org/wiki/Agricultural_science",
   },
   {
-    title: "Agronomy",
-    image: Diary,
-    path: "https://www.britannica.com/science/agronomy",
+    title: "Agroecologist",
+    image: Agroecologist,
+    path: "https://en.wikipedia.org/wiki/Agroecology",
   },
   {
-    title: "Plant Breeding and Genetics",
-    image: fst,
-    path: "https://www.britannica.com/science/plant-breeding",
+    title: "Agroforestry Specialist",
+    image: AgroforestrySpecialist,
+    path: "https://en.wikipedia.org/wiki/Agroforestry",
   },
   {
-    title: "Soil Science",
-    image: pbg,
-    path: "https://en.wikipedia.org/wiki/Soil_science#:~:text=Soil%20science%20is%20the%20study,use%20and%20management%20of%20soils.",
+    title: "Agronomist",
+    image: Agronomist,
+    path: "https://en.wikipedia.org/wiki/Agronomy",
   },
   {
-    title: "Dairy Technology",
-    image: soil,
-    path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
+    title: "Aquaculture Technician",
+    image: AquacultureTechnician,
+    path: "https://en.wikipedia.org/wiki/Aquaculture",
   },
-    {
-        title: "& many more",
-        image: manymore,
-        path: "https://en.wikipedia.org/wiki/Mass_communication",
-    },
+  {
+    title: "Conservation Scientist",
+    image: ConservationScientist,
+    path: "https://en.wikipedia.org/wiki/Conservation_scientist",
+  },
+  {
+    title: "Ecological Restoration Technician",
+    image: EcologicalRestorationTechnician,
+    path: "https://en.wikipedia.org/wiki/Ecological_restoration",
+  },
+  { 
+    title: "& many more", 
+    image: manymore, 
+    path: "https://en.wikipedia.org/wiki/Agriculture"
+},
+  // {
+  //   title: "Environmental Consultant",
+  //   image: EnvironmentalConsultant,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Environmental Educator",
+  //   image: EnvironmentalEducator,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Farmer",
+  //   image: Farmer,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Fishery Manager",
+  //   image: FisheryManager,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Forester",
+  //   image: Forester,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Horticulturist",
+  //   image: Horticulturist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Hydroponics Specialist",
+  //   image: HydroponicsSpecialist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Land Restoration Specialist",
+  //   image: LandRestorationSpecialist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Permaculture Designer",
+  //   image: PermacultureDesigner,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Plant Pathologist",
+  //   image: PlantPathologist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Ranch Manager",
+  //   image: RanchManager,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Renewable Energy Consultant",
+  //   image: RenewableEnergyConsultant,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Soil Scientist",
+  //   image: SoilScientist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Sustainable Agriculture Specialist",
+  //   image: SustainableAgricultureSpecialist,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Urban Gardener",
+  //   image: UrbanGardener,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Veterinary Technician",
+  //   image: VeterinaryTechnician,
+  //   path: "#",
+  // },
+  // {
+  //   title: "Wildlife Conservationist",
+  //   image: WildlifeConservationist,
+  //   path: "#",
+  // },
 ];
 
 const AgricultureMgm = () => {
   return (
-    <div className="agricontainer">
-      <h2 className="agrititle">Food & Agriculture</h2>
-      <p className="agridescription">
-        This field is simply not just about harvesting, crops, seeds, pesticides
-        etc., but also delves into the aspects of trading, feasibility studies,
-        food processing, marketing as well as economics.
+    <div className="container">
+      <h2 className="title">Agriculture & Natural Resource</h2>
+      <p className="description">
+        This field goes beyond crops and pesticides, exploring trading, food processing, marketing, and economics.
       </p>
-      {/* <p className="agriread-more">Read more</p> */}
-
-      <h3 className="agrisubtitle">
+      <h3 className="subtitle">
         Click below to explore any of the following career(s)
       </h3>
 
-      <div className="agricareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="agricareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="agricareer-image"
-              />
-              <p className="agricareer-title">{career.title}</p>
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
+            <a 
+              href={career.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="button"
+            >
+              See Details
             </a>
-            <a href={career.path} target="_blank" rel="noopener noreferrer" className="button">
-               See Details
-             </a>
           </div>
         ))}
       </div>

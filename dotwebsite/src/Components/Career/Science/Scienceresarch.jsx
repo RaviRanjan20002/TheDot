@@ -44,38 +44,25 @@ const careers = [
   ];
 const Scienceresarch = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">Science and Research</h2>
-      <p className="lawdescription">
-        Science and research careers involve the pursuit of knowledge, discovery, 
-        and innovation in various fields such as space exploration, biology, chemistry, 
-        geology, and food science. Scientists and researchers play a crucial role in 
-        advancing technology, improving healthcare, understanding the natural world, 
-        and solving global challenges. Careers in science and research require 
-        curiosity, analytical skills, and a passion for experimentation and discovery. 
-        From astronauts exploring space to food scientists ensuring nutrition and safety, 
-        these professions contribute significantly to society and the future of humanity.
+    <div className="container">
+      <h2 className="title">Science and Research</h2>
+      <p className="description">
+      Careers in science and research drive innovation and discovery in fields like space exploration, biology, chemistry, and food science, contributing to technology, healthcare, and solving global challenges. These roles require curiosity, analytical skills, and a passion for advancing knowledge.
       </p>
 
-      <h3 className="lawsubtitle">
+      <h3 className="subtitle">
         Click below to explore any of the following career(s)
       </h3>
 
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
-            <a
-              href={career.path}
-              target="_blank"
-              rel="noopener noreferrer"
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
+            <a 
+              href={career.link} 
+              target="_blank" 
+              rel="noopener noreferrer" 
               className="button"
             >
               See Details

@@ -37,37 +37,31 @@ const careers = [
     path: "https://en.wikipedia.org/wiki/Occupational_safety_and_health_professional",
   },
   {
-        title: "& many more",
-        image: manymore,
-        path: "https://en.wikipedia.org/wiki/Safety_management",
+    title: "& many more",
+    image: manymore,
+    path: "https://en.wikipedia.org/wiki/Safety_management",
   },
 ];
 
 const Safety = () => {
   return (
-    <div className="lawcontainer">
-      <h2 className="lawtitle">Safety Management Services</h2>
-      <p className="lawdescription">
-        Safety management services play a crucial role in ensuring the health, safety, and well-being of individuals in various industries. Professionals in this field work to identify potential hazards, implement safety protocols, and ensure compliance with regulations to minimize risks. Careers in safety management span diverse sectors, including fire safety, construction, occupational health, and risk management. These roles require strong analytical skills, attention to detail, and a proactive approach to hazard prevention. With increasing workplace safety standards and regulations, the demand for skilled safety professionals continues to grow, making it a promising career path.
+    <div className="container">
+      <h2 className="title">Safety Management Services</h2>
+      <p className="description">
+      Safety management professionals identify hazards, implement protocols, and ensure regulatory compliance across industries like construction, fire safety, and occupational health. With rising safety standards, demand for skilled experts is growing, making it a promising career path.
       </p>
 
-      <h3 className="lawsubtitle">
+      <h3 className="subtitle">
         Click below to explore any of the following career(s)
       </h3>
 
-      <div className="lawcareer-grid">
+      <div className="grid">
         {careers.map((career, index) => (
-          <div key={index} className="lawcareer-card">
-            <a href={career.path} target="_blank" rel="noopener noreferrer">
-              <img
-                src={career.image}
-                alt={career.title}
-                className="lawcareer-image"
-              />
-              <p className="lawcareer-title">{career.title}</p>
-            </a>
+          <div key={index} className="card">
+            <img src={career.image} alt={career.title} />
+            <h2>{career.title}</h2>
             <a
-              href={career.path}
+              href={career.link}
               target="_blank"
               rel="noopener noreferrer"
               className="button"
