@@ -4,7 +4,7 @@ import hsa from "../../../assets/hsa.avif";
 import risk from "../../../assets/risk.avif";
 import hazard from "../../../assets/hzrd.avif";
 import sdr from "../../../assets/sdr.avif";
-
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Fire Safety Officer",
@@ -35,6 +35,11 @@ const careers = [
     title: "Safety Director",
     image: sdr,
     path: "https://en.wikipedia.org/wiki/Occupational_safety_and_health_professional",
+  },
+  {
+        title: "& many more",
+        image: manymore,
+        path: "https://en.wikipedia.org/wiki/Safety_management",
   },
 ];
 

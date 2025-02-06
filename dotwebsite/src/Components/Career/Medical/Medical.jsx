@@ -8,7 +8,7 @@ import Pathologist from "../../../assets/Pathologist.avif";
 import Anesthesiologist from "../../../assets/Anesthesiologist.avif";
 import SportsMedicine from "../../../assets/SportsMedicine.avif";
 import Psychiatry from "../../../assets/Psychiatry.avif";
-
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Doctor",
@@ -55,6 +55,11 @@ const careers = [
     image: Psychiatry,
     path: "https://en.wikipedia.org/wiki/Psychiatry",
   },
+    { 
+      title: "& many more", 
+      image: manymore, 
+      path: "https://en.wikipedia.org/wiki/Medicine"
+    },
 ];
 
 const Medical = () => {

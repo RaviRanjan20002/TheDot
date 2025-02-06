@@ -7,7 +7,7 @@ import wec from "../../../assets/wec.avif";
 import pr from "../../../assets/pr.avif";
 import imgc from "../../../assets/imgc.avif";
 import content from "../../../assets/content.avif";
-
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Event Management",
@@ -53,6 +53,11 @@ const careers = [
     title: "Image Consultant",
     image: imgc,
     path: "https://en.wikipedia.org/wiki/Image_consulting",
+  },
+  {
+      title: "& many more",
+      image: manymore,
+      path: "https://en.wikipedia.org/wiki/Mass_communication",
   },
 ];
 

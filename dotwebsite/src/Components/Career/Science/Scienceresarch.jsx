@@ -4,6 +4,7 @@ import chemist from "../../../assets/chemist.avif";
 import fs from "../../../assets/fs.avif";
 import Geologist from "../../../assets/Geologist.avif";
 import rs from "../../../assets/rs.avif";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
     {
       title: "Astronaut",
@@ -34,6 +35,11 @@ const careers = [
       title: "Research Scientist",
       image: rs,
       path: "https://en.wikipedia.org/wiki/Scientific_research",
+    },
+    {
+          title: "& many more",
+          image: manymore,
+          path: "https://en.wikipedia.org/wiki/Science",
     },
   ];
 const Scienceresarch = () => {

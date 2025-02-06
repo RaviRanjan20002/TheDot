@@ -1,6 +1,7 @@
 
 import Entrepreneurships from "../../../assets/Entrepreneurships.avif";
 import Family from "../../../assets/family.avif";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Entrepreneurship",
@@ -11,6 +12,11 @@ const careers = [
     title: "Family Business",
     image: Family,
     path: "https://www.econlib.org/library/Enc/Entrepreneurship.html#:~:text=Entrepreneurship%20is%20the%20process%20of,the%20entrepreneur%20makes%20a%20profit.",
+  },
+  { 
+      title: "& many more", 
+      image: manymore, 
+      path: "https://www.econlib.org/library/Enc/Entrepreneurship.html#:~:text=Entrepreneurship%20is%20the%20process%20of,the%20entrepreneur%20makes%20a%20profit."
   },
 ];
 

@@ -8,6 +8,7 @@ import aerospace from "../../../assets/aerospace.avif";
 import ece from "../../../assets/ece.avif";
 import civil from "../../../assets/civil.avif";
 import cpl from "../../../assets/cpl.avif";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Computer Science and Engineering",
@@ -54,6 +55,11 @@ const careers = [
     image: cpl,
     path: "https://en.wikipedia.org/wiki/Petroleum_engineering",
   },
+    { 
+      title: "& many more", 
+      image: manymore, 
+      path: "https://www.google.com/search?q=Engineering+careers&sxsrf=AOaemvK1"
+    },
 ];
 
 const Engineering = () => {

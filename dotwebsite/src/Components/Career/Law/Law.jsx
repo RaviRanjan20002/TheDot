@@ -1,6 +1,7 @@
 import "./Law.css";
 import Laww from "../../../assets/laww.avif";
 import Public from "../../../assets/public.avif";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Law",
@@ -11,6 +12,11 @@ const careers = [
     title: "Public Prosecution",
     image: Public,
     path: "https://en.wikipedia.org/wiki/Public_prosecutor",
+  },
+  {
+    title: "& many more",
+    image: manymore,
+    path: "https://en.wikipedia.org/wiki/Cultural_heritage_management",
   },
 ];
 
@@ -27,22 +33,22 @@ const Law = () => {
         lawyer, one is expected to apply abstract law theories to solve problems
         of clients in a diverse set of situations. India has over twelve lakh
         lawyers, but according to reports, only one-fifth of them are capable of
-        practicing law in the courts. Thus, there is a huge demand for well-trained
-        & skilled lawyers. With the increase in the number of premier law
-        colleges in the country and the increasing demand from the industry, a
-        career in law is an extremely lucrative option for the youth. Today, a
-        huge range of specialization options has also emerged for lawyers such
-        as International Taxation Law, Cyber Law, Environmental Law, Sports
-        Management Law, IPR, Aviation Law, and Mergers & Acquisitions Law, etc.
-        Students interested in making a career in law can either do a 5-year
-        course straight after the 12th class or a three-year law course after
-        graduation in any discipline. After graduation, one can further
-        specialize by pursuing an LLM from an Indian or global
-        university/college. People in the field of law work at various
-        corporate houses, law agencies, law firms, litigation, and
-        administrative services, amongst others. Today, leading law firms are the
-        most sought-after destinations for Law Graduates. Some of the top law
-        firms in the country are Amarchand Mangaldas, AZB & Partners, J Sagar
+        practicing law in the courts. Thus, there is a huge demand for
+        well-trained & skilled lawyers. With the increase in the number of
+        premier law colleges in the country and the increasing demand from the
+        industry, a career in law is an extremely lucrative option for the
+        youth. Today, a huge range of specialization options has also emerged
+        for lawyers such as International Taxation Law, Cyber Law, Environmental
+        Law, Sports Management Law, IPR, Aviation Law, and Mergers &
+        Acquisitions Law, etc. Students interested in making a career in law can
+        either do a 5-year course straight after the 12th class or a three-year
+        law course after graduation in any discipline. After graduation, one can
+        further specialize by pursuing an LLM from an Indian or global
+        university/college. People in the field of law work at various corporate
+        houses, law agencies, law firms, litigation, and administrative
+        services, amongst others. Today, leading law firms are the most
+        sought-after destinations for Law Graduates. Some of the top law firms
+        in the country are Amarchand Mangaldas, AZB & Partners, J Sagar
         Associates, Khaitan & Co, Luthra & Luthra. Trending Fields: Corporate
         Law, International Taxation, Cyber Law.
       </p>

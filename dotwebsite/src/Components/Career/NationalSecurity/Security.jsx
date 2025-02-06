@@ -4,6 +4,7 @@ import Iaf from "../../../assets/iaf.avif";
 import caf from "../../../assets/caf.avif";
 import bsf from "../../../assets/bsf.avif";
 import cid from "../../../assets/cid.avif";
+import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
   {
@@ -35,6 +36,11 @@ const careers = [
     title: "CID officer",
     image: cid,
     path: "https://en.wikipedia.org/wiki/Crime_Investigation_Department",
+  },
+  {
+      title: "& many more",
+      image: manymore,
+      path: "https://en.wikipedia.org/wiki/Indian_Armed_Forces",
   },
 ];
 

@@ -4,7 +4,7 @@ import tour from "../../../assets/tour.avif";
 import ctmg from "../../../assets/ctmg.avif";
 import bthr from "../../../assets/bthr.avif";
 import trd from "../../../assets/trd.avif";
-
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Hotel Management",
@@ -36,6 +36,11 @@ const careers = [
     image: trd,
     path: "https://en.wikipedia.org/wiki/Training_and_development",
   },
+    {
+      title: "& many more",
+      image: manymore,
+      path: "https://en.wikipedia.org/wiki/Hospitality_industry"
+    }
 ];
 
 const Hospitality = () => {

@@ -1,6 +1,7 @@
 import Archaeologist from "../../../assets/Archaeologist.avif";
 import Archivist from "../../../assets/Archivist.avif";
 import MuseumCurator from "../../../assets/Museum Curator.avif";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Archaeologist",
@@ -17,6 +18,11 @@ const careers = [
     image: MuseumCurator,
     path: "https://en.wikipedia.org/wiki/Cultural_heritage_management",
   },
+    { 
+        title: "& many more", 
+        image: manymore, 
+        path: "https://en.wikipedia.org/wiki/Cultural_heritage_management"
+    },
 ];
 
 const Cultures= () => {
