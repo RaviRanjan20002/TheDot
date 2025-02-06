@@ -33,10 +33,15 @@ import FinanceEconomicsMgm from "./FinanceEconomics/FinanceEconomicsMgm";
 import AnimalCareFarmingMgm from "./AnimalCareFarming/AnimalCareFarmingMgm";
 import BeautyPersonalCareMgm from "./BeautyPersonalCare/BeautyPersonalCareMgm";
 import EnvironmentalCareMgm from "./EnviornmentalCare/EnvironmentalCareMgm";
+import Transport from "./Transportation/Transport";
+import Socialservice from "./Socialservice/Socialservice";
+import Salesmgm from "./Salesmgm/Salesmgm";
+import Politicslaw from "./Politicslaw/Politicslaw";
+import Mediaarts from "./Mediaarts/Mediaarts";
+import Manufacturing from "./Manufacturing/Manufacturing";
+import It from "./InformationTechnology/It";
+import Gaming from "./Gaming/Gaming";
 import Fashion from "./FashionIndustry/Fashion";
-
-
-// Import other components for different careers
 
 const careerComponents = {
   "Administration and Management":AdminManagment,
@@ -72,7 +77,15 @@ const careerComponents = {
   "Animal Care and Farming": AnimalCareFarmingMgm,
   "Beauty and Personal Care": BeautyPersonalCareMgm,
   "Environmental Care": EnvironmentalCareMgm,
-  "Fashion Industry": Fashion,
+  "Transportation and Logistics":Transport,
+  "Social Services and Counseling":Socialservice,
+  "Sales and Management":Salesmgm,
+  "Politics and Law":Politicslaw,
+  "Media and Performing Arts": Mediaarts ,
+  "Manufacturing and Production":Manufacturing,
+  "Information Technology":It,
+  "Gaming Industry":Gaming,
+  "Fashion Industry":Fashion,
 };
 
 const CareerDetail = () => {
