@@ -1,34 +1,35 @@
-// Import images
-import Music from "../../../assets/Musics.avif";
-import Choreographer from "../../../assets/Choreographer.avif";
-import ActingDramatics from "../../../assets/ActingDramatics.avif";
-import Modelling from "../../../assets/Modelling.avif";
-import Stage from "../../../assets/stage.avif";
+
+import Barrister from "../../../assets/Barrister.avif";
+import Judge from "../../../assets/Judge.avif";
+import Politician from "../../../assets/ActingDramatics.avif";
+import Lawyer from "../../../assets/Lawyer.avif";
+import NotaryPublic from "../../../assets/np.avif";
 import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
-  { title: "Music", image: Music, link: "https://www.careersinmusic.com/" },
-  { title: "Choreographer", image: Choreographer, link: "https://www.careersinballet.com/choreographer-career-guide" },
-  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://www.backstage.com/magazine/article/acting-career-guide-72359/" },
-  { title: "Modelling", image: Modelling, link: "https://www.models.com/" },
-  { title: "Stage Lighting", image: Stage, link: "https://www.productionhub.com/profiles/details/43737/stage-lighting-career-guide" },
+  { title: "Barrister", image: Barrister, link: "https://en.wikipedia.org/wiki/Barrister" },
+  { title: "Judge", image: Judge, link: "https://en.wikipedia.org/wiki/Judge" },
+  { title: "Politician", image: Politician, link: "https://en.wikipedia.org/wiki/Politician" },
+  { title: "Lawyer", image: Lawyer, link: "https://en.wikipedia.org/wiki/Lawyer" },
+  { title: "Notary Public", image: NotaryPublic, link: "https://en.wikipedia.org/wiki/Notary_public" },
   { 
     title: "& many more", 
     image: manymore, 
-    link: "https://www.google.com/search?q=Art+and+design+careers&sca_esv=6aebd63ec5ad7295&sxsrf=AHTn8zpg45FYyy-rWcVFyUXFTMUzY-LO0A%3A1738737548382&ei=jAejZ6_3FsPi2roP4_296Q4&ved=0ahUKEwiv7baP9quLAxVDsVYBHeN-L-0Q4dUDCBA&uact=5&oq=Art+and+design+careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiFkFydCBhbmQgZGVzaWduIGNhcmVlcnMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5IhR5QqxVYlhpwAngBkAEAmAH3AaABywOqAQMyLTK4AQPIAQD4AQGYAgSgAtsDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgcQABiABBgNwgIGEAAYDRgewgIIEAAYBRgNGB7CAggQABgIGA0YHpgDAIgGAZAGCZIHBTIuMC4yoAfBDg&sclient=gws-wiz-serp"
+    link: "https://en.wikipedia.org/wiki/Law"
   },
 ];
 
 const Politicslaw = () => {
   return (
     <div className="container">
-      <h1>Arts and Design Careers</h1>
+      <h1>Politics and Law</h1>
       <p className="description">
-        Performing arts involves self-expression through music, dance, and drama. 
-        With India being a leading film producer, there are vast career opportunities in 
-        theatre, entertainment, television, and film. From certificate courses to masters 
-        programs, a formal education in the arts enhances skills and opportunities in 
-        this dynamic field.
+        The fields of politics and law shape societies through governance, justice, and policy-making. 
+        Lawyers and judges uphold the rule of law, ensuring fairness and justice, while politicians 
+        influence legislation and public policies. Careers in this domain require strong analytical 
+        skills, communication abilities, and a deep understanding of legal and political systems. 
+        Whether advocating for justice, serving in government, or providing legal counsel, professionals 
+        in politics and law play a crucial role in shaping the world.
       </p>
 
       <h3 className="subtitle">Click below to explore any of the following career(s)</h3>
