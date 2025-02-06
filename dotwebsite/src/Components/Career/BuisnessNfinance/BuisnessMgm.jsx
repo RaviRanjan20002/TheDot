@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./BusinessMgm.css";
 
 import AccountantImage from "../../../assets/Accountant.jpg";

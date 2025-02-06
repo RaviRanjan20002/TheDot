@@ -1,4 +1,4 @@
-/* General Container Styling */
+/* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -14,13 +14,22 @@ h1 {
   color: #333;
 }
 
-.arts-description {
+.architecture-description {
   justify-content: center;
   font-size: 16px;
   margin: 0 auto 1rem auto;
   text-align: center;
-  color: #333;
+  color: #1f1e1e;
   max-width: 80%;
+}
+
+/* Subtitle */
+h3.subtitle {
+  font-size: 18px;
+  color: black;
+  text-align: center;
+  margin: 20px 0;
+  font-weight: bold;
 }
 
 /* Flexbox Layout for Cards */
@@ -60,13 +69,13 @@ h1 {
   border-radius: 0px;
 }
 
-/* Card Title */
+/* Title */
 .card h2 {
   font-size: 18px;
   font-weight: bold;
   margin: 8px 0;
   text-align: center;
-  color: #333;
+  color: #222;
 }
 
 /* Button Styling */

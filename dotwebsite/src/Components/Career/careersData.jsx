@@ -52,7 +52,7 @@ const careersData = [
   { title: "Arts and Design", options: 42, image: Arts },
   { title: "Beauty and Personal Care", options: 25, image: Beauty },
   { title: "Business and Finance", options: 26, image: Business },
-  { title: "Business and Management", options: 26, image: BusinessMgm },
+  { title: "Entrepreneurship", options: 26, image: BusinessMgm },
   { title: "Food and Culinary Art", options: 31, image: Food },
   { title: "Construction and Skilled Trades", options: 52, image: construction },
   { title: "Cultural Heritage Management", options: 10, image: culture },

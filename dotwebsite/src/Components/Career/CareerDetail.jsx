@@ -20,13 +20,22 @@ import Medical from "./Medical/Medical";
 import Civil from "./CivilServices/Civil";
 import Law from "./Law/Law";
 import Arts from "./Arts/Arts";
+import Entrepreneurship from "./Entrepreneurship/Entrepreneurship";
+import Cultures from "./Culturals/Cultures";
+import Media from "./Media/Media";
+import Hospitality from "./Hospitality/Hospitality";
+import Security from "./NationalSecurity/Security";
+import Safety from "./Safety/Safety";
+import Scienceresarch from "./Science/Scienceresarch";
+import Textile from "./Textile/Textile";
 import ITSoftwareMgm from "./ITSoftware/ITSoftwareMgm";
 import FinanceEconomicsMgm from "./FinanceEconomics/FinanceEconomicsMgm";
 import AnimalCareFarmingMgm from "./AnimalCareFarming/AnimalCareFarmingMgm";
 import BeautyPersonalCareMgm from "./BeautyPersonalCare/BeautyPersonalCareMgm";
 import EnvironmentalCareMgm from "./EnviornmentalCare/EnvironmentalCareMgm";
 import ECommerceMgm from "./E-Commerce/ECommerceMgm";
-import Environment from "./Environmental/Environment";
+
+
 
 
 // Import other components for different careers
@@ -51,14 +60,22 @@ const careerComponents = {
   "Medical": Medical,
   "Civil Services": Civil,
   "Law and Public Policy":Law,
-  "Arts and Design":Arts,
+  "Arts and Design": Arts,
+  "Entrepreneurship":Entrepreneurship,
+  "Cultural Heritage Management":Cultures,
+  "Media and Communications":Media,
+  "Hospitality Industry":Hospitality,
+  "National Security and Emergency Services":Security,
+  "Safety Management Services":Safety,
+  "Science and Research":Scienceresarch,
+  "Textile and Clothing Industry":Textile,
   "IT and Computer Science": ITSoftwareMgm,
   "Finance and Economics":FinanceEconomicsMgm,
   "Animal Care and Farming": AnimalCareFarmingMgm,
   "Beauty and Personal Care": BeautyPersonalCareMgm,
   "Environmental Care": EnvironmentalCareMgm,
   "Ecommerce": ECommerceMgm,
-  "Gaming Industry":Environment,
+  
 };
 
 const CareerDetail = () => {
