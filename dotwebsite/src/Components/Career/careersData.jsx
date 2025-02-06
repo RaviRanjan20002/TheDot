@@ -41,7 +41,7 @@ import Sports from "../../assets/sports.jpg";
 import Textile from "../../assets/textile.jpg";
 import Transport from "../../assets/transport.jpg";
 import Travel from "../../assets/travel.jpg";
-import "../../../styles/CareerLibrary.css";
+import "./CareerLibrary.css";
 
 
 const careersData = [
