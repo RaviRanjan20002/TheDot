@@ -68,7 +68,7 @@ const careersData = [
   { title: "Gaming Industry", options: 18, image: Gaming },
   { title: "Hospitality and Tourism", options: 25, image: Hospitality },
   { title: "Hospitality Industry", options: 15, image: Hospitalityindustry },
-  { title: "Information Technology (IT)", options: 24, image: it },
+  { title: "Information Technology", options: 24, image: it },
   { title: "IT and Computer Science", options: 31, image: itcs },
   { title: "Law and Public Policy", options: 24, image: law },
   { title: "Manufacturing and Production", options: 133, image: Manufacture },

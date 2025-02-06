@@ -33,9 +33,7 @@ import FinanceEconomicsMgm from "./FinanceEconomics/FinanceEconomicsMgm";
 import AnimalCareFarmingMgm from "./AnimalCareFarming/AnimalCareFarmingMgm";
 import BeautyPersonalCareMgm from "./BeautyPersonalCare/BeautyPersonalCareMgm";
 import EnvironmentalCareMgm from "./EnviornmentalCare/EnvironmentalCareMgm";
-import ECommerceMgm from "./E-Commerce/ECommerceMgm";
-
-
+import Fashion from "./FashionIndustry/Fashion";
 
 
 // Import other components for different careers
@@ -74,8 +72,7 @@ const careerComponents = {
   "Animal Care and Farming": AnimalCareFarmingMgm,
   "Beauty and Personal Care": BeautyPersonalCareMgm,
   "Environmental Care": EnvironmentalCareMgm,
-  "Ecommerce": ECommerceMgm,
-  
+  "Fashion Industry": Fashion,
 };
 
 const CareerDetail = () => {
