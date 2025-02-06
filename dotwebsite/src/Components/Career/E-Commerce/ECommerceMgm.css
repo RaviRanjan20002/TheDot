@@ -1,0 +1,124 @@
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 16px;
+}
+
+/* Heading */
+h1 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 16px;
+    text-align: center;
+    color: #333;
+}
+
+.ecomdescription {
+    justify-content: center;
+    font-size: 16px;
+    margin: 0 auto 1rem auto;
+    text-align: center;
+    color: #333;
+    max-width: 80%;
+}
+
+/* Subtitle */
+
+
+/* Flexbox Layout for Cards */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 16px;
+    padding: 16px;
+}
+
+/* Card Style */
+.card {
+    background-color: white;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 4px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center horizontally */
+    justify-content: space-between; /* Distribute space between image, title, and button */
+    width: 280px;
+    min-height: 350px; /* Consistent height */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 250px; /* Fixed height for images */
+    object-fit: contain; /* Maintain aspect ratio, fit within container */
+    border-radius: 0px;
+}
+
+/* Title */
+.card h2 {
+    font-size: 18px;
+    font-weight: bold;
+    margin: 8px 0;
+    text-align: center;
+    color: #222;
+}
+
+/* Button Styling */
+.button {
+    background-color: #3b82f6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    display: inline-block;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    margin-top: auto; /* Push button to bottom of card */
+}
+
+.button:hover {
+    background-color: #2563eb;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .grid {
+        justify-content: center;
+    }
+    .card {
+        width: 300px; /* Adjust card width for larger screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .grid {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+    .card img {
+        height: 200px; /* Slightly smaller image height for mobile */
+    }
+}
