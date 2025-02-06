@@ -1,36 +1,35 @@
 
-
-// Import images
-import Music from "../../../assets/Musics.avif";
-import Choreographer from "../../../assets/Choreographer.avif";
-import ActingDramatics from "../../../assets/ActingDramatics.avif";
-import Modelling from "../../../assets/Modelling.avif";
-import Stage from "../../../assets/stage.avif";
+import Advertiser from "../../../assets/Advertiser.avif";
+import Brand from "../../../assets/brand.avif";
+import MarketResearcher from "../../../assets/MarketResearcher.jpg";
+import Retailer from "../../../assets/Retailer.avif";
+import SalesExecutive from "../../../assets/SalesExecutive.avif";
 import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
-  { title: "Music", image: Music, link: "https://www.careersinmusic.com/" },
-  { title: "Choreographer", image: Choreographer, link: "https://www.careersinballet.com/choreographer-career-guide" },
-  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://www.backstage.com/magazine/article/acting-career-guide-72359/" },
-  { title: "Modelling", image: Modelling, link: "https://www.models.com/" },
-  { title: "Stage Lighting", image: Stage, link: "https://www.productionhub.com/profiles/details/43737/stage-lighting-career-guide" },
+  { title: "Advertiser", image: Advertiser, link: "https://en.wikipedia.org/wiki/Advertising" },
+  { title: "Brand Manager", image: Brand, link: "https://en.wikipedia.org/wiki/Brand_management" },
+  { title: "Market Researcher", image: MarketResearcher, link: "https://en.wikipedia.org/wiki/Market_research" },
+  { title: "Retailer", image: Retailer, link: "https://en.wikipedia.org/wiki/Retail" },
+  { title: "Sales Executive", image: SalesExecutive, link: "https://en.wikipedia.org/wiki/Sales" },
   { 
     title: "& many more", 
     image: manymore, 
-    link: "https://www.google.com/search?q=Art+and+design+careers&sca_esv=6aebd63ec5ad7295&sxsrf=AHTn8zpg45FYyy-rWcVFyUXFTMUzY-LO0A%3A1738737548382&ei=jAejZ6_3FsPi2roP4_296Q4&ved=0ahUKEwiv7baP9quLAxVDsVYBHeN-L-0Q4dUDCBA&uact=5&oq=Art+and+design+careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiFkFydCBhbmQgZGVzaWduIGNhcmVlcnMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5IhR5QqxVYlhpwAngBkAEAmAH3AaABywOqAQMyLTK4AQPIAQD4AQGYAgSgAtsDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgcQABiABBgNwgIGEAAYDRgewgIIEAAYBRgNGB7CAggQABgIGA0YHpgDAIgGAZAGCZIHBTIuMC4yoAfBDg&sclient=gws-wiz-serp"
+    link: "https://en.wikipedia.org/wiki/Business_management"
   },
 ];
 
 const Salesmgm = () => {
   return (
     <div className="container">
-      <h1>Arts and Design Careers</h1>
+      <h1>Sales and Management</h1>
       <p className="description">
-        Performing arts involves self-expression through music, dance, and drama. 
-        With India being a leading film producer, there are vast career opportunities in 
-        theatre, entertainment, television, and film. From certificate courses to masters 
-        programs, a formal education in the arts enhances skills and opportunities in 
-        this dynamic field.
+        Sales and management are the driving forces behind business growth, customer relationships, 
+        and market expansion. Professionals in this field analyze consumer needs, develop marketing 
+        strategies, and manage teams to optimize business success. Careers in advertising, brand 
+        management, market research, and retail provide exciting opportunities to work in a dynamic 
+        and competitive environment. Whether you are helping businesses grow or managing large-scale 
+        retail operations, this industry offers rewarding career paths with strong growth potential.
       </p>
 
       <h3 className="subtitle">Click below to explore any of the following career(s)</h3>

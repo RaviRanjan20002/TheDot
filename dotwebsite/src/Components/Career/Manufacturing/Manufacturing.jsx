@@ -1,35 +1,36 @@
-
 // Import images
-import Music from "../../../assets/Musics.avif";
-import Choreographer from "../../../assets/Choreographer.avif";
-import ActingDramatics from "../../../assets/ActingDramatics.avif";
-import Modelling from "../../../assets/Modelling.avif";
-import Stage from "../../../assets/stage.avif";
+import AircraftMechanic from "../../../assets/AircraftMechanic.avif";
+import Designer from "../../../assets/Designer.avif";
+import MetalWorker from "../../../assets/MetalWorker.avif";
+import qe from "../../../assets/qe.avif";
+import wm from "../../../assets/wm.avif";
 import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
-  { title: "Music", image: Music, link: "https://www.careersinmusic.com/" },
-  { title: "Choreographer", image: Choreographer, link: "https://www.careersinballet.com/choreographer-career-guide" },
-  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://www.backstage.com/magazine/article/acting-career-guide-72359/" },
-  { title: "Modelling", image: Modelling, link: "https://www.models.com/" },
-  { title: "Stage Lighting", image: Stage, link: "https://www.productionhub.com/profiles/details/43737/stage-lighting-career-guide" },
+  { title: "Aircraft Mechanic", image: AircraftMechanic, link: "https://en.wikipedia.org/wiki/Aircraft_maintenance_technician" },
+  { title: "Designer", image: Designer, link: "https://en.wikipedia.org/wiki/Design" },
+  { title: "Metal Worker", image: MetalWorker, link: "https://en.wikipedia.org/wiki/Metalworking" },
+  { title: "Quality Engineer", image: qe, link: "https://en.wikipedia.org/wiki/Quality_engineering" },
+  { title: "Warehouse Manager", image: wm, link: "https://en.wikipedia.org/wiki/Warehouse" },
   { 
     title: "& many more", 
     image: manymore, 
-    link: "https://www.google.com/search?q=Art+and+design+careers&sca_esv=6aebd63ec5ad7295&sxsrf=AHTn8zpg45FYyy-rWcVFyUXFTMUzY-LO0A%3A1738737548382&ei=jAejZ6_3FsPi2roP4_296Q4&ved=0ahUKEwiv7baP9quLAxVDsVYBHeN-L-0Q4dUDCBA&uact=5&oq=Art+and+design+careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiFkFydCBhbmQgZGVzaWduIGNhcmVlcnMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5IhR5QqxVYlhpwAngBkAEAmAH3AaABywOqAQMyLTK4AQPIAQD4AQGYAgSgAtsDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgcQABiABBgNwgIGEAAYDRgewgIIEAAYBRgNGB7CAggQABgIGA0YHpgDAIgGAZAGCZIHBTIuMC4yoAfBDg&sclient=gws-wiz-serp"
+    link: "https://en.wikipedia.org/wiki/Manufacturing"
   },
 ];
 
 const Manufacturing = () => {
   return (
     <div className="container">
-      <h1>Arts and Design Careers</h1>
+      <h1>Manufacturing and Industrial Careers</h1>
       <p className="description">
-        Performing arts involves self-expression through music, dance, and drama. 
-        With India being a leading film producer, there are vast career opportunities in 
-        theatre, entertainment, television, and film. From certificate courses to masters 
-        programs, a formal education in the arts enhances skills and opportunities in 
-        this dynamic field.
+        Manufacturing and industrial careers play a vital role in producing goods and 
+        maintaining supply chains worldwide. These careers require expertise in design, 
+        engineering, mechanics, and quality control to ensure efficiency and innovation. 
+        From aircraft maintenance to metalworking, each profession in this field contributes 
+        to building and maintaining essential infrastructure and products used daily. 
+        Advancements in automation, robotics, and sustainable practices continue to shape 
+        the future of manufacturing, making it an ever-evolving and dynamic industry.
       </p>
 
       <h3 className="subtitle">Click below to explore any of the following career(s)</h3>
