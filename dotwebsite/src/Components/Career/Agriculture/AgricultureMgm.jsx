@@ -6,6 +6,7 @@ import Diary from "../../../assets/diary.png";
 import fst from "../../../assets/fst.png";
 import pbg from "../../../assets/pbg.png";
 import soil from "../../../assets/soil.png";
+import manymore from "../../../assets/manymore.jpg";
 const careers = [
   {
     title: "Food Science and Technology",
@@ -37,8 +38,11 @@ const careers = [
     image: soil,
     path: "https://www.sciencedirect.com/topics/agricultural-and-biological-sciences/dairy-technology#:~:text=Dairy%20husbandry%20involves%20the%20production,wholesome%2C%20and%20sensorially%20desirable%20products.",
   },
-  // { title: "Horticulture", image: "/images/horticulture.png" },
-  // { title: "Agricultural Engineering", image: "/images/agricultural-engineering.png" },
+    {
+        title: "& many more",
+        image: manymore,
+        path: "https://en.wikipedia.org/wiki/Mass_communication",
+    },
 ];
 
 const AgricultureMgm = () => {
