@@ -36,6 +36,7 @@ import Logistics from "../../../assets/logisticsinside.jpg";
 import Marketing from "../../../assets/marketinginside.jpg";
 import ProjectManagement from "../../../assets/projectinside.jpg";
 import Sales from "../../../assets/salesinside.jpg";
+import manymore from "../../../assets/manymore.jpg";
 
 const roles = [
     { title: "Administrative Assistant", image: Administration },
@@ -72,7 +73,12 @@ const roles = [
     { title: "Supply Chain Manager", image: SupplyChainManager },
     { title: "Training and Development Manager", image: TrainingDevelopmentManager },
     { title: "Vice President of Operations", image: VPOperations },
-    { title: "Warehouse Manager", image: WarehouseManager }
+    { title: "Warehouse Manager", image: WarehouseManager },
+    {
+        title: "& many more",
+        image: manymore,
+        path: "https://en.wikipedia.org/wiki/Travel_and_Tourism",
+    },
 ];
 
 const AdminManagment = () => {

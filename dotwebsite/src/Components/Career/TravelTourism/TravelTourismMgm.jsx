@@ -6,10 +6,11 @@ import AdventureSports from "../../../assets/AdventureSports.jpg";
 import AdventureTourism from "../../../assets/AdventureTourism.jpg";
 import AirHostessTraining from "../../../assets/AirHostessTraining.jpg";
 import AirlineCabinCrew from "../../../assets/AirlineCabinCrew.jpg";
-// import FitnessTrainer from "../../../assets/FitnessTrainer.jpg";
-// import MuseumCurator from "../../../assets/MuseumCurator.jpg";
-// import MuseumDirector from "../../../assets/MuseumDirector.jpg";
-// import PersonalTrainer from "../../../assets/PersonalTrainer.jpg";
+import FitnessTrainer from "../../../assets/FitnessTrainer.jpg";
+import MuseumCurator from "../../../assets/MuseumCurator.jpg";
+import MuseumDirector from "../../../assets/MuseumDirector.jpg";
+import PersonalTrainer from "../../../assets/PersonalTrainer.jpg";
+import manymore from "../../../assets/manymore.jpg";
 // import ScubaDiving from "../../../assets/ScubaDiving.jpg";
 // import SpaceTourismGuide from "../../../assets/SpaceTourismGuide.jpg";
 // import SportsPhysicalFitness from "../../../assets/SportsPhysicalFitness.jpg";
@@ -22,10 +23,16 @@ const roles = [
   { title: "Adventure Tourism", image: AdventureTourism },
   { title: "Air Hostess Training", image: AirHostessTraining },
   { title: "Airline Cabin Crew", image: AirlineCabinCrew },
-//   { title: "Fitness Trainer", image: FitnessTrainer },
-//   { title: "Museum Curator", image: MuseumCurator },
-//   { title: "Museum Director", image: MuseumDirector },
-//   { title: "Personal Trainer", image: PersonalTrainer },
+  { title: "Fitness Trainer", image: FitnessTrainer },
+  { title: "Museum Curator", image: MuseumCurator },
+  { title: "Museum Director", image: MuseumDirector },
+  { title: "Personal Trainer", image: PersonalTrainer },
+  {
+      title: "& many more",
+      image: manymore,
+      path: "https://en.wikipedia.org/wiki/Travel_and_Tourism",
+    },
+  
 //   { title: "Scuba Diving", image: ScubaDiving },
 //   { title: "Space Tourism Guide", image: SpaceTourismGuide },
 //   { title: "Sports/Physical Fitness", image: SportsPhysicalFitness },

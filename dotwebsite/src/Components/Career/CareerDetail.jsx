@@ -42,6 +42,7 @@ import Manufacturing from "./Manufacturing/Manufacturing";
 import It from "./InformationTechnology/It";
 import Gaming from "./Gaming/Gaming";
 import Fashion from "./FashionIndustry/Fashion";
+import ECommerceMgm from "./E-Commerce/ECommerceMgm";
 
 const careerComponents = {
   "Administration and Management":AdminManagment,
@@ -86,6 +87,7 @@ const careerComponents = {
   "Information Technology":It,
   "Gaming Industry":Gaming,
   "Fashion Industry":Fashion,
+  "Ecommerce":ECommerceMgm,
 };
 
 const CareerDetail = () => {
