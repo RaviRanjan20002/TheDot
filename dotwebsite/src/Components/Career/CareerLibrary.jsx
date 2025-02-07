@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./CareerLibrary.css";
 import  { useState } from "react";
 import careersData from "./careersData"; // Import career data
-import CareerOptions from "./CareerOptions"; // Import CareerOptions component
+//import CareerOptions from "./CareerOptions"; // Import CareerOptions component
 
 const CareerLibrary = () => {
   const [query, setQuery] = useState('');
