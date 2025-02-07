@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import "../../../styles/CareerLibrary.css";
+import "./CareerLibrary.css";
 import  { useState } from "react";
 import careersData from "./careersData"; // Import career data
 

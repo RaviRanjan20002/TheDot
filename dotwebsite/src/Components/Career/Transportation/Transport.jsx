@@ -3,6 +3,11 @@ import FlightInstructor from "../../../assets/fi.avif";
 import ActingDramatics from "../../../assets/Acting.avif";
 import LogisticsManager from "../../../assets/lgm.avif";
 import MerchantNavy from "../../../assets/MerchantNavy.avif";
+import TransportPlanner from "../../../assets/transport_planner.jpg";
+import SupplyChainAnalyst from "../../../assets/supply_chain_analyst.jpg";
+import FreightForwarder from "../../../assets/freight_forwarder.jpg";
+// import AirTrafficController from "../../../assets/air_traffic_controller.avif";
+// import PortManager from "../../../assets/port_manager.avif";
 import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
@@ -31,6 +36,31 @@ const careers = [
     image: MerchantNavy, 
     link: "https://en.wikipedia.org/wiki/Merchant_Navy" 
   },
+  { 
+    title: "Transport Planner", 
+    image: TransportPlanner, 
+    link: "https://en.wikipedia.org/wiki/Transport_planner" 
+  },
+  { 
+    title: "Supply Chain Analyst", 
+    image: SupplyChainAnalyst, 
+    link: "https://en.wikipedia.org/wiki/Supply_chain_management" 
+  },
+  { 
+    title: "Freight Forwarder", 
+    image: FreightForwarder, 
+    link: "https://en.wikipedia.org/wiki/Freight_forwarder" 
+  },
+  // { 
+  //   title: "Air Traffic Controller", 
+  //   image: AirTrafficController, 
+  //   link: "https://en.wikipedia.org/wiki/Air_traffic_controller" 
+  // },
+  // { 
+  //   title: "Port Manager", 
+  //   image: PortManager, 
+  //   link: "https://en.wikipedia.org/wiki/Port_management" 
+  // },
   { 
     title: "& many more", 
     image: manymore, 
