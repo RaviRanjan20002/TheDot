@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./AnimalCareFarmingMgm.css";
 
 // Import images (replace with actual paths)

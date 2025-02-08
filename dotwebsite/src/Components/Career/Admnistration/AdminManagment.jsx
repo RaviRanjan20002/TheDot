@@ -30,7 +30,6 @@ import TrainingDevelopmentManager from "../../../assets/TrainingDevelopmentManag
 import VPOperations from "../../../assets/VPOperations.jpg";
 import SupplyChainManager from "../../../assets/SupplyChainManager.jpg";
 import RegionalManager from "../../../assets/RegionalManager.jpg";
-
 import IT from "../../../assets/itinside.jpg";
 import Logistics from "../../../assets/logisticsinside.jpg";
 import Marketing from "../../../assets/marketinginside.jpg";

@@ -35,7 +35,7 @@ const Engineering = () => {
         and more. Engineers drive innovation and provide technological solutions
         that impact various aspects of our lives. Specializations include
         Electronics, Computer Science, Mechanical, Civil, Aerospace, and more.
-        A four-year bachelor's degree from a reputed institution opens doors to
+        A four-year bachelors degree from a reputed institution opens doors to
         top companies like Google, Facebook, Amazon, and Microsoft.
       </p>
 

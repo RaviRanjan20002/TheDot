@@ -1,4 +1,4 @@
-import React from 'react';
+
 import "./Entrepreneurship.css";
 
 // Import images (replace with actual paths)
@@ -30,14 +30,14 @@ import BusinessFounder from "../../../assets/BusinessFounder.jpg";
 import manymore from "../../../assets/manymore.jpg";
 
 const careers = [
-  { title: "Management Analyst", image: ManagementAnalyst },
-  { title: "Sales Manager", image: SalesManager },
-  { title: "Master of Corporate Communication", image: CorporateCommunication },
-  { title: "Business Development", image: BusinessDevelopment },
-  { title: "Chief Executive Officer", image: CEO },
-  { title: "New Venture Developers", image: NewVentureDevelopers },
-  { title: "Advertising Executive", image: AdvertisingExecutive },
-  { title: "Business Founder", image: BusinessFounder },
+  { title: "Management Analyst", image: ManagementAnalyst, link: "https://en.wikipedia.org/wiki/Management_consulting" },
+  { title: "Sales Manager", image: SalesManager, link: "https://en.wikipedia.org/wiki/Sales_management" },
+  { title: "Master of Corporate Communication", image: CorporateCommunication, link: "https://en.wikipedia.org/wiki/Corporate_communication" },
+  { title: "Business Development", image: BusinessDevelopment, link: "https://en.wikipedia.org/wiki/Business_development" },
+  { title: "Chief Executive Officer", image: CEO, link: "https://en.wikipedia.org/wiki/Chief_executive_officer" },
+  { title: "New Venture Developers", image: NewVentureDevelopers, link: "https://en.wikipedia.org/wiki/Entrepreneurship" },
+  { title: "Advertising Executive", image: AdvertisingExecutive, link: "https://en.wikipedia.org/wiki/Advertising" },
+  { title: "Business Founder", image: BusinessFounder, link: "https://en.wikipedia.org/wiki/Entrepreneurship" },
 
   // { title: "Marketing Manager", image: MarketingManager },
   // { title: "Social Media", image: SocialMedia },

@@ -47,14 +47,14 @@ import manymore from "../../../assets/manymore.jpg";
 // import WebDeveloper from "../../../assets/WebDeveloper.avif";
 
 const careers = [
-  { title: "Music", image: Music, link: "https://www.careersinmusic.com/" },
-  { title: "Choreographer", image: Choreographer, link: "https://www.careersinballet.com/choreographer-career-guide" },
-  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://www.backstage.com/magazine/article/acting-career-guide-72359/" },
-  { title: "Modelling", image: Modelling, link: "https://www.models.com/" },
-  { title: "Fine Artist", image: FineArtist, link: "https://www.fineartistcareers.com/" },
-  { title: "Graphic Designer", image: GraphicDesigner, link: "https://www.graphicdesignercareers.com/" },
-  { title: "Illustrator", image: Illustrator, link: "https://www.illustratorcareers.com/" },
-  { title: "Interior Decorator", image: InteriorDecorator, link: "https://www.interiordecoratorcareers.com/" },
+  { title: "Music", image: Music, link: "https://en.wikipedia.org/wiki/Music" },
+  { title: "Choreographer", image: Choreographer, link: "https://en.wikipedia.org/wiki/Choreography" },
+  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://en.wikipedia.org/wiki/Acting" },
+  { title: "Modelling", image: Modelling, link: "https://en.wikipedia.org/wiki/Model_(person)" },
+  { title: "Fine Artist", image: FineArtist, link: "https://en.wikipedia.org/wiki/Fine_art" },
+  { title: "Graphic Designer", image: GraphicDesigner, link: "https://en.wikipedia.org/wiki/Graphic_design" },
+  { title: "Illustrator", image: Illustrator, link: "https://en.wikipedia.org/wiki/Illustration" },
+  { title: "Interior Decorator", image: InteriorDecorator, link: "https://en.wikipedia.org/wiki/Interior_design"},
   { 
     title: "& many more", 
     image: manymore, 

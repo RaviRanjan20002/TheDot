@@ -8,7 +8,9 @@ import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
 import CareerLibrary from "./Components/Career/CareerLibrary";
-import CareerDetail from "./Components/Career/CareerDetail"; // Import new component
+import CareerDetail from "./Components/Career/CareerDetail";
+
+// Import new component
 
 function App() {
   return (

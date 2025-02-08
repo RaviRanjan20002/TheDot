@@ -1,8 +1,8 @@
 import AIML from "../../../assets/aiml.jpg";
-import Blockchain from "../../../assets/blockchain.jpg";
+import Blockchain from "../../../assets/blockchain.avif";
 import BI from "../../../assets/bi.jpg";
 import Cybersecurity from "../../../assets/cybersecurity.jpg";
-import DataScience from "../../../assets/datascience.jpg";
+import DataScience from "../../../assets/DataScientist.avif";
 import DatabaseAdmin from "../../../assets/databaseadmin.jpg";
 import DevOps from "../../../assets/devops.jpg";
 import DigitalNomad from "../../../assets/digitalnomad.jpg";
@@ -66,7 +66,7 @@ const IT = () => {
       <p className="description">
         The IT industry is at the heart of the digital revolution, offering diverse roles from software development to cybersecurity.
         As technology continues to evolve, professionals in this field are in high demand to innovate, secure, and optimize digital solutions
-        across industries worldwide. Whether you're interested in coding, data analysis, or managing complex systems, IT has a career path for you.
+        across industries worldwide. Whether you are interested in coding, data analysis, or managing complex systems, IT has a career path for you.
       </p>
 
       <h3 className="subtitle">Click below to explore any of the following career(s)</h3>

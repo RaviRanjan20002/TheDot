@@ -80,7 +80,7 @@ const Medical = () => {
             <img src={career.image} alt={career.title} />
             <h2>{career.title}</h2>
             <a 
-              href={career.link} 
+              href={career.path} 
               target="_blank" 
               rel="noopener noreferrer" 
               className="button"
