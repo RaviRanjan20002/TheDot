@@ -41,6 +41,9 @@ import Sports from "../../assets/sports.avif";
 import Textile from "../../assets/textile.avif";
 import Transport from "../../assets/transport.avif";
 import Travel from "../../assets/travel.avif";
+import nonmedical from "../../assets/nonmedical.avif";
+import humanities from "../../assets/humanities.avif";
+
 import "./CareerLibrary.css";
 const careersData = [
   { title: "Administration and Management", options: 34, image: Administration },
@@ -86,6 +89,9 @@ const careersData = [
   { title: "Textile and Clothing Industry", options: 52, image: Textile },
   { title: "Transportation and Logistics", options: 86, image: Transport },
   { title: "Travel and Tourism", options: 14, image: Travel },
+  { title: "NonMedical", options: 14, image: nonmedical },
+  { title: "Humanities", options: 14, image: humanities },
+
 ];
 
 export default careersData;

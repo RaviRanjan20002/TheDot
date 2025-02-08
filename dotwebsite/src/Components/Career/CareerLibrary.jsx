@@ -1,17 +1,20 @@
 import { Link } from "react-router-dom";
 import "./CareerLibrary.css";
-import  { useState } from "react";
+import { useState } from "react";
 import careersData from "./careersData"; // Import career data
-//import CareerOptions from "./CareerOptions"; // Import CareerOptions component
+import CareerOptions from "./CareerOptions"; // Import CareerOptions component
 
 const CareerLibrary = () => {
   const [query, setQuery] = useState('');
 
   return (
     <div>
-      {/* <CareerOptions /> */}
       <div className="career-library">
-        <h1>Career Library</h1>
+        <h1>
+          <Link to="/career-streams" className="career-library-link">
+            Career Library
+          </Link>
+        </h1>
         <p className="subtitle">
           See all major career options out there and learn about each one of them.
         </p>
@@ -50,4 +53,4 @@ const CareerLibrary = () => {
   );
 };
 
-export default CareerLibrary;
+export default CareerLibrary; 

@@ -47,16 +47,17 @@ import manymore from "../../../assets/manymore.jpg";
 // import WebDeveloper from "../../../assets/WebDeveloper.avif";
 
 const careers = [
-  { title: "Music", image: Music, link: "https://www.careersinmusic.com/" },
-  { title: "Choreographer", image: Choreographer, link: "https://www.careersinballet.com/choreographer-career-guide" },
-  { title: "Acting/Dramatics", image: ActingDramatics, link: "https://www.backstage.com/magazine/article/acting-career-guide-72359/" },
-  { title: "Modelling", image: Modelling, link: "https://www.models.com/" },
-  { title: "Fine Artist", image: FineArtist, link: "https://www.fineartistcareers.com/" },
-  { title: "Graphic Designer", image: GraphicDesigner, link: "https://www.graphicdesignercareers.com/" },
-  { title: "Illustrator", image: Illustrator, link: "https://www.illustratorcareers.com/" },
-  { title: "Interior Decorator", image: InteriorDecorator, link: "https://www.interiordecoratorcareers.com/" },
-  { 
-    title: "& many more", 
+  
+    { title: "Music", image: Music, link: "https://en.wikipedia.org/wiki/Music" },
+    { title: "Choreographer", image: Choreographer, link: "https://en.wikipedia.org/wiki/Choreography" },
+    { title: "Acting/Dramatics", image: ActingDramatics, link: "https://en.wikipedia.org/wiki/Acting" },
+    { title: "Modelling", image: Modelling, link: "https://en.wikipedia.org/wiki/Model_(person)" },
+    { title: "Fine Artist", image: FineArtist, link: "https://en.wikipedia.org/wiki/Fine_art" },
+    { title: "Graphic Designer", image: GraphicDesigner, link: "https://en.wikipedia.org/wiki/Graphic_design" },
+    { title: "Illustrator", image: Illustrator, link: "https://en.wikipedia.org/wiki/Illustration" },
+    { title: "Interior Decorator", image: InteriorDecorator, link: "https://en.wikipedia.org/wiki/Interior_design" },
+  
+   { title: "& many more", 
     image: manymore, 
     link: "https://www.google.com/search?q=Art+and+design+careers&sca_esv=6aebd63ec5ad7295&sxsrf=AHTn8zpg45FYyy-rWcVFyUXFTMUzY-LO0A%3A1738737548382&ei=jAejZ6_3FsPi2roP4_296Q4&ved=0ahUKEwiv7baP9quLAxVDsVYBHeN-L-0Q4dUDCBA&uact=5&oq=Art+and+design+careers&gs_lp=Egxnd3Mtd2l6LXNlcnAiFkFydCBhbmQgZGVzaWduIGNhcmVlcnMyChAAGIAEGEMYigUyChAAGIAEGEMYigUyBBAAGB4yBBAAGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB4yBhAAGAUYHjIGEAAYBRgeMgYQABgFGB5IhR5QqxVYlhpwAngBkAEAmAH3AaABywOqAQMyLTK4AQPIAQD4AQGYAgSgAtsDwgIKEAAYsAMY1gQYR8ICDRAAGIAEGLADGEMYigXCAgcQABiABBgNwgIGEAAYDRgewgIIEAAYBRgNGB7CAggQABgIGA0YHpgDAIgGAZAGCZIHBTIuMC4yoAfBDg&sclient=gws-wiz-serp"
   },
@@ -140,3 +141,5 @@ const Arts = () => {
 };
 
 export default Arts;
+
+
