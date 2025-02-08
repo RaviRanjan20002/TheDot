@@ -8,9 +8,8 @@ import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
 import CareerLibrary from "./Components/Career/CareerLibrary";
-import CareerDetail from "./Components/Career/CareerDetail";
-
-// Import new component
+import CareerDetail from "./Components/Career/CareerDetail"; // Import new component
+import CareerStreams from "./Components/Career/CareerStream";
 
 function App() {
   return (
@@ -23,6 +22,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="CrashCourse" element={<CrashCourse />} />
           <Route path="CareerLibrary" element={<CareerLibrary />} />
+          <Route path="/career-streams" element={<CareerStreams />} />
           <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
           <Route path="*" element={<NoPage />} />
         </Route>

@@ -140,3 +140,5 @@ const Arts = () => {
 };
 
 export default Arts;
+
+

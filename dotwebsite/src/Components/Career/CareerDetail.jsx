@@ -43,6 +43,8 @@ import It from "./InformationTechnology/It";
 import Gaming from "./Gaming/Gaming";
 import Fashion from "./FashionIndustry/Fashion";
 import ECommerceMgm from "./E-Commerce/ECommerceMgm";
+import NonMedicalMgm from "./NonMedical/NonMedicalMgm";
+import HumanitiesMgm from "./Humanities/HumanitiesMgm";
 
 const careerComponents = {
   "Administration and Management":AdminManagment,
@@ -88,6 +90,8 @@ const careerComponents = {
   "Gaming Industry":Gaming,
   "Fashion Industry":Fashion,
   "Ecommerce":ECommerceMgm,
+  "NonMedical": NonMedicalMgm,
+  "Humanities": HumanitiesMgm ,
 };
 
 const CareerDetail = () => {

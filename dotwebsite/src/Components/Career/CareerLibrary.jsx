@@ -1,0 +1,56 @@
+import { Link } from "react-router-dom";
+import "./CareerLibrary.css";
+import { useState } from "react";
+import careersData from "./careersData"; // Import career data
+import CareerOptions from "./CareerOptions"; // Import CareerOptions component
+
+const CareerLibrary = () => {
+  const [query, setQuery] = useState('');
+
+  return (
+    <div>
+      <div className="career-library">
+        <h1>
+          <Link to="/career-streams" className="career-library-link">
+            Career Library
+          </Link>
+        </h1>
+        <p className="subtitle">
+          See all major career options out there and learn about each one of them.
+        </p>
+        <hr />
+        {/* AI Assistant Banner */}
+        <div className="ai-assistant">
+          <strong>🚀 Introducing Our Career Page Provided by The DOT Counselling Team</strong>
+          <p>Kickstart your career journey with the best Career guidance.</p>
+        </div>
+        {/* Search Bar */}
+        <input
+          type="text"
+          placeholder="Search by name or career..."
+          onChange={(e) => setQuery(e.target.value.toLowerCase())}
+          className="search-bar"
+        />
+        {/* Career Cards */}
+        <div className="career-grid">
+          {careersData.filter((career) => career.title.toLowerCase().includes(query)
+          ).map((career, index) => (
+            <Link
+              key={index}
+              to={`/career/${career.title.replace(/\s+/g, "-").toLowerCase()}`} // Dynamic URL
+              className="career-card"
+            >
+              <img src={career.image} alt={career.title} className="career-image" />
+              <div className="career-info">
+                <h2>{career.title}</h2>
+                <p>{career.options} career options</p>
+              </div>
+            </Link>
+          ))}
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default CareerLibrary; 
