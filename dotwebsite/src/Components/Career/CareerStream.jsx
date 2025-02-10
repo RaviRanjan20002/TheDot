@@ -15,24 +15,16 @@ const CareerStreams = () => {
       </p>
       <img src={studentImage} alt="Student" className="student-image" />
 
-      <div className="streams-grid">
-        <Link to="/CareerLibrary?stream=Medical" className="stream-card">
-          Medical
-        </Link>
-        <Link to="/CareerLibrary?stream=Non-Medical" className="stream-card">
-          Non-Medical
-        </Link>
-        <Link to="/CareerLibrary?stream=others" className="stream-card">
-          Others
-        </Link>
-      </div>
+            <div className="streams-grid">
+                <Link to="/CareerLibrary?stream=Medical" className="stream-card">Medical</Link>
+                <Link to="/CareerLibrary?stream=Non-Medical" className="stream-card">Non-Medical</Link>
+                <Link to="/CareerLibrary?stream=others" className="stream-card">Others</Link>
+            </div>
 
-      <p className="good-luck-text">All the Best for Your Future!</p>
-      <p className="motivational-quote">
-        Your journey starts here. Choose wisely and dream big!
-      </p>
-    </div>
-  );
+            <p className="good-luck-text">All the Best for Your Future!</p>
+            <p className="motivational-quote">DOT BY DOT WE BUILD YOUR FUTURE!</p>
+        </div>
+    );
 };
 
 export default CareerStreams;
