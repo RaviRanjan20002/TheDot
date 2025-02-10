@@ -21,8 +21,9 @@ const CareerStreams = () => {
                 <Link to="/CareerLibrary?stream=others" className="stream-card">Others</Link>
             </div>
 
-            <p className="good-luck-text">All the Best for Your Future!</p>
-            <p className="motivational-quote">DOT BY DOT WE BUILD YOUR FUTURE!</p>
+            <p className="good-luck-text">DOT BY DOT WE BUILD YOUR FUTURE!</p>
+            {/* <p className="motivational-quote">DOT BY DOT WE BUILD YOUR FUTURE!</p> */}
+            
         </div>
     );
 };
