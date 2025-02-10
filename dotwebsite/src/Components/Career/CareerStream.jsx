@@ -16,9 +16,7 @@ const CareerStreams = () => {
             <div className="streams-grid">
             <Link to="/CareerLibrary?stream=Medical" className="stream-card">Medical</Link>
 <Link to="/CareerLibrary?stream=Non-Medical" className="stream-card">Non-Medical</Link>
-<Link to="/CareerLibrary?stream=Arts" className="stream-card">Humanities/Arts</Link>
-<Link to="/CareerLibrary?stream=Commerce" className="stream-card">Commerce</Link>
-
+<Link to="/CareerLibrary?stream=others" className="stream-card">Others</Link>
             </div>
 
             <p className="good-luck-text">All the Best for Your Future!</p>
