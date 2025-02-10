@@ -1,6 +1,5 @@
 // New Component for Career Streams Page
 
-import React from "react";
 import { Link } from "react-router-dom";
 import "./CareerStreams.css";
 import studentImage from "../../assets/student-image2.png"; 
@@ -15,14 +14,15 @@ const CareerStreams = () => {
             <img src={studentImage} alt="Student" className="student-image" />
 
             <div className="streams-grid">
-                <Link to="/career/medical" className="stream-card">Medical</Link>
-                <Link to="/career/NonMedical" className="stream-card">Non-Medical</Link>
-                <Link to="/career/Humanities" className="stream-card">Humanities/Arts</Link>
-                <Link to="/career/commerce" className="stream-card">Commerce</Link>
+            <Link to="/CareerLibrary?stream=Medical" className="stream-card">Medical</Link>
+<Link to="/CareerLibrary?stream=Non-Medical" className="stream-card">Non-Medical</Link>
+<Link to="/CareerLibrary?stream=Arts" className="stream-card">Humanities/Arts</Link>
+<Link to="/CareerLibrary?stream=Commerce" className="stream-card">Commerce</Link>
+
             </div>
 
             <p className="good-luck-text">All the Best for Your Future!</p>
-            <p className="motivational-quote">"Your journey starts here. Choose wisely and dream big!"</p>
+            <p className="motivational-quote">Your journey starts here. Choose wisely and dream big!</p>
         </div>
     );
 };
