@@ -44,7 +44,6 @@ import Travel from "../../assets/travel.avif";
 import nonmedical from "../../assets/nonmedical.avif";
 import humanities from "../../assets/humanities.avif";
 
-import "./CareerLibrary.css";
 const careersData = [
   { title: "Administration and Management", options: 34, image: Administration },
   { title: "Agriculture and Natural Resources", options: 25, image: Agriculture },
