@@ -30,7 +30,7 @@
   
     .subtitle {
       color: gray;
-      font-size: 20px;
+      font-size: 30px;
     }
   
     .ai-assistant {
@@ -172,3 +172,25 @@
      height: 200px;
      width: 200px;
   }
+
+  .career-library-link {
+    margin: 1rem;
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Inherits text color from parent */
+    cursor: pointer; /* Indicates it's clickable */
+  }
+  
+  .career-library-link span {
+    margin: 2rem;
+    padding: 1rem;
+    font-family: "DM Serif Text", serif;
+    /* font-family: "PT Serif", serif; */
+    font-size: 40px; /* Adjust size as needed */
+    font-weight: bold; /* Normal text weight */
+    
+  }
+  
+  .career-library-link:hover {
+    text-decoration: none; /* Adds underline on hover for visual feedback */
+  }
+  
