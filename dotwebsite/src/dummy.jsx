@@ -151,3 +151,19 @@ const CareerLibrary = () => {
 };
 
 export default CareerLibrary;
+// <!-- <!doctype html>
+// <html lang="en">
+//   <head>
+//     <meta charset="UTF-8" />
+//     <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+//     <link rel="icon" type="image/jpeg" href="./src/assets/logoimg.png" />
+//     <meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+//     <meta name="description" content="Best Coaching Centers for IIT JEE and NEET in Rewari with Fee Structure: Join The DOT Institute in Rewari for JEE Main , JEE Advanced and NEET Preparation. We provide cutting-edge educational solutions that help students to excel in their goals."/> 
+//     <meta name="keywords" content="iit-jee,NEET,Best Coaching in Rewari for IIT JEE and NEET,IIT JEE and NEET in Rewari,Rewari,Best Coaching for NEET,Best Faculty in Rewari, Highest Selection Ratio in rewari,Top Coaching Centers for IIT JEE and NEET in Rewari" /> 
+//     <title> Best coaching for IIT-JEE Mains &amp; Advanced, NEET  in Rewari</title>
+//   </head>
+//   <body>
+//     <div id="root"></div>
+//     <script type="module" src="/src/main.jsx"></script>
+//   </body>
+// </html> -->

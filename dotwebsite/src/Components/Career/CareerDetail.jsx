@@ -100,7 +100,7 @@ const CareerDetail = () => {
   const career = careersData.find((c) => c.title.toLowerCase() === formattedTitle.toLowerCase());
 
   if (!career) {
-    return <h2>Career Not Found</h2>;
+    return <h2>Career Not Found !wait till we build </h2>;
   }
 
   const SpecificCareerComponent = careerComponents[career.title];
