@@ -91,7 +91,7 @@ const Navbar = () => {
             <ul className="dropdown-menu">
               <li>
                 <a
-                  href="https://script.google.com/macros/s/AKfycbyb7MreEsHHZwDRbJbQSftB1aJ9fKfX0KlpSD-CBdyIeJAqjq6b3xgrKjUu3KvZ9tHtPg/exec"
+                  href="https://script.google.com/macros/s/AKfycbx7ukQgqNo03DhSqG50M6GSwxml0-2EPv6qOAsTI3YJVzGLegZ3VhACSYsSrpzNjY6WGQ/exec"
                   className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -102,7 +102,7 @@ const Navbar = () => {
               </li>
               <li>
                 <a
-                  href="https://script.google.com/macros/s/AKfycbxCMkxiK7oOh2zPgp6m3EDK0sZbT5_8n-b7_gOWqq50gNSyQdjmEy42mBIZhWK2FZkEeA/exec"
+                  href="https://script.google.com/macros/s/AKfycbx65WSAKBgYbZgP5tBybMAkjQXcNBPDK-Bnm28FYBInkiktskn86QsEAPiYhwvLO_2KkQ/exec"
                   className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
