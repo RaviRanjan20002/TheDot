@@ -5,7 +5,7 @@ body, ul, li, a, span {
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
-  font-family: Arial, sans-serif;
+  /* font-family: Arial, sans-serif; */
 }
 
 /* Navbar container */
@@ -14,7 +14,7 @@ body, ul, li, a, span {
   background-color: #141b23;
   background-size: cover;
   background-position: center;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,16 +31,17 @@ body, ul, li, a, span {
 }
 
 .DotName {
+  font-size: 1.5rem;
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   color: #ffffff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 2px;
 }
 
 .navbar .logo {
-  width: 50px;
-  height: 50px;
+  width: 70px;
+  height: 70px;
   clip-path: circle(50%);
   object-fit: cover;
   animation: rotation 8s infinite linear;
