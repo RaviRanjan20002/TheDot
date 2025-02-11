@@ -56,14 +56,14 @@
     animation-fill-mode: forwards;
 }
 
-/* .student-image {
+.student-image {
     width: 100%;
     max-width: 1000px;
     height: auto;
     margin-bottom: 20px;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-} */
+    /* border-radius: 15px; */
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); */
+}
 
 @keyframes typing {
     from {
@@ -124,11 +124,11 @@
 .good-luck-text {
     font-size: 2rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
     overflow: hidden;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
     margin: 0 auto;
-    letter-spacing: .04em;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 /* .motivational-quote {
@@ -181,18 +181,19 @@
     }
 
     .good-luck-text {
-        font-size: 1.8rem;
+        font-size: 1.5rem;
+        padding: 0 15px;
     }
 }
 
 @media (max-width: 480px) {
     .career-streams-container h1 {
-        font-size: 2rem;
+        font-size: 1.9rem;
         margin-bottom: 20px;
     }
 
     .description-text {
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     .stream-card {
@@ -207,13 +208,14 @@
     }
 
     .good-luck-text {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        padding: 0 10px;
     }
 }
 
 @media (max-width: 320px) {
     .career-streams-container h1 {
-        font-size: 1.8rem;
+        font-size: 1.3rem;
         margin-bottom: 15px;
     }
 
@@ -229,6 +231,6 @@
     }
 
     .good-luck-text {
-        font-size: 1.3rem;
+        font-size: 0.7rem;
     }
 }

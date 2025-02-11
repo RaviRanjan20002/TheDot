@@ -1,7 +1,8 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Navbar.css";
-import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logo.jpg";
+import logo from "../../assets/logo21.png";
 
 const Navbar = () => {
   const [isDropdownVisible, setDropdownVisible] = useState(false);
@@ -43,7 +44,7 @@ const Navbar = () => {
         <div className="logo">
           <img src={logo} alt="Logo" className="logo" />
         </div>
-        <h3 className="DotName">The Dot</h3>
+        <h3 className="DotName">The DOT</h3>
       </div>
 
       <button className="menu-toggle" onClick={toggleMobileMenu}>
@@ -64,7 +65,7 @@ const Navbar = () => {
           <Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link>
         </li>
         <li>
-          <Link to="/career-streams" onClick={closeMobileMenu}>CareerLibrary</Link>
+          <Link to="/career-streams" onClick={closeMobileMenu}>CAREER LIBRARY</Link>
         </li>
         <li className="dropdown">
           <span className="dropdown-toggle" onClick={toggleDropdown}>
