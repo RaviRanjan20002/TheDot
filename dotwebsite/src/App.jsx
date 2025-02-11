@@ -7,9 +7,9 @@ import Contact from "./Components/pages/Contact";
 import NoPage from "./Components/pages/NoPage";
 import Gallery from "./Components/pages/Gallery";
 import CrashCourse from "./Components/pages/CrashCourse";
-import CareerLibrary from "./Components/Career/CareerLibrary";
-import CareerDetail from "./Components/Career/CareerDetail"; // Import new component
-import CareerStreams from "./Components/Career/CareerStream";
+import CareerLibrary from "./Components/Career/CareerFolder/CareerLibrary";
+import CareerDetail from "./Components/Career/CareerFolder/CareerDetail"; // Import new component
+import CareerStreams from "./Components/Career/CareerFolder/CareerStream";
 
 function App() {
   return (
