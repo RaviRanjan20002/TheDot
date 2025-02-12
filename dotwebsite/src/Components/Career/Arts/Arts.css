@@ -1,8 +1,21 @@
+/* Global Box Sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 /* Container */
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 16px;
+  padding: 16px 32px;
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 16px;
+  }
 }
 
 /* Heading */
@@ -15,9 +28,9 @@ h1 {
 }
 
 .architecture-description {
-  justify-content: center;
+  justify-content:center;
   font-size: 16px;
-  margin: 0 auto 1rem auto;
+  margin: 1rem auto 1rem auto;
   text-align: center;
   color: #1f1e1e;
   max-width: 80%;
@@ -37,7 +50,7 @@ h3.subtitle {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 16px;
+  gap: 24px;
   padding: 16px;
 }
 
@@ -104,6 +117,10 @@ h3.subtitle {
   .grid {
     justify-content: center;
   }
+
+  .card {
+    width: 45%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -121,4 +138,14 @@ h3.subtitle {
   .card {
     width: 100%;
   }
+}
+
+/* Prevent Overflow */
+body {
+  overflow-x: hidden;
+}
+
+/* Debugging Outline - Remove after testing */
+.container, .grid, .card {
+  outline: 1px dashed white;
 }
