@@ -1,6 +1,6 @@
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fdf6ee;
+    background:#c5e4df;;
     margin: 0;
     padding: 0;
   }
@@ -38,7 +38,7 @@ body {
   }
   
   .start-trial {
-    background: linear-gradient(to right, #ff6600, #ff4500);
+    background: linear-gradient(to right, #0b8874,#067260);
     color: white;
     padding: 12px 20px;
     border-radius: 25px;
