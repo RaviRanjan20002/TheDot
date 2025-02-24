@@ -124,7 +124,7 @@ const Navbar = () => {
           ></a>
           
           <a
-            href="https://www.instagram.com/thedot_iit/"
+            href="https://www.instagram.com/thedotinstitute"
             className="fab fa-instagram"
             target="_blank"
             rel="noopener noreferrer"

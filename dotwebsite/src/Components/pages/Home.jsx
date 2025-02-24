@@ -6,17 +6,21 @@ import Facilities from '../Section/Facilities';
 import Testimonial from '../Section/Testimonial';
 import Footer from '../Section/Footer';
 import BannerSlider from '../Section/BannerSlider';
+import Whatsapp from '../Section/Whatsapp';
+import NewHome from '../pages/NewHome';
 
 function Home() {
   return (
     <div>
-      <BannerSlider/> 
+      <BannerSlider/>
       <Courses/>
+      <NewHome/>
       <Registration/>
       <Empowering/>
       <Facilities/>
       <Testimonial/>
       <Footer/>
+      <Whatsapp/>
     </div>
   );
 }
