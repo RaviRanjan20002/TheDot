@@ -1,7 +1,6 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Navbar.css";
-// import logo from "../../assets/logo.jpg";
 import logo from "../../assets/logo21.png";
 
 const Navbar = () => {
@@ -14,14 +13,10 @@ const Navbar = () => {
   };
 
   const toggleMobileMenu = () => {
-    setMobileMenuVisible(!isMobileMenuVisible);
+    setMobileMenuVisible((prev) => !prev);
   };
 
-  const closeMobileMenu = () => {
-    setMobileMenuVisible(false);
-  };
-
-  // Close the mobile menu if clicked outside
+  // Close the mobile menu when clicking outside
   useEffect(() => {
     const handleClickOutside = (event) => {
       if (
@@ -39,7 +34,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="navbar" ref={mobileMenuRef}>
+    <nav className="navbar">
       <div className="logo-container">
         <div className="logo">
           <img src={logo} alt="Logo" className="logo" />
@@ -51,51 +46,38 @@ const Navbar = () => {
         ☰
       </button>
 
-      <ul className={`nav-links ${isMobileMenuVisible ? "active" : ""}`}>
+      <ul
+        className={`nav-links ${isMobileMenuVisible ? "active" : ""}`}
+        ref={mobileMenuRef}
+      >
         <li>
-          <Link to="/" onClick={closeMobileMenu}>HOME</Link>
+          <Link to="/" onClick={() => setMobileMenuVisible(false)}>HOME</Link>
         </li>
         <li>
-          <Link to="/blogs" onClick={closeMobileMenu}>BLOGS</Link>
+          <Link to="/blogs" onClick={() => setMobileMenuVisible(false)}>BLOGS</Link>
         </li>
         <li>
-          <Link to="/gallery" onClick={closeMobileMenu}>GALLERY</Link>
+          <Link to="/gallery" onClick={() => setMobileMenuVisible(false)}>GALLERY</Link>
         </li>
         <li>
-          <Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link>
+          <Link to="/contact" onClick={() => setMobileMenuVisible(false)}>CONTACT</Link>
         </li>
         <li>
-          <Link to="/career-streams" onClick={closeMobileMenu}>CAREER LIBRARY</Link>
+          <Link to="/career-streams" onClick={() => setMobileMenuVisible(false)}>CAREER LIBRARY</Link>
         </li>
         <li className="dropdown">
           <span className="dropdown-toggle" onClick={toggleDropdown}>
             VIEW RESULT
-            <span className="dropdown-icon">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                width="12"
-                height="12"
-                fill="currentColor"
-                viewBox="0 0 16 16"
-                style={{ marginLeft: "5px" }}
-              >
-                <path
-                  fillRule="evenodd"
-                  d="M1.5 5.5a.5.5 0 0 1 .866-.5l5.5 7a.5.5 0 0 1-.732.684L1.5 5.5zm12.866-.5a.5.5 0 1 1 .732.684l-5.5 7a.5.5 0 0 1-.866-.5l5.5-7z"
-                />
-              </svg>
-            </span>
+            <span className="dropdown-icon">▼</span>
           </span>
-
           {isDropdownVisible && (
             <ul className="dropdown-menu">
               <li>
                 <a
                   href="https://script.google.com/macros/s/AKfycbx7ukQgqNo03DhSqG50M6GSwxml0-2EPv6qOAsTI3YJVzGLegZ3VhACSYsSrpzNjY6WGQ/exec"
-                  className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={closeMobileMenu}
+                  onClick={() => setMobileMenuVisible(false)}
                 >
                   JEE Main Result
                 </a>
@@ -103,10 +85,9 @@ const Navbar = () => {
               <li>
                 <a
                   href="https://script.google.com/macros/s/AKfycbx65WSAKBgYbZgP5tBybMAkjQXcNBPDK-Bnm28FYBInkiktskn86QsEAPiYhwvLO_2KkQ/exec"
-                  className="no-zoom"
                   target="_blank"
                   rel="noopener noreferrer"
-                  onClick={closeMobileMenu}
+                  onClick={() => setMobileMenuVisible(false)}
                 >
                   NEET Result
                 </a>
@@ -120,29 +101,28 @@ const Navbar = () => {
             className="fab fa-facebook-f"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={closeMobileMenu}
+            onClick={() => setMobileMenuVisible(false)}
           ></a>
-          
           <a
             href="https://www.instagram.com/thedotinstitute"
             className="fab fa-instagram"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={closeMobileMenu}
+            onClick={() => setMobileMenuVisible(false)}
           ></a>
           <a
             href="http://linkedin.com/in/the-dot-754739257"
             className="fab fa-linkedin-in"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={closeMobileMenu}
+            onClick={() => setMobileMenuVisible(false)}
           ></a>
           <a
             href="https://www.youtube.com/@thedotrewari"
             className="fab fa-youtube"
             target="_blank"
             rel="noopener noreferrer"
-            onClick={closeMobileMenu}
+            onClick={() => setMobileMenuVisible(false)}
           ></a>
         </div>
       </ul>
