@@ -11,10 +11,10 @@ body, ul, li, a, span {
 /* Navbar container */
 .navbar {
   background-image: url(../src/assets/footer-widget-bg.png);
-  background-color: #141b23;
+  background-color: white;
   background-size: cover;
   background-position: center;
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -30,30 +30,14 @@ body, ul, li, a, span {
   gap: 10px;
 }
 
-.DotName {
-  font-size: 1.5rem;
-  font-family: "DM Serif Text", serif;
-  font-weight: 400;
-  color: #ffffff;
-  /* text-transform: uppercase; */
-  letter-spacing: 2px;
-}
+
 
 .navbar .logo {
-  width: 70px;
-  height: 70px;
-  clip-path: circle(50%);
-  object-fit: cover;
-  animation: rotation 8s infinite linear;
-}
-@keyframes rotation {
-  from {
-    transform:rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-  
+  margin: 0;
+  padding-left: 0.8rem;
+  width: 150px;
+  height: 100px;
+  object-fit: contain;
 }
 
 /* Navigation links */
@@ -68,7 +52,7 @@ body, ul, li, a, span {
 .nav-links .dropdown-toggle {
   font-family: "DM Serif Text", serif;
   font-weight: 400;
-  color: white;
+  color: #141b23;
   padding: 10px;
   border-radius: 5px;
   cursor: pointer;
@@ -77,7 +61,7 @@ body, ul, li, a, span {
 
 .nav-links li a:hover,
 .nav-links .dropdown-toggle:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(180, 168, 168, 0.1);
 }
 
 /* Dropdown styles */
@@ -121,7 +105,7 @@ body, ul, li, a, span {
 }
 
 .social-icons a {
-  color: white;
+  color: #141b23;
   font-size: 20px;
   transition: transform 0.3s ease;
 }
@@ -135,7 +119,7 @@ body, ul, li, a, span {
 .menu-toggle {
   display: none;
   font-size: 24px;
-  color: white;
+  color: #141b23;
   background: none;
   border: none;
   cursor: pointer;
@@ -156,7 +140,7 @@ body, ul, li, a, span {
     top: 70px;
     left: 0;
     width: 100%;
-    background-color: #141b23;
+    background-color: white;
     /* padding: 20px 0; */
     z-index: 1000;
   }
