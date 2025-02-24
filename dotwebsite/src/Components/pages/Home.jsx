@@ -5,14 +5,15 @@ import Empowering from '../Section/Empowering';
 import Facilities from '../Section/Facilities';
 import Testimonial from '../Section/Testimonial';
 import Footer from '../Section/Footer';
-import BannerSlider from '../Section/BannerSlider';
+// import BannerSlider from '../Section/BannerSlider';
 import Whatsapp from '../Section/Whatsapp';
 import NewHome from '../pages/NewHome';
 
 function Home() {
   return (
     <div>
-      <BannerSlider/>
+      {/* <BannerSlider/> */}
+      <NewHome/>
       <Courses/>
       <NewHome/>
       <Registration/>
