@@ -9,61 +9,6 @@ body {
     width: 100%;
     padding: 20px 50px;
   }
-  
-  /* Navbar */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-  }
-  
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-  }
-  
-  .edtech {
-    color: #1e2a52;
-  }
-  
-  .kids {
-    color: #ff6600;
-  }
-  
-  .nav-links {
-    display: flex;
-    list-style: none;
-    gap: 20px;
-  }
-  
-  .nav-links li {
-    cursor: pointer;
-    font-weight: 500;
-  }
-  
-  .nav-buttons {
-    display: flex;
-    gap: 15px;
-  }
-  
-  .login {
-    background: none;
-    border: none;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  .get-started {
-    background: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border-radius: 20px;
-    border: none;
-    cursor: pointer;
-    font-weight: bold;
-  }
-  
   /* Hero Section */
   .hero {
     display: flex;
