@@ -6,6 +6,7 @@ import "../../../styles/CrashCourse.css";
 const CrashCourse = () => {
   return (
     <section className="crash-course-page">
+
       {/* Header Section */}
       <div className="header-section">
         <h1>The Crash Course to Give Your JEE Main Preparation the Ultimate Boost</h1>

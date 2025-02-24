@@ -6,17 +6,18 @@ import Facilities from '../Section/Facilities';
 import Testimonial from '../Section/Testimonial';
 import Footer from '../Section/Footer';
 import BannerSlider from '../Section/BannerSlider';
-
+import Whatsapp from '../Section/Whatsapp';
 function Home() {
   return (
     <div>
-      <BannerSlider/> 
+      <BannerSlider/>
       <Courses/>
       <Registration/>
       <Empowering/>
       <Facilities/>
       <Testimonial/>
       <Footer/>
+      <Whatsapp/>
     </div>
   );
 }
