@@ -2,7 +2,7 @@
 import React from 'react'
 function NoPage() {
   return (
-    <div>NoPage ! You are at wrong Page <p>created by Ravi </p></div>
+    <div>NoPage! <p> </p></div>
   )
 }
 
