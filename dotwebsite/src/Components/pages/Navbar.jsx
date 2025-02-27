@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import "../../../styles/Navbar.css";
 // import logo from "../../assets/logo.jpg";
+// import logo from "../../assets/logo21.png";
 import logo from "../../assets/dott.png";
 
 const Navbar = () => {
@@ -44,7 +45,7 @@ const Navbar = () => {
         <div className="logo">
           <img src={logo} alt="Logo" className="logo" />
         </div>
-        
+        {/* <h3 className="DotName">The DOT</h3> */}
       </div>
 
       <button className="menu-toggle" onClick={toggleMobileMenu}>
@@ -117,7 +118,7 @@ const Navbar = () => {
           )}
         </li>
         <div className="social-icons">
-          <a
+          {/* <a
             href="https://www.facebook.com/thedotrewari/"
             className="fab fa-facebook-f"
             target="_blank"
@@ -145,7 +146,7 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
-          ></a>
+          ></a> */}
         </div>
       </ul>
     </nav>

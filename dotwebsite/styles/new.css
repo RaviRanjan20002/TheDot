@@ -1,168 +1,80 @@
 /* General styles */
 body {
-  font-family: 'Poppins', sans-serif;
-  background: #fdf6ee;
-  margin: 0;
-  padding: 0;
-}
-
-.landing-page {
-  width: 100%;
-  padding: 20px;
-}
-
-/* Hero Section */
-.hero {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  margin-top: 50px;
-  flex-wrap: wrap;
-}
-
-/* Text Content */
-.hero-content {
-  max-width: 50%;
-}
-
-.hero-content h1 {
-  font-size: 50px;
-  color: #1e2a52;
-  font-weight: bold;
-}
-
-.hero-content p {
-  font-size: 18px;
-  color: gray;
-  margin-top: 10px;
-}
-
-/* Buttons */
-.buttons {
-  margin-top: 20px;
-}
-
-.start-trial {
-  background: linear-gradient(to right, #ff6600, #ff4500);
-  color: white;
-  padding: 12px 20px;
-  border-radius: 25px;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 15px;
-}
-
-.watch-video {
-  background: none;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
-  font-weight: bold;
-}
-
-/* Image & Badge */
-.hero-image {
-  position: relative;
-}
-
-.child-image {
-  width: 400px;
-  max-width: 100%;
-  border-radius: 10px;
-}
-
-.badge {
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: #ff4500;
-  color: white;
-  padding: 8px 15px;
-  border-radius: 15px;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-/* RESPONSIVE DESIGN */
-
-/* For Tablets */
-@media screen and (max-width: 1024px) {
+    font-family: 'Poppins', sans-serif;
+    background:#c5e4df;;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .landing-page {
+    width: 100%;
+    padding: 20px 50px;
+  }
+  /* Hero Section */
   .hero {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .hero-content {
-    max-width: 80%;
-  }
-
-  .hero-content h1 {
-    font-size: 42px;
-  }
-
-  .hero-content p {
-    font-size: 16px;
-  }
-
-  .buttons {
     display: flex;
-    justify-content: center;
-  }
-
-  .start-trial, .watch-video {
-    font-size: 14px;
-    padding: 10px 15px;
-  }
-
-  .hero-image {
-    margin-top: 20px;
-  }
-
-  .child-image {
-    width: 350px;
-  }
-}
-
-/* For Mobile */
-@media screen and (max-width: 768px) {
-  .hero-content {
-    max-width: 100%;
-    text-align: center;
-  }
-
-  .hero-content h1 {
-    font-size: 32px;
-  }
-
-  .hero-content p {
-    font-size: 14px;
-  }
-
-  .buttons {
-    flex-direction: column;
     align-items: center;
+    justify-content: space-between;
+    margin-top: 50px;
   }
-
-  .start-trial, .watch-video {
-    width: 80%;
-    margin: 10px 0;
+  
+  .hero-content {
+    max-width: 50%;
   }
-
-  .hero-image {
-    display: flex;
-    justify-content: center;
+  
+  .hero-content h1 {
+    font-size: 50px;
+    color: #1e2a52;
+    font-weight: bold;
+  }
+  
+  .hero-content p {
+    font-size: 18px;
+    color: gray;
+    margin-top: 10px;
+  }
+  
+  .buttons {
     margin-top: 20px;
   }
-
+  
+  .start-trial {
+    background: linear-gradient(to right, #0b8874,#067260);
+    color: white;
+    padding: 12px 20px;
+    border-radius: 25px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  
+  .watch-video {
+    background: none;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .hero-image {
+    position: relative;
+  }
+  
   .child-image {
-    width: 280px;
+    width: 400px;
+    border-radius: 10px;
   }
-
+  
   .badge {
-    top: 10px;
-    right: 10px;
-    font-size: 12px;
-    padding: 5px 10px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #ff4500;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 15px;
+    font-size: 14px;
+    font-weight: bold;
   }
-}
+  
