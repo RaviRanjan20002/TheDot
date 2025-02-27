@@ -94,6 +94,7 @@ body, ul, li, a, span {
   padding: 10px 0;
   display: none;
   min-width: 150px;
+  z-index: 10;
 }
 
 .nav-links .dropdown:hover .dropdown-menu {
