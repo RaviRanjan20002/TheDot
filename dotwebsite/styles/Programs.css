@@ -1,76 +1,93 @@
-/* Global Styling */
-.programs-container {
-    text-align: center;
-    padding: 30px;
-    font-family: "Arial", sans-serif;
-    background-color: #f7f9fc;
-  }
+/* Course Section Styling */
+.course-section {
+  padding: 40px;
+  background-color: #c5e4df;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #1e2a52;
+  margin-top: 10px;
+  margin-bottom: 40px;
+}
+
+/* Course Container */
+.course-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+/* Course Card */
+.course-card {
+  width: 280px;
+  background-color: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
   
-  h2 {
-    font-size: 28px;
-    font-weight: bold;
-    color: #1e3a8a;
-    margin-bottom: 20px;
-  }
-  
-  /* Program Grid */
-  .programs-grid {
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+/* Course Image */
+.course-image {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Course Details */
+/* Course Details */
+.course-details {
     display: flex;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;  /* Center content horizontally */
     justify-content: center;
-    flex-wrap: wrap;
+    padding: 10px;
+    text-align: center;
   }
   
-  /* Individual Program Cards */
-  .program-card {
-    width: 280px;
-    border-radius: 12px;
-    overflow: hidden;
-    background: linear-gradient(135deg, #2a5968, #2563eb);
-    color: white;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-    padding: 15px;
-    position: relative;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  }
-  
-  .program-card:hover {
-    transform: scale(1.08);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3);
-  }
-  
-  /* Image Styling */
-  .program-card img {
-    width: 100%;
-    height: 160px;
-    object-fit: cover;
-    border-radius: 8px;
-  }
-  
-  /* Title and Instructor */
-  .program-card h3 {
-    font-size: 20px;
-    margin: 10px 0;
-    font-weight: bold;
-    color: #ffcc00;
-  }
-  
-  .program-card p {
-    font-size: 14px;
-    color: #ffeb99;
-  }
-  
-  /* Rating */
-  .rating {
-    font-size: 16px;
-    color: #ffcc00;
-    margin: 5px 0;
-    font-weight: bold;
-  }
-  
-  /* Price Section */
-  .price {
-    font-size: 18px;
-    margin: 5px 0;
-    font-weight: bold;
-  }  
+
+.course-title {
+    margin: 0%;
+  font-size: 0.7rem;
+  font-weight: bold;
+  color: #1e2a52;
+  /* margin-bottom: 5px; */
+}
+
+.instructor {
+  font-size: 0.8rem;
+  color: #555;
+  /* margin-bottom: 5px; */
+}
+
+.rating {
+  font-size: 0.9rem;
+  color: #f39c12;
+  /* margin-bottom: 5px; */
+}
+
+
+/* Enroll Button */
+.enroll-btn {
+  background-color: #539c81;
+  color: white;
+  font-size: 1rem;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.enroll-btn:hover {
+  background-color: #3b7a64;
+}
