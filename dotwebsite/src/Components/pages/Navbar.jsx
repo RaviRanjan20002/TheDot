@@ -54,23 +54,23 @@ const Navbar = () => {
 
       <ul className={`nav-links ${isMobileMenuVisible ? "active" : ""}`}>
         <li>
-          <Link to="/" onClick={closeMobileMenu}>HOME</Link>
+          <Link to="/" onClick={closeMobileMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/blogs" onClick={closeMobileMenu}>BLOGS</Link>
+          <Link to="/blogs" onClick={closeMobileMenu}>Blogs</Link>
         </li>
         <li>
-          <Link to="/gallery" onClick={closeMobileMenu}>GALLERY</Link>
+          <Link to="/gallery" onClick={closeMobileMenu}>Gallery</Link>
         </li>
         <li>
-          <Link to="/contact" onClick={closeMobileMenu}>CONTACT</Link>
+          <Link to="/contact" onClick={closeMobileMenu}>Contact</Link>
         </li>
         <li>
-          <Link to="/career-streams" onClick={closeMobileMenu}>CAREER LIBRARY</Link>
+          <Link to="/career-streams" onClick={closeMobileMenu}>Career Library</Link>
         </li>
         <li className="dropdown">
           <span className="dropdown-toggle" onClick={toggleDropdown}>
-            VIEW RESULT
+            View Result
             <span className="dropdown-icon">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -144,7 +144,15 @@ const Navbar = () => {
             target="_blank"
             rel="noopener noreferrer"
             onClick={closeMobileMenu}
-          ></a> */}
+          ></a> */
+            <a
+              href="https://support.thedotinstitute.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+             <button className="start-trial">Get Scholarship</button>
+            </a>
+          }
         </div>
       </ul>
     </nav>

@@ -12,10 +12,9 @@ import NewHome from '../pages/NewHome';
 function Home() {
   return (
     <div>
+      <NewHome/>
       {/* <BannerSlider/> */}
-      <NewHome/>
       <Courses/>
-      <NewHome/>
       <Registration/>
       <Empowering/>
       <Facilities/>
