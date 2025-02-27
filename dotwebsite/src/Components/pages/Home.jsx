@@ -8,12 +8,14 @@ import Footer from '../Section/Footer';
 // import BannerSlider from '../Section/BannerSlider';
 import Whatsapp from '../Section/Whatsapp';
 import NewHome from '../pages/NewHome';
+import Programs from '../Section/Programs';
 
 function Home() {
   return (
     <div>
       <NewHome/>
       {/* <BannerSlider/> */}
+      <Programs/>
       <Courses/>
       <Registration/>
       <Empowering/>
