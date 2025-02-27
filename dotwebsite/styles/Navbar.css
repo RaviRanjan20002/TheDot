@@ -75,7 +75,7 @@ body, ul, li, a, span {
 .nav-links li a:hover,
 .nav-links .dropdown-toggle:hover {
   /* background-color: rgba(255, 255, 255, 0.1); */
-  border: 1px solid #d1a30d;;
+  border: 1px solid #d1a30d;
   color:#d8590a;
 }
 
@@ -88,7 +88,7 @@ body, ul, li, a, span {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #a8dfef;
+  background-color:#c5e4df;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
@@ -110,7 +110,9 @@ body, ul, li, a, span {
 }
 
 .nav-links .dropdown-menu li a:hover {
-  background-color: rgba(255, 255, 255, 0.1);
+  /* background-color: rgba(255, 255, 255, 0.1); */
+  border: 1px solid #d1a30d;
+  color:#d8590a;
 }
 
 /* Social icons */
@@ -164,6 +166,7 @@ body, ul, li, a, span {
 
   .nav-links.active {
     display: flex;
+    margin-top: 10px;
   }
 
   .nav-links li {

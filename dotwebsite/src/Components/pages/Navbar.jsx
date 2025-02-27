@@ -51,12 +51,12 @@ const Navbar = () => {
           {isDropdownVisible && (
             <ul className="dropdown-menu">
               <li>
-                <a href="https://script.google.com/..." target="_blank" rel="noopener noreferrer" onClick={closeDropdown}>
+                <a href="https://script.google.com/macros/s/AKfycbx7ukQgqNo03DhSqG50M6GSwxml0-2EPv6qOAsTI3YJVzGLegZ3VhACSYsSrpzNjY6WGQ/exec" target="_blank" rel="noopener noreferrer" onClick={closeDropdown}>
                   JEE Main Result
                 </a>
               </li>
               <li>
-                <a href="https://script.google.com/..." target="_blank" rel="noopener noreferrer" onClick={closeDropdown}>
+                <a href="https://script.google.com/macros/s/AKfycbx65WSAKBgYbZgP5tBybMAkjQXcNBPDK-Bnm28FYBInkiktskn86QsEAPiYhwvLO_2KkQ/exec" target="_blank" rel="noopener noreferrer" onClick={closeDropdown}>
                   NEET Result
                 </a>
               </li>

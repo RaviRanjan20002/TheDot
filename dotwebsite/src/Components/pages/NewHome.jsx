@@ -35,7 +35,7 @@
 // };
 
 // export default NewHome;
-import React, { useState, useEffect } from "react";
+import  { useState, useEffect } from "react";
 import "../../../styles/new.css";
 
 import homeimg2 from "../../assets/devansh.png";
@@ -54,7 +54,7 @@ const heroData = [
   {
     id: 2,
     title: "Excel in ",
-    highlight: "Mathematics & Science",
+    highlight: "IIT-JEE & NEET",
     description: "Master concepts with top-tier educators and structured courses.",
     image: homeimg2,
   },
