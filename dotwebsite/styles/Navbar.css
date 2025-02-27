@@ -88,13 +88,13 @@ body, ul, li, a, span {
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #444;
+  background-color: #a8dfef;
   border-radius: 5px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);
   padding: 10px 0;
   display: none;
   min-width: 150px;
-  z-index: 10;
+  z-index: 2;
 }
 
 .nav-links .dropdown:hover .dropdown-menu {
@@ -105,7 +105,7 @@ body, ul, li, a, span {
   display: block;
   padding: 8px 15px;
   font-size: 13px;
-  color: white;
+  color: black;
   transition: background 0.3s ease;
 }
 
@@ -208,7 +208,7 @@ body, ul, li, a, span {
   }
 
   .nav-links .dropdown-menu {
-    min-width: 120px;
+    min-width: 80px;
   }
 }
 
