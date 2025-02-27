@@ -54,7 +54,7 @@ const heroData = [
   {
     id: 2,
     title: "Excel in ",
-    highlight: "Mathematics & Science",
+    highlight: "IIT-JEE & NEET",
     description: "Master concepts with top-tier educators and structured courses.",
     image: homeimg2,
   },
