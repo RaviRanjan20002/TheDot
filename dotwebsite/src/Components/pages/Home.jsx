@@ -9,6 +9,7 @@ import Footer from '../Section/Footer';
 import Whatsapp from '../Section/Whatsapp';
 import NewHome from '../pages/NewHome';
 import ResFac from '../Section/ResFac';
+import Programs from '../Section/Programs';
 
 function Home() {
   return (
@@ -16,6 +17,7 @@ function Home() {
       <NewHome/>
       {/* <BannerSlider/> */}
       <ResFac/>
+      <Programs/>
       <Courses/>
       <Registration/>
       <Empowering/>
