@@ -8,6 +8,7 @@ import Footer from '../Section/Footer';
 // import BannerSlider from '../Section/BannerSlider';
 import Whatsapp from '../Section/Whatsapp';
 import NewHome from '../pages/NewHome';
+import ResFac from '../Section/ResFac';
 import Programs from '../Section/Programs';
 
 function Home() {
@@ -15,6 +16,7 @@ function Home() {
     <div>
       <NewHome/>
       {/* <BannerSlider/> */}
+      <ResFac/>
       <Programs/>
       <Courses/>
       <Registration/>

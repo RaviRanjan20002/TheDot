@@ -10,6 +10,8 @@ import CrashCourse from "./Components/pages/CrashCourse";
 import CareerLibrary from "./Components/Career/CareerFolder/CareerLibrary";
 import CareerDetail from "./Components/Career/CareerFolder/CareerDetail"; // Import new component
 import CareerStreams from "./Components/Career/CareerFolder/CareerStream";
+import Faculty from "./Components/pages/Faculty";
+import Result from "./Components/pages/Result";
 
 function App() {
   return (
@@ -21,6 +23,8 @@ function App() {
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="CrashCourse" element={<CrashCourse />} />
+          <Route path="faculty" element={<Faculty />} />
+          <Route path="result" element={<Result />} />
           <Route path="CareerLibrary" element={<CareerLibrary />} />
           <Route path="/career-streams" element={<CareerStreams />} />
           <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}

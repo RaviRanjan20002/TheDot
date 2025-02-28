@@ -1,0 +1,100 @@
+/* Faculty Styles */
+
+.faculty-container {
+    max-width: 100%;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #16395b;
+  }
+  
+  .faculty-title {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    background-color: #fffb1f;
+    border-radius: 5px;
+  }
+  
+  .faculty-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .faculty-subject {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    width: 20%;
+    margin: auto auto 20px auto;
+    padding: 10px;
+    background-image: linear-gradient(315deg, #caeff6 0%, #8daec6 74%);
+    border-radius: 50%;
+  }
+  .faculty-subject:hover {
+    transform: scale(1.01);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-color: #f25106;
+    box-shadow: 0 0 15px #f98e03;
+  }
+  .faculty-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .faculty-card {
+    background: linear-gradient(135deg, #e4ab0c, #eaee83);
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(236, 109, 109, 0.1);
+    padding: 20px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    width: 250px;
+    cursor: pointer;
+    border: 3px solid transparent;
+    position: relative;
+  }
+  
+  .faculty-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+    border-color: #f25106;
+    box-shadow: 0 0 15px #f98e03;
+  }
+  
+  .facultyimage {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 10px auto;
+    border: 3px solid #ffffff; /* White border */
+    object-fit: cover;
+  }
+  
+  .faculty-name {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1b3651;
+    margin: 10px 0;
+  }
+  
+  .faculty-degree {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #0a1343;
+  }
+  
+  .faculty-contact {
+    margin-top: 30px;
+    font-size: 1.2rem;
+    color: #ba4c0c;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  
