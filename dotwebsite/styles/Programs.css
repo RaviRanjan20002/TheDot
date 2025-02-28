@@ -1,7 +1,7 @@
 /* Course Section Styling */
 .course-section {
   padding: 40px;
-  background-color: #c5e4df;
+  background-image: url("../src/assets/bgff.jpg");
   text-align: center;
 }
 
