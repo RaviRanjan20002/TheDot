@@ -91,7 +91,7 @@ const NewHome = () => {
           <div className="buttons">
             <button className="start-trial">Explore Now</button>
             <a
-              href="https://youtu.be/UcqFdpc9q9Q?si=GDVl-nx8FseKrBo4"
+              href="https://youtu.be/1-J288mq9oo?si=en9O-TW4eUA_yR2X"
               target="_blank"
               rel="noopener noreferrer"
             >
