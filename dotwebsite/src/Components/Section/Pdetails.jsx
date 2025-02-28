@@ -13,8 +13,8 @@ const programDetails = {
             { name: "Aarav Gupta", feedback: "Amazing faculty and doubt support, improved my ranks drastically." },
             { name: "Sneha Verma", feedback: "The crash course gave me a great confidence boost before the exam." },
         ],
-        youtubePodcast: "https://www.youtube.com/watch?v=UcqFdpc9q9Q&ab_channel=TheDOT", // Replace with actual video link
-        result: "Last year, 150+ students secured 95+ percentile in JEE!",
+        youtubePodcast: "https://www.youtube.com/embed/UcqFdpc9q9Q", // Replace with actual video link
+        result: "Last year, 15+ students secured 95+ percentile in JEE!",
     },
     2: {
         schedule: "Tuesday - Friday: 3 PM to 6 PM | Sunday: 9 AM to 12 PM",
@@ -26,7 +26,7 @@ const programDetails = {
             { name: "Rohan Joshi", feedback: "The test series and mock exams were super helpful for my NEET prep." },
             { name: "Neha Arora", feedback: "Loved the interactive doubt-solving sessions and mentorship." },
         ],
-        youtubePodcast: "https://youtu.be/UcqFdpc9q9Q?si=iZtw3C2eMwDneNHu", // Replace with actual video link
+        youtubePodcast: "https://www.youtube.com/embed/UcqFdpc9q9Q", // Replace with actual video link
         result: "Last year, 200+ students cracked NEET with excellent scores!",
     },
 };
@@ -73,7 +73,8 @@ const Pdetails = () => {
 
             {/* YouTube Podcast Section */}
             <div className="details-section">
-                <h3>🎥 YouTube Podcast</h3>
+                <h3>📺 YouTube Podcast</h3>
+
                 <iframe
                     className="youtube-video"
                     src={details.youtubePodcast}

@@ -123,7 +123,7 @@ const ProgramDetail = () => {
                 </div>
             </div>
 
-            <Link to="/" className="back-button">← Back to Programs</Link>
+            {/* <Link to="/" className="back-button">← Back to Programs</Link> */}
 
             {showForm && (
                 <div className="modal-overlay">

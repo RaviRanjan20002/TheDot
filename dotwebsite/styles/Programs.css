@@ -8,7 +8,7 @@
 
 .section-title {
     margin: 0%;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #1e2a52;
     margin-bottom: 2rem;
@@ -57,9 +57,9 @@
 }
 
 
-.course-title {
+.course-titleP {
     margin: 0%;
-    font-size: 0.7rem;
+    font-size: 1.2rem;
     font-weight: bold;
     color: #1e2a52;
     /* margin-bottom: 5px; */
@@ -79,17 +79,17 @@
 
 
 /* Enroll Button */
-.enroll-btn {
+.enroll-btnP {
     background-color: #539c81;
     color: white;
     font-size: 1rem;
-    padding: 10px 15px;
+    padding: 4px 6px;
     border: none;
-    border-radius: 8px;
+    border-radius: 6px;
     cursor: pointer;
     transition: background 0.3s ease;
 }
 
-.enroll-btn:hover {
+.enroll-btnP:hover {
     background-color: #3b7a64;
 }
