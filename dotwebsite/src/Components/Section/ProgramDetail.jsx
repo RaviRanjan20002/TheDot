@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import "../../../styles/ProgramDetail.css"; // Import the CSS file
+import "../../../styles/ProgramDetail.css";
 
 import coursePlanner from "../../assets/coursePlanner.avif";
 import faculty from "../../assets/prog2.jpg";
 import councellor from "../../assets/counseller.jpeg";
 import Pdetails from "./Pdetails";
-// import Pdetails from "./Pdetails";
 
 const programs = [
     { id: 1, title: "11th JEE Program", description: "Detailed JEE preparation for 11th graders." },
@@ -34,20 +33,17 @@ const ProgramDetail = () => {
     const validateForm = () => {
         const { name, phone, email } = studentInfo;
 
-        // Name validation (At least 3 characters)
         if (name.trim().length < 3) {
             alert("Name must be at least 3 characters long.");
             return false;
         }
 
-        // Phone number validation (Exactly 10 digits)
         const phonePattern = /^[0-9]{10}$/;
         if (!phonePattern.test(phone)) {
             alert("Phone number must be exactly 10 digits.");
             return false;
         }
 
-        // Email validation (Basic pattern check)
         const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailPattern.test(email)) {
             alert("Please enter a valid email address.");
@@ -61,18 +57,39 @@ const ProgramDetail = () => {
         setStudentInfo({ ...studentInfo, [e.target.name]: e.target.value });
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = async (e) => {
         e.preventDefault();
         if (validateForm()) {
-            const link = document.createElement("a");
-            link.href = downloadLink;
-            link.setAttribute("download", downloadLink.split("/").pop());
-            document.body.appendChild(link);
-            link.click();
-            document.body.removeChild(link);
+          const formEle = document.querySelector(".formsec");
+          const formData = new FormData(formEle);
 
-            setShowForm(false);
-            setStudentInfo({ name: "", phone: "", email: "" });
+            try {
+                const response = await fetch(
+                    "https://script.google.com/macros/s/AKfycbzrgzdVEGhOPI8YAAnvS86IhcD8Lv_BTMB84DqmNYmTwyEsFblkorNPi72jF7iZ4y88/exec",
+                    {
+                        method: "POST",
+                        body: formData,
+                    }
+                );
+
+                if (response.ok) {
+                    alert("Form submitted successfully!");
+                    setShowForm(false);
+                    setStudentInfo({ name: "", phone: "", email: "" });
+                    
+                    const link = document.createElement("a");
+                    link.href = downloadLink;
+                    link.setAttribute("download", downloadLink.split("/").pop());
+                    document.body.appendChild(link);
+                    link.click();
+                    document.body.removeChild(link);
+                } else {
+                    alert("Failed to submit the form. Please try again.");
+                }
+            } catch (error) {
+                console.error("Error submitting form:", error);
+                alert("An error occurred while submitting the form.");
+            }
         }
     };
 
@@ -87,39 +104,21 @@ const ProgramDetail = () => {
                     <img src={coursePlanner} alt="Course Planner" className="info-image" />
                     <h3>Course Planner</h3>
                     <p>Download the course planner for detailed scheduling.</p>
-                    <button
-                        className="download-btn"
-                        onClick={() => {
-                            setDownloadLink("/pdfs/The Dot Book.-1.pdf");
-                            setShowForm(true);
-                        }}
-                    >
-                        Download
-                    </button>
+                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/TheDotBook.pdf"); setShowForm(true); }}>Download</button>
                 </div>
 
                 <div className="info-box">
                     <img src={faculty} alt="Faculty" className="info-image" />
                     <h3>Faculty</h3>
                     <p>Learn more about our expert faculty members.</p>
-                    <button
-                        className="download-btn"
-                        onClick={() => {
-                            setDownloadLink("/pdfs/faculty-details.pdf");
-                            setShowForm(true);
-                        }}
-                    >
-                        Download
-                    </button>
+                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/faculty-details.pdf"); setShowForm(true); }}>Download</button>
                 </div>
 
                 <div className="info-box">
                     <img src={councellor} alt="Counselor" className="info-image" />
                     <h3>Connect to Counselors</h3>
                     <p>Get guidance from our expert counselors.</p>
-                    <Link to="/contact" className="connect-btn">
-                        Connect Now
-                    </Link>
+                    <Link to="/contact" className="connect-btn">Connect Now</Link>
                 </div>
             </div>
 
@@ -129,31 +128,10 @@ const ProgramDetail = () => {
                 <div className="modal-overlay">
                     <div className="modal">
                         <h3>Enter Your Details</h3>
-                        <form onSubmit={handleSubmit}>
-                            <input
-                                type="text"
-                                name="name"
-                                placeholder="Name"
-                                value={studentInfo.name}
-                                onChange={handleChange}
-                                required
-                            />
-                            <input
-                                type="tel"
-                                name="phone"
-                                placeholder="Phone Number"
-                                value={studentInfo.phone}
-                                onChange={handleChange}
-                                required
-                            />
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={studentInfo.email}
-                                onChange={handleChange}
-                                required
-                            />
+                        <form className="formsec" onSubmit={handleSubmit}>
+                            <input type="text" name="name" placeholder="Name" value={studentInfo.name} onChange={handleChange} required />
+                            <input type="tel" name="phone" placeholder="Phone Number" value={studentInfo.phone} onChange={handleChange} required />
+                            <input type="email" name="email" placeholder="Email" value={studentInfo.email} onChange={handleChange} required />
                             <button type="submit" className="submit-btn">Submit & Download</button>
                             <button type="button" className="close-btn" onClick={() => setShowForm(false)}>Cancel</button>
                         </form>
@@ -163,9 +141,7 @@ const ProgramDetail = () => {
         </div>
         <Pdetails/>
         </div>
-        
     );
-    
 };
 
 export default ProgramDetail;

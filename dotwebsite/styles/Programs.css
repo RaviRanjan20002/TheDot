@@ -1,9 +1,8 @@
 /* Course Section Styling */
 .course-section {
-    padding-top: 3rem;
-    padding-bottom: 4rem;
-    background-color: #c5e4df;
-    text-align: center;
+  padding: 40px;
+  background-image: url("../src/assets/bgff.jpg");
+  text-align: center;
 }
 
 .section-title {

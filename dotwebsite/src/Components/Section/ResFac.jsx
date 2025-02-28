@@ -38,8 +38,8 @@
 // export default ResFac;
 
 import React from "react";
-import img1 from "../../assets/aiml.jpg";
-import img2 from "../../assets/aiml.jpg";
+import img1 from "../../assets/1a.jpg";
+import img2 from "../../assets/13a.jpg";
 import "../../../styles/ResFac.css";
 import { Link } from "react-router-dom";
 

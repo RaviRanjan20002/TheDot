@@ -18,6 +18,7 @@ function Home() {
       {/* <BannerSlider/> */}
       {/* <ResFac/> */}
       <Programs/>
+      <ResFac/>
       <Courses/>
       <Registration/>
       <Empowering/>

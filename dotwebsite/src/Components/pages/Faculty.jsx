@@ -1,6 +1,6 @@
 import "../../../styles/faculty.css";
 import imag1 from "../../assets/rahul.png";
-import imag2 from "../../assets/raju.png";
+import imag2 from "../../assets/chiran.png";
 import imag3 from "../../assets/raju.png";
 
 import imag4 from "../../assets/satish.png";
