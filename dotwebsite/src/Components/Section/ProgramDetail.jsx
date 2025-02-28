@@ -1,22 +1,28 @@
-import React from "react";
+
+import  { useState, useEffect } from "react";
 import { useParams, Link } from "react-router-dom";
-import "../../../styles/ProgramDetail.css"; // Import the CSS file
-// import image1 from "../../assets/prog2.jpg";
+import "../../../styles/ProgramDetail.css";
+import image1 from "../../assets/prog2.jpg";
+import pdfi from "../../public/uploads/dummy.pdf";
 
 const programs = [
-  { id: 1, title: "11th JEE Program", imgSrc: image1, description: "Detailed JEE preparation for 11th graders." },
-  { id: 2, title: "11th NEET Program", imgSrc: image1, description: "Comprehensive NEET syllabus for 11th students." },
-  { id: 3, title: "12th JEE Program", imgSrc: image1, description: "Advanced JEE topics for 12th graders." },
-  { id: 4, title: "12th NEET Program", imgSrc: image1, description: "In-depth NEET syllabus for 12th students." },
-  { id: 5, title: "JEE Dropper Program", imgSrc: image1, description: "Specialized JEE course for droppers." },
-  { id: 6, title: "NEET Dropper", imgSrc: image1, description: "Targeted NEET preparation for droppers." },
-  { id: 7, title: "JEE Crash Course", imgSrc: image1, description: "Quick revision and crash course for JEE." },
-  { id: 8, title: "NEET Crash Course", imgSrc: image1, description: "Fast-paced NEET preparation course." },
+  { id: 1, title: "11th JEE Program", imgSrc: image1, description: "Detailed JEE preparation for 11th graders.", pdf: pdfi },
+  { id: 2, title: "11th NEET Program", imgSrc: image1, description: "Comprehensive NEET syllabus for 11th students.", pdf: pdfi },
+  { id: 3, title: "12th JEE Program", imgSrc: image1, description: "Advanced JEE topics for 12th graders.", pdf: pdfi },
+  { id: 4, title: "12th NEET Program", imgSrc: image1, description: "In-depth NEET syllabus for 12th students.", pdf: pdfi },
 ];
 
 const ProgramDetail = () => {
-  const { id } = useParams(); // Get program ID from URL
+  const { id } = useParams();
+  const [pdfUrl, setPdfUrl] = useState("");
+
   const program = programs.find((p) => p.id === parseInt(id));
+
+  useEffect(() => {
+    if (program) {
+      setPdfUrl(program.pdf);
+    }
+  }, [program]);
 
   if (!program) {
     return <h2 className="not-found">Program Not Found</h2>;
@@ -27,24 +33,31 @@ const ProgramDetail = () => {
       <h2 className="detail-title">{program.title}</h2>
       <p className="detail-description">{program.description}</p>
 
-      {/* New Boxes for Additional Information */}
       <div className="info-boxes">
         {/* Course Planner Box */}
         <div className="info-box">
           <h3>Course Planner</h3>
           <p>Download the course planner for detailed scheduling.</p>
-          <a href="/path-to-course-planner.pdf" download className="download-btn">
-            Download
-          </a>
+          {pdfUrl ? (
+            <a href={pdfUrl} download className="download-btn">
+              Download
+            </a>
+          ) : (
+            <p>No PDF available</p>
+          )}
         </div>
 
         {/* Faculty Box */}
         <div className="info-box">
           <h3>Faculty</h3>
           <p>Learn more about our expert faculty members.</p>
-          <a href="/path-to-faculty-details.pdf" download className="download-btn">
-            Download
-          </a>
+          {pdfUrl ? (
+            <a href={pdfUrl} download className="download-btn">
+              Download
+            </a>
+          ) : (
+            <p>No PDF available</p>
+          )}
         </div>
 
         {/* Connect to Counselors Box */}

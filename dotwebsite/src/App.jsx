@@ -31,7 +31,7 @@ function App() {
           <Route path="/career-streams" element={<CareerStreams />} />
           <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
           <Route path="/" element={<Programs />} />
-        <Route path="/programs/:id" element={<ProgramDetail />} />
+          <Route path="/programs/:id" element={<ProgramDetail />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
