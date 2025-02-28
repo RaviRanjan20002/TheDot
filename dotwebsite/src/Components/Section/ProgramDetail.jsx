@@ -143,7 +143,7 @@ const ProgramDetail = () => {
   const [showForm, setShowForm] = useState(false);
   const [downloadLink, setDownloadLink] = useState("");
   const [studentInfo, setStudentInfo] = useState({ name: "", phone: "", email: "" });
- 
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   if (!program) {
     return <h2 className="not-found">Program Not Found</h2>;
@@ -159,7 +159,7 @@ const ProgramDetail = () => {
     formData.append("name", studentInfo.name);
     formData.append("phone", studentInfo.phone);
     formData.append("email", studentInfo.email);
-
+    formData.append("program", program.title);
   
     try {
       const response = await fetch(
@@ -193,6 +193,7 @@ const ProgramDetail = () => {
     }
   };
   
+
   return (
     <div className="program-detail">
       <h2 className="detail-title">{program.title}</h2>
@@ -213,6 +214,21 @@ const ProgramDetail = () => {
             Download
           </button>
         </div>
+            <div className="info-boxes">
+                <div className="info-box">
+                    <img src={coursePlanner} alt="Course Planner" className="info-image" />
+                    <h3>Course Planner</h3>
+                    <p>Download the course planner for detailed scheduling.</p>
+                    <button
+                        className="download-btn"
+                        onClick={() => {
+                            setDownloadLink("/pdfs/The Dot Book.-1.pdf");
+                            setShowForm(true);
+                        }}
+                    >
+                        Download
+                    </button>
+                </div>
 
         <div className="info-box">
           <img src={faculty} alt="Faculty" className="info-image" />
@@ -229,6 +245,30 @@ const ProgramDetail = () => {
           </button>
         </div>
       </div>
+                <div className="info-box">
+                    <img src={faculty} alt="Faculty" className="info-image" />
+                    <h3>Faculty</h3>
+                    <p>Learn more about our expert faculty members.</p>
+                    <button
+                        className="download-btn"
+                        onClick={() => {
+                            setDownloadLink("/pdfs/faculty-details.pdf");
+                            setShowForm(true);
+                        }}
+                    >
+                        Download
+                    </button>
+                </div>
+
+                <div className="info-box">
+                    <img src={councellor} alt="Counselor" className="info-image" />
+                    <h3>Connect to Counselors</h3>
+                    <p>Get guidance from our expert counselors.</p>
+                    <Link to="/contact" className="connect-btn">
+                        Connect Now
+                    </Link>
+                </div>
+            </div>
 
       <Link to="/" className="back-button">← Back to Programs</Link>
 
@@ -248,6 +288,47 @@ const ProgramDetail = () => {
       )}
     </div>
   );
+            {showForm && (
+                <div className="modal-overlay">
+                    <div className="modal">
+                        <h3>Enter Your Details</h3>
+                        <form onSubmit={handleSubmit}>
+                            <input
+                                type="text"
+                                name="name"
+                                placeholder="Name"
+                                value={studentInfo.name}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="tel"
+                                name="phone"
+                                placeholder="Phone Number"
+                                value={studentInfo.phone}
+                                onChange={handleChange}
+                                required
+                            />
+                            <input
+                                type="email"
+                                name="email"
+                                placeholder="Email"
+                                value={studentInfo.email}
+                                onChange={handleChange}
+                                required
+                            />
+                            <button type="submit" className="submit-btn">Submit & Download</button>
+                            <button type="button" className="close-btn" onClick={() => setShowForm(false)}>Cancel</button>
+                        </form>
+                    </div>
+                </div>
+            )}
+        </div>
+        <Pdetails/>
+        </div>
+        
+    );
+    
 };
 
 export default ProgramDetail;
