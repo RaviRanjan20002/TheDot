@@ -12,6 +12,8 @@ import CareerDetail from "./Components/Career/CareerFolder/CareerDetail"; // Imp
 import CareerStreams from "./Components/Career/CareerFolder/CareerStream";
 import Faculty from "./Components/pages/Faculty";
 import Result from "./Components/pages/Result";
+import Programs from "./Components/Section/Programs";
+import ProgramDetail from "./Components/Section/ProgramDetail";
 
 function App() {
   return (
@@ -28,6 +30,8 @@ function App() {
           <Route path="CareerLibrary" element={<CareerLibrary />} />
           <Route path="/career-streams" element={<CareerStreams />} />
           <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
+          <Route path="/" element={<Programs />} />
+        <Route path="/programs/:id" element={<ProgramDetail />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

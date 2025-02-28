@@ -16,7 +16,7 @@ function Home() {
     <div>
       <NewHome/>
       {/* <BannerSlider/> */}
-      <ResFac/>
+      {/* <ResFac/> */}
       <Programs/>
       <Courses/>
       <Registration/>

@@ -1,46 +1,47 @@
 /* Course Section Styling */
 .course-section {
-  padding: 40px;
-  background-color: #c5e4df;
-  text-align: center;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+    background-color: #c5e4df;
+    text-align: center;
 }
 
 .section-title {
-  font-size: 3rem;
-  font-weight: bold;
-  color: #1e2a52;
-  margin-top: 10px;
-  margin-bottom: 40px;
+    margin: 0%;
+    font-size: 3rem;
+    font-weight: bold;
+    color: #1e2a52;
+    margin-bottom: 2rem;
 }
 
 /* Course Container */
 .course-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
 }
 
 /* Course Card */
 .course-card {
-  width: 280px;
-  background-color: white;
-  border-radius: 12px;
-  overflow: hidden;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease;
-  
+    width: 280px;
+    background-color: white;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+
 }
 
 .course-card:hover {
-  transform: translateY(-5px);
+    transform: translateY(-5px);
 }
 
 /* Course Image */
 .course-image {
-  width: 100%;
-  height: 160px;
-  object-fit: cover;
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
 }
 
 /* Course Details */
@@ -48,46 +49,47 @@
 .course-details {
     display: flex;
     flex-direction: column;
-    align-items: center;  /* Center content horizontally */
+    align-items: center;
+    /* Center content horizontally */
     justify-content: center;
     padding: 10px;
     text-align: center;
-  }
-  
+}
+
 
 .course-title {
     margin: 0%;
-  font-size: 0.7rem;
-  font-weight: bold;
-  color: #1e2a52;
-  /* margin-bottom: 5px; */
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #1e2a52;
+    /* margin-bottom: 5px; */
 }
 
 .instructor {
-  font-size: 0.8rem;
-  color: #555;
-  /* margin-bottom: 5px; */
+    font-size: 0.8rem;
+    color: #555;
+    /* margin-bottom: 5px; */
 }
 
 .rating {
-  font-size: 0.9rem;
-  color: #f39c12;
-  /* margin-bottom: 5px; */
+    font-size: 0.9rem;
+    color: #f39c12;
+    /* margin-bottom: 5px; */
 }
 
 
 /* Enroll Button */
 .enroll-btn {
-  background-color: #539c81;
-  color: white;
-  font-size: 1rem;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: background 0.3s ease;
+    background-color: #539c81;
+    color: white;
+    font-size: 1rem;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease;
 }
 
 .enroll-btn:hover {
-  background-color: #3b7a64;
+    background-color: #3b7a64;
 }

@@ -1,92 +1,38 @@
 import React from "react";
+import { Link } from "react-router-dom"; // Import Link for navigation
 import "../../../styles/Programs.css";
-
 import image1 from "../../assets/prog2.jpg";
 
 const programs = [
-    {
-      title: "12th JEE Program",
-    //   instructor: "A comprehensive program covering JEE Main & Advanced syllabus, focusing on concept clarity, problem-solving, and mock tests.",
-    //   rating: 4.8,
-    //   reviews: 1200,
-      imgSrc: image1, 
-    },
-    {
-      title: "11th JEE Program",
-    //   instructor: "Expert Faculty",
-    //   rating: 4.7,
-    //   reviews: 950,
-      imgSrc: image1,
-    },
-    {
-      title: "12th NEET Program",
-    //   instructor: "Expert Faculty",
-    //   rating: 4.9,
-    //   reviews: 1500,
-      imgSrc: image1,
-    },
-    {
-      title: "11th NEET Program",
-    //   instructor: "Expert Faculty",
-    //   rating: 4.6,
-    //   reviews: 870,
-      imgSrc: image1,
-    },
-    {
-      title: "JEE Dropper Program",
-    //   instructor: "Expert Faculty",
-    //   rating: 4.8,
-    //   reviews: 1350,
-      imgSrc: image1 ,
-    },
-    {
-      title: "NEET Dropper",
-    //   instructor: "Expert Faculty",
-    //   rating: 4.7,
-    //   reviews: 1250,
-      imgSrc: image1,
-    },
-  ];
-  
-  const Programs = () => {
-    return (
-        <div className="course-section">
-          <h2 className="section-title">Our Programs</h2>
-          <div className="course-container">
-            {programs.map((program, index) => (
-              <div key={index} className="course-card">
-                <img src={program.imgSrc} alt={program.title} className="course-image" />
-                <div className="course-details">
-                  <h3 className="course-title">{program.title}</h3>
-                  
-                  <div className="price-section">
-                    <span className="current-price">{program.price}</span>
-                    <span className="original-price">{program.originalPrice}</span>
-                  </div>
-                  <button className="enroll-btn">Enroll Now</button>
-                </div>
-              </div>
-            ))}
+  { id: 1, title: "11th JEE Program", imgSrc: image1, description: "Detailed JEE preparation for 11th graders." },
+  { id: 2, title: "11th NEET Program", imgSrc: image1, description: "Comprehensive NEET syllabus for 11th students." },
+  { id: 3, title: "12th JEE Program", imgSrc: image1, description: "Advanced JEE topics for 12th graders." },
+  { id: 4, title: "12th NEET Program", imgSrc: image1, description: "In-depth NEET syllabus for 12th students." },
+  { id: 5, title: "JEE Dropper Program", imgSrc: image1, description: "Specialized JEE course for droppers." },
+  { id: 6, title: "NEET Dropper", imgSrc: image1, description: "Targeted NEET preparation for droppers." },
+  { id: 7, title: "JEE Crash Course", imgSrc: image1, description: "Quick revision and crash course for JEE." },
+  { id: 8, title: "NEET Crash Course", imgSrc: image1, description: "Fast-paced NEET preparation course." },
+];
+
+const Programs = () => {
+  return (
+    <div className="course-section">
+      <h2 className="section-title">Our Programs</h2>
+      <div className="course-container">
+        {programs.map((program) => (
+          <div key={program.id} className="course-card">
+            <img src={program.imgSrc} alt={program.title} className="course-image" />
+            <div className="course-details">
+              <h3 className="course-title">{program.title}</h3>
+              <Link to={`/programs/${program.id}`} className="enroll-btn">
+                Explore More
+              </Link>
+            </div>
           </div>
-        </div>
-      );
-    };
+        ))}
+      </div>
+    </div>
+  );
+};
 
-  export default Programs;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
+export default Programs;
