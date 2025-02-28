@@ -29,18 +29,22 @@ const ProgramDetail = () => {
     return <h2 className="not-found">Program Not Found</h2>;
   }
 
-  // Handle input change
   const handleChange = (e) => {
     setStudentInfo({ ...studentInfo, [e.target.name]: e.target.value });
   };
 
-  // Handle form submission
   const handleSubmit = (e) => {
     e.preventDefault();
     if (studentInfo.name && studentInfo.phone && studentInfo.email) {
-      window.location.href = downloadLink; // Trigger download
-      setShowForm(false); // Close modal
-      setStudentInfo({ name: "", phone: "", email: "" }); // Reset form
+      const link = document.createElement("a");
+      link.href = downloadLink;
+      link.setAttribute("download", downloadLink.split("/").pop());
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      setShowForm(false);
+      setStudentInfo({ name: "", phone: "", email: "" });
     } else {
       alert("Please fill in all fields.");
     }
@@ -51,9 +55,7 @@ const ProgramDetail = () => {
       <h2 className="detail-title">{program.title}</h2>
       <p className="detail-description">{program.description}</p>
 
-      {/* Info Boxes */}
       <div className="info-boxes">
-        {/* Course Planner Box */}
         <div className="info-box">
           <img src={coursePlanner} alt="Course Planner" className="info-image" />
           <h3>Course Planner</h3>
@@ -61,7 +63,7 @@ const ProgramDetail = () => {
           <button
             className="download-btn"
             onClick={() => {
-              setDownloadLink("/path-to-course-planner.pdf");
+              setDownloadLink("/pdfs/The Dot Book.-1.pdf");
               setShowForm(true);
             }}
           >
@@ -69,7 +71,6 @@ const ProgramDetail = () => {
           </button>
         </div>
 
-        {/* Faculty Box */}
         <div className="info-box">
           <img src={faculty} alt="Faculty" className="info-image" />
           <h3>Faculty</h3>
@@ -77,7 +78,7 @@ const ProgramDetail = () => {
           <button
             className="download-btn"
             onClick={() => {
-              setDownloadLink("/path-to-faculty-details.pdf");
+              setDownloadLink("/pdfs/faculty-details.pdf");
               setShowForm(true);
             }}
           >
@@ -85,7 +86,6 @@ const ProgramDetail = () => {
           </button>
         </div>
 
-        {/* Connect to Counselors Box */}
         <div className="info-box">
           <img src={councellor} alt="Counselor" className="info-image" />
           <h3>Connect to Counselors</h3>
@@ -98,7 +98,6 @@ const ProgramDetail = () => {
 
       <Link to="/" className="back-button">← Back to Programs</Link>
 
-      {/* Modal for Student Info */}
       {showForm && (
         <div className="modal-overlay">
           <div className="modal">
