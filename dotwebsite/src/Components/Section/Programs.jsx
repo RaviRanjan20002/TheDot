@@ -1,7 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "../../../styles/Programs.css";
-import image1 from "../../assets/prog2.jpg";
+import image1 from "../../assets/JEE11.jpg";
 import image5 from "../../assets/JEEDROP.jpg";
 import image6 from "../../assets/NEETDROP.jpg";
 import image4 from "../../assets/NEET12.jpg";
