@@ -18,7 +18,7 @@ const facultyData = [
     subject: "Physics",
     members: [
       { name: "Rahul Sir", degree: "B.Tech, IIT Bombay" ,img:imag1},
-      { name: "Chirranjeev Sir", degree: "B.Tech, IIT Roorkee"  ,img:imag2},
+      { name: "Chiranjeev Sir", degree: "B.Tech, IIT Roorkee"  ,img:imag2},
       { name: "Raju Sir", degree: "B.Tech, DTU"  ,img:imag3},
     ],
   },

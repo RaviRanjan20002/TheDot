@@ -23,8 +23,8 @@ const Programs = () => {
           <div key={program.id} className="course-card">
             <img src={program.imgSrc} alt={program.title} className="course-image" />
             <div className="course-details">
-              <h3 className="course-title">{program.title}</h3>
-              <Link to={`/programs/${program.id}`} className="enroll-btn">
+              <h3 className="course-titleP">{program.title}</h3>
+              <Link to={`/programs/${program.id}`} className="enroll-btnP">
                 Explore More
               </Link>
             </div>

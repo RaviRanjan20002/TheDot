@@ -5,6 +5,7 @@ import "../../../styles/ProgramDetail.css";
 import coursePlanner from "../../assets/coursePlanner.avif";
 import faculty from "../../assets/prog2.jpg";
 import councellor from "../../assets/counseller.jpeg";
+import Pdetails from "./Pdetails";
 
 const programs = [
     { id: 1, title: "11th JEE Program", description: "Detailed JEE preparation for 11th graders." },
@@ -96,6 +97,7 @@ const ProgramDetail = () => {
     };
 
     return (
+        <div>
         <div className="program-detail">
             <h2 className="detail-title">{program.title}</h2>
             <p className="detail-description">{program.description}</p>
@@ -123,7 +125,7 @@ const ProgramDetail = () => {
                 </div>
             </div>
 
-            <Link to="/" className="back-button">← Back to Programs</Link>
+            {/* <Link to="/" className="back-button">← Back to Programs</Link> */}
 
             {showForm && (
                 <div className="modal-overlay">
@@ -139,6 +141,8 @@ const ProgramDetail = () => {
                     </div>
                 </div>
             )}
+        </div>
+        <Pdetails/>
         </div>
     );
 };
