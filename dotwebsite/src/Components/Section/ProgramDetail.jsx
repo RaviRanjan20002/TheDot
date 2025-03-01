@@ -6,6 +6,7 @@ import coursePlanner from "../../assets/coursePlanner.avif";
 import faculty from "../../assets/prog2.jpg";
 import councellor from "../../assets/counseller.jpeg";
 import Pdetails from "./Pdetails";
+import ParentsTestimonial from "./ParentsTestimonial";
 
 const programs = [
     { id: 1, title: "11th JEE Program", description: "Detailed JEE preparation for 11th graders." },
@@ -142,6 +143,7 @@ const ProgramDetail = () => {
                 </div>
             )}
         </div>
+        <ParentsTestimonial/>
         <Pdetails/>
         </div>
     );
