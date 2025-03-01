@@ -24,7 +24,7 @@ const ProgramDetail = () => {
     const [showForm, setShowForm] = useState(false);
     const [downloadLink, setDownloadLink] = useState("");
     const [studentInfo, setStudentInfo] = useState({ name: "", phone: "", email: "" });
-
+    const [isSubmitting, setIsSubmitting] = useState(false); 
     if (!program) {
         return <h2 className="not-found">Program Not Found</h2>;
     }
@@ -63,6 +63,7 @@ const ProgramDetail = () => {
           const formData = new FormData(formEle);
 
             try {
+                setIsSubmitting(true);
                 const response = await fetch(
                     "https://script.google.com/macros/s/AKfycbzrgzdVEGhOPI8YAAnvS86IhcD8Lv_BTMB84DqmNYmTwyEsFblkorNPi72jF7iZ4y88/exec",
                     {
@@ -88,7 +89,9 @@ const ProgramDetail = () => {
             } catch (error) {
                 console.error("Error submitting form:", error);
                 alert("An error occurred while submitting the form.");
-            }
+            }finally {
+                setIsSubmitting(false); // Reset loading state
+              }
         }
     };
 
@@ -130,7 +133,7 @@ const ProgramDetail = () => {
                             <input type="text" name="name" placeholder="Name" value={studentInfo.name} onChange={handleChange} required />
                             <input type="tel" name="phone" placeholder="Phone Number" value={studentInfo.phone} onChange={handleChange} required />
                             <input type="email" name="email" placeholder="Email" value={studentInfo.email} onChange={handleChange} required />
-                            <button type="submit" className="submit-btn">Submit & Download</button>
+                            <button type="submit" className="submit-btn"  disabled={isSubmitting}>{isSubmitting ? "Submitting..." : "Submit & Download"}</button>
                             <button type="button" className="close-btn" onClick={() => setShowForm(false)}>Cancel</button>
                         </form>
                     </div>
