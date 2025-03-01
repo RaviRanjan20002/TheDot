@@ -2,14 +2,19 @@ import React from "react";
 import { Link } from "react-router-dom"; // Import Link for navigation
 import "../../../styles/Programs.css";
 import image1 from "../../assets/prog2.jpg";
+import image5 from "../../assets/DROPPERJEE.jpg";
+import image6 from "../../assets/NEETDROP.jpg";
+import image4 from "../../assets/NEET12.jpg";
+import image3 from "../../assets/JEE12.jpg";
+import image2 from "../../assets/NEET11.jpg";
 
 const programs = [
   { id: 1, title: "11th JEE Program", imgSrc: image1, description: "Detailed JEE preparation for 11th graders." },
-  { id: 2, title: "11th NEET Program", imgSrc: image1, description: "Comprehensive NEET syllabus for 11th students." },
-  { id: 3, title: "12th JEE Program", imgSrc: image1, description: "Advanced JEE topics for 12th graders." },
-  { id: 4, title: "12th NEET Program", imgSrc: image1, description: "In-depth NEET syllabus for 12th students." },
-  { id: 5, title: "JEE Dropper Program", imgSrc: image1, description: "Specialized JEE course for droppers." },
-  { id: 6, title: "NEET Dropper", imgSrc: image1, description: "Targeted NEET preparation for droppers." },
+  { id: 2, title: "11th NEET Program", imgSrc: image2, description: "Comprehensive NEET syllabus for 11th students." },
+  { id: 3, title: "12th JEE Program", imgSrc: image3, description: "Advanced JEE topics for 12th graders." },
+  { id: 4, title: "12th NEET Program", imgSrc: image4, description: "In-depth NEET syllabus for 12th students." },
+  { id: 5, title: "JEE Dropper Program", imgSrc: image5, description: "Specialized JEE course for droppers." },
+  { id: 6, title: "NEET Dropper", imgSrc: image6, description: "Targeted NEET preparation for droppers." },
   { id: 7, title: "JEE Crash Course", imgSrc: image1, description: "Quick revision and crash course for JEE." },
   { id: 8, title: "NEET Crash Course", imgSrc: image1, description: "Fast-paced NEET preparation course." },
 ];
