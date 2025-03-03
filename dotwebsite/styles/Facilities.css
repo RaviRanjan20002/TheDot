@@ -1,126 +1,149 @@
-/* CSS for Facilities Component */
+/* Facilities Section */
 .facilities-section {
-    
     font-family: "DM Serif Text", serif;
     font-size: 1rem;
-    /* padding: 2.3rem 1rem 2.5rem 1rem; */
-    padding: 0.5rem 1rem 2.5rem 1rem;
-    /* background-color: #1d2733; */
+    padding: 1rem 2rem 5rem 2rem;
     background-image: url("../src/assets/bgff.jpg");
+    background-size: cover;
+    background-position: center;
     color: white;
 }
 
+/* Container */
 .facilities-container {
-    max-width: 1250px;
+    max-width: 1200px;
     margin: 0 auto;
     text-align: center;
 }
 
-.textcont {
-    max-width: 800px;
-    margin: 0 auto;
-    /* padding: 0 10px; */
-}
-
+/* Title */
 .fasection-title {
-    font-size: 2.5rem;
-    /* color: white; */
-    color: #0c0c0c;
-    /* margin-bottom: 20px; */
+    font-family:   "PT Serif", serif;
+    padding-bottom: 2rem;
+    font-size: 2.3rem;
+    color: #333333;
+    margin-bottom: 20px;
 }
 
+/* Description */
 .section-description {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    /* color: #ddd; */
     color: #061165;
-    /* line-height: 1.2; */
 }
 
+/* Facilities Grid */
 .facilities-grid {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     gap: 20px;
     justify-content: center;
+    align-items: stretch;
+    margin-top: 20px;
 }
 
+/* Facility Item */
 .facility-item {
     background-color: white;
-    color: #333333;
+    color: #333;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    max-width: 350px;
-    width: 100%;
-    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
     display: flex;
     flex-direction: column;
+    text-align: center;
     border: 2px solid #f88605;
+    max-width: 100%;
 }
 
+/* Hover Effect */
 .facility-item:hover {
     transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
 }
 
+/* Image */
 .facility-item img {
     width: 100%;
     height: auto;
     border-bottom: 2px solid #ddd;
 }
 
+/* Title */
 .facility-item h3 {
-    font-size: 1.5rem;
-    /* color: #003366; */
+    font-family: "Bitter", serif;
+    font-size: 1.6rem;
     color: #061165;
     margin: 15px 20px 10px;
 }
 
+/* Paragraph */
 .facility-item p {
-    font-size: 16px;
-    color: #444444;
-    margin: 0 1rem 1rem;
+    font-family: "Bitter", serif;
+    font-size: 1rem;
+    color: #444;
+    margin: 0 1rem 1.5rem;
     text-align: justify;
-    line-height: 1.2;
-    font-family: "DM Serif Text", serif;
-    font-weight: normal;
+    line-height: 1.4;
 }
 
-/* Responsive Design */
+/* ✅ Responsive Design */
+
+/* Medium Devices (Tablets, iPads) */
 @media (max-width: 1024px) {
-    .facilities-grid {
-        gap: 15px;
+    .fasection-title {
+        font-size: 2.2rem;
     }
 
-    .facility-item {
-        max-width: 300px;
+    .section-description {
+        font-size: 1rem;
     }
 
-    .section-title {
+    .facility-item h3 {
+        font-size: 1.4rem;
+    }
+
+    .facility-item p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Small Devices (Phones) */
+@media (max-width: 768px) {
+    .facilities-section {
+        padding: 1.5rem 1rem;
+    }
+
+    .fasection-title {
         font-size: 2rem;
     }
 
     .section-description {
         font-size: 1rem;
     }
-}
 
-@media (max-width: 768px) {
     .facilities-grid {
-        flex-direction: column;
-        align-items: center;
+        grid-template-columns: 1fr; /* Full width for mobile */
     }
 
     .facility-item {
-        max-width: 98%;
+        max-width: 95%;
+        margin: 0 auto;
     }
 
-    .textcont {
-        padding: 0 15px;
+    .facility-item h3 {
+        font-size: 1.3rem;
+    }
+
+    .facility-item p {
+        font-size: 0.9rem;
     }
 }
 
+/* Extra Small Devices (Very Small Phones) */
 @media (max-width: 480px) {
-    .section-title {
+    .fasection-title {
         font-size: 1.8rem;
     }
 
@@ -133,6 +156,6 @@
     }
 
     .facility-item p {
-        font-size: 0.9rem;
+        font-size: 0.85rem;
     }
 }
