@@ -7,6 +7,7 @@ import faculty from "../../assets/prog2.jpg";
 import councellor from "../../assets/counseller.jpeg";
 import Pdetails from "./Pdetails";
 
+
 const programs = [
     { id: 1, title: "11th JEE Program", description: "Detailed JEE preparation for 11th graders." },
     { id: 2, title: "11th NEET Program", description: "Comprehensive NEET syllabus for 11th students." },
@@ -143,6 +144,7 @@ const ProgramDetail = () => {
             )}
         </div>
         <Pdetails/>
+        
         </div>
     );
 };

@@ -7,6 +7,8 @@ import image6 from "../../assets/NEETDROP.jpg";
 import image4 from "../../assets/NEET12.jpg";
 import image3 from "../../assets/JEE12.jpg";
 import image2 from "../../assets/NEET11.jpg";
+import image7 from "../../assets/CRASHNEET.jpg";
+import image8 from "../../assets/CRASHJEE.jpg";
 
 const programs = [
   { id: 1, title: "11th JEE Program", imgSrc: image1, description: "Detailed JEE preparation for 11th graders." },
@@ -15,8 +17,8 @@ const programs = [
   { id: 4, title: "12th NEET Program", imgSrc: image4, description: "In-depth NEET syllabus for 12th students." },
   { id: 5, title: "JEE Dropper Program", imgSrc: image5, description: "Specialized JEE course for droppers." },
   { id: 6, title: "NEET Dropper", imgSrc: image6, description: "Targeted NEET preparation for droppers." },
-  { id: 7, title: "JEE Crash Course", imgSrc: image1, description: "Quick revision and crash course for JEE." },
-  { id: 8, title: "NEET Crash Course", imgSrc: image1, description: "Fast-paced NEET preparation course." },
+  { id: 7, title: "JEE Crash Course", imgSrc: image7, description: "Quick revision and crash course for JEE." },
+  { id: 8, title: "NEET Crash Course", imgSrc: image8, description: "Fast-paced NEET preparation course." },
 ];
 
 const Programs = () => {

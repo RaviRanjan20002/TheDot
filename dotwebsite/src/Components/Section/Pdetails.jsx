@@ -58,7 +58,7 @@ const Pdetails = () => {
                 <div className="testimonials-grid">
                     {details.parentTestimonials.map((parent, index) => (
                         <div key={index} className="testimonial-card">
-                            <img src={parent.image} alt={parent.name} className="testimonial-image" />
+                            <img src={parent.image} alt={parent.name} className="testimonial-image2" />
                             <strong>{parent.name}</strong>
                             <p>"{parent.feedback}"</p>
                         </div>
@@ -72,7 +72,7 @@ const Pdetails = () => {
                 <div className="testimonials-grid">
                     {details.studentTestimonials.map((student, index) => (
                         <div key={index} className="testimonial-card">
-                            <img src={student.image} alt={student.name} className="testimonial-image" />
+                            <img src={student.image} alt={student.name} className="testimonial-image2" />
                             <strong>{student.name}</strong>
                             <p>"{student.feedback}"</p>
                         </div>
