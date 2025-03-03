@@ -1,0 +1,226 @@
+/* Footer General Styles */
+.footer {
+  justify-items: center;
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  background-color: #141b23;
+  background-image: url(../src/assets/footer-widget-bg.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center 100px;
+  color: #ffffff;
+}
+
+/* Footer Top Section */
+.footer-top {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1000px;
+  padding: 1rem;
+}
+
+/* Footer dropdown toggle */
+.dropdown-heading {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.4rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  border-bottom: 2px solid #141010;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  padding: 5px 10px 10px 0px;
+}
+
+/* Dropdown icon */
+.dropdown-icon {
+  margin-left: 10px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* Hide the dropdown icon on large screens */
+@media (min-width: 769px) {
+  .dropdown-icon {
+    display: none;
+  }
+}
+
+/* Show the dropdown icon on smaller screens */
+@media (max-width: 768px) {
+  .dropdown-icon {
+    display: inline-block;
+  }
+}
+
+/* Styling for the dropdown sections */
+.toggle-section {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.toggle-section li {
+  padding-left: 20px;
+}
+
+.visible {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+/* Footer Column Styles */
+.footer-column {
+  color: white;
+  flex: 1;
+  min-width: 200px;
+  margin: 0 10px;
+  justify-content: space-between;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-column ul li {
+  font-family: "DM Serif Text", serif;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 0.25rem;
+  font-size: 1.03rem;
+  word-spacing: 0px;
+  letter-spacing: 0.8px;
+  color: white;
+  padding: 0.3125rem 0.625rem;
+  text-align: left;
+  position: relative;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-column ul li:hover {
+  color: #ffffff;
+  transform: translateX(5px) scale(1.05);
+  transition: transform 0.4s ease;
+}
+
+/* Add a dot before each list item */
+.footer-column ul li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  font-size: 1rem;
+  color: #2a718f;
+  transition: transform 0.3s ease;
+}
+
+.footer-column ul li:hover::before {
+  transform: scale(1.2);
+  transition: transform 0.3s ease;
+}
+
+/* Default state for large screens (always visible) */
+.footer-column ul.toggle-section {
+  display: block;
+}
+
+/* Responsive Design for small screens */
+@media (max-width: 768px) {
+  .footer-column ul.toggle-section {
+    display: none;
+  }
+  .footer-column ul.hidden {
+    display: none;
+  }
+  .footer-column ul.visible {
+    display: block;
+  }
+}
+
+/* Contact Section */
+.contact-info p {
+  margin: 10px 0;
+  font-size: 0.95rem;
+}
+
+.social-icons {
+  margin-top: 15px;
+  display: flex;
+  padding: 0 15px;
+}
+
+.social-icons a {
+  font-size: 1rem;
+  margin-right: 0px;
+  color: white !important;
+  transition: color 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  color: #2a718f !important;
+}
+
+.social-icons a:last-child {
+  margin-right: 0;
+}
+
+/* Footer Bottom Styles */
+.footer-bottom {
+  border-top: 1px solid #333;
+  margin-top: 0px;
+  display: block;
+  font-size: 1.05rem;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+}
+
+.footer-bottom p {
+  margin: 5px 10px;
+  font-size: 1.02rem;
+  color: #cccccc;
+}
+
+.footer-bottom a {
+  color: #2a718f;
+  margin: 0 10px;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-bottom a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+
+/* Our Centers Section */
+.footer-column.our-centers ul {
+  padding-left: 20px;
+}
+
+.footer-column.our-centers ul li {
+  font-size: 1.03rem;
+  color: white;
+  padding: 0.3125rem 0.625rem;
+  transition: color 0.3s ease-in-out;
+}
+
+.footer-column.our-centers ul li:hover {
+  color: #ffffff;
+  transform: translateX(5px) scale(1.05);
+  transition: transform 0.4s ease;
+}
+

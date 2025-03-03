@@ -42,9 +42,9 @@ const Pdetails = () => {
 
     return (
         <div className="program-details">
-            <h2 className="details-title">📚 Program Details</h2>
+            {/* <h2 className="details-title">📚 Program Details</h2>
 
-            {/* Schedule Section */}
+            {// Schedule Section}
             <div className="details-section schedule-section">
                 <h3>📅 Schedule</h3>
                 <div className="schedule-card">
@@ -52,7 +52,7 @@ const Pdetails = () => {
                 </div>
             </div>
 
-            {/* Parents' Testimonials */}
+            {// Parents' Testimonials }
             <div className="details-section">
                 <h3>👨‍👩‍👧 Parents' Testimonials</h3>
                 <div className="testimonials-grid">
@@ -66,7 +66,7 @@ const Pdetails = () => {
                 </div>
             </div>
 
-            {/* Students' Testimonials */}
+            {// Students' Testimonials }
             <div className="details-section">
                 <h3>🎓 Students' Testimonials</h3>
                 <div className="testimonials-grid">
@@ -78,7 +78,8 @@ const Pdetails = () => {
                         </div>
                     ))}
                 </div>
-            </div>
+            </div> 
+            */}
 
             {/* YouTube Podcast Section */}
             <div className="details-section">

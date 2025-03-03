@@ -36,6 +36,7 @@
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
+   overflow: hidden;
 }
 
 /* Individual Cards */
@@ -93,7 +94,7 @@
 
 /* Button Styling */
 .learn-more {
-    margin-top: 15px;
+    margin-top: 0px;
     padding: 10px 20px;
     font-size: 1rem;
     color: #fff;
