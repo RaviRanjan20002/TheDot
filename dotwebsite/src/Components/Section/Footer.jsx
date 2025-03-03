@@ -1,6 +1,8 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "../../../styles/Footer.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+
 
 const Footer = () => {
   const [openSections, setOpenSections] = useState({
@@ -83,7 +85,7 @@ const Footer = () => {
             <li>JEE (Main & Adv.)</li>
             <li>NEET (UG)</li>
             <li>Crash course for JEE mains</li>
-            <li>Crash course for Neet UG</li>
+            <li>Crash course for Neet</li>
             {/* <li>Online Programs</li> */}
             {/* <li>Study Abroad</li> */}
           </ul>
@@ -160,32 +162,20 @@ const Footer = () => {
             </li>
           </ul>
           <div className="social-icons">
-            <a
-              href="https://www.facebook.com/thedotrewari/"
-              className="fab fa-facebook-f"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-           
-            <a
-              href="https://www.instagram.com/thedotinstitute"
-              className="fab fa-instagram"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-            <a
-              href="http://linkedin.com/in/the-dot-754739257"
-              className="fab fa-linkedin-in"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
-            <a
-              href="https://www.youtube.com/@thedotrewari"
-              className="fab fa-youtube"
-              target="_blank"
-              rel="noopener noreferrer"
-            ></a>
+            <a href="https://www.facebook.com/thedotrewari/" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f fa-lg"></i>
+            </a>
+            <a href="https://www.instagram.com/thedotinstitute" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram fa-lg"></i>
+            </a>
+            <a href="http://linkedin.com/in/the-dot-754739257" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in fa-lg"></i>
+            </a>
+            <a href="https://www.youtube.com/@thedotrewari" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-youtube fa-lg"></i>
+            </a>
           </div>
+
         </div>
       </div>
 

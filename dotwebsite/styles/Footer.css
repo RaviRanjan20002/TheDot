@@ -29,7 +29,7 @@
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   margin-bottom: 0.5rem;
   cursor: pointer;
   border-bottom: 2px solid #141010;
@@ -100,13 +100,22 @@
   font-family: "DM Serif Text", serif;
   font-weight: 400;
   font-style: normal;
-  margin-bottom: 4px;
-  font-size: 0.9rem;
-  color: #dcdcdc;
-  padding: 5px 10px;
+  margin-bottom: 0.25rem; /* Scalable margin */
+  font-size: 1.03rem;
+  word-spacing: 0px;
+  letter-spacing: 0.8px; /* Better readability */
+  color: white;
+  padding: 0.3125rem 0.625rem;
   text-align: left;
   position: relative;
+  transition: color 0.3s ease-in-out; /* Smooth hover transition */
 }
+
+.footer-column ul li:hover {
+  color: #ffffff; /* Slightly brighter on hover */
+  /* text-decoration: underline; */
+}
+
 
 /* Add a dot before each list item */
 .footer-column ul li::before {
@@ -164,29 +173,30 @@
    padding: 0 15px; 
 }
 
-.social-icons i {
-  font-size: 1.5rem;
-  margin-right: 15px;
-  color: #dcdcdc;
+.social-icons a {
+  font-size: 1rem;
+  margin-right: 0px;
+  color: white !important;  /* Ensure white color is applied */
   transition: color 0.3s ease;
+  text-decoration: none; /* Prevent underline on anchor tags */
 }
 
-/* Remove the margin-right for the last icon */
-.social-icons i:last-child {
+.social-icons a:hover {
+  color: #2a718f !important; /* Hover color */
+}
+
+/* Remove margin for last icon */
+.social-icons a:last-child {
   margin-right: 0;
 }
 
-
-.social-icons i:hover {
-  color: #2a718f; /* Highlight color */
-}
 
 /* Footer Bottom Styles */
 .footer-bottom {
   border-top: 1px solid #333;
   margin-top: 0px;
   display: block;
-  font-size: 0.9rem;
+  font-size: 1.05rem;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -195,7 +205,7 @@
 
 .footer-bottom p {
   margin: 5px 10px;
-  font-size: 0.9rem;
+  font-size: 1.02rem;
   color: #cccccc;
 }
 
