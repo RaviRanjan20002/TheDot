@@ -3,54 +3,60 @@
     box-sizing: border-box;
     padding: 60px 20px;
     background-image: url("../src/assets/bgff.jpg");
+    background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
     overflow-x: hidden;
+    width: 100%;
 }
 
+/* Container */
 .container-Em {
-    margin: 1rem 2rem 1rem 2rem;
+    margin: 1rem 2rem;
     box-sizing: border-box;
     display: flex;
     flex-direction: row;
-    /* Align text and image side by side */
     justify-content: space-between;
     align-items: center;
     max-width: 1200px;
     gap: 30px;
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
 
+/* Text Content */
 .content-Em {
-    margin: 1rem 1.5rem 1rem 1.5rem;
-    overflow: hidden;
-    font-family: "Bitter", serif;
+    margin: 1rem;
     flex: 1;
-    min-width: 400px;
-    /* Ensure minimum size for text block */
+    min-width: 350px; /* Ensures text block doesn't shrink too much */
     text-align: left;
-    /* Keep text aligned left */
 }
 
 .section-title-em {
-    font-size: 36px;
+    
+    font-size: 2.3rem;
     font-weight: bold;
     color: #0c0c0c;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .section-description-em {
-    font-size: 20px;
+    font-family: "Bitter", serif;
+    font-size: 1.2rem;
     color: #061165;
     margin-bottom: 20px;
     line-height: 1.5;
 }
 
+/* Statistics Section */
 .statistics {
+    font-family: "Bitter", serif;
     display: flex;
     gap: 30px;
     flex-wrap: wrap;
+    justify-content: flex-start;
 }
 
 .stat-item {
@@ -60,41 +66,44 @@
 }
 
 .stat-item h3 {
-    font-size: 32px;
-    color: #061165;;
+    
+    font-size: 2rem;
+    color: #061165;
     margin-bottom: 5px;
     transition: all 0.2s ease-in-out;
 }
 
 .stat-item p {
-    font-size: 20px;
-    color:#061165;;
+    font-size: 1.1rem;
+    color: #061165;
 }
 
-
+/* Image Section */
 .image-container-Em {
     flex: 1;
-    min-width: 500px;
+    min-width: 450px;
     display: flex;
     justify-content: flex-end;
 }
 
 .image-container-Em img {
     margin: 20px;
-    overflow: hidden;
     max-width: 100%;
-    border-radius: 8px;
+    height: auto;
+    border-radius: 4px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Responsive Design */
+/* ✅ Responsive Design */
+
+/* Medium Devices (Tablets, iPads) */
 @media (max-width: 1024px) {
     .section-title-em {
-        font-size: 30px;
+        font-size: 2rem;
     }
 
     .section-description-em {
-        font-size: 15px;
+        font-size: 1rem;
     }
 
     .statistics {
@@ -102,19 +111,24 @@
     }
 
     .stat-item h3 {
-        font-size: 28px;
+        font-size: 1.8rem;
     }
 
     .stat-item p {
-        font-size: 13px;
+        font-size: 1rem;
+    }
+
+    .image-container-Em {
+        min-width: 350px;
     }
 }
 
+/* Small Devices (Phones) */
 @media (max-width: 768px) {
     .container-Em {
         flex-direction: column;
-        /* Stack text and image vertically */
         text-align: center;
+        align-items: center;
     }
 
     .content-Em {
@@ -122,42 +136,45 @@
         min-width: auto;
     }
 
+    .statistics {
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+    }
+
     .stat-item {
         text-align: center;
     }
 
-    .section-title-em {
-        font-size: 28px;
-    }
-
-    .section-description-em {
-        font-size: 14px;
-    }
-
-    .statistics {
-        flex-direction: column;
-        gap: 15px;
+    .image-container-Em {
+        justify-content: center;
+        min-width: auto;
     }
 }
 
+/* Extra Small Devices (Very Small Phones) */
 @media (max-width: 480px) {
     .empowering-section {
         padding: 40px 10px;
     }
 
     .section-title-em {
-        font-size: 24px;
+        font-size: 1.8rem;
     }
 
     .section-description-em {
-        font-size: 13px;
+        font-size: 0.95rem;
     }
 
     .stat-item h3 {
-        font-size: 24px;
+        font-size: 1.6rem;
     }
 
     .stat-item p {
-        font-size: 12px;
+        font-size: 0.9rem;
+    }
+
+    .image-container-Em img {
+        margin: 10px;
     }
 }
