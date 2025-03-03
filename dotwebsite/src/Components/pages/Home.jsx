@@ -10,20 +10,21 @@ import Whatsapp from '../Section/Whatsapp';
 import NewHome from '../pages/NewHome';
 import ResFac from '../Section/ResFac';
 import Programs from '../Section/Programs';
+import ParentsTestimonial from '../Section/ParentsTestimonial';
 
 function Home() {
   return (
     <div>
       <NewHome/>
       {/* <BannerSlider/> */}
-      {/* <ResFac/> */}
       <Programs/>
       <ResFac/>
-      <Courses/>
-      <Registration/>
+      {/* <Courses/> */}
+      {/* <Registration/> */}
       <Empowering/>
       <Facilities/>
-      <Testimonial/>
+      <ParentsTestimonial/>
+      {/* <Testimonial/> */}
       <Footer/>
       <Whatsapp/>
     </div>

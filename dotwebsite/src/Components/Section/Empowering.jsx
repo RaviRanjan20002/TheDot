@@ -46,9 +46,9 @@ const Empowering = () => {
         <section className="empowering-section">
             <div className="container-Em">
                 <div className="content-Em">
-                    <h2 className="section-title-em">Empowering Future Leaders in Science</h2>
+                    <h2 className="section-title-em">Empowering Future Leaders in IIT-JEE & NEET</h2>
                     <p className="section-description-em">
-                        At The Dot, we specialize in IIT-JEE and NEET coaching, guided by experienced IITians ensuring students achieve their academic goals.
+                        At The Dot, we specialize in IIT-JEE & NEET coaching, guided by experienced IITians ensuring students achieve his goals.
                     </p>
                     <div className="statistics">
                         <div className="stat-item">

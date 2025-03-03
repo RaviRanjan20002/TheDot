@@ -1,46 +1,45 @@
 import "../../../styles/ParentsTestimonial.css";
-import parent from "../../assets/parent.jpg";
+import parent from "../../assets/MrSharma.jpeg";
 
 const testimonials = [
   {
-    name: "Michael Smith",
-    image: parent, // Replace with actual image URL
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    name: "Rajesh Verma",
+    image: parent,
+    text: "The DOT Institute has been a game-changer for my child. The expert faculty and structured approach to JEE and NEET preparation make it one of the best coaching institutes in India. Highly recommended!",
   },
   {
-    name: "Emily Johnson",
+    name: "Sunita Sharma",
     image: parent,
-    text: "Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+    text: "I am extremely satisfied with The DOT Institute. The personalized attention and doubt-clearing sessions have significantly improved my child's confidence in competitive exams.",
   },
   {
-    name: "John Doe",
+    name: "Anil Gupta",
     image: parent,
-    text: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    text: "The DOT Institute ensures a balance of conceptual learning and practice. Their AI-powered question paper generator helps students get real exam-like experience!",
   },
   {
-    name: "Sarah Williams",
+    name: "Pooja Reddy",
     image: parent,
-    text: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+    text: "I have seen a remarkable improvement in my child's performance. The DOT Institute's innovative approach to learning and mock test analysis is outstanding.",
   },
   {
-    name: "David Brown",
+    name: "Vikram Patel",
     image: parent,
-    text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "The DOT Institute provides a great learning environment with top-notch faculty and technology-driven preparation. It truly prepares students for success!",
   },
   {
-    name: "David Brown",
+    name: "Meena Iyer",
     image: parent,
-    text: "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    text: "What I love about The DOT Institute is their structured curriculum and real-time feedback for students. It ensures they stay ahead in their preparation!",
   },
 ];
 
-const Testimonial = ({ name, role, image, text }) => {
+const Testimonial = ({ name, image, text }) => {
   return (
-    <div className="testimonial-box">
-      <div className="testimonial-content">
+    <div className="ptestimonial-box">
+      <div className="ptestimonial-content">
         <img src={image} alt={name} className="testimonial-img" />
         <h3>{name}</h3>
-        <p className="role">{role}</p>
         <p className="text">{text}</p>
         <div className="stars">★★★★★</div>
       </div>
@@ -50,10 +49,13 @@ const Testimonial = ({ name, role, image, text }) => {
 
 const ParentsTestimonial = () => {
   return (
-    <div className="testimonial-container">
+    <div className="ptcontainer">
+    <h1> Parents' Testimonials about The DOT !</h1>
+    <div className="ptestimonial-container">
       {testimonials.map((testimonial, index) => (
         <Testimonial key={index} {...testimonial} />
       ))}
+    </div>
     </div>
   );
 };
