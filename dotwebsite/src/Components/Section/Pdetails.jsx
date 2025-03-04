@@ -2,6 +2,7 @@ import React from "react";
 import { useParams, Link } from "react-router-dom";
 import "../../../styles/Pdetails.css"; // Import the updated CSS
 import mrsharma from "../../assets/MrSharma.jpeg";
+import { useState } from "react";
 
 const programDetails = {
     1: {
@@ -14,7 +15,11 @@ const programDetails = {
             { name: "Aarav Gupta", feedback: "Amazing faculty and doubt support, improved my ranks drastically.", image: mrsharma},
             { name: "Sneha Verma", feedback: "The crash course gave me a great confidence boost before the exam.", image: mrsharma },
         ],
-        youtubePodcast: "https://www.youtube.com/embed/UcqFdpc9q9Q",
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
         result: "Last year, 15+ students secured 95+ percentile in JEE!",
     },
     2: {
@@ -27,15 +32,77 @@ const programDetails = {
             { name: "Rohan Joshi", feedback: "The test series and mock exams were super helpful for my NEET prep.", image: "/images/student3.jpg" },
             { name: "Neha Arora", feedback: "Loved the interactive doubt-solving sessions and mentorship.", image: "/images/student4.jpg" },
         ],
-        youtubePodcast: "https://www.youtube.com/embed/UcqFdpc9q9Q",
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
         result: "Last year, 200+ students cracked NEET with excellent scores!",
     },
+    3: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+         result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    4: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+        result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    5: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+        result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    6: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+        result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    7: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+        result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    8: {
+        youtubePodcast: {
+            0:"https://www.youtube.com/embed/UcqFdpc9q9Q",
+            1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
+            2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
+        },
+        result: "Last year, 200+ students cracked NEET with excellent scores!",
+    },
+    
 };
+
 
 const Pdetails = () => {
     const { id } = useParams();
     const details = programDetails[id];
-
+    const [index,Setindex] = useState(0);
+    const previndex =()=>{
+        Setindex( index === 0 ? 2: index-1 );
+        console.log(index);
+    }
+    const nextindex =()=>{
+        Setindex(index ===2? 0 : index+1);
+        console.log(index);
+    }
     if (!details) {
         return <h2 className="not-found">Program Details Not Available</h2>;
     }
@@ -82,21 +149,27 @@ const Pdetails = () => {
             */}
 
             {/* YouTube Podcast Section */}
+          
             <div className="details-section">
                 <h3>📺 YouTube Podcast</h3>
+
+                <span><button onClick={previndex}>&#11164;</button></span>
                 <iframe
                     className="youtube-video"
-                    src={details.youtubePodcast}
+                    src={details.youtubePodcast[index]}
                     title="YouTube Podcast"
                     frameBorder="0"
                     allowFullScreen
                 ></iframe>
+        <span><button onClick={nextindex}>&#11166;</button></span>
             </div>
-
+           
             {/* Result Section */}
             <div className="details-section result-section">
                 <h3>🏆 Results</h3>
                 <p>{details.result}</p>
+                <Link to="/result" className="back-button">Click here</Link>
+                
             </div>
 
             <Link to="/" className="back-button">← Back to Programs</Link>
