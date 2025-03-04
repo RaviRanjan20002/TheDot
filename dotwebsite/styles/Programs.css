@@ -6,11 +6,12 @@
 }
 
 .section-title {
+    font-family: "PT Serif", serif;
     margin: 0%;
-    font-size: 2rem;
-    font-weight: bold;
-    color: #1e2a52;
-    margin-bottom: 2rem;
+    font-size: 3rem;
+    font-weight: 1000;
+    color: #0b1a4b;
+    margin-bottom: 3rem;
 }
 
 /* Course Container */
@@ -90,5 +91,5 @@
 }
 
 .enroll-btnP:hover {
-    background-color:rgb(227, 64, 4);
+    background-color:#0b4061;
 }
