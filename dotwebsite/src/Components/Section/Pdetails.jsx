@@ -37,7 +37,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 30+ students cracked NEET with excellent scores!",
     },
     3: {
         youtubePodcast: {
@@ -45,7 +45,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-         result: "Last year, 200+ students cracked NEET with excellent scores!",
+         result: "Last year, 30+ students cracked NEET with excellent scores!",
     },
     4: {
         youtubePodcast: {
@@ -53,7 +53,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 15+ students secured 95+ percentile in JEE!",
     },
     5: {
         youtubePodcast: {
@@ -61,7 +61,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 30+ students cracked NEET with excellent scores!",
     },
     6: {
         youtubePodcast: {
@@ -69,7 +69,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 15+ students secured 95+ percentile in JEE!",
     },
     7: {
         youtubePodcast: {
@@ -77,7 +77,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 15+ students secured 95+ percentile in JEE!",
     },
     8: {
         youtubePodcast: {
@@ -85,7 +85,7 @@ const programDetails = {
             1:"https://www.youtube.com/embed/lUQ-kQzfAUQ?si=E3_BU97prXyJeyjJ",  
             2:"https://www.youtube.com/embed/1-J288mq9oo?si=Agx4zwic0ZM2IYLl" 
         },
-        result: "Last year, 200+ students cracked NEET with excellent scores!",
+        result: "Last year, 30+ students cracked NEET with excellent scores!",
     },
     
 };
@@ -97,11 +97,11 @@ const Pdetails = () => {
     const [index,Setindex] = useState(0);
     const previndex =()=>{
         Setindex( index === 0 ? 2: index-1 );
-        console.log(index);
+        
     }
     const nextindex =()=>{
         Setindex(index ===2? 0 : index+1);
-        console.log(index);
+        
     }
     if (!details) {
         return <h2 className="not-found">Program Details Not Available</h2>;
@@ -153,7 +153,7 @@ const Pdetails = () => {
             <div className="details-section">
                 <h3>📺 YouTube Podcast</h3>
 
-                <span><button onClick={previndex}>&#11164;</button></span>
+                <span><button className="arrowbutton" onClick={previndex}>&#11164;</button></span>
                 <iframe
                     className="youtube-video"
                     src={details.youtubePodcast[index]}
@@ -161,7 +161,7 @@ const Pdetails = () => {
                     frameBorder="0"
                     allowFullScreen
                 ></iframe>
-        <span><button onClick={nextindex}>&#11166;</button></span>
+        <span><button className="arrowbutton" onClick={nextindex}>&#11166;</button></span>
             </div>
            
             {/* Result Section */}

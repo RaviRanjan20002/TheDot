@@ -98,7 +98,7 @@ const ProgramDetail = () => {
     };
 
     return (
-        <div>
+        <div className="program-detail-container">
         <div className="program-detail">
             <h2 className="detail-title">{program.title}</h2>
             <p className="detail-description">{program.description}</p>

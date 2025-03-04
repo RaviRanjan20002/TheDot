@@ -180,7 +180,7 @@ const Footer = () => {
       </div>
 
       <div className="footer-bottom">
-        <p>THE DOT Coaching Institute ©All rights reserved.</p>
+        <p>The DOT Coaching Institute ©All rights reserved.</p>
         <p>
           <a href="#">Terms of Use</a> | <a href="#">Privacy Policy</a> |{" "}
           <a href="#">Refund Policy</a> | <a href="#">Disclaimer</a>
