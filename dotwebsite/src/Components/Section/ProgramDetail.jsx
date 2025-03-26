@@ -108,14 +108,14 @@ const ProgramDetail = () => {
                     <img src={coursePlanner} alt="Course Planner" className="info-image" />
                     <h3>Course Planner</h3>
                     <p>Download the course planner for detailed scheduling.</p>
-                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/TheDotBook.pdf"); setShowForm(true); }}>Download</button>
+                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/TheDOT.pdf"); setShowForm(true); }}>Download</button>
                 </div>
 
                 <div className="info-box">
                     <img src={faculty} alt="Faculty" className="info-image" />
                     <h3>Faculty</h3>
                     <p>Learn more about our expert faculty members.</p>
-                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/faculty-details.pdf"); setShowForm(true); }}>Download</button>
+                    <button className="download-btn" onClick={() => { setDownloadLink("/pdfs/TheDOT.pdf"); setShowForm(true); }}>Download</button>
                 </div>
 
                 <div className="info-box">
