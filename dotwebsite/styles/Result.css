@@ -1,144 +1,165 @@
 .achievers-container {
-    text-align: center;
-    background: #0c5978;
-    color: white;
-    padding: 2rem;
-    margin: auto;
-  }
+  text-align: center;
+  background: #0c5978;
+  color: white;
+  padding: 2rem;
+  margin: auto;
+}
+
+.maintitle {
+  margin: auto;
+  font-size: 3rem;
+  font-weight: bold;
+  text-decoration: underline;
+  color: #eeca39;
   
+}
+
+.title {
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.schools {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+  text-align: center;
+  gap: 10px;
+}
+
+.achievers-list {
+  margin: 4rem auto;
+  max-width: 1200px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  padding: 0 2rem;
+}
+
+/* Achiever Cards */
+.achiever-card {
+  background: #eeca39;
+  border-radius: 10px;
+  padding: 0px;
+  text-align: center;
+  width: 240px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.achiever-card:hover {
+  transform: scale(1.05);
+}
+
+.achiever-img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  border: 4px solid white;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.iit-name {
+  margin: 0%;
+  padding: 0%;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+.jee-rank {
+  margin: 5px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #1e3a5f;
+}
+
+/* Fix for Achiever Info Box */
+.achiever-info {
+  background: #003366;
+  color: white;
+  padding: 10px;  /* Added padding for better spacing */
+  border-radius: 5px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.achiever-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.parent {
+  font-size: 0.95rem;
+  margin-bottom: 5px;
+}
+
+/* Address Formatting Fix */
+.address {
+  font-size: 0.9rem;
+  white-space: nowrap; /* Prevents unwanted line breaks */
+  word-break: break-word; /* Ensures long words wrap correctly */
+  line-height: 1.4;
+}
+
+/* Optional: Force a Line Break Before Address */
+.address::before {
+  
+  white-space: pre;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
   .maintitle {
-    margin: auto;
-    font-size: 3rem;
-    font-weight: bold;
-    text-decoration: underline;
-    color: #eeca39;
+      font-size: 2.5rem;
   }
-  
   .title {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: white;
+      font-size: 1.8rem;
   }
-  
-  .schools {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    text-align: center;
-    gap: 10px;
-  }
-  
-  .achievers-list {
-    margin: 4rem auto;
-    max-width: 1200px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-    padding: 0 2rem;
-  }
-  
-  /* Achiever Cards */
   .achiever-card {
-    background: #eeca39;
-    border-radius: 10px;
-    padding: 0px;
-    text-align: center;
-    width: 240px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease-in-out;
+      width: 220px;
   }
-  
-  .achiever-card:hover {
-    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .maintitle {
+      font-size: 2.2rem;
   }
-  
-  .achiever-img {
-    width: 120px;
-    height: 120px;
-    border-radius: 50%;
-    border: 4px solid white;
-    margin-top: 5px;
-    margin-bottom: 5px;
+  .title {
+      font-size: 1.6rem;
   }
-  
-  .iit-name {
-    margin: 0%;
-    padding: 0%;
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #1e3a5f;
+  .achievers-list {
+      flex-direction: column;
+      align-items: center;
   }
-  
-  .jee-rank {
-    margin: 5px;
-    font-size: 1rem;
-    font-weight: bold;
-    color: #1e3a5f;
+  .achiever-card {
+      width: 90%;
+      max-width: 300px;
   }
-  
-  .achiever-info {
-    background: #003366;
-    color: white;
-    padding: 3px;
-    border-radius: 5px;
+}
+
+@media (max-width: 480px) {
+  .maintitle {
+      font-size: 2rem;
   }
-  
-  .achiever-name {
-    margin: auto;
-    font-size: 1.2rem;
-    font-weight: bold;
+  .title {
+      font-size: 1.4rem;
   }
-  
-  .parent, .address {
-    font-size: 0.9rem;
+  .achievers-container {
+      padding: 1rem;
   }
-  
-  /* Responsive Design */
-  @media (max-width: 1024px) {
-    .maintitle {
-        font-size: 2.5rem;
-    }
-    .title {
-        font-size: 1.8rem;
-    }
-    .achiever-card {
-        width: 220px;
-    }
+  .achiever-card {
+      width: 100%;
+      max-width: 280px;
   }
-  
-  @media (max-width: 768px) {
-    .maintitle {
-        font-size: 2.2rem;
-    }
-    .title {
-        font-size: 1.6rem;
-    }
-    .achievers-list {
-        flex-direction: column;
-        align-items: center;
-    }
-    .achiever-card {
-        width: 90%;
-        max-width: 300px;
-    }
-  }
-  
-  @media (max-width: 480px) {
-    .maintitle {
-        font-size: 2rem;
-    }
-    .title {
-        font-size: 1.4rem;
-    }
-    .achievers-container {
-        padding: 1rem;
-    }
-    .achiever-card {
-        width: 100%;
-        max-width: 280px;
-    }
-  }
-  
+}
