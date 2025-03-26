@@ -1,12 +1,11 @@
 /* General Styling */
 .resfac-container {
-    padding: 3rem;
+    padding: 1.8rem;
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    
     background-image: url("../src/assets/bgff.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -38,13 +37,13 @@
     flex-wrap: wrap;
     gap: 30px;
     width: 100%;
-   overflow: hidden;
+    overflow: hidden;
 }
 
 /* Individual Cards */
 .resfac {
     max-width: 350px;
-    height: 450px;
+    min-height: 500px; /* Increased height to fit button */
     background: linear-gradient(135deg, #5ab2e5, #3a8dca);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
@@ -53,6 +52,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: space-between; /* Ensure content stays balanced */
 }
 
 .resfac:hover {
@@ -80,6 +80,8 @@
     flex-direction: column;
     align-items: center;
     flex-grow: 1;
+    justify-content: flex-start;
+    padding-bottom: 20px; /* Ensures button is not hidden */
 }
 
 .resfac-content img {
@@ -99,8 +101,8 @@
 .resfac-content p {
     font-size: 1rem;
     color: #f0f0f0;
-    flex-grow: 1;
-    margin-bottom: 15px;
+    flex-grow: 1; /* Pushes button to the bottom */
+    margin-bottom: 10px;
 }
 
 /* Button Styling */
@@ -108,6 +110,7 @@
     width: 100%;
     max-width: 200px;
     padding: 10px 5px;
+    margin-top: auto; /* Push button to the bottom */
     font-size: 1rem;
     color: #fff;
     background-color: rgb(252, 79, 16);

@@ -34,7 +34,7 @@ const facultyData = [
     subject: "Maths",
     members: [
       { name: "Kundan Sir", degree: "B.Tech, IIT Delhi",img:imag7 },
-      { name: "Manish Sir", degree: "M.Sc, IIT Delhi",img:imag8 },
+      { name: "Manish Sir", degree: "B.tech ,IIT Dhanbad",img:imag8 },
       { name: "Mohit Sir", degree: "M.Sc, NIT Jmsd",img:imag9 },
     ],
   },

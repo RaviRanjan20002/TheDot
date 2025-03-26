@@ -55,7 +55,7 @@ import kunaljpg from "../../assets/kunal.jpg";
 
 const jeemain = [
   { name: "Namit Jain", parent: "Bhushan Jain", address: "Gandhi Nagar,Rewari,Haryana", Percentile: "99.54", img: Namit },
-  { name: "Madhur", parent: "Naveen Kumar", address: "Jhajjar,Rewari ,Haryana", Percentile: "99.3",  img: Madhur},
+  { name: "Madhur", parent: "Naveen Kumar", address: "Jhajjars Rewari, Haryana", Percentile: "99.3",  img: Madhur},
   { name: "Devansh", parent: "Vinod", address: "Ansal Town,Rewari,Haryana",Percentile: "99.01", img:Devansh },
   { name: "Aryan", parent: "Birender Yadav", address: "Rajpura Khalsa, Rewari,Haryana", Percentile: "98.38", img: Aryan},
   { name: "Deepanshu", parent: "Dharmendra yadav", address: "Pahari,Rewari,Haryana", Percentile: "97.84", college: "", img: Deepanshu},

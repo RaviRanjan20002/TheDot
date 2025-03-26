@@ -37,9 +37,7 @@ body, ul, li, a, span {
 .navbar .logo {
   width: 140px;
   height: 100px;
-  /* clip-path: circle(50%); */
   object-fit: cover;
-  /* animation: rotation 8s infinite linear; */
 }
 @keyframes rotation {
   from {
