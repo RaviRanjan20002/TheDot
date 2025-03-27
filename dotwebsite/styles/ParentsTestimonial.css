@@ -270,12 +270,13 @@ h3 {
   .testimonials-container {
     justify-content: flex-start; /* Align videos from left */
     padding: 10px;
+    min-height:380px;
   }
 
   .video-card {
     height: 250px; /* Fixed height for consistency */
     width: 35vw; /* Dynamic width for better UI */
-    min-width: 120px; /* Ensures small screens have proper sizing */
+    min-width: 150px; /* Ensures small screens have proper sizing */
     max-width: 200px;
   }
 
