@@ -226,9 +226,10 @@ const ProgramDetail = () => {
             setStudentInfo({ name: "", phone: "", email: "" });
         } else {
             alert("Please fill out all fields.");
+            
         }
     };
-    
+
 
     return (
         <div className="program-detail-container">

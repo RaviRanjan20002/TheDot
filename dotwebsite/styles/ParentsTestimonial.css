@@ -88,7 +88,7 @@ h3 {
 /* Testimonial Section */
 .testimonial-section {
   text-align: center;
-  padding: 20px;
+  padding: 20px ;
   background-image: url("../src/assets/bgff.jpg");
   min-height: 520px;
 }
@@ -104,10 +104,10 @@ h3 {
 /* Video Container */
 .testimonials-container {
   display: flex;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px;
+  padding: 20px 10px;
   flex-wrap: nowrap;
   overflow-x: auto;
 }
@@ -126,7 +126,7 @@ h3 {
   position: relative;
   width: 150px;
   height: 300px;
-  border-radius: 10px;
+  border-radius: 5px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
@@ -168,4 +168,10 @@ h3 {
 /* On Hover: Video Expands but Name Stays */
 .video-card:hover .parent-name-box {
   bottom: 10px; /* Slightly move up when hovered */
+}
+
+@media (max-width: 440px) {
+  .testimonials-container{
+    gap: 5px;
+  }
 }

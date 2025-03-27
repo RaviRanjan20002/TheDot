@@ -1,9 +1,13 @@
 /* Course Section Styling */
-.course-section {
-  padding: 40px;
-  background-image: url("../src/assets/bgff.jpg");
-  text-align: center;
-}
+.course-section {   
+    padding: 50px;   
+    background-image: url("../src/assets/bgff.jpg");   
+    background-repeat: no-repeat; 
+    background-size: cover; 
+    background-position: center; 
+    text-align: center; 
+}  
+
 
 .section-title {
     font-family: "PT Serif", serif;
