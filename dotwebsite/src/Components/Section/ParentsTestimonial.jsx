@@ -123,24 +123,17 @@
 
 // export default ParentsTestimonial;
 
-
 import { useRef } from "react";
 import "../../../styles/ParentsTestimonial.css";
-import video1 from "../../assets/vid1.mp4";
-import video2 from "../../assets/vid2.mp4";
-import video3 from "../../assets/vid3.mp4";
-import video4 from "../../assets/vid4.mp4";
-import video5 from "../../assets/vid5.mp4";
-import video6 from "../../assets/vid6.mp4";
 
 const ParentsTestimonial = () => {
   const videos = [
-    { id: 1, src: video1, name: "Sapna Yadav " },
-    { id: 2, src: video2, name: "Dayanand Pokhriwal" },
-    { id: 3, src: video3, name: "Kiran" },
-    { id: 4, src: video4, name: "Sachin Gupta" },
-    { id: 5, src: video5, name: "Chandra Sekhar" },
-    { id: 6, src: video6, name: "Arun kumar" },
+    { id: 1, src: "https://tinyurl.com/yck73fuh", name: "Sapna Yadav" },
+    { id: 2, src: "https://tinyurl.com/mr37m8mm", name: "Dayanand Pokhriwal" },
+    { id: 3, src: "https://tinyurl.com/y77xr8sn", name: "Kiran" },
+    { id: 4, src: "https://tinyurl.com/2feeh436", name: "Sachin Gupta" },
+    { id: 5, src: "https://tinyurl.com/3em57we6", name: "Chandra Sekhar" },
+    { id: 6, src: "https://tinyurl.com/vs3s3bff", name: "Arun Kumar" },
   ];
 
   const videoRefs = useRef([]);
@@ -173,8 +166,9 @@ const ParentsTestimonial = () => {
               ref={(el) => (videoRefs.current[index] = el)}
               src={video.src}
               className="testimonial-video"
-              muted ={false}
+              muted
               loop
+              controls
             ></video>
             <div className="parent-name-box">
               <span className="parent-name">{video.name}</span>

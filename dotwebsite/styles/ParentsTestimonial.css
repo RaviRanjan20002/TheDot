@@ -83,12 +83,124 @@ h3 {
 }  */
 /* Overall Section */
 
+/* Testimonial Section */
+/* .testimonial-section {
+  text-align: center;
+  padding: 20px;
+  background-image: url("../src/assets/bgff.jpg");
+  min-height: 520px;
+}
 
-/* Overall Section */
+
+.testimonial-heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #f6f7fa;
+  margin-bottom: 20px;
+}
+
+
+.testimonials-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+}
+
+
+.video-card:nth-child(odd) {
+  transform: translateY(-20px);
+}
+
+.video-card:nth-child(even) {
+  transform: translateY(20px);
+}
+
+
+.video-card {
+  position: relative;
+  width: 150px;
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.4s ease-in-out;
+}
+
+
+.video-card:hover {
+  transform: scale(1.1) translateY(0);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3);
+  width: 200px;
+  height: 350px;
+  border-radius: 20px;
+}
+
+
+.testimonial-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+
+.parent-name-box {
+  position: absolute;
+  bottom: 2px; 
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 123, 255, 0.8); 
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  width: 80%; 
+}
+
+
+.video-card:hover .parent-name-box {
+  bottom: 10px; 
+}
+@media (max-width: 768px) {
+  .testimonial-heading {
+    font-size: 2rem;
+  }
+  .testimonials-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+  .video-card {
+    width: 100%;
+    height: 200px;
+  }
+  
+}
+@media (max-width: 480px) {
+  .testimonial-heading {
+    font-size: 1.5rem;
+  }
+  .testimonials-container {
+    display: flex;
+    flex-direction:row;
+    gap: 10px;
+  }
+  .video-card {
+    width: 100%;
+    height: 100px;
+  }
+} */
+
 /* Testimonial Section */
 .testimonial-section {
   text-align: center;
-  padding: 20px ;
+  padding: 10px;
   background-image: url("../src/assets/bgff.jpg");
   min-height: 520px;
 }
@@ -104,32 +216,44 @@ h3 {
 /* Video Container */
 .testimonials-container {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   justify-content: center;
   align-items: flex-start;
-  padding: 20px 10px;
-  flex-wrap: nowrap;
-  overflow-x: auto;
+  padding: 20px;
+  flex-wrap: nowrap; /* Keeps videos in a single row */
+  overflow-x: auto; /* Enables horizontal scrolling on small screens */
+  scroll-snap-type: x mandatory;
 }
 
-/* Zig-zag Alignment */
-.video-card:nth-child(odd) {
-  transform: translateY(-20px);
+/* Zig-zag Alignment (ONLY on larger screens) */
+@media (min-width: 769px) {
+  .video-card:nth-child(odd) {
+    transform: translateY(-20px);
+  }
+
+  .video-card:nth-child(even) {
+    transform: translateY(20px);
+  }
 }
 
-.video-card:nth-child(even) {
-  transform: translateY(20px);
+/* Remove Zig-Zag on Mobile */
+@media (max-width: 768px) {
+  .video-card:nth-child(odd),
+  .video-card:nth-child(even) {
+    transform: none;
+  }
 }
 
 /* Video Card */
 .video-card {
   position: relative;
   width: 150px;
-  height: 300px;
-  border-radius: 5px;
+  height: 300px; /* Default height */
+  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.4s ease-in-out;
+  scroll-snap-align: center;
 }
 
 /* Hover Effect: Video Expands */
@@ -139,6 +263,28 @@ h3 {
   width: 200px;
   height: 350px;
   border-radius: 20px;
+}
+
+/* Responsive Video Styles for Mobile */
+@media (max-width: 768px) {
+  .testimonials-container {
+    justify-content: flex-start; /* Align videos from left */
+    padding: 10px;
+    min-height:380px;
+  }
+
+  .video-card {
+    height: 250px; /* Fixed height for consistency */
+    width: 35vw; /* Dynamic width for better UI */
+    min-width: 150px; /* Ensures small screens have proper sizing */
+    max-width: 200px;
+  }
+
+  /* Hover effect removed on touch screens */
+  .video-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
 }
 
 /* Video Styling */
@@ -152,26 +298,20 @@ h3 {
 /* Parent Name Box */
 .parent-name-box {
   position: absolute;
-  bottom: 2px; /* Move it to the bottom */
+  bottom: 2px;
   left: 50%;
   transform: translateX(-50%);
-  background-color: rgba(0, 123, 255, 0.8); /* Semi-transparent background */
+  background-color: rgba(0, 123, 255, 0.8);
   color: white;
   padding: 6px 12px;
   border-radius: 5px;
   font-size: 14px;
   font-weight: bold;
   text-align: center;
-  width: 80%; /* Ensure it fits */
+  width: 80%;
 }
 
-/* On Hover: Video Expands but Name Stays */
+/* Keep Name Box Position */
 .video-card:hover .parent-name-box {
-  bottom: 10px; /* Slightly move up when hovered */
-}
-
-@media (max-width: 440px) {
-  .testimonials-container{
-    gap: 5px;
-  }
+  bottom: 10px;
 }

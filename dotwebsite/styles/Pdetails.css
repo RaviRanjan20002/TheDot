@@ -1,173 +1,188 @@
-.program-details {
-    max-width: 1020px;
-    margin: 20px auto;
-    padding: 0px;
-    background: #ffffff;
-    border-radius: 12px;
-}
+/* Container for the program details */
+        .program-details {
+            max-width: 1020px;
+            margin: 20px auto;
+            padding: 20px;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
 
-.details-title {
-    font-size: 28px;
-    text-align: center;
-    margin-top: 2rem;
-    margin-bottom: 20px;
-    color: #2c3e50;
-    font-family: "DM Serif Text", serif;
-}
+        /* Section Title */
+        .details-section h3 {
+            font-size: 24px;
+            color: #2980b9;
+            margin-bottom: 15px;
+        }
 
-.details-section {
-    background: #f8f9fa;
-    padding: 20px;
-    margin-bottom: 20px;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+        /* Video Container */
+        .video-container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            margin: 10px 0;
+        }
 
-.details-section h3 {
-    font-size: 22px;
-    color: #2980b9;
-    margin-bottom: 15px;
-}
+        .youtube-video {
+            width: 100%;
+            height: 400px;
+            border-radius: 8px;
+            border: none;
+        }
 
-.schedule-card {
-    background: linear-gradient(135deg, #1e71a9, #3b78b5);
-    padding: 15px;
-    color: white;
-    font-size: 18px;
-    border-radius: 10px;
-    text-align: center;
-}
+        * Arrow Buttons */
+        .arrowbutton {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(44, 92, 197, 0.6);
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 24px;
+            border-radius: 50%;
+            padding: 10px;
+            transition: background 0.3s ease, transform 0.2s;
+            width: 60px;
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        /* Move Buttons Further Outside */
+        .arrowbutton.left {
+            left: -80px;  /* Increased spacing */
+        }
+        
+        .arrowbutton.right {
+            right: -80px; /* Increased spacing */
+        }
+        
+        .arrowbutton:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            /* transform: translateY(-50%) scale(1.1); */
+        }
 
-.testimonials-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-}
+        /* Result Section */
+        .result-section {
+            background: linear-gradient(135deg, #49a0d9, #b7dbd5);
+            color: #11395e;
+            font-weight: bold;
+            text-align: center;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px auto;
+            max-width: 100%;
+            font-size: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
 
-.testimonial-card {
-    background: #fff;
-    padding: 15px;
-    border-radius: 10px;
-    text-align: center;
-    width: 45%;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
-}
+        .result-section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
 
-.testimonial-image2 {
-    width: 70px;
-    height: 70px;
-    border-radius: 50%;
-    margin-bottom: 10px;
-    object-fit: cover;
-    border: 3px solid #2980b9;
-}
+        .view-result {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 15px;
+            background: #ffffff;
+            color: #11395e;
+            font-weight: bold;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background 0.3s ease-in-out, color 0.3s ease-in-out;
+        }
 
-.testimonial-card strong {
-    display: block;
-    font-size: 16px;
-    color: #2c3e50;
-}
+        .view-result:hover {
+            background: #11395e;
+            color: white;
+        }
 
-.testimonial-card p {
-    font-size: 14px;
-    color: #555;
-}
+        /* Back Button */
+        .back-button {
+            display: inline-block;
+            margin-top: 0px;
+            padding: 12px 20px;
+            font-size: 18px;
+            background: #101d2d;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: all 0.3s ease-in-out;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
 
-.youtube-video {
-    width: 100%;
-    height: 400px;
-    border-radius: 8px;
-}
+        .back-button:hover {
+            background: #217dbb;
+            transform: scale(1.05);
+        }
 
-.result-section {
-    background: #dff9fb;
-    font-weight: bold;
-    text-align: center;
-    padding: 20px;
-    border-left: 5px solid #16a085;
-    font-size: 18px;
-}
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .program-details {
+                width: 90%;
+            }
 
-.arrowbutton {
-    color: black;
-    background-color: #1e71a9;
-}
+            .youtube-video {
+                height: 300px;
+            }
 
-.back-button {
-    display: block;
-    text-align: center;
-    margin-top: 20px;
-    padding: 10px 15px;
-    background-color: #2980b9;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
+            .arrowbutton {
+                width: 40px;
+                height: 40px;
+                font-size: 20px;
+            }
 
-.back-button:hover {
-    background-color: #1f6692;
-}
+            .arrowbutton.left {
+                left: -50px; /* Adjusted for tablets */
+            }
 
-/* Responsive Styles */
-@media (max-width: 768px) {
-    .program-details {
-        width: 95%;
-        padding: 10px;
-    }
+            .arrowbutton.right {
+                right: -50px; /* Adjusted for tablets */
+            }
 
-    .details-title {
-        font-size: 24px;
-    }
+            .result-section {
+                font-size: 18px;
+                padding: 20px;
+            }
 
-    .details-section {
-        padding: 15px;
-    }
+            .back-button {
+                font-size: 16px;
+                padding: 10px 18px;
+            }
+        }
 
-    .details-section h3 {
-        font-size: 20px;
-    }
+        @media (max-width: 480px) {
+            .youtube-video {
+                height: 250px;
+            }
 
-    .testimonial-card {
-        width: 100%;
-    }
+            .arrowbutton {
+                width: 35px;
+                height: 35px;
+                font-size: 18px;
+            }
 
-    .youtube-video {
-        height: 250px;
-    }
-}
+            .arrowbutton.left {
+                left: -40px; /* Adjusted for mobile */
+            }
 
-@media (max-width: 480px) {
-    .details-title {
-        font-size: 22px;
-    }
+            .arrowbutton.right {
+                right: -40px; /* Adjusted for mobile */
+            }
 
-    .details-section {
-        padding: 10px;
-    }
+            .result-section {
+                font-size: 16px;
+                padding: 18px;
+            }
 
-    .details-section h3 {
-        font-size: 18px;
-    }
-
-    .schedule-card {
-        font-size: 16px;
-        padding: 10px;
-    }
-
-    .testimonial-card {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .testimonial-image2 {
-        width: 60px;
-        height: 60px;
-    }
-
-    .back-button {
-        font-size: 14px;
-        padding: 8px 12px;
-    }
-}
+            .back-button {
+                font-size: 14px;
+                padding: 8px 14px;
+            }
+        }

@@ -155,7 +155,7 @@ import React, { useState } from "react";
 import { useParams, Link } from "react-router-dom";
 import "../../../styles/ProgramDetail.css";
 
-import coursePlanner from "../../assets/coursePlanner.avif";
+import coursePlanner from "../../assets/coursePlanner.png";
 import councellor from "../../assets/counseller.jpeg";
 import Pdetails from "./Pdetails";
 

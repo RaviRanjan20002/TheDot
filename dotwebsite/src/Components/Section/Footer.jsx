@@ -171,7 +171,7 @@ const Footer = () => {
             <a href="http://linkedin.com/in/the-dot-754739257" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin-in fa-lg"></i>
             </a>
-            <a href="https://www.youtube.com/@thedotrewari" target="_blank" rel="noopener noreferrer">
+            <a href="https://www.youtube.com/@thedotinstituterewari" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-youtube fa-lg"></i>
             </a>
           </div>
