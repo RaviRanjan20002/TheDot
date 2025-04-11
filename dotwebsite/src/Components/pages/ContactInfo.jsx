@@ -6,6 +6,7 @@ const ContactInfo = () => {
   return (
     <div className="contact-info-container">
       <div className="contact-details">
+        
         <h1>Contact Us</h1>
         <p>
           Reach out to us for inquiries about IIT-JEE and NEET coaching.

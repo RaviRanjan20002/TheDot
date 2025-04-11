@@ -2,7 +2,7 @@ import React from 'react';
 
 // Import images
 import AdventureTravelGuide from "../../assets/AdventureTravelGuide.jpg";
-import Bartender from "../../assets/Bartender.jpg";
+import EventPlanner from "../../assets/EventPlanner.jpg";
 import BedAndBreakfastOwner from "../../assets/BedAndBreakfastOwner.jpg";
 import CateringManager from "../../assets/CateringManager.jpg";
 import Chef from "../../assets/Chef.jpg";
@@ -30,7 +30,7 @@ import manymore from "../../assets/manymore.jpg";
 
 const careers = [
   { title: "Adventure Travel Guide", image: AdventureTravelGuide, link: "https://en.wikipedia.org/wiki/Adventure_travel" },
-  { title: "Bartender", image: Bartender, link: "https://en.wikipedia.org/wiki/Bartender" },
+  { title: "EventPlanner", image: EventPlanner, link: "https://en.wikipedia.org/wiki/EventPlanner" },
   { title: "Bed and Breakfast Owner", image: BedAndBreakfastOwner, link: "https://en.wikipedia.org/wiki/Bed_and_breakfast" },
   { title: "Catering Manager", image: CateringManager, link: "https://en.wikipedia.org/wiki/Catering" },
   { title: "Chef", image: Chef, link: "https://en.wikipedia.org/wiki/Chef" },

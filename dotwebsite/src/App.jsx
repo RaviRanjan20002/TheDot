@@ -14,6 +14,15 @@ import Faculty from "./Components/pages/Faculty";
 import Result from "./Components/pages/Result";
 import Programs from "./Components/Section/Programs";
 import ProgramDetail from "./Components/Section/ProgramDetail";
+import IITBlog from "./Components/pages/iitblog";
+import AboutExcellence from "./Components/Section/AboutExcellence";
+import OurVision from "./Components/Section/OurVision";
+import OurJourney from "./Components/Section/OurJourney";
+import JoinOurTeam from "./Components/Section/JoinOurTeam";
+import JeeMainAdv from "./Components/Section/JeeMainAdv"
+import NeetUG from "./Components/Section/NeetUG";
+import JeeCrash from "./Components/Section/CrashCourseJEE";
+import NeetCrash from "./Components/Section/CrashCourseNEET";
 
 function App() {
   return (
@@ -22,6 +31,8 @@ function App() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="blogs" element={<Blogs />} />
+          {/* <Route path="/blog/:title" element={<IITBlog />} /> */}
+          <Route path="/blog/:title" element={<IITBlog />} />
           <Route path="gallery" element={<Gallery />} />
           <Route path="contact" element={<Contact />} />
           <Route path="CrashCourse" element={<CrashCourse />} />
@@ -32,6 +43,14 @@ function App() {
           <Route path="career/:careerTitle" element={<CareerDetail />} /> {/* Dynamic route */}
           <Route path="/" element={<Programs />} />
           <Route path="/programs/:id" element={<ProgramDetail />} />
+          <Route path="/about-excellence" element={<AboutExcellence />} />
+          <Route path="/our-vision" element={<OurVision />} />
+          <Route path="/our-journey" element={<OurJourney />} /> 
+          <Route path="/join-our-team" element={<JoinOurTeam />}/>
+          <Route path="/jee-main-adv" element={<JeeMainAdv />} />
+          <Route path="/neet-ug" element={<NeetUG />} />
+          <Route path="/jee-crash-course" element={<JeeCrash />} />
+          <Route path="/neet-crash-course" element={<NeetCrash />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

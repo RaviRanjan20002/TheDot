@@ -1,6 +1,7 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from "react";
 import "../../../styles/Footer.css";
+import { Link } from "react-router-dom";
 import "@fortawesome/fontawesome-free/css/all.min.css";
 
 
@@ -48,11 +49,10 @@ const Footer = () => {
           <ul
             className={`${openSections.about ? "visible" : "hidden"} toggle-section`}
           >
-            <li>About Excellence</li>
-            <li>Our Vision</li>
-            {/* <li>Leadership</li> */}
-            <li>Our Journey</li>
-            <li>Join Our Team</li>
+            <li><Link to="/about-excellence">About Excellence</Link></li>
+            <li><Link to="/our-vision">Our Vision</Link></li>
+            <li><Link to="/our-journey">Our Journey</Link></li>
+            <li><Link to="/join-our-team">Join Our Team</Link></li>
           </ul>
         </div>
 
@@ -82,10 +82,10 @@ const Footer = () => {
           <ul
             className={`${openSections.courses ? "visible" : "hidden"} toggle-section`}
           >
-            <li>JEE (Main & Adv.)</li>
-            <li>NEET (UG)</li>
-            <li>Crash course for JEE mains</li>
-            <li>Crash course for Neet</li>
+            <li> <Link to="/jee-main-adv">JEE (Main & Adv.)</Link></li>
+            <li><Link to="/neet-ug">NEET (UG)</Link></li>
+            <li><Link to="/jee-crash-course">Crash course for JEE mains</Link></li>
+            <li><Link to="/neet-crash-course">Crash course for Neet</Link></li>
             {/* <li>Online Programs</li> */}
             {/* <li>Study Abroad</li> */}
           </ul>
@@ -117,11 +117,11 @@ const Footer = () => {
           <ul
             className={`${openSections.results ? "visible" : "hidden"} toggle-section`}
           >
-            <li>JEE Advanced</li>
-            <li>NEET UG</li>
-            <li>AIIMS</li>
+            <li><Link to="/result">JEE Advanced</Link></li>
+            <li><Link to="/result">NEET UG</Link></li>
+            {/* <li>AIIMS</li> */}
             {/* <li>Olympiads</li> */}
-            <li>Board Exams</li>
+            {/* <li>Board Exams</li> */}
           </ul>
         </div>
 
@@ -176,7 +176,7 @@ const Footer = () => {
             </a>
           </div>
 
-        </div>
+        </div>  
       </div>
 
       <div className="footer-bottom">
@@ -191,3 +191,4 @@ const Footer = () => {
 };
 
 export default Footer;
+
